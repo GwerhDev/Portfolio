@@ -9,7 +9,8 @@
 .works{
   width: 100%;
   height: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .devUl{
@@ -17,9 +18,15 @@
   margin-left: 15%;
   width: 70%;
   height: auto;
-  margin-top: 150px;
   display: grid;
-  margin-bottom: 150px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 25px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.575);
+  transition-duration: .4s;
+}
+
+.devUl:hover{
+  box-shadow: 0px 0px 14px rgba(146, 146, 146, 0.541);
 }
 
 .devLi{
@@ -28,10 +35,15 @@
   list-style: none;
   text-align: left;
   transition-duration: .4s;
+  cursor: pointer;
 }
 
 :link, :visited{
   color: black
+}
+
+.ulList{
+  margin-left: -40px;
 }
 
 @media (max-width: 680px) {
