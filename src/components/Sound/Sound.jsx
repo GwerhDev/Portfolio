@@ -6,7 +6,7 @@ export const Sound = () => {
   const language = useSelector(state=>state.language)
   const API = require('../../middlewares/misc/sound-api.json')
   return (
-    <div className={s.devCont}>
+    <div className={s.soundCont}>
       <OptionTitle title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
       <div className={s.works}>
         <ul className={s.devUl}>
@@ -27,7 +27,7 @@ export const Sound = () => {
                     <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                       {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                     </h4>
-                  </li>   
+                  </li>
                 </ul>
             )})
           }

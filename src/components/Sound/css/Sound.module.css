@@ -1,4 +1,4 @@
-.devCont{
+.soundCont{
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -10,6 +10,7 @@
   width: 100%;
   height: 100%;
   margin-top: 100px;
+  margin-left: -40px;
 }
 
 .devUl{
