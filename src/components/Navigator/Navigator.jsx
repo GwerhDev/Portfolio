@@ -43,7 +43,7 @@ export const Navigator = () => {
               onMouseLeave={()=>{return(document.querySelector('#menuDeveloper').style.scale='0')}}
               >
             <button className={s.menuItem} id='menuDeveloper' disabled>
-              {language==='EN'? 'developer':'desarrollador'}
+              {language==='EN'? 'programming':'programacion'}
             </button>
           </div>
           <div 

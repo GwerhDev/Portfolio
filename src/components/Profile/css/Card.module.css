@@ -29,10 +29,12 @@
     font-weight: thin; 
     font-family: Arial, Helvetica, sans-serif; 
 }
+
 .divH2>h2{
     font-size: 11px;
     padding: 4px;
 }
+
 .divH2:hover{
     cursor: pointer;
     background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);

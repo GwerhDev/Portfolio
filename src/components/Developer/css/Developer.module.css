@@ -43,13 +43,14 @@
 }
 
 .ulList{
+  position: relative;
   margin-left: -40px;
+  margin-top: 100px;
 }
 
 @media (max-width: 680px) {
   .devLi{
     font-size: 13px;
-
   }
 }
 

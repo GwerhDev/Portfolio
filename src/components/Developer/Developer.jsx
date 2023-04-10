@@ -16,7 +16,7 @@ export const Developer = () => {
         <ul className={s.devUl}>
           <li key={'title1'} className={s.devLi}>
             <h1 onClick={()=> {shownState1==="none"? setShownState1("flex") : setShownState1("none")}}>
-              {">"} Web
+              Web
             </h1>
           </li>
           {
@@ -44,7 +44,7 @@ export const Developer = () => {
         <ul className={s.devUl}>
           <li key={'title2'} className={s.devLi}>
             <h1 onClick={()=> {shownState2==="none"? setShownState2("flex") : setShownState2("none")}}>
-              {language==='EN'?'> Desktop':'> Escritorio'}
+              {language==='EN'?'Desktop':'> Escritorio'}
             </h1>
           </li>
           {
@@ -72,7 +72,7 @@ export const Developer = () => {
         <ul className={s.devUl}>
           <li key={'title3'} className={s.devLi}>
             <h1 onClick={()=> {shownState3==="none"? setShownState3("flex") : setShownState3("none")}}>
-              {language==='EN'?'> Mobile':'> Movil'}
+              {language==='EN'?'Mobile':'> Movil'}
             </h1>
           </li>
           {
