@@ -18,13 +18,13 @@ export const Developer = () => {
                   <a href={e.href} target='_blank' rel="noreferrer">
                     {e.name}
                   </a>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                   </h4>
                 </li>        
@@ -40,13 +40,13 @@ export const Developer = () => {
                   <a href={e.href} target='_blank' rel="noreferrer">
                     {e.name}
                   </a>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                   </h4>
                 </li>        
@@ -63,13 +63,13 @@ export const Developer = () => {
                   <a href={e.href} target='_blank' rel="noreferrer">
                     {e.name}
                   </a>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                   </h4>
-                  <h4 style={{fontFamily:'Open Sans', fontSize:'12px'}}>
+                  <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                     {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                   </h4>
                 </li>        

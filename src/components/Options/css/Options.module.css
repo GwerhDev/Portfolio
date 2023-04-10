@@ -52,7 +52,7 @@
 }
 .par{
     font-weight: thin; 
-    font-family: 'Open Sans'; 
+    font-family: Arial, Helvetica, sans-serif; 
     font-size: 14px;
 }
 
@@ -70,6 +70,7 @@
     cursor: pointer;
     scale: 1.1;
 }
+
 .menuback{
     transition-duration: .4s;
     width: 35px;
