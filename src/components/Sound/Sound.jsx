@@ -1,19 +1,26 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { OptionTitle } from "../Options/OptionTitle"
 import s from "./css/Sound.module.css"
 import { HiddenStates, ShownStates } from "../../functions/ShownStates"
+import { useEffect } from "react"
+import { getSound } from "../../middlewares/redux/actions"
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
-  const API = require('../../middlewares/misc/sound-api.json')
-
+  const API = useSelector(state=>state.sound)
+  const dispatch = useDispatch()
+  
+  useEffect(()=>{
+    dispatch(getSound())
+  }, [dispatch])
+  
   return (
     <div className={s.soundCont}>
       <OptionTitle title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
       <div className={s.works}>
         <ul className={s.devUl}>
           {
-            API?.map((e,index)=>{
+            API? API.map((e,index)=>{
               return(
                 <ul 
                   className={s.ulList} 
@@ -61,6 +68,7 @@ export const Sound = () => {
                   </li>
                 </ul>
             )})
+            : null
           }
         </ul>
       </div>

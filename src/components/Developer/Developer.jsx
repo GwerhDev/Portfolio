@@ -1,14 +1,21 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { OptionTitle } from "../Options/OptionTitle"
 import s from "./css/Developer.module.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { getProgramming } from "../../middlewares/redux/actions"
 
 export const Developer = () => {
   const language = useSelector(state=>state.language)
-  const API = require('../../middlewares/misc/dev-api.json')
+  const API = useSelector(state=>state.programming)
   const [shownState1, setShownState1] = useState("none")
   const [shownState2, setShownState2] = useState("none")
   const [shownState3, setShownState3] = useState("none")
+  const dispatch = useDispatch()
+  
+  useEffect(()=>{
+    dispatch(getProgramming())
+  }, [dispatch])
+
   return ( 
     <div className={s.devCont}>
       <OptionTitle title={language==='EN'? 'portfolio: programming':'portafolio: programacion'}/>
@@ -20,7 +27,7 @@ export const Developer = () => {
             </h1>
           </li>
           {
-            API?.at(0).web.map((e,index)=>{
+            API?.at(0)?.web?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState1}}>
                   <li key={index} className={s.devLi}>
@@ -48,7 +55,7 @@ export const Developer = () => {
             </h1>
           </li>
           {
-            API?.at(1).desktop.map((e,index)=>{
+            API?.at(1)?.desktop?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState2}}>
                   <li key={index} className={s.devLi}>
@@ -76,7 +83,7 @@ export const Developer = () => {
             </h1>
           </li>
           {
-            API?.at(2).mobile.map((e,index)=>{
+            API?.at(2)?.mobile?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState3}}>
                   <li key={index} className={s.devLi}>

@@ -1,0 +1,1 @@
+export const URL_API = 'https://developers-terminalkiller.fly.dev'
