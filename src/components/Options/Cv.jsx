@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import { UnderConstruction } from '../Utils/UnderConstruction'
+import { URL_API } from '../../middlewares/misc/config'
 import s from './css/Options.module.css'
 
 export const Cv = () => {
@@ -21,7 +22,10 @@ export const Cv = () => {
             <h4 className={s.par}>
             </h4></>)
         }
-        <UnderConstruction/>
+            <UnderConstruction/>
+            <a href={`${URL_API}/auth/google`}>
+                <button>Google</button>
+            </a>
         </div>        
     </>
     )
