@@ -20,6 +20,7 @@ function App() {
         </Route>
         <Route exact path='/lalofreak/cv'>
           <CV/>
+          <Navigator/>
         </Route>
       </Switch>
       <Language/>

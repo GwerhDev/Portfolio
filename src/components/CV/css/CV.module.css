@@ -1,0 +1,12 @@
+.profileLalo{
+    background: linear-gradient(to left, #000000, #0e0e0e 99%);
+    width: 30vw;
+    height: 100vh;
+    box-shadow: 0px 0px 100px #434343;
+    font-family: Trajan;
+    z-index: 999;
+    position: fixed;
+    overflow-y: auto;
+    transform: translateX(-30vw);
+    transition-duration: 1s;
+}
