@@ -5,6 +5,7 @@ import { Navigator } from './components/Navigator/Navigator';
 import { Landing } from './components/Landing/Landing';
 import { Language } from './components/Language/Language';
 import { Footer } from './components/Footer/Footer';
+import { CV } from './components/CV/CV';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Route exact path='/lalofreak'>
           <Card/>
           <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/cv'>
+          <CV/>
         </Route>
       </Switch>
       <Language/>
