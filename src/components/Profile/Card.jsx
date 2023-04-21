@@ -18,6 +18,12 @@ export const Card = () => {
                     <Menu/>
                 </div>
                 {
+                    option==='CVRoute'?
+                    <div>
+                        CV
+                    </div>
+                    :
+                (
                     option==='developer'? 
                     <div>
                         <Developer/>
@@ -46,7 +52,7 @@ export const Card = () => {
                         </div>
                     )
                 )
-                )
+                ))
             }
             </div>
         </div>
