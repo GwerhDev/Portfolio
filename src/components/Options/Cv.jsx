@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import { UnderConstruction } from '../Utils/UnderConstruction'
 import { URL_API } from '../../middlewares/misc/config'
 import s from './css/Options.module.css'
+import googleLogo from '../../images/google-logo.png'
 
 export const Cv = () => {
     const language = useSelector(state=>state.language)
@@ -24,7 +25,9 @@ export const Cv = () => {
         }
             <UnderConstruction/>
             <a href={`${URL_API}/auth/google`}>
-                <button>Google</button>
+                <button className={s.googleButton}>
+                    <img src={googleLogo} alt="" height='40px' />
+                </button>
             </a>
         </div>        
     </>
