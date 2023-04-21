@@ -5,6 +5,8 @@ import { Navigator } from './components/Navigator/Navigator';
 import { Landing } from './components/Landing/Landing';
 import { Language } from './components/Language/Language';
 import { Footer } from './components/Footer/Footer';
+import { Curriculum } from './components/Curriculum/Curriculum';
+import { ProfileCanvas } from './components/Profile/ProfileCanvas';
 function App() {
   return (
     <div className="App">
@@ -14,10 +16,12 @@ function App() {
         </Route>
         <Route exact path='/lalofreak'>
           <Card/>
+          <ProfileCanvas/>
           <Navigator/>
         </Route>
         <Route exact path='/lalofreak/cv'>
-          <Card/>
+          <Curriculum/>
+          <ProfileCanvas/>
           <Navigator/>
         </Route>
       </Switch>

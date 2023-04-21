@@ -31,66 +31,74 @@ export const Navigator = () => {
                 {language==='EN'? 'menu':'menu'}
             </button>
           </div>
-          <div 
-            className={s.webImg}
-            id='developer'
-            onClick={()=>{return (
-              dispatch(setOption('developer')),
-              document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-              document.querySelector('#navCont').style.transform='translateX(0vw)'
-              )}}
-              onMouseEnter={()=>{return(document.querySelector('#menuDeveloper').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menuDeveloper').style.scale='0')}}
-              >
-            <button className={s.menuItem} id='menuDeveloper' disabled>
-              {language==='EN'? 'programming':'programacion'}
-            </button>
-          </div>
-          <div 
-            className={s.soundImg}
-            id='sound'
-            onClick={()=>{return (
-              dispatch(setOption('sound')),
-              document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-              document.querySelector('#navCont').style.transform='translateX(0vw)'
-              )}}
-              onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menuSound').style.scale='0')}}
-              >
-            <button className={s.menuItem} id='menuSound' disabled>
-              {language==='EN'? 'sound':'sonido'}
-            </button>
-          </div> 
-          <div 
-            className={s.designImg}
-            id='design'
-            onClick={()=>{return (
-              dispatch(setOption('design')),
-              document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-              document.querySelector('#navCont').style.transform='translateX(0vw)'
-              )}}
-              onMouseEnter={()=>{return(document.querySelector('#menuDesign').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menuDesign').style.scale='0')}}
-              >
-              <button className={s.menuItem} id='menuDesign' disabled>
-              {language==='EN'? 'design':'diseno'}
-            </button>
-          </div>          
-          <div 
-            className={s.contactImg}
-            id='contact'
-            onClick={()=>{return (
-              dispatch(setOption('contact')),
-              document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-              document.querySelector('#navCont').style.transform='translateX(0vw)'
-              )}}
-              onMouseEnter={()=>{return(document.querySelector('#menuContact').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menuContact').style.scale='0')}}
-              >
-            <button className={s.menuItem} id='menuContact' disabled>
-            {language==='EN'? 'contact':'contacto'}
-            </button>
-          </div>            
+          <Link to='/lalofreak'>
+            <div 
+              className={s.webImg}
+              id='developer'
+              onClick={()=>{return (
+                dispatch(setOption('developer')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuDeveloper').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuDeveloper').style.scale='0')}}
+                >
+              <button className={s.menuItem} id='menuDeveloper' disabled>
+                {language==='EN'? 'programming':'programacion'}
+              </button>
+            </div>
+          </Link>
+          <Link to='/lalofreak'>
+            <div 
+              className={s.soundImg}
+              id='sound'
+              onClick={()=>{return (
+                dispatch(setOption('sound')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuSound').style.scale='0')}}
+                >
+              <button className={s.menuItem} id='menuSound' disabled>
+                {language==='EN'? 'sound':'sonido'}
+              </button>
+            </div> 
+          </Link>
+          <Link to='/lalofreak'>
+            <div 
+              className={s.designImg}
+              id='design'
+              onClick={()=>{return (
+                dispatch(setOption('design')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuDesign').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuDesign').style.scale='0')}}
+                >
+                <button className={s.menuItem} id='menuDesign' disabled>
+                {language==='EN'? 'design':'diseno'}
+              </button>
+            </div>          
+          </Link>
+          <Link to='/lalofreak'>
+            <div 
+              className={s.contactImg}
+              id='contact'
+              onClick={()=>{return (
+                dispatch(setOption('contact')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuContact').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuContact').style.scale='0')}}
+                >
+              <button className={s.menuItem} id='menuContact' disabled>
+              {language==='EN'? 'contact':'contacto'}
+              </button>
+            </div>
+          </Link>            
           <Link to='/'>
             <div className={s.logoutImg} onClick={()=>{return dispatch(resetOption())}} 
               onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
