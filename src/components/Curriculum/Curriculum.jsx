@@ -1,9 +1,62 @@
+import { useDispatch, useSelector } from 'react-redux'
 import s from './css/Curriculum.module.css'
+import pdfIcon from '../../images/pdf-icon.png'
+import { OptionTitle } from '../Options/OptionTitle'
+import { useEffect } from 'react'
+import { setOption } from '../../middlewares/redux/actions'
 
 export const Curriculum = () => {
+    const language = useSelector(state=>state.language)
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(setOption('cv'))
+    }, [dispatch])
     return (
         <div className={s.contCV}>
-            <iframe title='cv' src="https://docs.google.com/document/d/e/2PACX-1vQdGTjkvYx86REziyJbLrbguZ6tqPPKtaOboizE24L5J7AlC5WalUhYIMBYSELKTzeUYTfKBCtXt9f8/pub?embedded=true"></iframe>
+            <OptionTitle title='curriculum vitae'/>            
+            { language === "EN"?
+            <div className={s.pdfCont}>
+                <ul className={s.pdfUl}>
+                    <a 
+                        href='https://drive.google.com/file/d/1-VW7cvG40JvCc2YlGJz76pwImHhN200n/view?usp=sharing' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Show Complete CV
+                    </a>
+                    <a 
+                        href='https://drive.google.com/file/d/1-aiOos4lB-VD7WBc3ly-lZTcCuIqAa74/view?usp=sharing' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Show FullStack Developer CV
+                    </a>
+                </ul>
+            </div>
+            :
+            <div className={s.pdfCont}>
+                <ul className={s.pdfUl}>
+                    <a 
+                        href='https://drive.google.com/file/d/1-KoVkTWGFQYp4iwwbWsB6leVi_bfzYjq/view?usp=sharing' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Ver CV Completo
+                    </a>
+                    <a 
+                        href='https://drive.google.com/file/d/1-gkdCuhXXkViQRRaYXZOA50_P7uMfDgX/view?usp=sharing' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Ver CV Desarrollador FullStack
+                    </a>
+                </ul>
+            </div>
+            }
         </div>
     )
 }

@@ -15,3 +15,24 @@
     align-content: center;
     overflow-x: hidden;
 }
+
+.pdfCont{
+    width: 100%;
+    height: auto;
+}
+.pdfUl{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.pdfUl a{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    width: 100px;
+    border-radius: 15px;
+    transition-duration: .4s;
+}
+
+.pdfUl a:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}

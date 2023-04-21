@@ -13,12 +13,6 @@ export const Card = () => {
             <div className={s.bgCanvas}>
 
                 {
-                    option==='CVRoute'?
-                    <div>
-                        CV
-                    </div>
-                    :
-                (
                     option==='developer'? 
                     <div>
                         <Developer/>
@@ -47,7 +41,7 @@ export const Card = () => {
                         </div>
                     )
                 )
-                ))
+                )
             }
             </div>
         </div>
