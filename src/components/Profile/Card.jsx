@@ -15,7 +15,6 @@ export const Card = (props) => {
     return (
         <div className={s.contLandingPage}>
             <div className={s.bgCanvas}>
-
                 {
                     option==='developer'? 
                     <div>
