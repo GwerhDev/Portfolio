@@ -34,7 +34,7 @@ export const Developer = () => {
             API?.at(0)?.web?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState1}}>
-                  <li key={index} className={s.devLi}>
+                  <li key={`web${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
                     </a>
@@ -63,7 +63,7 @@ export const Developer = () => {
             API?.at(1)?.desktop?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState2}}>
-                  <li key={index} className={s.devLi}>
+                  <li key={`desktop${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
                     </a>
@@ -92,7 +92,7 @@ export const Developer = () => {
             API?.at(2)?.mobile?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState3}}>
-                  <li key={index} className={s.devLi}>
+                  <li key={`mobile${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
                     </a>

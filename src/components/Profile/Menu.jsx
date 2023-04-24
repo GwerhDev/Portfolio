@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { resetOption, setOption } from "../../middlewares/redux/actions"
+import { setOption } from "../../middlewares/redux/actions"
 import { SocialLinks } from "../Utils/SocialLinks"
 import s from "./css/Card.module.css"
 import { Link } from "react-router-dom/cjs/react-router-dom.min"
@@ -9,11 +9,11 @@ export const Menu = () => {
     const language = useSelector(state=>state.language)
     return (
         <>
-            <Link to="/lalofreak">
+            <Link to="/lalofreak/home/introduction">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (
-                        dispatch(resetOption()),
+                        dispatch(setOption('programming, design & sound')),
                         document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
                         document.querySelector('#navCont').style.transform='translateX(0)'
                         )}}
@@ -27,7 +27,7 @@ export const Menu = () => {
                 </div>
             </Link>
 
-            <Link to="/lalofreak">
+            <Link to="/lalofreak/home/bio">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (
@@ -41,7 +41,7 @@ export const Menu = () => {
                     </h2>
                 </div>
             </Link>
-            <Link to="/lalofreak">
+            <Link to="/lalofreak/home/cv">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (

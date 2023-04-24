@@ -1,5 +1,5 @@
 import axios from "axios";
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_DESIGN, GET_SOUND } from "../../misc/consts";
+import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_DESIGN, GET_SOUND, SET_MENU } from "../../misc/consts";
 import { URL_API } from "../../misc/config";
 
 export const getProgramming = () => {
@@ -38,6 +38,13 @@ export const getSound = () => {
 export function setOption(e){
     return {
         type: SET_OPTION,
+        payload: e
+    }
+}
+
+export function setMenu(e){
+    return {
+        type: SET_MENU,
         payload: e
     }
 }

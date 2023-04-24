@@ -15,11 +15,46 @@ function App() {
           <Landing/>
         </Route>
         <Route exact path='/lalofreak'>
-          <Card/>
+          <Card option='developer'/>
           <ProfileCanvas/>
           <Navigator/>
         </Route>
-        <Route exact path='/lalofreak/cv'>
+        <Route exact path='/lalofreak/home/introduction'>
+          <Card option='programming, design & sound' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/home/bio'>
+          <Card option='bio' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/home/cv'>
+          <Card option='cv' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/portfolio/developer'>
+          <Card option='developer' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/portfolio/sound'>
+          <Card option='sound' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/portfolio/design'>
+          <Card option='design' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/contact'>
+          <Card option='contact' />
+          <ProfileCanvas/>
+          <Navigator/>
+        </Route>
+        <Route exact path='/lalofreak/download/cv'>
           <Curriculum/>
           <ProfileCanvas/>
           <Navigator/>

@@ -4,3 +4,4 @@ export const SET_LANGUAGE = 'SET_LANGUAGE'
 export const GET_PROGRAMMING = "GET_PROGRAMMING"
 export const GET_SOUND = "GET_SOUND"
 export const GET_DESIGN = "GET_DESIGN"
+export const SET_MENU = "SET_MENU"

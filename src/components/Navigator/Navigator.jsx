@@ -31,7 +31,7 @@ export const Navigator = () => {
                 {language==='EN'? 'menu':'menu'}
             </button>
           </div>
-          <Link to='/lalofreak'>
+          <Link to='/lalofreak/portfolio/developer'>
             <div 
               className={s.webImg}
               id='developer'
@@ -48,7 +48,7 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>
-          <Link to='/lalofreak'>
+          <Link to='/lalofreak/portfolio/sound'>
             <div 
               className={s.soundImg}
               id='sound'
@@ -65,7 +65,7 @@ export const Navigator = () => {
               </button>
             </div> 
           </Link>
-          <Link to='/lalofreak'>
+          <Link to='/lalofreak/portfolio/design'>
             <div 
               className={s.designImg}
               id='design'
@@ -82,7 +82,7 @@ export const Navigator = () => {
               </button>
             </div>          
           </Link>
-          <Link to='/lalofreak'>
+          <Link to='/lalofreak/contact'>
             <div 
               className={s.contactImg}
               id='contact'
