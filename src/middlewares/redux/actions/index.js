@@ -1,5 +1,5 @@
 import axios from "axios";
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_DESIGN, GET_SOUND, SET_MENU } from "../../misc/consts";
+import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_DESIGN, GET_SOUND, SET_MENU, GET_LOGIN } from "../../misc/consts";
 import { URL_API } from "../../misc/config";
 
 export const getProgramming = () => {
@@ -57,5 +57,20 @@ export function setLanguage(e){
     return { 
         type: SET_LANGUAGE,
         payload: e
+    }
+}
+
+export function loginWithGoogle(accessToken){
+    return async function (dispatch){ 
+        await axios.post(`${URL_API}/users/loginwithgoogle`, {accessToken})
+        .then(res => {
+            dispatch({
+                type: GET_LOGIN,
+                payload: res.data
+            })
+        })
+        .catch((e) => {
+            console.log(e);
+        })
     }
 }

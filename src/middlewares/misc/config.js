@@ -1,1 +1,1 @@
-export const URL_API = 'https://developers-terminalkiller.fly.dev'
+export const URL_API = 'https://developerkiller.fly.dev'

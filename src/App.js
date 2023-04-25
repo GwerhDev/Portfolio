@@ -7,12 +7,16 @@ import { Language } from './components/Language/Language';
 import { Footer } from './components/Footer/Footer';
 import { Curriculum } from './components/Curriculum/Curriculum';
 import { ProfileCanvas } from './components/Profile/ProfileCanvas';
+import AuthToken from './components/Auth/AuthToken';
 function App() {
   return (
     <div className="App">
       <Switch>
         <Route exact path='/'>
           <Landing/>
+        </Route>
+        <Route path='/lalofreak/auth'>
+          <AuthToken />
         </Route>
         <Route exact path='/lalofreak'>
           <Card option='developer'/>

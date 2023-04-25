@@ -1,4 +1,4 @@
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_SOUND, GET_DESIGN, SET_MENU } from "../../misc/consts"
+import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_SOUND, GET_DESIGN, SET_MENU, GET_LOGIN } from "../../misc/consts"
 
 const initialState = {
     option: 'developer',
@@ -6,11 +6,15 @@ const initialState = {
     programming: '',
     sound: '',
     design: '',
-    menu: ''
+    menu: '',
+    currentUser: ''
 }
 
 
 export default function rootReducer(state = initialState, action){
+    const auth = localStorage.getItem('auth');
+    const user = auth ? JSON.parse(auth) : null;
+
     switch(action.type){
         case GET_PROGRAMMING:
             return {
@@ -47,6 +51,18 @@ export default function rootReducer(state = initialState, action){
                 ...state,
                 language: action.payload
             }
+        case GET_LOGIN:
+            return {
+                ...state,
+                currentUser: action.payload.msg ? {
+                    userId: action.payload.msg.userId,
+                    userAlias: action.payload.msg.userAlias,
+                    email: action.payload.msg.email,
+                    isVerified: action.payload.msg.isVerified,
+                    googlePic: action.payload.msg.googlePic,
+                } : user,
+                rolUser: action.payload.msg ? JSON.parse(action.payload.msg.role) : false,
+            };
         default:
             return {...state}
     }
