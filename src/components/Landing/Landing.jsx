@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import s from './css/Landing.module.css'
+import st from '../Landing/css/Landing.module.css'
 import { Profile } from '../Profile/Profile'
 import { useSelector } from 'react-redux'
 import { SocialLinks } from '../Utils/SocialLinks'
@@ -10,13 +11,14 @@ export const Landing = () => {
   useEffect(()=> {localStorage.removeItem('auth')},[])
   return (
     <div className={s.landingCont}>
+      <div className={st.webBg}/>
       <div className={s.webBg}/>
       <Profile />
       <p style={{color:'white'}}>
         {
           language==='EN'?
-          'Programming, Design & Sound':
-          'Programación, Diseño & Sonido'
+          'Develop, Design & Sound':
+          'Desarrollo, Diseño & Sonido'
         }
       </p>
       <Link to='/lalofreak'>

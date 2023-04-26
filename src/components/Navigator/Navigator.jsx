@@ -61,26 +61,9 @@ export const Navigator = () => {
                 onMouseLeave={()=>{return(document.querySelector('#menuDeveloper').style.scale='0')}}
                 >
               <button className={s.menuItem} id='menuDeveloper' disabled>
-                {language==='EN'? 'programming':'programacion'}
+                {language==='EN'? 'develop':'desarrollo'}
               </button>
             </div>
-          </Link>
-          <Link to='/lalofreak/portfolio/sound'>
-            <div 
-              className={s.soundImg}
-              id='sound'
-              onClick={()=>{return (
-                dispatch(setOption('sound')),
-                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuSound').style.scale='0')}}
-                >
-              <button className={s.menuItem} id='menuSound' disabled>
-                {language==='EN'? 'sound':'sonido'}
-              </button>
-            </div> 
           </Link>
           <Link to='/lalofreak/portfolio/design'>
             <div 
@@ -98,6 +81,23 @@ export const Navigator = () => {
                 {language==='EN'? 'design':'diseno'}
               </button>
             </div>          
+          </Link>
+          <Link to='/lalofreak/portfolio/sound'>
+            <div 
+              className={s.soundImg}
+              id='sound'
+              onClick={()=>{return (
+                dispatch(setOption('sound')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuSound').style.scale='0')}}
+                >
+              <button className={s.menuItem} id='menuSound' disabled>
+                {language==='EN'? 'sound':'sonido'}
+              </button>
+            </div> 
           </Link>
           <Link to='/lalofreak/contact'>
             <div 
