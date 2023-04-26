@@ -7,6 +7,7 @@ import { getSound } from "../../middlewares/redux/actions"
 import { PresentationCard } from "../PresentationCard/PresentationCard"
 import portfolioDevImg from "../../images/portfolio-dev-img.png"
 import { GET_DESCRIPTION_SOUND } from "../../middlewares/misc/consts"
+import { Gear } from "./Gear/Gear"
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
@@ -76,6 +77,7 @@ export const Sound = () => {
           }
         </ul>
       </div>
+      <Gear language={language}/>
     </div>
   )
 }

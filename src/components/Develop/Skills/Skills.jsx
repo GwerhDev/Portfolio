@@ -3,11 +3,10 @@ import htmlIcon from '../../../images/html-icon.png'
 import cssIcon from '../../../images/css-icon.png'
 import jsIcon from '../../../images/js-icon.png'
 import reactIcon from '../../../images/react-icon.png'
-import { useSelector } from 'react-redux'
 
 
 export const Skills = (props) => {
-    const language = useSelector(state=>state.language)
+    const { language } = props
     return (
         <div className={s.skillsCont}>
             <div style={{width:'100%', textAlign:'center', paddingTop:'100px'}}>

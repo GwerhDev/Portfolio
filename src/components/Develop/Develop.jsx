@@ -116,7 +116,7 @@ export const Develop = () => {
           }
         </ul>
       </div>
-      <Skills />
+      <Skills language={language}/>
     </div>
   )
 }
