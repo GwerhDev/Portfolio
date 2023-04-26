@@ -8,6 +8,8 @@ import { Footer } from './components/Footer/Footer';
 import { Curriculum } from './components/Curriculum/Curriculum';
 import { ProfileCanvas } from './components/Profile/ProfileCanvas';
 import AuthToken from './components/Auth/AuthToken';
+import { Home } from './components/Home/Home';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 function App() {
   return (
     <div className="App">
@@ -19,7 +21,10 @@ function App() {
           <AuthToken />
         </Route>
         <Route exact path='/lalofreak'>
-          <Card option='developer'/>
+          <Redirect to='/lalofreak/home' />
+        </Route>
+        <Route exact path='/lalofreak/home'>
+          <Home/>
           <ProfileCanvas/>
           <Navigator/>
         </Route>

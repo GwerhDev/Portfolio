@@ -1,12 +1,12 @@
-import { useDispatch } from "react-redux"
-import { Contact } from "../Contact/Contact"
-import { Design } from "../Design/Design"
-import { Developer } from "../Developer/Developer"
-import { OptionCanvas } from "../Options/OptionsCanvas"
-import { Sound } from "../Sound/Sound"
-import s from "./css/Card.module.css"
 import { useEffect } from "react"
+import { useDispatch } from "react-redux"
 import { setOption } from "../../middlewares/redux/actions"
+import { OptionCanvas } from "../Options/OptionsCanvas"
+import { Developer } from "../Developer/Developer"
+import { Design } from "../Design/Design"
+import { Sound } from "../Sound/Sound"
+import { Contact } from "../Contact/Contact"
+import s from "./css/Card.module.css"
 
 export const Card = (props) => {
     const dispatch = useDispatch()

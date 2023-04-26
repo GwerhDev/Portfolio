@@ -1,7 +1,7 @@
 import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_SOUND, GET_DESIGN, SET_MENU, GET_LOGIN } from "../../misc/consts"
 
 const initialState = {
-    option: 'developer',
+    option: 'home',
     language: 'EN',
     programming: '',
     sound: '',
@@ -39,7 +39,7 @@ export default function rootReducer(state = initialState, action){
         case RESET_OPTION:
             return {
                 ...state,
-                option: 'developer'
+                option: 'home'
             }
         case SET_MENU:
             return {
@@ -58,10 +58,8 @@ export default function rootReducer(state = initialState, action){
                     userId: action.payload.msg.userId,
                     userAlias: action.payload.msg.userAlias,
                     email: action.payload.msg.email,
-                    isVerified: action.payload.msg.isVerified,
                     googlePic: action.payload.msg.googlePic,
                 } : user,
-                rolUser: action.payload.msg ? JSON.parse(action.payload.msg.role) : false,
             };
         default:
             return {...state}

@@ -22,7 +22,8 @@
   position: relative;
 }
 
-.profileImg, 
+.profileImg,
+.homeImg,
 .webImg, 
 .soundImg, 
 .designImg, 
@@ -43,6 +44,9 @@
 .profileImg{
   background-image: url(../../../images/menu-icon.png);
 }
+.homeImg{
+  background-image: url(../../../images/home-icon.png);
+}
 .webImg{
   background-image: url(../../../images/web-icon.png);
 }
@@ -59,6 +63,7 @@
   background-image: url(../../../images/logout-icon.png);
 }
 .profileImg:hover,
+.homeImg:hover,
 .webImg:hover, 
 .soundImg:hover, 
 .designImg:hover, 

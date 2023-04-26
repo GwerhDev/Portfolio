@@ -21,7 +21,7 @@ export const Menu = () => {
                     <h2>
                         {
                             language==='EN'?
-                            'Home' : 'Inicio'
+                            'Intro' : 'Intro'
                         }
                     </h2>
                 </div>
@@ -50,7 +50,12 @@ export const Menu = () => {
                         document.querySelector('#navCont').style.transform='translateX(0)'
                         )}}
                 >
-                    <h2>CV</h2>
+                    <h2>
+                        {
+                            language==='EN'?
+                                'Resume' : 'CV'
+                        }                    
+                    </h2>
                 </div>
             </Link>
             <div className={s.contSL}>

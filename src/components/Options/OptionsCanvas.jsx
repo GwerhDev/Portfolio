@@ -3,9 +3,9 @@ import { setOption } from '../../middlewares/redux/actions'
 import { Bio } from './Bio'
 import s from './css/Options.module.css'
 import { Cv } from './Cv'
-import { Home } from './Home'
 import { OptionTitle } from './OptionTitle'
 import arrowIcon from '../../images/arrow-icon.png'
+import { Intro } from './Intro'
 
 export const OptionCanvas = () => {
     const option = useSelector(state=>state.option)
@@ -24,7 +24,7 @@ export const OptionCanvas = () => {
             <div className={s.webBg}/>
             <OptionTitle title={langOption(option)} />
             {option==='programming, design & sound'?
-            <><Home/>
+            <><Intro/>
             <div className={s.btnsCont}>
                 <img src='true' alt='' />
                 <div style={{display:'flex'}}>

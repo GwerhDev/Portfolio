@@ -4,13 +4,20 @@ import pdfIcon from '../../images/pdf-icon.png'
 import { OptionTitle } from '../Options/OptionTitle'
 import { useEffect } from 'react'
 import { setOption } from '../../middlewares/redux/actions'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom'
 
 export const Curriculum = () => {
     const language = useSelector(state=>state.language)
+    const currentUser = useSelector(state=>state.currentUser)
+    const history = useHistory()
     const dispatch = useDispatch()
+
     useEffect(() => {
         dispatch(setOption('cv'))
-    }, [dispatch])
+        if (currentUser===''){
+            history.push('/lalofreak/home/cv')
+        }
+    }, [dispatch, currentUser, history])
     return (
         <div className={s.contCV}>
             <OptionTitle title='curriculum vitae'/>            

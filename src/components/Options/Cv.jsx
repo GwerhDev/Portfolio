@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-import { UnderConstruction } from '../Utils/UnderConstruction'
 import { URL_API } from '../../middlewares/misc/config'
 import s from './css/Options.module.css'
 import googleLogo from '../../images/google-logo.png'
@@ -12,7 +11,7 @@ export const Cv = () => {
         {
             language==='EN'?
             (<><h4 className={s.par}>
-                To request my CV, you can log in with a Google account to view it and/or download it
+                To request my Resume, you can log in with a Google account to view it and/or download it
             </h4>
             <h4 className={s.par}>
             </h4></>)
@@ -23,7 +22,6 @@ export const Cv = () => {
             <h4 className={s.par}>
             </h4></>)
         }
-            <UnderConstruction/>
             <a href={`${URL_API}/auth/google`}>
                 <button className={s.googleButton}>
                     <img src={googleLogo} alt="" height='40px' />

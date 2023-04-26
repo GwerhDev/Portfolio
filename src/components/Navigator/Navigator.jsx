@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import { resetOption, setOption } from "../../middlewares/redux/actions"
+import { setOption } from "../../middlewares/redux/actions"
 import s from "./css/Navigator.module.css"
 import { disapear, optionActive } from "./js/functions"
 
@@ -31,6 +31,23 @@ export const Navigator = () => {
                 {language==='EN'? 'menu':'menu'}
             </button>
           </div>
+          <Link to='/lalofreak/home'>
+            <div 
+              className={s.homeImg}
+              id='home'
+              onClick={()=>{return (
+                dispatch(setOption('home')),
+                document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                document.querySelector('#navCont').style.transform='translateX(0vw)'
+                )}}
+                onMouseEnter={()=>{return(document.querySelector('#menuHome').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuHome').style.scale='0')}}
+                >
+              <button className={s.menuItem} id='menuHome' disabled>
+                {language==='EN'? 'Home':'Inicio'}
+              </button>
+            </div>
+          </Link>
           <Link to='/lalofreak/portfolio/developer'>
             <div 
               className={s.webImg}
@@ -100,7 +117,7 @@ export const Navigator = () => {
             </div>
           </Link>            
           <Link to='/'>
-            <div className={s.logoutImg} onClick={()=>{return dispatch(resetOption())}} 
+            <div className={s.logoutImg} onClick={()=>{return localStorage.removeItem('auth')}}
               onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
               onMouseLeave={()=>{return(document.querySelector('#menuLogout').style.scale='0')}}
               >

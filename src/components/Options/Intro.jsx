@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import s from './css/Options.module.css'
 
-export const Home = () => {
+export const Intro = () => {
     const language = useSelector(state=>state.language)
     return (
         <>

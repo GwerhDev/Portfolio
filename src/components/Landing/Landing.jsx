@@ -3,9 +3,11 @@ import s from './css/Landing.module.css'
 import { Profile } from '../Profile/Profile'
 import { useSelector } from 'react-redux'
 import { SocialLinks } from '../Utils/SocialLinks'
+import { useEffect } from 'react'
 
 export const Landing = () => {
   const language = useSelector(state=>state.language)
+  useEffect(()=> {localStorage.removeItem('auth')},[])
   return (
     <div className={s.landingCont}>
       <div className={s.webBg}/>
