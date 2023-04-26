@@ -11,33 +11,34 @@ export const Cv = () => {
     return (
         <>
         <div className={s.cont}>
-        {
-            language==='EN'?
-            (<><h4 className={s.par}>
-                To request my Resume, you can log in with a Google account to view it and/or download it
-            </h4>
-            <h4 className={s.par}>
-            </h4></>)
-            :
-            (<><h4 className={s.par}>
-                Para solicitar mi CV, puedes iniciar sesión con una cuenta de Google para acceder a visualizarlo y/o descargarlo
-            </h4>
-            <h4 className={s.par}>
-            </h4></>)
-        }
+            {
+                language==='EN'?
+                (<><h4 className={s.par}>
+                    To request my Resume, you can log in with a Google account to view it and/or download it
+                </h4>
+                <h4 className={s.par}>
+                </h4></>)
+                :
+                (<><h4 className={s.par}>
+                    Para solicitar mi CV, puedes iniciar sesión con una cuenta de Google para acceder a visualizarlo y/o descargarlo
+                </h4>
+                <h4 className={s.par}>
+                </h4></>)
+            }
             {
                 user?
                 <>
                     {
-                        language==='EN'? 'Continue as ' : 'Continuar como ' 
+                        language==='EN'? 'Continue as:' : 'Continuar como:' 
                     }
-                    <br />
                     <Link to='/lalofreak/download/cv'>
-                        <img className={s.googlePic} src={user.googlePic} alt={user.userAlias} /><br/>
-                        <br/>
-                        <p style={{fontFamily:'Trajan'}}>
-                            {user.userAlias}
-                        </p>
+                        <div className={s.loginUserCont}>
+                            <p style={{fontFamily:'Trajan', color: 'white'}}>
+                                {user.userAlias}
+                            </p>
+                            <br/>
+                            <img className={s.googlePic} src={user.googlePic} alt={user.userAlias} /><br/>
+                        </div>
                     </Link>
                     <p>
                         {

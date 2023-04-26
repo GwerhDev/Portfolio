@@ -4,6 +4,9 @@ import s from "./css/Sound.module.css"
 import { HiddenStates, ShownStates } from "../../functions/ShownStates"
 import { useEffect } from "react"
 import { getSound } from "../../middlewares/redux/actions"
+import { PresentationCard } from "../PresentationCard/PresentationCard"
+import portfolioDevImg from "../../images/portfolio-dev-img.png"
+import { GET_DESCRIPTION_SOUND } from "../../middlewares/misc/consts"
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
@@ -16,6 +19,7 @@ export const Sound = () => {
   
   return (
     <div className={s.soundCont}>
+      <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_SOUND}/>
       <OptionTitle title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
       <div className={s.works}>
         <ul className={s.devUl}>

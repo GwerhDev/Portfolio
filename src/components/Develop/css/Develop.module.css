@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 800px) {
+  .parr{
+    font-size: 12px;
+  }
   .resumeButton{
     margin-top: 20px;
   }
