@@ -36,7 +36,7 @@
 .cont{
     width: 70%;
     margin-left: 15%;
-    height: 250px;
+    height: 300px;
     color: rgb(255, 255, 255);
     position: relative;
     margin-top: 120px;
@@ -90,6 +90,9 @@
 .googleButton:hover{
     cursor: pointer;
     scale: 1.04;
+}
+.googlePic{
+    border-radius: 100%;
 }
 
 @keyframes animation {

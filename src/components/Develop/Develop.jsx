@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux"
 import { OptionTitle } from "../Options/OptionTitle"
-import s from "./css/Developer.module.css"
+import s from "./css/Develop.module.css"
 import { useEffect, useState } from "react"
 import { getProgramming } from "../../middlewares/redux/actions"
 import webIcon from "../../images/web-icon-black.png"
 import desktopIcon from "../../images/desktop-icon.png"
 import mobileIcon from "../../images/mobile-icon.png"
 
-export const Developer = () => {
+export const Develop = () => {
   const language = useSelector(state=>state.language)
   const API = useSelector(state=>state.programming)
   const [shownState1, setShownState1] = useState("none")
@@ -21,7 +21,7 @@ export const Developer = () => {
 
   return ( 
     <div className={s.devCont}>
-      <OptionTitle title={language==='EN'? 'portfolio: programming':'portafolio: programacion'}/>
+      <OptionTitle color='black' title={language==='EN'? 'portfolio: develop':'portafolio: desarrollo'}/>
       <div className={s.works}>
         <ul className={s.devUl}>
           <li key={'title1'} className={s.devLi} >

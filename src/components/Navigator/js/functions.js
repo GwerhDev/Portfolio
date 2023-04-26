@@ -1,11 +1,11 @@
 export function optionActive(e) {
   document.querySelector(`#profile`).style.boxShadow=('0px 0px 4px transparent')
   document.querySelector(`#home`).style.boxShadow=('0px 0px 4px transparent')
-  document.querySelector(`#developer`).style.boxShadow=('0px 0px 4px transparent')
+  document.querySelector(`#develop`).style.boxShadow=('0px 0px 4px transparent')
   document.querySelector(`#sound`).style.boxShadow=('0px 0px 4px transparent')
   document.querySelector(`#design`).style.boxShadow=('0px 0px 4px transparent')
   document.querySelector(`#contact`).style.boxShadow=('0px 0px 4px transparent')
-  if(e !== 'programming, design & sound' && e !== 'bio' && e !== 'cv') return document.querySelector(`#${e}`).style.boxShadow=('0px 0px 10px white')
+  if(e !== 'develop, design & sound' && e !== 'bio' && e !== 'cv') return document.querySelector(`#${e}`).style.boxShadow=('0px 0px 10px white')
   else return document.querySelector(`#profile`).style.boxShadow=('0px 0px 10px white')
 }
 

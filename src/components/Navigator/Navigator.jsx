@@ -48,19 +48,19 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>
-          <Link to='/lalofreak/portfolio/developer'>
+          <Link to='/lalofreak/portfolio/develop'>
             <div 
               className={s.webImg}
-              id='developer'
+              id='develop'
               onClick={()=>{return (
-                dispatch(setOption('developer')),
+                dispatch(setOption('develop')),
                 document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuDeveloper').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuDeveloper').style.scale='0')}}
+                onMouseEnter={()=>{return(document.querySelector('#menuDevelop').style.scale='1')}}
+                onMouseLeave={()=>{return(document.querySelector('#menuDevelop').style.scale='0')}}
                 >
-              <button className={s.menuItem} id='menuDeveloper' disabled>
+              <button className={s.menuItem} id='menuDevelop' disabled>
                 {language==='EN'? 'develop':'desarrollo'}
               </button>
             </div>

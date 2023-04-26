@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { setOption } from "../../middlewares/redux/actions"
 import { OptionCanvas } from "../Options/OptionsCanvas"
-import { Developer } from "../Developer/Developer"
+import { Develop } from "../Develop/Develop"
 import { Design } from "../Design/Design"
 import { Sound } from "../Sound/Sound"
 import { Contact } from "../Contact/Contact"
@@ -16,9 +16,9 @@ export const Card = (props) => {
         <div className={s.contLandingPage}>
             <div className={s.bgCanvas}>
                 {
-                    option==='developer'? 
+                    option==='develop'? 
                     <div>
-                        <Developer/>
+                        <Develop/>
                     </div>
                     :
                 (

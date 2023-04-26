@@ -5,11 +5,13 @@ import devIcon from '../../images/dev-icon.png'
 import designIcon from '../../images/design-icon.png'
 import soundIcon from '../../images/sound-icon.png'
 import { useSelector } from 'react-redux'
+import { OptionTitle } from '../Options/OptionTitle'
 
 export const Section = (props) => {
     const language = useSelector(state=>state.language)
     return (
         <div>
+            <OptionTitle title={language==='EN'? 'select portfolio' : 'seleccionar portafolio'} color='white' />
             <ul className={s.porfolioList}>
                 <li>
                     <h3 style={{fontFamily:'Trajan', color: 'white', fontSize:'.8rem'}}>                        
@@ -17,7 +19,7 @@ export const Section = (props) => {
                             language==='EN'? 'develop':'desarrollo'
                         }
                     </h3>
-                    <Link to='/lalofreak/portfolio/developer'>
+                    <Link to='/lalofreak/portfolio/develop'>
                         <div className={s.portfolioIconCont}>
                             <img src={devIcon} alt="" height={'110px'} />
                         </div>
