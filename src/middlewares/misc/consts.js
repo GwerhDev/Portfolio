@@ -11,11 +11,11 @@ export const GET_LOGIN = "GET_LOGIN"
 
 export const GET_DESCRIPTION_DEV={
     en:'I am a Fullstack Web Developer oriented to Multimedia and Scalable Apps.',
-    es:'Soy un Desarrollador Web Fullstack, orientado a Multimedia y Aplicaciones Escalables'
+    es:'Soy un Desarrollador Web Fullstack, orientado a Multimedia y Aplicaciones Escalables.'
 }
 export const GET_DESCRIPTION_SOUND={
-    en:"I am a self-taught Soundman, founder of the Audio Recording and Post-production Studio 'La Ruina Records'",
-    es:"Soy un Sonidista autodidacta, fundador del Estudio de Grabación y Post-producción de Audio 'La Ruina Records'"
+    en:"I am a self-taught Soundman, founder of the Audio Recording and Post-production Studio 'La Ruina Records'.",
+    es:"Soy un Sonidista autodidacta, fundador del Estudio de Grabación y Post-producción de Audio 'La Ruina Records'."
 }
 export const GET_DESCRIPTION_DESIGN={
     en:"I am a designer oriented to 3D modeling and operator of CNC Routers, CNC Lasers and 3D Printers.",
