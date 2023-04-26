@@ -45,6 +45,18 @@
 .ulList{
   position: relative;
   margin-left: -40px;
+  display: flex;
+  flex-direction: row;
+
+}
+@media (max-width: 1000px) {
+  .ulList{
+    flex-direction: column;
+    
+  }
+  .projectImg{
+    margin-bottom: 15px;
+  }
 }
 
 .viewerCont{
@@ -172,6 +184,18 @@
     width: 100%;
     line-height: 8px;
   }
+}
+
+.projectImg{
+  background-color: #171717;
+  width: 300px;
+  height: 180px;
+  margin-right: 50px;
+  background-image: url(../../../images/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border-radius: 15px;
 }
 
 @keyframes animation {

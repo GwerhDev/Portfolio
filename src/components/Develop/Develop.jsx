@@ -39,6 +39,9 @@ export const Develop = () => {
             API?.at(0)?.web?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState1}}>
+                  <a href={e.href} target='_blank' rel="noreferrer">
+                    <div className={s.projectImg}></div>
+                  </a>
                   <li key={`web${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
@@ -68,6 +71,9 @@ export const Develop = () => {
             API?.at(1)?.desktop?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState2}}>
+                  <a href={e.href} target='_blank' rel="noreferrer">
+                    <div className={s.projectImg}></div>
+                  </a>
                   <li key={`desktop${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
@@ -97,6 +103,9 @@ export const Develop = () => {
             API?.at(2)?.mobile?.map((e,index)=>{
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState3}}>
+                  <a href={e.href} target='_blank' rel="noreferrer">
+                    <div className={s.projectImg}></div>
+                  </a>
                   <li key={`mobile${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
                       {e.name}
