@@ -27,22 +27,31 @@ export const Cv = () => {
         }
             {
                 user?
-                <><Link to='/lalofreak/download/cv'>
-                    <img className={s.googlePic} src={user.googlePic} alt={user.userAlias} /><br/>
-                    <button>
+                <>
+                    {
+                        language==='EN'? 'Continue as ' : 'Continuar como ' 
+                    }
+                    <br />
+                    <Link to='/lalofreak/download/cv'>
+                        <img className={s.googlePic} src={user.googlePic} alt={user.userAlias} /><br/>
+                        <br/>
+                        <p style={{fontFamily:'Trajan'}}>
+                            {user.userAlias}
+                        </p>
+                    </Link>
+                    <p>
                         {
-                            language==='EN'? 'Continue as ' : 'Continuar como ' 
+                            language==='EN'? 'or request with another account' : 'o solicitar con otra cuenta' 
                         }
-                        {user.userAlias} 
-                    </button>
+                        
+                    </p>
                     <br/>
-                </Link>
-                <p>o iniciar con otra cuenta</p><br/>
-                <a href={`${URL_API}/auth/google`} onClick={()=>{return localStorage.removeItem('auth')}}>
-                    <button className={s.googleButton} onClick={()=>{return localStorage.removeItem('auth')}}>
-                        <img src={googleLogo} alt="" height='40px' />
-                    </button>
-                </a></>
+                    <a href={`${URL_API}/auth/google`} onClick={()=>{return localStorage.removeItem('auth')}}>
+                        <button className={s.googleButton} onClick={()=>{return localStorage.removeItem('auth')}}>
+                            <img src={googleLogo} alt="" height='40px' />
+                        </button>
+                    </a>
+                </>
                 :
                 <a href={`${URL_API}/auth/google`}>
                 <button className={s.googleButton}>

@@ -6,6 +6,9 @@ import { getProgramming } from "../../middlewares/redux/actions"
 import webIcon from "../../images/web-icon-black.png"
 import desktopIcon from "../../images/desktop-icon.png"
 import mobileIcon from "../../images/mobile-icon.png"
+import { Skills } from "./Skills/Skills"
+import portfolioDevImg from "../../images/portfolio-dev-img.png"
+import { Link } from "react-router-dom"
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -21,6 +24,36 @@ export const Develop = () => {
 
   return ( 
     <div className={s.devCont}>
+      <div className={s.viewerCont}>
+        <div className={s.imgCont}>
+          <img className={s.portfolioDevImg} src={portfolioDevImg} alt="" />
+        </div>
+      <ul className={s.viewerUl}>
+        <h1 className={s.title}>Gerardo guarda
+        <br/>
+          <p>lalofreak</p>
+          <div className={s.introCont}>
+            <b className={s.parr}>
+              {
+                language==='EN'?
+                'My name is Gerardo Guarda Acosta, also known as LaloFreak on GitHub. I am a Fullstack Web Developer oriented to Multimedia and scalable apps.'
+                :
+                'Mi nombre es Gerardo Guarda Acosta, también conocido como LaloFreak en GitHub. Soy un Desarrollador Web Fullstack, orientado a Multimedia y aplicaciones escalables'
+              }
+            </b>
+            <br />
+            <Link to='/lalofreak/download/cv'>
+              <button className={s.resumeButton}>
+                {
+                  language==='EN'?
+                  'check resume' : 'ver cv'
+                }
+              </button>
+            </Link>
+          </div>
+        </h1>
+      </ul>
+      </div>
       <OptionTitle color='black' title={language==='EN'? 'portfolio: develop':'portafolio: desarrollo'}/>
       <div className={s.works}>
         <ul className={s.devUl}>
@@ -111,6 +144,7 @@ export const Develop = () => {
           }
         </ul>
       </div>
+      <Skills />
     </div>
   )
 }

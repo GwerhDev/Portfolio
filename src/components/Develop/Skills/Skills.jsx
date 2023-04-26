@@ -1,16 +1,16 @@
-import s from './css/Home.module.css'
-import htmlIcon from '../../images/html-icon.png'
-import cssIcon from '../../images/css-icon.png'
-import jsIcon from '../../images/js-icon.png'
-import reactIcon from '../../images/react-icon.png'
+import s from './css/Skills.module.css'
+import htmlIcon from '../../../images/html-icon.png'
+import cssIcon from '../../../images/css-icon.png'
+import jsIcon from '../../../images/js-icon.png'
+import reactIcon from '../../../images/react-icon.png'
 import { useSelector } from 'react-redux'
 
 
 export const Skills = (props) => {
     const language = useSelector(state=>state.language)
     return (
-        <div>
-            <div style={{width:'100%', textAlign:'center'}}>
+        <div className={s.skillsCont}>
+            <div style={{width:'100%', textAlign:'center', paddingTop:'100px'}}>
                 <h1 style={{fontFamily:'Trajan', color:'white', fontSize:'2.3rem'}}>{language==='EN'? 'Skills' : 'Habilidades'}</h1>
             </div>
             <ul className={s.iconList} style={{marginLeft:'-40px'}}>
