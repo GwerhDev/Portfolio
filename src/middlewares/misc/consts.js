@@ -19,5 +19,5 @@ export const GET_DESCRIPTION_SOUND={
 }
 export const GET_DESCRIPTION_DESIGN={
     en:"I am a designer oriented to 3D modeling and operator of CNC Routers, CNC Lasers and 3D Printers.",
-    es:"Soy un Diseñador orientado al modelado 3D y operador de maquinaria CNC Router, CNC Láser e Impresoras 3D"
+    es:"Soy un Diseñador orientado al modelado 3D y operador de maquinaria CNC Router, CNC Láser e Impresoras 3D."
 }
