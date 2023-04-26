@@ -11,13 +11,15 @@ export const Curriculum = () => {
     const currentUser = useSelector(state=>state.currentUser)
     const history = useHistory()
     const dispatch = useDispatch()
+    const auth = localStorage.getItem('auth');
+    const user = auth ? JSON.parse(auth) : null;
 
     useEffect(() => {
         dispatch(setOption('cv'))
-        if (currentUser===''){
+        if (!user){
             history.push('/lalofreak/home/cv')
         }
-    }, [dispatch, currentUser, history])
+    }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contCV}>
             <OptionTitle title='curriculum vitae'/>            
