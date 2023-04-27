@@ -29,7 +29,7 @@ function App() {
           <Navigator/>
         </Route>
         <Route exact path='/lalofreak/home/introduction'>
-          <Card option='develop, design & sound' />
+          <Card option='introduction' />
           <ProfileCanvas/>
           <Navigator/>
         </Route>

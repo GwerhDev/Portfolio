@@ -13,7 +13,7 @@ export const Menu = () => {
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (
-                        dispatch(setOption('develop, design & sound')),
+                        dispatch(setOption('introduction')),
                         document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
                         document.querySelector('#navCont').style.transform='translateX(0)'
                         )}}

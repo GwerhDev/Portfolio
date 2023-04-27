@@ -13,7 +13,7 @@ export const OptionCanvas = () => {
     const language = useSelector(state=>state.language)
     const dispatch = useDispatch()
     const langOption = (option) => {
-        if(language==='ES' && option === 'develop, design & sound') return 'desarrollo, diseno & sonido'
+        if(language==='ES' && option === 'introduction') return 'introduccion'
         if(language==='ES' && option === 'develop') return 'desarrollo'
         if(language==='ES' && option === 'sound') return 'sonido'
         if(language==='ES' && option === 'design') return 'diseno '
@@ -24,7 +24,7 @@ export const OptionCanvas = () => {
         <div className={s.contOptions}>
             <div className={s.webBg}/>
             <OptionTitle title={langOption(option)} />
-            {option==='develop, design & sound'?
+            {option==='introduction'?
             <><Intro/>
             <div className={s.btnsCont}>
                 <img src='true' alt='' />
@@ -50,7 +50,7 @@ export const OptionCanvas = () => {
                     <Link to='/lalofreak/home/introduction'>
                         <img 
                         className={s.menuback} 
-                        onClick={()=>{return dispatch(setOption('develop, design & sound'))}} 
+                        onClick={()=>{return dispatch(setOption('introduction'))}} 
                         src={arrowIcon} 
                         alt='next' 
                         width='30px'
