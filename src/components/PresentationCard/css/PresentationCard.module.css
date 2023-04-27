@@ -1,226 +1,228 @@
 .devCont{
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
-  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+.works{
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.devUl{
+  position: relative;
+  margin-left: 15%;
+  width: 70%;
+  height: auto;
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 25px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.575);
+  transition-duration: .4s;
+}
+
+.devUl:hover{
+  box-shadow: 0px 0px 14px rgba(146, 146, 146, 0.541);
+}
+
+.devLi{
+  font-family: Trajan;
+  font-size: 18px;
+  list-style: none;
+  text-align: left;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+
+:link, :visited{
+  color: black
+}
+
+.ulList{
+  position: relative;
+  margin-left: -40px;
+}
+
+.viewerCont{
+  background-color: #171717;
+  height: 100vh;
+}
+
+.parr{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  text-shadow: 0px 0px 4px #171717;
+}
+
+.introCont{
+  width: 400px;
+  line-height: 5px;
+}
+
+.viewerUl{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgCont{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 69vh;
+  height: 69vh;
+  right: -20px;
+  bottom: 0px;
+  border-radius: 100%;
+  transition-duration: .4s;
+  animation-name: animation1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background: radial-gradient(rgb(255, 255, 255) 20% , #8d8d8d 120%);
+}
+
+.portfolioDevImg{
+  position: absolute;
+  width: 50vh;
+  right: 0px;
+  bottom: 0px;
+  filter: grayscale(.7);
+}
+
+.title{
+  font-family: Trajan;
+  font-size: 3vw;
+  color: white;
+  padding-left: 60px;
+  padding-top: 20vh;
+  padding-right: 100px;
+  text-align: left;
+  text-shadow: 0px 0px 4px #171717;
+}
+
+.title p{
+  font-size: 1.4vw;
+  text-shadow: 0px 0px 4px #171717;
+
+}
+
+.resumeButton{
+  margin-top: 50px;
+  background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
+  border-radius: 3%;
+  transition-duration: .5s;
+  padding: 8px;
+  font-weight: thin; 
+  font-family: Trajan;
+  border-radius: 10px;
+  border: none;
+}
+
+.resumeButton:hover{
+  cursor: pointer;
+  background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+  color: white;
+  scale: 1.01;
+  animation-name: resplandor;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
   
-  .works{
-    width: 100%;
-    height: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-  }
-  
-  .devUl{
-    position: relative;
-    margin-left: 15%;
-    width: 70%;
-    height: auto;
-    display: grid;
-    background-color: rgba(255, 255, 255, 0.527);
-    border-radius: 25px;
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.575);
-    transition-duration: .4s;
-  }
-  
-  .devUl:hover{
-    box-shadow: 0px 0px 14px rgba(146, 146, 146, 0.541);
-  }
-  
-  .devLi{
-    font-family: Trajan;
-    font-size: 18px;
-    list-style: none;
-    text-align: left;
-    transition-duration: .4s;
-    cursor: pointer;
-  }
-  
-  :link, :visited{
-    color: black
-  }
-  
-  .ulList{
-    position: relative;
-    margin-left: -40px;
-  }
-  
-  .viewerCont{
-    background-color: #171717;
-    height: 100vh;
-  }
-  
+@media (max-width: 800px) {
   .parr{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9rem;
-    text-shadow: 0px 0px 4px #171717;
-  }
-  
-  .introCont{
-    width: 400px;
-    line-height: 5px;
-  }
-  
-  .viewerUl{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .imgCont{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 69vh;
-    height: 69vh;
-    right: -20px;
-    bottom: 0px;
-    border-radius: 100%;
-    transition-duration: .4s;
-    animation-name: animation1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    background: radial-gradient(rgb(255, 255, 255) 20% , #8d8d8d 120%);
-  }
-  
-  .portfolioDevImg{
-    position: absolute;
-    width: 50vh;
-    right: 0px;
-    bottom: 0px;
-    filter: grayscale(.7);
-  }
-  
-  .title{
-    font-family: Trajan;
-    font-size: 3vw;
-    color: white;
-    padding-left: 60px;
-    padding-top: 20vh;
-    padding-right: 100px;
-    text-align: left;
-    text-shadow: 0px 0px 4px #171717;
-  }
-  
-  .title p{
-    font-size: 1.4vw;
-    text-shadow: 0px 0px 4px #171717;
-  
+    font-size: 12px;
   }
   .resumeButton{
-    margin-top: 50px;
-    background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
-    border-radius: 3%;
-    transition-duration: .5s;
-    padding: 8px;
-    font-weight: thin; 
-    font-family: Trajan;
-    border-radius: 10px;
-    border: none;
+    margin-top: 20px;
   }
-  .resumeButton:hover{
-    cursor: pointer;
-    background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
-    color: white;
-    scale: 1.01;
-    animation-name: resplandor;
-    animation-duration: .5s;
-    animation-timing-function: ease-in-out;
-    box-shadow: 0px 0px 1px rgb(255, 255, 255);
+  .devLi{
+    font-size: 13px;
   }
-  
-  @media (max-width: 800px) {
-    .parr{
-      font-size: 12px;
-    }
-    .resumeButton{
-      margin-top: 20px;
-    }
-    .devLi{
-      font-size: 13px;
-    }
-    .viewerUl{
-      flex-direction: column;
-    }
-    .title{
-      text-align: center;
-      font-size: 4vw;
-      padding-top: 80px;
-    }
-    .title p{
-      font-size: 2.5vw;
-    }
-    .portfolioDevImg{
-      width: 35vh;
-    }
-    .imgCont{
-      width: 47vh;
-      height: 47vh;
-      animation-name: animation2;
-    }
-  
-    .imgCont:hover{
-      width: 50vh;
-      height: 50vh;
-    }
-  
-    .introCont{
-      width: 100%;
-      line-height: 8px;
-    }
+  .viewerUl{
+    flex-direction: column;
   }
-  
-  @keyframes animation {
-    from {
-      opacity: 1;
-      scale: 1
-    }
-    to {
-      opacity: .6;
-      scale: 1.2
-    }
+  .title{
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 80px;
   }
-  
-  @keyframes resplandor {
-    0% {
-      box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    }
-    50% {
-      box-shadow: 0px 0px 200px rgba(255, 255, 255, 0);
-    }
-    100% {
-      box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    }
+  .title p{
+    font-size: 2.5vw;
   }
-  
-  @keyframes animation1 {
-    0% {
-      width: 69vh;
-      height: 69vh;  }
-    50% {
-      width: 80vh;
-      height: 80vh;
-    }
-    100% {
-      width: 69vh;
-      height: 69vh;  }
+  .portfolioDevImg{
+    width: 35vh;
   }
-  
-  @keyframes animation2 {
-    0% {
-      width: 57vh;
-      height: 57vh;  }
-    50% {
-      width: 60vh;
-      height: 60vh;
-    }
-    100% {
-      width: 57vh;
-      height: 57vh;  }
+  .imgCont{
+    width: 47vh;
+    height: 47vh;
+    animation-name: animation2;
   }
+
+  .imgCont:hover{
+    width: 50vh;
+    height: 50vh;
+  }
+
+  .introCont{
+    width: 100%;
+    line-height: 8px;
+  }
+}
+
+@keyframes animation {
+  from {
+    opacity: 1;
+    scale: 1
+  }
+  to {
+    opacity: .6;
+    scale: 1.2
+  }
+}
+
+@keyframes resplandor {
+  0% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    width: 69vh;
+    height: 69vh;  }
+  50% {
+    width: 80vh;
+    height: 80vh;
+  }
+  100% {
+    width: 69vh;
+    height: 69vh;  }
+}
+
+@keyframes animation2 {
+  0% {
+    width: 57vh;
+    height: 57vh;  }
+  50% {
+    width: 60vh;
+    height: 60vh;
+  }
+  100% {
+    width: 57vh;
+    height: 57vh;  }
+}
