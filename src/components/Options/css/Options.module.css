@@ -85,6 +85,7 @@
     transition-duration: .4s;
     border-radius: 5px;
     border: none;
+    filter: grayscale(.3);
 }
 
 .googleButton:hover{

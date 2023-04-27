@@ -31,6 +31,14 @@ export const PresentationCard = (props) => {
                 }
               </button>
             </Link>
+            <Link to='/lalofreak/contact'>
+              <button className={s.resumeButton}>
+                {
+                  language==='EN'?
+                  'contact' : 'contacto'
+                }
+              </button>
+            </Link>
           </div>
         </h1>
       </ul>

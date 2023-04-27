@@ -5,10 +5,17 @@ import s from './css/Contact.module.css';
 import { URL_API } from "../../middlewares/misc/config";
 
 export const Contact = () => {
+  const auth = localStorage.getItem('auth');
+  const user = auth ? JSON.parse(auth) : null;
+
+  const name = user? user.userAlias : ""
+  const email = user? user.email : ""
+
+
   const language = useSelector(state=>state.language)
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    name: name,
+    email: email,
     message: "",
   });
   const [message, setMessage] = useState("");
@@ -68,7 +75,7 @@ export const Contact = () => {
             {language==='EN'? 'Message:' : 'Mensaje:'}<br/>
               <textarea placeholder={language==='EN'? 'Write your message here...' : 'Escribe tu mensaje aquí...'} name="message" onChange={handleInputChange} />
             </label><br/>
-            <button className={s.submitButton} type="submit">Send</button>
+            <button className={s.submitButton} type="submit">{language==='EN'? 'send' : 'enviar'}</button>
           </form>
         </div>
       )}

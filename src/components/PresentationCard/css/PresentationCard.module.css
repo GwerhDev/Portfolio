@@ -124,6 +124,7 @@
   font-family: Trajan;
   border-radius: 10px;
   border: none;
+  margin-right: 10px;
 }
 
 .resumeButton:hover{
