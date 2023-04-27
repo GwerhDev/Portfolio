@@ -24,7 +24,7 @@
     width: 70%;
     margin-left: 15%;
     height: auto;
-    top: 100px;
+    top: 70px;
     text-align: center;
     border-bottom: solid;
     border-bottom-color: rgb(239, 239, 239);
@@ -36,7 +36,7 @@
 .cont{
     width: 70%;
     margin-left: 15%;
-    height: 400px;
+    height: 350px;
     color: rgb(255, 255, 255);
     position: relative;
     margin-top: 120px;
