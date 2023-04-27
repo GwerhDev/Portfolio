@@ -11,7 +11,6 @@ export const Contact = () => {
   const name = user? user.userAlias : ""
   const email = user? user.email : ""
 
-
   const language = useSelector(state=>state.language)
   const [formData, setFormData] = useState({
     name: name,
@@ -63,6 +62,7 @@ export const Contact = () => {
       {showForm && (
         <div className={s.divFormCont}>
           <form className={s.formCont} onSubmit={handleSubmit}>
+            <img src={user? user.googlePic : ''} style={{borderRadius:'100%'}} width='50px' alt="" /> <br />
             <label>
             {language==='EN'? 'Name' : 'Nombre'}
               <input placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" onChange={handleInputChange}/>
