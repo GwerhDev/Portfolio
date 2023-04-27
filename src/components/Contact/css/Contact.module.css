@@ -10,6 +10,14 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     margin-bottom: 10px;
+    height: 30px;
+    background-color: #171717d5;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+
 }
 
 .formCont textarea{
@@ -17,6 +25,10 @@
     width: 100%;
     height: 100px;
     resize: none;
+    background-color: #171717d5;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .divFormCont{
@@ -40,7 +52,7 @@
 
 .submitButton{
     margin-top: 10px;
-    background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
+    background: linear-gradient(230deg, rgb(218, 218, 218), #d6d4d4 85%);
     border-radius: 3%;
     transition-duration: .5s;
     padding: 8px;
@@ -48,6 +60,7 @@
     font-family: Trajan;
     border-radius: 10px;
     border: none;
+    box-shadow: 0px 0px 4px #000000;
 }
 
 .submitButton:hover{
