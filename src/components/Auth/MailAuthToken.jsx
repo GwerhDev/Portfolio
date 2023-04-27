@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom'
 import { loginWithGoogle } from '../../middlewares/redux/actions';
 
-const AuthToken = () => {
+const MailAuthToken = () => {
   const history = useHistory()
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -20,7 +20,7 @@ const AuthToken = () => {
   useEffect(() => {
     if (currentUser) {
       localStorage.setItem('auth', JSON.stringify(currentUser))
-      history.push('/lalofreak/download/cv')
+      history.push('/lalofreak/contact')
       window.location.reload()
     }
   }, [currentUser, history])
@@ -39,4 +39,4 @@ const AuthToken = () => {
   )
 }
 
-export default AuthToken
+export default MailAuthToken

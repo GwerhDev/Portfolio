@@ -3,6 +3,9 @@ import { OptionTitle } from "../Options/OptionTitle";
 import { useSelector } from "react-redux";
 import s from './css/Contact.module.css';
 import { URL_API } from "../../middlewares/misc/config";
+import defaultUserIcon from "../../images/user-icon.png";
+import logoutIcon from "../../images/logout-icon.png";
+import googleIcon from "../../images/google-icon.png"
 
 export const Contact = () => {
   const auth = localStorage.getItem('auth');
@@ -62,14 +65,31 @@ export const Contact = () => {
       {showForm && (
         <div className={s.divFormCont}>
           <form className={s.formCont} onSubmit={handleSubmit}>
-            <img src={user? user.googlePic : ''} style={{borderRadius:'100%'}} width='50px' alt="" /> <br />
+            {
+              user?
+              <ul style={{listStyle:'none', display:'flex'}}>
+                <img src={user.googlePic?? defaultUserIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black', marginLeft:'-40px'}} width='50px' alt="" />
+                <div onClick={()=>{return (localStorage.removeItem('auth'), window.location.reload())}} style={{borderRadius:'100%', cursor:'pointer', width:'25px', height:'25px', marginLeft:'-7px', backgroundColor:'gray'}}>
+                  <img src={logoutIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black'}} width='25px' alt="" /> <br />
+                </div>
+              </ul>
+              :
+              <ul style={{listStyle:'none', display:'flex'}}>
+                <a href={`${URL_API}/mail/google`}>
+                  <img src={defaultUserIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black', marginLeft:'-40px'}} width='50px' height='50px' alt="" />
+                </a>
+                <a href={`${URL_API}/mail/google`} style={{borderRadius:'100%', cursor:'pointer', width:'25px', height:'25px', marginLeft:'-7px', backgroundColor:'white'}}>
+                  <img src={googleIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black'}} width='25px' alt="" /> <br />
+                </a>
+              </ul>
+            }
             <label>
             {language==='EN'? 'Name' : 'Nombre'}
-              <input placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" onChange={handleInputChange}/>
+              <input placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" value={formData.name} onChange={handleInputChange}/>
             </label><br />
             <label>
             {language==='EN'? 'Email' : 'Correo'}
-              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" onChange={handleInputChange} />
+              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" value={formData.email} onChange={handleInputChange} />
             </label><br />
             <label>
             {language==='EN'? 'Message:' : 'Mensaje:'}<br/>

@@ -17,6 +17,9 @@ function App() {
         <Route exact path='/'>
           <Landing/>
         </Route>
+        <Route path='/lalofreak/mail/auth'>
+          <AuthToken />
+        </Route>
         <Route path='/lalofreak/auth'>
           <AuthToken />
         </Route>
