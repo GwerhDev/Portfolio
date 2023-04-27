@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { OptionTitle } from "../Options/OptionTitle";
 import { useSelector } from "react-redux";
 import s from './css/Contact.module.css';
 import { URL_API } from "../../middlewares/misc/config";
-import { UnderConstruction } from "../Utils/UnderConstruction"
 
 export const Contact = () => {
   const language = useSelector(state=>state.language)
@@ -12,7 +11,9 @@ export const Contact = () => {
     email: "",
     message: "",
   });
-  
+  const [message, setMessage] = useState("");
+  const [showForm, setShowForm] = useState(true);
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevState) => ({ ...prevState, [name]: value }));
@@ -30,35 +31,52 @@ export const Contact = () => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      // show success message or handle error
+      setMessage(data.message);
+      setShowForm(false);
     })
     .catch((error) => {
       console.error(error);
-      // show error message or handle error
     });
   };
-  
+
+  useEffect(() => {
+    let timer;
+    if (!showForm) {
+      timer = setTimeout(() => {
+        setShowForm(true);
+        setMessage("");
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [showForm]);
+
   return (
-    
     <>
-    
       <OptionTitle title={language==='EN'? 'contact' : 'contacto'} />
-      <form className={s.formCont} onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" onChange={handleInputChange}/>
-        </label><br />
-        <label>
-          Email:
-          <input type="email" name="email" onChange={handleInputChange} />
-        </label><br />
-        <label>
-          Message:
-          <textarea name="message" onChange={handleInputChange} />
-        </label><br/>
-        <button type="submit">Send</button>
-      </form>
-      <UnderConstruction />
+      {showForm && (
+        <div className={s.divFormCont}>
+          <form className={s.formCont} onSubmit={handleSubmit}>
+            <label>
+            {language==='EN'? 'Name' : 'Nombre'}
+              <input placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" onChange={handleInputChange}/>
+            </label><br />
+            <label>
+            {language==='EN'? 'Email' : 'Correo'}
+              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" onChange={handleInputChange} />
+            </label><br />
+            <label>
+            {language==='EN'? 'Message:' : 'Mensaje:'}<br/>
+              <textarea placeholder={language==='EN'? 'Write your message here...' : 'Escribe tu mensaje aquí...'} name="message" onChange={handleInputChange} />
+            </label><br/>
+            <button className={s.submitButton} type="submit">Send</button>
+          </form>
+        </div>
+      )}
+      {!showForm && (
+        <div className={s.showFormCont}>
+          <p>{message}</p>
+        </div>
+      )}
     </>
   );
 }

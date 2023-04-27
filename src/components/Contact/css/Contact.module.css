@@ -1,3 +1,61 @@
 .formCont{
     margin-top: 150px;
 }
+
+.formCont label{
+    font-family: Trajan;
+}
+
+.formCont input{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.formCont textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.divFormCont{
+    width: 40%;
+    text-align: left;
+    margin-left: 33%;
+}
+
+.showFormCont{
+    font-family: Trajan;
+    position: absolute;
+    text-shadow: 0px 0px 5px green;
+    margin-top: 150px;
+    width: 70%;
+    right: 7.5%;
+    color: black;
+    background-color: rgba(209, 209, 209, 0.966);
+    padding: 100px;
+    border-radius: 15px;
+}
+
+.submitButton{
+    margin-top: 10px;
+    background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
+    border-radius: 3%;
+    transition-duration: .5s;
+    padding: 8px;
+    font-weight: thin; 
+    font-family: Trajan;
+    border-radius: 10px;
+    border: none;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+    color: white;
+    scale: 1.01;
+    animation-name: resplandor;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0px 0px 1px rgb(255, 255, 255);
+  }
