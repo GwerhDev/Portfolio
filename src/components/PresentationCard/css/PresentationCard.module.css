@@ -121,6 +121,8 @@
     padding: 8px;
     font-weight: thin; 
     font-family: Trajan;
+    border-radius: 10px;
+    border: none;
   }
   .resumeButton:hover{
     cursor: pointer;
