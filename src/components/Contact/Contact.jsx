@@ -6,6 +6,7 @@ import { URL_API } from "../../middlewares/misc/config";
 import defaultUserIcon from "../../images/user-icon.png";
 import logoutIcon from "../../images/logout-icon.png";
 import googleIcon from "../../images/gmail-icon.png"
+import { removeLocalStorage } from "../../functions/RemoveLocalStorage";
 
 export const Contact = () => {
   const auth = localStorage.getItem('auth');
@@ -69,7 +70,7 @@ export const Contact = () => {
               user?
               <ul style={{listStyle:'none', display:'flex'}}>
                 <img src={user.googlePic?? defaultUserIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black', marginLeft:'-40px'}} width='50px' alt="" />
-                <div onClick={()=>{return (localStorage.removeItem('auth'), window.location.reload())}} style={{borderRadius:'100%', cursor:'pointer', width:'25px', height:'25px', marginLeft:'-7px', backgroundColor:'gray'}}>
+                <div onClick={()=>{return (removeLocalStorage(), window.location.reload())}} style={{borderRadius:'100%', cursor:'pointer', width:'25px', height:'25px', marginLeft:'-7px', backgroundColor:'gray'}}>
                   <img src={logoutIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black'}} width='25px' alt="" /> <br />
                 </div>
               </ul>

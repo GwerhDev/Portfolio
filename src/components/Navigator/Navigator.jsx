@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { setOption } from "../../middlewares/redux/actions"
 import s from "./css/Navigator.module.css"
 import { disapear, optionActive } from "./js/functions"
+import { removeLocalStorage } from "../../functions/RemoveLocalStorage"
 
 export const Navigator = () => {
   const dispatch = useDispatch()
@@ -117,7 +118,7 @@ export const Navigator = () => {
             </div>
           </Link>            
           <Link to='/'>
-            <div className={s.logoutImg} onClick={()=>{return localStorage.removeItem('auth')}}
+            <div className={s.logoutImg} onClick={()=>{return removeLocalStorage()}}
               onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
               onMouseLeave={()=>{return(document.querySelector('#menuLogout').style.scale='0')}}
               >

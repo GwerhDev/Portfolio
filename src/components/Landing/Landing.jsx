@@ -5,10 +5,11 @@ import { Profile } from '../Profile/Profile'
 import { useSelector } from 'react-redux'
 import { SocialLinks } from '../Utils/SocialLinks'
 import { useEffect } from 'react'
+import { removeLocalStorage } from '../../functions/RemoveLocalStorage'
 
 export const Landing = () => {
   const language = useSelector(state=>state.language)
-  useEffect(()=> {localStorage.removeItem('auth')},[])
+  useEffect(()=> {removeLocalStorage()},[])
   return (
     <div className={s.landingCont}>
       <div className={st.webBg}/>
