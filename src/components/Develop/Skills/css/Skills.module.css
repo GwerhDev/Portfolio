@@ -15,9 +15,12 @@
 }
 
 .iconList{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 10px;
     list-style: none;
-    width: 100%;
-    justify-content: center;
-    vertical-align: middle;
+    padding-left: 200px;
+    padding-right: 180px;
+    margin-left: 20px;
+    margin: 0;
 }
