@@ -8,16 +8,46 @@
     background-color: #171717;
 }
 
-.icon{
-    filter: grayscale(1);
-    margin-left: 10px;
-    margin-right: 10px;
+.gearList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+    list-style: none;
+    padding-left: 150px;
+    padding-right: 130px;
+    margin-left: 20px;
+    margin-top: 100px;
+    font-family: Trajan;
+    font-size: 10px;
 }
 
-.iconList{
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-    vertical-align: middle;
+.gearList div p{
+    position: relative;
+    bottom: -10px;
+
+}
+
+.imgCont{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 30px;
+    border-radius: 15px;
+    transition-duration: .4s;
+    margin-bottom: 40px;
+}
+.imgCont:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.imgCont img{
+    transition-duration: .4s;
+    filter: grayscale(.4);
+}
+
+.imgCont img:hover{
+    scale: 1.1;
+    filter: grayscale(0);
 }
