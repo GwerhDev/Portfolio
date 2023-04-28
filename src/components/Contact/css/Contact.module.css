@@ -1,3 +1,18 @@
+.webBg{
+    background-image: url(../../../images/web-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    overflow: auto;
+}
+
 .formCont{
     margin-top: 150px;
 }
@@ -52,6 +67,7 @@
 
 .submitButton{
     margin-top: 10px;
+    margin-bottom: 100px;
     background: linear-gradient(230deg, rgb(218, 218, 218), #d6d4d4 85%);
     border-radius: 3%;
     transition-duration: .5s;

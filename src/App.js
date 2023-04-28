@@ -7,9 +7,10 @@ import { Language } from './components/Language/Language';
 import { Footer } from './components/Footer/Footer';
 import { Curriculum } from './components/Curriculum/Curriculum';
 import { ProfileCanvas } from './components/Profile/ProfileCanvas';
-import AuthToken from './components/Auth/AuthToken';
 import { Home } from './components/Home/Home';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import AuthToken from './components/Auth/AuthToken';
+import MailAuthToken from './components/Auth/MailAuthToken';
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,7 @@ function App() {
           <Landing/>
         </Route>
         <Route path='/lalofreak/mail/auth'>
-          <AuthToken />
+          <MailAuthToken />
         </Route>
         <Route path='/lalofreak/auth'>
           <AuthToken />

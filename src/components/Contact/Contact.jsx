@@ -5,7 +5,7 @@ import s from './css/Contact.module.css';
 import { URL_API } from "../../middlewares/misc/config";
 import defaultUserIcon from "../../images/user-icon.png";
 import logoutIcon from "../../images/logout-icon.png";
-import googleIcon from "../../images/google-icon.png"
+import googleIcon from "../../images/gmail-icon.png"
 
 export const Contact = () => {
   const auth = localStorage.getItem('auth');
@@ -60,7 +60,7 @@ export const Contact = () => {
   }, [showForm]);
 
   return (
-    <>
+    <div className={s.webBg}>
       <OptionTitle title={language==='EN'? 'contact' : 'contacto'} />
       {showForm && (
         <div className={s.divFormCont}>
@@ -89,7 +89,7 @@ export const Contact = () => {
             </label><br />
             <label>
             {language==='EN'? 'Email' : 'Correo'}
-              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" value={formData.email} onChange={handleInputChange} />
+              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" style={user? {backgroundColor:'gray'}:{}} disabled={user?? false} value={formData.email} onChange={handleInputChange} />
             </label><br />
             <label>
             {language==='EN'? 'Message:' : 'Mensaje:'}<br/>
@@ -104,6 +104,6 @@ export const Contact = () => {
           <p>{message}</p>
         </div>
       )}
-    </>
+    </div>
   );
 }

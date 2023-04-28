@@ -33,7 +33,7 @@ export const Cv = () => {
                     }
                     <Link to='/lalofreak/download/cv'>
                         <div className={s.loginUserCont}>
-                            <p style={{fontFamily:'Trajan', color: 'white'}}>
+                            <p style={{fontFamily:'Trajan', color: 'white', textShadow:'0px 0px 3px black'}}>
                                 {user.userAlias}
                             </p>
                             <br/>
