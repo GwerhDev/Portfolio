@@ -14,7 +14,7 @@ import {GET_DESCRIPTION_DEV} from "../../middlewares/misc/consts"
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   const API = useSelector(state=>state.programming)
-  const [shownState1, setShownState1] = useState("none")
+  const [shownState1, setShownState1] = useState("flex")
   const [shownState2, setShownState2] = useState("none")
   const [shownState3, setShownState3] = useState("none")
   const dispatch = useDispatch()

@@ -42,7 +42,7 @@ export const Sound = () => {
                     <button
                       className={s.buttonClose}
                       style={{
-                        display:'none', 
+                        display:'flex', 
                         position:'relative', 
                         right:'20px',
                         paddingRight:'15px',
@@ -59,7 +59,7 @@ export const Sound = () => {
                         <p onClick={()=>{return ShownStates(`contInfoSound${index}`,`closeButton${index}`)}}>
                           {e.name}
                         </p>
-                    <div id={`contInfoSound${index}`} style={{display:'none'}}>
+                    <div id={`contInfoSound${index}`} style={{display:'grid'}}>
                       <li className={s.ytPlayer}>
                         <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                       </li>
@@ -68,6 +68,9 @@ export const Sound = () => {
                       </h4>
                       <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Year: ${e.year}` : `Año: ${e.year}`}
                       </h4>
                     </div>
                   </li>
