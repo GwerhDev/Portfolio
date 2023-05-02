@@ -7,7 +7,7 @@ export const PresentationCard = (props) => {
     return (
         <div className={s.viewerCont}>
         <div className={s.imgCont}>
-          <img className={s.portfolioDevImg} src={img} alt="" />
+          <img className={s.portfolioDevImg} src={img} alt="" loading="lazy" />
         </div>
       <ul className={s.viewerUl}>
         <h1 className={s.title}>Gerardo guarda
