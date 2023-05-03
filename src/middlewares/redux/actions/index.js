@@ -4,7 +4,7 @@ import { URL_API } from "../../misc/config";
 
 export const getProgramming = () => {
     return async function (dispatch) {
-        await axios.get(`${URL_API}/getprogramming`)
+        await axios.get(`${URL_API}/getdevelop`)
         .then(res => {
             dispatch({
                 type: GET_PROGRAMMING,
