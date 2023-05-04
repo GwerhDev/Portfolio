@@ -198,6 +198,18 @@
   border-radius: 15px;
 }
 
+.projectImgMobile{
+  background-color: #171717;
+  width: 180px;
+  height: 316px;
+  margin-right: 50px;
+  background-image: url(../../../images/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  border-radius: 15px;
+}
+
 @keyframes animation {
   from {
     opacity: 1;

@@ -106,7 +106,7 @@ export const Develop = () => {
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState3}}>
                   <a href={e.href} target='_blank' rel="noreferrer">
-                    <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
+                    <div className={s.projectImgMobile} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
                   </a>
                   <li key={`mobile${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
