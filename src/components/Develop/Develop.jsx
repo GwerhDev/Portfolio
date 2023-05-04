@@ -9,7 +9,9 @@ import mobileIcon from "../../images/mobile-icon.png"
 import { Skills } from "./Skills/Skills"
 import portfolioDevImg from "../../images/portfolio-dev-img.png"
 import { PresentationCard } from "../PresentationCard/PresentationCard"
-import {GET_DESCRIPTION_DEV} from "../../middlewares/misc/consts"
+import { GET_DESCRIPTION_DEV } from "../../middlewares/misc/consts"
+import { RenderDriveImg } from "../../functions/RenderDriveImg"
+import loadingImg from "../../images/loading.gif"
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -40,7 +42,7 @@ export const Develop = () => {
               return(
                 <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState1}}>
                   <a href={e.href} target='_blank' rel="noreferrer">
-                    <div className={s.projectImg}></div>
+                    <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
                   </a>
                   <li key={`web${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
