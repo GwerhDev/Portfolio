@@ -12,6 +12,7 @@ import { PresentationCard } from "../PresentationCard/PresentationCard"
 import { GET_DESCRIPTION_DEV } from "../../middlewares/misc/consts"
 import { RenderDriveImg } from "../../functions/RenderDriveImg"
 import loadingImg from "../../images/loading.gif"
+import openwindowIcon from "../../images/openwindow-icon.png"
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -46,17 +47,18 @@ export const Develop = () => {
                   </a>
                   <li key={`web${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
-                      {e.name}
+                        {e.name}
+                        <img src={openwindowIcon} alt="" width={'18px'}/>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
+                      </h4>
                     </a>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
-                    </h4>
                   </li>
                 </ul>
             )})
@@ -78,17 +80,18 @@ export const Develop = () => {
                   </a>
                   <li key={`desktop${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
-                      {e.name}
+                        {e.name}
+                        <img src={openwindowIcon} alt="" width={'18px'}/>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
+                      </h4>
                     </a>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
-                    </h4>
                   </li>
                 </ul>        
             )})
@@ -110,17 +113,18 @@ export const Develop = () => {
                   </a>
                   <li key={`mobile${index}`} className={s.devLi}>
                     <a href={e.href} target='_blank' rel="noreferrer">
-                      {e.name}
+                        {e.name}
+                        <img src={openwindowIcon} alt="" width={'18px'}/>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
+                      </h4>
                     </a>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
-                    </h4>
-                    <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
-                      {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
-                    </h4>
                   </li>
                 </ul>        
             )})
