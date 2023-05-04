@@ -13,6 +13,7 @@ import { GET_DESCRIPTION_DEV } from "../../middlewares/misc/consts"
 import { RenderDriveImg } from "../../functions/RenderDriveImg"
 import loadingImg from "../../images/loading.gif"
 import openwindowIcon from "../../images/openwindow-icon.png"
+import softwareIcon from "../../images/software-icon.png"
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -20,6 +21,8 @@ export const Develop = () => {
   const [shownState1, setShownState1] = useState("flex")
   const [shownState2, setShownState2] = useState("none")
   const [shownState3, setShownState3] = useState("none")
+  const [shownState4, setShownState4] = useState("none")
+
   const dispatch = useDispatch()
   
   useEffect(()=>{
@@ -127,6 +130,39 @@ export const Develop = () => {
                     </a>
                   </li>
                 </ul>        
+            )})
+          }
+        </ul>
+        <ul className={s.devUl}>
+          <li key={'title4'} className={s.devLi} >
+            <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState4==="none"? setShownState4("flex") : setShownState4("none")}}>
+              Sofware
+              <img style={{marginRight: "50px"}} src={softwareIcon} width="40px" height="40px" alt="software" />
+            </h1>
+          </li>
+          {
+            API?.at(3)?.software?.map((e,index)=>{
+              return(
+                <ul className={s.ulList} style={{listStyle:'none', marginBottom:'50px', display: shownState4}}>
+                  <a href={e.href} target='_blank' rel="noreferrer">
+                    <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
+                  </a>
+                  <li key={`software${index}`} className={s.devLi}>
+                    <a href={e.href} target='_blank' rel="noreferrer">
+                        {e.name}
+                        <img src={openwindowIcon} alt="" width={'18px'}/>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
+                      </h4>
+                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                        {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
+                      </h4>
+                    </a>
+                  </li>
+                </ul>
             )})
           }
         </ul>
