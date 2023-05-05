@@ -59,7 +59,7 @@ export const Menu = () => {
                 </div>
             </Link>
             <div className={s.contSL}>
-                <SocialLinks/>
+                <SocialLinks gitHub='https://github.com/LaloFreak' linkedIn='https://www.linkedin.com/in/lalofreak/' />
             </div>        
         </>
     )

@@ -37,7 +37,9 @@ export const Landing = () => {
         }        
         </div>
       </Link>
-      <div className={s.contSL}><SocialLinks/></div>
+      <div className={s.contSL}>
+        <SocialLinks gitHub='https://github.com/LaloFreak' linkedIn='https://www.linkedin.com/in/lalofreak/' />
+      </div>
       </motion.div>
     </div>
   )
