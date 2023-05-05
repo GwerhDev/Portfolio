@@ -8,9 +8,9 @@ import { Footer } from './components/Footer/Footer';
 import { Curriculum } from './components/Curriculum/Curriculum';
 import { ProfileCanvas } from './components/Profile/ProfileCanvas';
 import { Home } from './components/Home/Home';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import AuthToken from './components/Auth/AuthToken';
 import MailAuthToken from './components/Auth/MailAuthToken';
+import { LandingLaloFreak } from './components/Landing/LaloFreak/Landing';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <AuthToken />
         </Route>
         <Route exact path='/lalofreak'>
-          <Redirect to='/lalofreak/home' />
+          <LandingLaloFreak/>
         </Route>
         <Route exact path='/lalofreak/home'>
           <Home/>
