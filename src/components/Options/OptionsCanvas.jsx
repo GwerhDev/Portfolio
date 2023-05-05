@@ -7,6 +7,8 @@ import { OptionTitle } from './OptionTitle'
 import arrowIcon from '../../images/arrow-icon.png'
 import { Intro } from './Intro'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
 
 export const OptionCanvas = () => {
     const option = useSelector(state=>state.option)
@@ -24,6 +26,12 @@ export const OptionCanvas = () => {
         <div className={s.contOptions}>
             <div className={s.webBg}/>
             <OptionTitle title={langOption(option)} />
+            <motion.div 
+            initial={{opacity:0, x:-10}}
+            transition={{duration: 1}}
+            animate={{opacity:1, x:0}}
+            >
+
             {option==='introduction'?
             <><Intro/>
             <div className={s.btnsCont}>
@@ -91,6 +99,8 @@ export const OptionCanvas = () => {
                 </div>
             </div></>
             :null}
+            </motion.div>
+
         </div>
     )
 }

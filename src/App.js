@@ -11,6 +11,7 @@ import { Home } from './components/Home/Home';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import AuthToken from './components/Auth/AuthToken';
 import MailAuthToken from './components/Auth/MailAuthToken';
+
 function App() {
   return (
     <div className="App">

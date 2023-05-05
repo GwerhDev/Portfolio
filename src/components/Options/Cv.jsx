@@ -3,14 +3,20 @@ import { URL_API } from '../../middlewares/misc/config'
 import s from './css/Options.module.css'
 import googleLogo from '../../images/google-logo.png'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
 
 export const Cv = () => {
     const language = useSelector(state=>state.language)
     const auth = localStorage.getItem('auth');
     const user = auth ? JSON.parse(auth) : null;
     return (
-        <>
         <div className={s.cont}>
+            <motion.div 
+            initial={{opacity:0}}
+            transition={{duration: 1}}
+            animate={{opacity:1}}
+            >
             {
                 language==='EN'?
                 (<><h4 className={s.par}>
@@ -60,7 +66,7 @@ export const Cv = () => {
                 </button>
             </a>
             }
-        </div>        
-    </>
+        </motion.div>
+        </div>       
     )
 }

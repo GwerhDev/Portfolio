@@ -5,6 +5,7 @@ import { OptionTitle } from '../Options/OptionTitle'
 import { useEffect } from 'react'
 import { setOption } from '../../middlewares/redux/actions'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom'
+import { motion } from 'framer-motion'
 
 export const Curriculum = () => {
     const language = useSelector(state=>state.language)
@@ -24,6 +25,11 @@ export const Curriculum = () => {
         <div className={s.contCV}>
             <OptionTitle title='curriculum vitae'/>            
             { language === "EN"?
+            <motion.div 
+            initial={{opacity:0}}
+            transition={{duration: 1}}
+            animate={{opacity:1}}
+            >
             <div className={s.pdfCont}>
                 <ul className={s.pdfUl}>
                     <a 
@@ -44,7 +50,13 @@ export const Curriculum = () => {
                     </a>
                 </ul>
             </div>
+            </motion.div>
             :
+            <motion.div 
+            initial={{opacity:0}}
+            transition={{duration: 1}}
+            animate={{opacity:1}}
+            >
             <div className={s.pdfCont}>
                 <ul className={s.pdfUl}>
                     <a 
@@ -65,6 +77,8 @@ export const Curriculum = () => {
                     </a>
                 </ul>
             </div>
+            </motion.div>
+
             }
         </div>
     )

@@ -1,11 +1,17 @@
 import { useSelector } from 'react-redux'
 import s from './css/Options.module.css'
+import { motion } from 'framer-motion'
+
 
 export const Intro = () => {
     const language = useSelector(state=>state.language)
     return (
-        <>
         <div className={s.cont}>
+            <motion.div 
+            initial={{opacity:0}}
+            transition={{duration: 1}}
+            animate={{opacity:1}}
+            >
         {
             language==='EN'?
             (<>
@@ -25,7 +31,7 @@ export const Intro = () => {
             </h4></>            
             )
         }
+            </motion.div>
         </div>        
-    </>
     )
 }

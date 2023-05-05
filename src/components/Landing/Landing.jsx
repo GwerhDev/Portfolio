@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 import { SocialLinks } from '../Utils/SocialLinks'
 import { useEffect } from 'react'
 import { removeLocalStorage } from '../../functions/RemoveLocalStorage'
+import { motion } from 'framer-motion'
 
 export const Landing = () => {
   const language = useSelector(state=>state.language)
@@ -14,7 +15,12 @@ export const Landing = () => {
     <div className={s.landingCont}>
       <div className={st.webBg}/>
       <div className={s.webBg}/>
-      <Profile />
+      <motion.div 
+        initial={{opacity:0, y:10}}
+        transition={{duration: 2}}
+        animate={{opacity:1, y:0}}
+        >
+        <Profile />
       <p style={{color:'white'}}>
         {
           language==='EN'?
@@ -32,6 +38,7 @@ export const Landing = () => {
         </div>
       </Link>
       <div className={s.contSL}><SocialLinks/></div>
+      </motion.div>
     </div>
   )
 }

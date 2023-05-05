@@ -7,6 +7,7 @@ import defaultUserIcon from "../../images/user-icon.png";
 import logoutIcon from "../../images/logout-icon.png";
 import googleIcon from "../../images/gmail-icon.png"
 import { removeLocalStorage } from "../../functions/RemoveLocalStorage";
+import { motion } from 'framer-motion'
 
 export const Contact = () => {
   const auth = localStorage.getItem('auth');
@@ -62,6 +63,11 @@ export const Contact = () => {
 
   return (
     <div className={s.webBg}>
+      <motion.div 
+      initial={{opacity:0}}
+      transition={{duration: 1}}
+      animate={{opacity:1}}
+      >
       <OptionTitle title={language==='EN'? 'contact' : 'contacto'} />
       {showForm && (
         <div className={s.divFormCont}>
@@ -105,6 +111,7 @@ export const Contact = () => {
           <p>{message}</p>
         </div>
       )}
+    </motion.div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { setOption } from '../../middlewares/redux/actions'
 import { Section } from './Section'
 
+
 export const Home = () => {
     const dispatch = useDispatch()
     useEffect(()=>{dispatch(setOption('home'))},[dispatch])

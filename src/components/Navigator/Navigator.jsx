@@ -5,6 +5,7 @@ import { setOption } from "../../middlewares/redux/actions"
 import s from "./css/Navigator.module.css"
 import { disapear, optionActive } from "./js/functions"
 import { removeLocalStorage } from "../../functions/RemoveLocalStorage"
+import { motion } from 'framer-motion'
 
 export const Navigator = () => {
   const dispatch = useDispatch()
@@ -15,6 +16,11 @@ export const Navigator = () => {
     disapear()
   }, [option])
   return (
+    <motion.div 
+      initial={{opacity:0, x:-100}}
+      transition={{duration: 1}}
+      animate={{opacity:1, x:0}}
+    >
     <div className={s.navCont} id='navCont'>
       <ul className={s.ulCont}>
         <li>
@@ -130,5 +136,6 @@ export const Navigator = () => {
         </li>
       </ul>
     </div>
+    </motion.div>
   )
 }

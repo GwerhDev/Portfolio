@@ -6,12 +6,21 @@ import designIcon from '../../images/design-icon.png'
 import soundIcon from '../../images/sound-icon.png'
 import { useSelector } from 'react-redux'
 import { OptionTitle } from '../Options/OptionTitle'
+import { motion } from 'framer-motion'
+
 
 export const Section = (props) => {
     const language = useSelector(state=>state.language)
     return (
+        
+        
         <div>
             <OptionTitle title={language==='EN'? 'select portfolio' : 'seleccionar portafolio'} color='white' />
+            <motion.div 
+            initial={{opacity:0, y:-100}}
+            transition={{duration: 1}}
+            animate={{opacity:1, y:0}}
+        >
             <ul className={s.porfolioList}>
                 <li>
                     <h3 style={{fontFamily:'Trajan', color: 'white', fontSize:'.8rem'}}>                        
@@ -49,6 +58,7 @@ export const Section = (props) => {
                 </li>
             </ul>
             {/*<video className={s.visorIntroVideo} src={visorIntroVideo} autoPlay muted loop type="video/mp4"/>*/}
+        </motion.div>
         </div>
     )
 }
