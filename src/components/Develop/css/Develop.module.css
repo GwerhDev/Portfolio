@@ -31,7 +31,7 @@
 
 .devLi{
   font-family: Trajan;
-  font-size: 18px;
+  font-size: 15px;
   list-style: none;
   text-align: left;
   transition-duration: .4s;
@@ -153,7 +153,7 @@
     margin-top: 20px;
   }
   .devLi{
-    font-size: 13px;
+    font-size: 11px;
   }
   .viewerUl{
     flex-direction: column;
