@@ -10,7 +10,7 @@ import { ProfileCanvas } from './components/Profile/ProfileCanvas';
 import { Home } from './components/Home/Home';
 import AuthToken from './components/Auth/AuthToken';
 import MailAuthToken from './components/Auth/MailAuthToken';
-import { LandingLaloFreak } from './components/Landing/LaloFreak/Landing';
+import { LandingLaloFreak } from './components/LandingLaloFreak/LandingLaloFreak';
 
 function App() {
   return (

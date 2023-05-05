@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import s from './css/Landing.module.css'
-import st from '../Landing/css/Landing.module.css'
+import s from './css/LandingLaloFreak.module.css'
 import { Profile } from '../Profile/Profile'
 import { useSelector } from 'react-redux'
 import { SocialLinks } from '../Utils/SocialLinks'
@@ -13,7 +12,7 @@ export const LandingLaloFreak = () => {
   useEffect(()=> {removeLocalStorage()},[])
   return (
     <div className={s.landingCont}>
-      <div className={st.webBg}/>
+      <div className={s.webBg}/>
       <div className={s.webBg}/>
       <motion.div 
         initial={{opacity:0, y:10}}
@@ -28,7 +27,7 @@ export const LandingLaloFreak = () => {
           'Desarrollo, Diseño & Sonido'
         }
       </p>
-      <Link to='/lalofreak'>
+      <Link to='/lalofreak/home'>
         <div className={s.enterBtn}>
         {
           language==='EN'?

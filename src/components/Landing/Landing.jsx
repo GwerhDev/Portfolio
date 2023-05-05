@@ -28,7 +28,7 @@ export const Landing = () => {
           'Desarrollo, Diseño & Sonido'
         }
       </p>
-      <Link to='/lalofreak'>
+      <Link to='/lalofreak/home'>
         <div className={s.enterBtn}>
         {
           language==='EN'?
