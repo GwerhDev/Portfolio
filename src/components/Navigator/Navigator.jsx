@@ -20,6 +20,11 @@ export const Navigator = () => {
       initial={{opacity:0, x:-100}}
       transition={{duration: 1}}
       animate={{opacity:1, x:0}}
+      drag='y'
+      dragConstraints={{
+        top: -80,
+        bottom: 50,
+      }}
     >
     <div className={s.navCont} id='navCont'>
       <ul className={s.ulCont}>

@@ -8,6 +8,7 @@ import { PresentationCard } from "../PresentationCard/PresentationCard"
 import portfolioDevImg from "../../images/portfolio-dev-img.png"
 import { GET_DESCRIPTION_SOUND } from "../../middlewares/misc/consts"
 import { Gear } from "./Gear/Gear"
+import { motion } from 'framer-motion'
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
@@ -60,9 +61,16 @@ export const Sound = () => {
                           {e.name}
                         </p>
                     <div id={`contInfoSound${index}`} style={{display:'grid'}}>
-                      <li className={s.ytPlayer}>
-                        <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                      </li>
+                      <motion.div
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        viewport={{once: false}}
+                        transition={{duration: 1.5}}
+                      >
+                        <li className={s.ytPlayer}>
+                          <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        </li>
+                      </motion.div>
                       <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
