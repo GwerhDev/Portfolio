@@ -17,7 +17,10 @@ export const Gear = (props) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: false}}
-                transition={{duration: 1.5}}
+                transition={{
+                    duration: 1.5,
+                    type: 'spring'
+                }}
             >
                 <li>
                     <div className={s.imgCont}>

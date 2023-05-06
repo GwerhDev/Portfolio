@@ -17,7 +17,7 @@ export const Landing = () => {
       <div className={s.webBg}/>
       <motion.div 
         initial={{opacity:0, y:10}}
-        transition={{duration: 2}}
+        transition={{duration: 2, type: 'spring'}}
         animate={{opacity:1, y:0}}
         >
         <Profile />
