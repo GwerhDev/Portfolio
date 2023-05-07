@@ -24,7 +24,6 @@ export const OptionCanvas = () => {
     }
     return (
         <div className={s.contOptions}>
-            <div className={s.webBg}/>
             <OptionTitle title={langOption(option)} />
             <motion.div 
             initial={{opacity:0, x:-10}}
