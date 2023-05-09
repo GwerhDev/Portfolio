@@ -128,7 +128,7 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>            
-          <Link to='/'>
+          <Link to='/lalofreak'>
             <div className={s.logoutImg} onClick={()=>{return removeLocalStorage()}}
               onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
               onMouseLeave={()=>{return(document.querySelector('#menuLogout').style.scale='0')}}
