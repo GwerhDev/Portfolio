@@ -16,7 +16,7 @@ export const Featured = () => {
                     <div className={s.titleItem}>
                         <h2>Artificial Intelligence app</h2>
                     </div>
-                    <a href="http://ai-testing.terminalkiller.site" target="_blank" rel="noreferrer">
+                    <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <img src={ RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4') } alt="" />
