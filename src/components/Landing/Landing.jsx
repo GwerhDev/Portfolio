@@ -45,7 +45,7 @@ export const Landing = () => {
                   alt="NachoIconic" 
                   width="100px"
                   />
-              <h2 className={s.name} style={{color: "white", fontFamily:"Arial, Helvetica, sans-serif", fontWeight: 'thin', filter:'drop-shadow(0px 0px .1px yellow)'}}>Ignacio melgarejo</h2>
+              <h2 className={s.name} style={{color: "white", fontFamily:"Arial, Helvetica, sans-serif", fontWeight: 'thin', filter:'drop-shadow(0px 0px .1px yellow)'}}>Ignacio Melgarejo</h2>
               <h3 className={s.alias} style={{color: "white", fontWeight: 'thin'}}>nachoiconic</h3>
           </>
             <p style={{color:'white'}}>
