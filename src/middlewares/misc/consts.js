@@ -10,8 +10,8 @@ export const GET_LOGIN = "GET_LOGIN"
 
 
 export const GET_DESCRIPTION_DEV={
-    en:'I am a Fullstack Web Developer oriented to Multimedia and Scalable Apps.',
-    es:'Soy un Desarrollador Web Fullstack, orientado a Multimedia y Aplicaciones Escalables.'
+    en:'I am a Fullstack Web Developer oriented to Multimedia, Scalable Apps, Machine Learning and Artificial Intelligence.',
+    es:'Soy un Desarrollador Web Fullstack, orientado a Multimedia, Aplicaciones Escalables, Machine Learning e Inteligencia Artificial.'
 }
 export const GET_DESCRIPTION_SOUND={
     en:"I am a self-taught Soundman, founder of the Audio Recording and Post-production Studio 'La Ruina Records'.",
