@@ -11,7 +11,7 @@ export const Home = () => {
     return (
         <div className={s.homeCont}>
             <div className={s.sectionCont} >
-                <Section/>
+            <Section/>
             </div>
         </div>
     )

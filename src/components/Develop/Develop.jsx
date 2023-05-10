@@ -15,12 +15,13 @@ import loadingImg from "../../images/loading.gif"
 import openwindowIcon from "../../images/openwindow-icon.png"
 import softwareIcon from "../../images/software-icon.png"
 import { motion } from 'framer-motion'
+import { Featured } from "./Featured/Featured"
 
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   const API = useSelector(state=>state.programming)
-  const [shownState1, setShownState1] = useState("flex")
+  const [shownState1, setShownState1] = useState("none")
   const [shownState2, setShownState2] = useState("none")
   const [shownState3, setShownState3] = useState("none")
   const [shownState4, setShownState4] = useState("none")
@@ -34,6 +35,7 @@ export const Develop = () => {
   return ( 
     <div className={s.devCont}>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
+      <Featured/>
       <OptionTitle color='black' title={language==='EN'? 'portfolio: develop':'portafolio: desarrollo'}/>
       <motion.div
         initial={{opacity: 0}}
