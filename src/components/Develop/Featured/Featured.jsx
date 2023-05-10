@@ -8,7 +8,9 @@ export const Featured = () => {
   
     return (
         <div className={s.featuredCont}>
-            <OptionTitle color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
+            <div className={s.title}>
+                <OptionTitle color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
+            </div>
             <div className={s.infoCont}>
                 <div className={s.featuredWrap}>
                     <div className={s.titleItem}>
@@ -22,17 +24,33 @@ export const Featured = () => {
                         </div>
                     </a> 
                 </div>
-                <div className={s.featuredWrap}>
-                    <div className={s.titleItem}>
-                        <h2>la Ruina tv</h2>
-                    </div>
-                    <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
-                        <div className={s.wrapper}>
-                            <div className={s.imageContainer}>
-                                <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
+                <div className={s.secondDesktop}>
+                    <div className={s.featuredWrap}>
+                        <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                            <div className={s.wrapper}>
+                                <div className={s.imageContainer}>
+                                    <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
+                                </div>
                             </div>
+                        </a> 
+                        <div className={s.titleItem}>
+                            <h2>la Ruina tv</h2>
                         </div>
-                    </a> 
+                    </div>
+                </div>
+                <div className={s.secondMobile}>
+                    <div className={s.featuredWrap}>
+                        <div className={s.titleItem}>
+                            <h2>la Ruina tv</h2>
+                        </div>
+                        <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                            <div className={s.wrapper}>
+                                <div className={s.imageContainer}>
+                                    <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
                 </div>
                 <div className={s.featuredWrap}>
                     <div className={s.titleItem}>
