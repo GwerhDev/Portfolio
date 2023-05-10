@@ -23,74 +23,96 @@ function App() {
           <Nav/>
           <Landing/>
         </Route>
-        <><Route path='/lalofreak/mail/auth'>
+        <Route path='/lalofreak/mail/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <MailAuthToken />
+          <Language/>
+          <Footer/>
         </Route>
         <Route path='/lalofreak/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <AuthToken />
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <LandingLaloFreak/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/home'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Home/>
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/home/introduction'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='introduction' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/home/bio'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='bio' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/home/cv'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='cv' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/portfolio/develop'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='develop' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/portfolio/sound'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='sound' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/portfolio/design'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='design' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/contact'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='contact' />
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
         <Route exact path='/lalofreak/download/cv'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />  
           <Curriculum/>
           <ProfileCanvas/>
           <Navigator/>
+          <Language/>
+          <Footer/>
         </Route>
-        <Language/>
-        <Footer/></>
       </Switch>
     </div>
   );
