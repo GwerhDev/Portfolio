@@ -18,7 +18,7 @@ export const Curriculum = () => {
     useEffect(() => {
         dispatch(setOption('cv'))
         if (!user){
-            history.push('/lalofreak/home/cv')
+            history.push('/home/cv')
         }
     }, [dispatch, currentUser, history, user])
     return (

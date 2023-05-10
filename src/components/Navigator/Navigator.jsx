@@ -43,7 +43,7 @@ export const Navigator = () => {
                 {language==='EN'? 'menu':'menu'}
             </button>
           </div>
-          <Link to='/lalofreak/home'>
+          <Link to='/home'>
             <div 
               className={s.homeImg}
               id='home'
@@ -60,7 +60,7 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>
-          <Link to='/lalofreak/portfolio/develop'>
+          <Link to='/portfolio/develop'>
             <div 
               className={s.webImg}
               id='develop'
@@ -77,7 +77,7 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>
-          <Link to='/lalofreak/portfolio/design'>
+          <Link to='/portfolio/design'>
             <div 
               className={s.designImg}
               id='design'
@@ -94,7 +94,7 @@ export const Navigator = () => {
               </button>
             </div>          
           </Link>
-          <Link to='/lalofreak/portfolio/sound'>
+          <Link to='/portfolio/sound'>
             <div 
               className={s.soundImg}
               id='sound'
@@ -111,7 +111,7 @@ export const Navigator = () => {
               </button>
             </div> 
           </Link>
-          <Link to='/lalofreak/contact'>
+          <Link to='/contact'>
             <div 
               className={s.contactImg}
               id='contact'
@@ -128,7 +128,7 @@ export const Navigator = () => {
               </button>
             </div>
           </Link>            
-          <Link to='/lalofreak'>
+          <Link to='/'>
             <div className={s.logoutImg} onClick={()=>{return removeLocalStorage()}}
               onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
               onMouseLeave={()=>{return(document.querySelector('#menuLogout').style.scale='0')}}

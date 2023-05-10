@@ -9,7 +9,7 @@ export const Menu = () => {
     const language = useSelector(state=>state.language)
     return (
         <>
-            <Link to="/lalofreak/home/introduction">
+            <Link to="/home/introduction">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (
@@ -27,7 +27,7 @@ export const Menu = () => {
                 </div>
             </Link>
 
-            <Link to="/lalofreak/home/bio">
+            <Link to="/home/bio">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (
@@ -41,7 +41,7 @@ export const Menu = () => {
                     </h2>
                 </div>
             </Link>
-            <Link to="/lalofreak/home/cv">
+            <Link to="/home/cv">
                 <div 
                     className={s.divH2}
                     onClick={()=>{return (

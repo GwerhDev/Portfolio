@@ -28,7 +28,7 @@ export const PresentationCard = (props) => {
               }
             </b>
             <br />
-            <Link to='/lalofreak/home/cv'>
+            <Link to='/home/cv'>
               <button className={s.resumeButton}>
                 {
                   language==='EN'?
@@ -36,7 +36,7 @@ export const PresentationCard = (props) => {
                 }
               </button>
             </Link>
-            <Link to='/lalofreak/contact'>
+            <Link to='/contact'>
               <button className={s.resumeButton}>
                 {
                   language==='EN'?

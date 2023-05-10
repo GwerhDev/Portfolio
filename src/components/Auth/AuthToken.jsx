@@ -20,7 +20,7 @@ const AuthToken = () => {
   useEffect(() => {
     if (currentUser) {
       localStorage.setItem('auth', JSON.stringify(currentUser))
-      history.push('/lalofreak/download/cv')
+      history.push('/download/cv')
       window.location.reload()
     }
   }, [currentUser, history])

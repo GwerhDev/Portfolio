@@ -28,7 +28,7 @@ export const Section = (props) => {
                             language==='EN'? 'develop':'desarrollo'
                         }
                     </h3>
-                    <Link to='/lalofreak/portfolio/develop'>
+                    <Link to='/portfolio/develop'>
                         <div className={s.portfolioIconCont}>
                             <img src={devIcon} alt="" height={'110px'} />
                         </div>
@@ -39,7 +39,7 @@ export const Section = (props) => {
                         {
                             language==='EN'? 'design':'diseno'
                         }                        </h3>
-                    <Link to='/lalofreak/portfolio/design'>
+                    <Link to='/portfolio/design'>
                         <div className={s.portfolioIconCont}>
                             <img src={designIcon} alt="" height={'110px'} />
                         </div>
@@ -50,7 +50,7 @@ export const Section = (props) => {
                         {
                             language==='EN'? 'sound':'sonido'
                         }                        </h3>
-                    <Link to='/lalofreak/portfolio/sound'>
+                    <Link to='/portfolio/sound'>
                         <div className={s.portfolioIconCont}>
                             <img src={soundIcon} alt="" height={'110px'} />
                         </div>

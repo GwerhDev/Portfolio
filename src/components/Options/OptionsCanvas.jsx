@@ -37,7 +37,7 @@ export const OptionCanvas = () => {
                 <img src='true' alt='' />
                 <div style={{display:'flex'}}>
                     <h3 style={{fontFamily: 'Trajan', fontSize:'18px', marginRight:'10px'}}>bio</h3>
-                    <Link to='/lalofreak/home/bio'>
+                    <Link to='/home/bio'>
                         <img 
                             className={s.menuback} 
                             onClick={()=>{return dispatch(setOption('bio'))}}
@@ -54,7 +54,7 @@ export const OptionCanvas = () => {
 
             <div className={s.btnsCont}>
                 <div style={{display:'flex'}}>
-                    <Link to='/lalofreak/home/introduction'>
+                    <Link to='/home/introduction'>
                         <img 
                         className={s.menuback} 
                         onClick={()=>{return dispatch(setOption('introduction'))}} 
@@ -68,7 +68,7 @@ export const OptionCanvas = () => {
                 </div>
                 <div style={{display:'flex'}}>
                     <h3 style={{fontFamily: 'Trajan', fontSize:'18px', marginRight:'10px'}}>cv</h3>
-                    <Link to='/lalofreak/home/cv'>
+                    <Link to='/home/cv'>
                         <img 
                         className={s.menuback} 
                         onClick={()=>{return dispatch(setOption('cv'))}} 
@@ -84,7 +84,7 @@ export const OptionCanvas = () => {
             <><Cv/>
             <div className={s.btnsCont}>
                 <div style={{display:'flex'}}>
-                    <Link to='/lalofreak/home/bio'>
+                    <Link to='/home/bio'>
                         <img 
                             className={s.menuback} 
                             onClick={()=>{return dispatch(setOption('bio'))}}

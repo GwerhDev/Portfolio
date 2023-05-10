@@ -20,7 +20,7 @@ const MailAuthToken = () => {
   useEffect(() => {
     if (currentUser) {
       localStorage.setItem('auth', JSON.stringify(currentUser))
-      history.push('/lalofreak/contact')
+      history.push('/contact')
       window.location.reload()
     }
   }, [currentUser, history])

@@ -2,46 +2,39 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import { Card } from './components/Profile/Card';
 import { Navigator } from './components/Navigator/Navigator';
-import { Landing } from './components/Landing/Landing';
 import { Language } from './components/Language/Language';
 import { Footer } from './components/Footer/Footer';
 import { Curriculum } from './components/Curriculum/Curriculum';
 import { ProfileCanvas } from './components/Profile/ProfileCanvas';
 import { Home } from './components/Home/Home';
-import { LandingLaloFreak } from './components/LandingLaloFreak/LandingLaloFreak';
+import { Landing } from './components/Landing/Landing';
 import { Header } from './components/Header/Header';
 import AuthToken from './components/Auth/AuthToken';
 import MailAuthToken from './components/Auth/MailAuthToken';
-import { Nav } from './components/Landing/Nav';
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/'>
-          <Header title={"TerminalKiller | Developers"} content={"TerminalKiller Developers"} />
-          <Nav/>
-          <Landing/>
-        </Route>
-        <Route path='/lalofreak/mail/auth'>
+        <Route path='/mail/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <MailAuthToken />
           <Language/>
           <Footer/>
         </Route>
-        <Route path='/lalofreak/auth'>
+        <Route path='/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <AuthToken />
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak'>
+        <Route exact path='/'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
-          <LandingLaloFreak/>
+          <Landing/>
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/home'>
+        <Route exact path='/home'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Home/>
           <ProfileCanvas/>
@@ -49,7 +42,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/home/introduction'>
+        <Route exact path='/home/introduction'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='introduction' />
           <ProfileCanvas/>
@@ -57,7 +50,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/home/bio'>
+        <Route exact path='/home/bio'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='bio' />
           <ProfileCanvas/>
@@ -65,7 +58,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/home/cv'>
+        <Route exact path='/home/cv'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='cv' />
           <ProfileCanvas/>
@@ -73,7 +66,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/portfolio/develop'>
+        <Route exact path='/portfolio/develop'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='develop' />
           <ProfileCanvas/>
@@ -81,7 +74,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/portfolio/sound'>
+        <Route exact path='/portfolio/sound'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='sound' />
           <ProfileCanvas/>
@@ -89,7 +82,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/portfolio/design'>
+        <Route exact path='/portfolio/design'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='design' />
           <ProfileCanvas/>
@@ -97,7 +90,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/contact'>
+        <Route exact path='/contact'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='contact' />
           <ProfileCanvas/>
@@ -105,7 +98,7 @@ function App() {
           <Language/>
           <Footer/>
         </Route>
-        <Route exact path='/lalofreak/download/cv'>
+        <Route exact path='/download/cv'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />  
           <Curriculum/>
           <ProfileCanvas/>
