@@ -19,94 +19,72 @@ function App() {
         <Route path='/mail/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <MailAuthToken />
-          <Language/>
-          <Footer/>
         </Route>
         <Route path='/auth'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <AuthToken />
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/'>
           <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Landing/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/home'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Deveñop, Disign & Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <Home/>
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/home/introduction'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Introduction"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='introduction' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/home/bio'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Bio"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='bio' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/home/cv'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Resume"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='cv' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/portfolio/develop'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='develop' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/portfolio/sound'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='sound' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/portfolio/design'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Portfolio: Design"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='design' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/contact'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Contact"} content={"Desarrollo, Diseño y Sonido"} />
           <Card option='contact' />
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
         <Route exact path='/download/cv'>
-          <Header title={"LaloFreak | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />  
+          <Header title={"LaloFreak | Resume"} content={"Desarrollo, Diseño y Sonido"} />  
           <Curriculum/>
           <ProfileCanvas/>
           <Navigator/>
-          <Language/>
-          <Footer/>
         </Route>
       </Switch>
+      <Language/>
+      <Footer/>
     </div>
   );
 }
