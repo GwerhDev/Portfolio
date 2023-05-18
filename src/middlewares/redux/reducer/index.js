@@ -1,8 +1,10 @@
 import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_SOUND, GET_DESIGN, SET_MENU, GET_LOGIN } from "../../misc/consts"
+const lang = localStorage.getItem('language');
+const userLang = lang ? JSON.parse(lang) : 'EN';
 
 const initialState = {
     option: 'home',
-    language: 'EN',
+    language: userLang,
     programming: '',
     sound: '',
     design: '',
@@ -10,11 +12,9 @@ const initialState = {
     currentUser: ''
 }
 
-
 export default function rootReducer(state = initialState, action){
     const auth = localStorage.getItem('auth');
     const user = auth ? JSON.parse(auth) : null;
-
     switch(action.type){
         case GET_PROGRAMMING:
             return {
@@ -47,9 +47,10 @@ export default function rootReducer(state = initialState, action){
                 menu: action.payload
             }
         case SET_LANGUAGE:
+            localStorage.setItem('language', JSON.stringify(action.payload))
             return {
                 ...state,
-                language: action.payload
+                language: action.payload,
             }
         case GET_LOGIN:
             return {
