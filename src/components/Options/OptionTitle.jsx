@@ -18,7 +18,7 @@ export const OptionTitle = (props) => {
                 }}
             >
                 {title==='cv' && language==='EN'? 'resume': title}
-                <img src={showMoreIcon} alt="" width={'25px'} style={{display: displayButton?? 'none'}}/>
+                <img id='showMoreIcon' src={showMoreIcon} alt="" width={'25px'} style={{display: displayButton?? 'none'}}/>
             </h1>
         </div>
     )

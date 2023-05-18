@@ -16,6 +16,7 @@ import openwindowIcon from "../../images/openwindow-icon.png"
 import softwareIcon from "../../images/software-icon.png"
 import { motion } from 'framer-motion'
 import { Featured } from "./Featured/Featured"
+import { totalDevProyects } from "../../functions/TotalProjects"
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -31,9 +32,12 @@ export const Develop = () => {
   useEffect(()=>{
     dispatch(getProgramming())
   }, [dispatch])
+
   function showHide(){
     displayState === 'none'? setDisplayState('flex') : setDisplayState('none')
   }
+
+  const total = totalDevProyects(API)
 
   return ( 
     <div className={s.devCont}>
@@ -45,7 +49,7 @@ export const Develop = () => {
         displayButton='flex'
         title={
           displayState === 'none'?
-          (language==='EN'? 'show all':'mostrar todo') : (language==='EN'? 'hide all':'ocultar todo')
+          (language==='EN'? `show all (${total})`:`mostrar todo (${total})`) : (language==='EN'? `hide all (${total})`:`ocultar todo (${total})`)
         }
         cursor='pointer'
       />
