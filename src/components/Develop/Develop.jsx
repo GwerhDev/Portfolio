@@ -166,7 +166,7 @@ export const Develop = () => {
           <ul className={s.devUl}>
             <li key={'title4'} className={s.devLi} >
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState4==="none"? setShownState4("flex") : setShownState4("none")}}>
-                Sofware
+                Software
                 <img style={{marginRight: "50px"}} src={softwareIcon} width="40px" height="40px" alt="software" />
               </h1>
             </li>
