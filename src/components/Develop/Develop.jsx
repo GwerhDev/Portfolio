@@ -17,7 +17,6 @@ import softwareIcon from "../../images/software-icon.png"
 import { motion } from 'framer-motion'
 import { Featured } from "./Featured/Featured"
 
-
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   const API = useSelector(state=>state.programming)
@@ -27,23 +26,36 @@ export const Develop = () => {
   const [shownState4, setShownState4] = useState("none")
 
   const dispatch = useDispatch()
-  
+  const [displayState, setDisplayState] = useState('none')
+
   useEffect(()=>{
     dispatch(getProgramming())
   }, [dispatch])
+  function showHide(){
+    displayState === 'none'? setDisplayState('flex') : setDisplayState('none')
+  }
 
   return ( 
     <div className={s.devCont}>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
       <Featured/>
-      <OptionTitle color='black' title={language==='EN'? 'portfolio: develop':'portafolio: desarrollo'}/>
+      <OptionTitle 
+        color='black' 
+        funct={showHide} 
+        displayButton='flex'
+        title={
+          displayState === 'none'?
+          (language==='EN'? 'show all':'mostrar todo') : (language==='EN'? 'hide all':'ocultar todo')
+        }
+        cursor='pointer'
+      />
       <motion.div
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         viewport={{once: true}}
       >
         <div className={s.works}>
-          <ul className={s.devUl}>
+          <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title1'} className={s.devLi} >
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState1==="none"? setShownState1("flex") : setShownState1("none")}}>
                 Web
@@ -58,7 +70,7 @@ export const Develop = () => {
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
                       viewport={{once: false}}
-                      transition={{duration: 1.5}}
+                      transition={{duration: 0.5}}
                     >
                       <a href={e.href} target='_blank' rel="noreferrer">
                         <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
@@ -83,7 +95,7 @@ export const Develop = () => {
               )})
             }
           </ul>
-          <ul className={s.devUl}>
+          <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title2'} className={s.devLi}>
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState2==="none"? setShownState2("flex") : setShownState2("none")}}>
                 {language==='EN'?'Desktop':'Escritorio'}
@@ -98,7 +110,7 @@ export const Develop = () => {
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
                       viewport={{once: false}}
-                      transition={{duration: 1.5}}
+                      transition={{duration: 0.5}}
                     >
                       <a href={e.href} target='_blank' rel="noreferrer">
                         <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
@@ -123,7 +135,7 @@ export const Develop = () => {
               )})
             }
           </ul>
-          <ul className={s.devUl}>
+          <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title3'} className={s.devLi}>
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState3==="none"? setShownState3("flex") : setShownState3("none")}}>
                 {language==='EN'?'Mobile': 'Movil'}
@@ -138,7 +150,7 @@ export const Develop = () => {
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
                       viewport={{once: false}}
-                      transition={{duration: 1.5}}
+                      transition={{duration: 0.5}}
                     >
                       <a href={e.href} target='_blank' rel="noreferrer">
                         <div className={s.projectImgMobile} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>
@@ -163,7 +175,7 @@ export const Develop = () => {
               )})
             }
           </ul>
-          <ul className={s.devUl}>
+          <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title4'} className={s.devLi} >
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState4==="none"? setShownState4("flex") : setShownState4("none")}}>
                 Software
@@ -178,7 +190,7 @@ export const Develop = () => {
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
                       viewport={{once: false}}
-                      transition={{duration: 1.5}}
+                      transition={{duration: 0.5}}
                     >
                       <a href={e.href} target='_blank' rel="noreferrer">
                         <div className={s.projectImg} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}></div>

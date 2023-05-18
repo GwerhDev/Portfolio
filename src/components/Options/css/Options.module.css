@@ -28,6 +28,10 @@
     padding-right: 20px;
 }
 
+.contTitle:hover{
+    color: #171717;
+}
+
 .cont{
     width: 70%;
     margin-left: 15%;

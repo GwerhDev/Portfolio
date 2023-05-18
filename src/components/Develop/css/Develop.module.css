@@ -49,18 +49,18 @@
   flex-direction: row;
   padding-right: 80px;
 }
+
 @media (max-width: 1000px) {
   .ulList{
     flex-direction: column;
     width: 70%;
     height: auto;
-    
   }
   .projectImg{
     margin-bottom: 15px;
   }
   .devUl{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
