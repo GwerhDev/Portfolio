@@ -11,7 +11,7 @@ export const Footer = () => {
             color:'white', 
             marginTop:'0px'}
           }>
-            {currentYear()} &copy; Theme by {<a style={{color: 'white'}} href='http://developers.terminalkiller.site/'>LaloFreak</a>}. All Cats Are Beautiful</h3>
+            {currentYear()} &copy; Theme by {<a style={{color: 'white'}} href='https://github.com/LaloFreak/Portfolio'>LaloFreak</a>}. All Cats Are Beautiful</h3>
     </div>
   )
 }
