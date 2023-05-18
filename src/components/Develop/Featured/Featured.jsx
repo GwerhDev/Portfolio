@@ -1,7 +1,8 @@
-import { useSelector } from "react-redux"
-import s from "./css/Featured.module.css"
-import { RenderDriveImg } from "../../../functions/RenderDriveImg"
-import { OptionTitle } from "../../Options/OptionTitle"
+import s from "./css/Featured.module.css";
+import githubIcon from "../../../images/github-icon.png";
+import { useSelector } from "react-redux";
+import { RenderDriveImg } from "../../../functions/RenderDriveImg";
+import { OptionTitle } from "../../Options/OptionTitle";
 
 export const Featured = () => {
     const language = useSelector(state=>state.language)
@@ -15,6 +16,7 @@ export const Featured = () => {
                 <div className={s.featuredWrap}>
                     <div className={s.titleItem}>
                         <h2>Artificial Intelligence app</h2>
+                        <img src={githubIcon} alt="github" />
                     </div>
                     <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
                         <div className={s.wrapper}>
@@ -35,6 +37,7 @@ export const Featured = () => {
                         </a> 
                         <div className={s.titleItem}>
                             <h2>la Ruina tv</h2>
+                            <img src={githubIcon} alt="github" />
                         </div>
                     </div>
                 </div>
@@ -42,6 +45,7 @@ export const Featured = () => {
                     <div className={s.featuredWrap}>
                         <div className={s.titleItem}>
                             <h2>la Ruina tv</h2>
+                            <img src={githubIcon} alt="github" />
                         </div>
                         <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
                             <div className={s.wrapper}>
@@ -55,6 +59,7 @@ export const Featured = () => {
                 <div className={s.featuredWrap}>
                     <div className={s.titleItem}>
                         <h2>world of Gwerh</h2>
+                        <img src={githubIcon} alt="github" />
                     </div>
                     <a href="http://worldofgwerh.terminalkiller.site" target="_blank" rel="noreferrer">
                         <div className={s.wrapper}>

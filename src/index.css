@@ -21,10 +21,9 @@ code {
   color: white;
 }
 ::-webkit-scrollbar {
-  z-index: 9999999;
+  z-index: 999;
   width: 10px;
   height: 100%;
-  position: absolute;
 }
 ::-webkit-scrollbar-track {
   background: linear-gradient(168deg, rgb(72, 72, 72) 20% , #171717 120%);

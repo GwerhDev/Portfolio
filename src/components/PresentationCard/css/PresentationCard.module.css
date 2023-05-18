@@ -82,7 +82,6 @@
   bottom: 0px;
   border-radius: 100%;
   transition-duration: .4s;
-  animation-name: animation1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -165,7 +164,6 @@
   .imgCont{
     width: 47vh;
     height: 47vh;
-    animation-name: animation2;
   }
 
   .imgCont:hover{

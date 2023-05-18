@@ -1,7 +1,7 @@
 .devCont{
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -47,15 +47,25 @@
   margin-left: -40px;
   display: flex;
   flex-direction: row;
-
+  padding-right: 80px;
 }
 @media (max-width: 1000px) {
   .ulList{
     flex-direction: column;
-    
+    width: 70%;
+    height: auto;
   }
   .projectImg{
     margin-bottom: 15px;
+  }
+  .devUl{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -146,6 +156,16 @@
 }
 
 @media (max-width: 800px) {
+  .devLi{
+    vertical-align: middle;
+    justify-content: center;
+  }
+  .devLi img{
+    padding: 0px;
+    margin: 0px;
+    margin-top: -5px;
+    scale: .7;
+  }
   .parr{
     font-size: 12px;
   }
@@ -153,7 +173,7 @@
     margin-top: 20px;
   }
   .devLi{
-    font-size: 11px;
+    font-size: 14px;
   }
   .viewerUl{
     flex-direction: column;
@@ -172,7 +192,6 @@
   .imgCont{
     width: 47vh;
     height: 47vh;
-    animation-name: animation2;
   }
 
   .imgCont:hover{
