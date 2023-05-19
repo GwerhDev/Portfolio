@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, useLocation } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom';
 import { loginWithGoogle } from '../../../middlewares/redux/actions';
 
 const AuthToken = () => {
@@ -39,4 +39,4 @@ const AuthToken = () => {
   )
 }
 
-export default AuthToken
+export default AuthToken;

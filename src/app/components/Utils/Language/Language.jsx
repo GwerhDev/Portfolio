@@ -2,13 +2,13 @@ import s from './css/Language.module.css'
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { setLanguage } from "../../../../middlewares/redux/actions"
-import lan from "./js"
+import lang from '../../../../functions/LanguageFunctions'
 
 export const Language = () => {
   const dispatch = useDispatch()
   const language = useSelector(state=>state.language)
   useEffect(()=>{
-    lan(language)
+    lang(language)
   },[language])
   return(
     <div className={s.lanCont}>

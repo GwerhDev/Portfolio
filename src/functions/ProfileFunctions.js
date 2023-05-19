@@ -1,0 +1,7 @@
+export function profilePicClick(dispatch, resetOption){
+    return (
+        dispatch(resetOption()),
+        document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+        document.querySelector('#navCont').style.transform='translateX(0)'
+    )
+}

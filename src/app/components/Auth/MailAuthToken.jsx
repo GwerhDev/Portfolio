@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, useLocation } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom';
 import { loginWithGoogle } from '../../../middlewares/redux/actions';
 
 const MailAuthToken = () => {
@@ -39,4 +39,4 @@ const MailAuthToken = () => {
   )
 }
 
-export default MailAuthToken
+export default MailAuthToken;

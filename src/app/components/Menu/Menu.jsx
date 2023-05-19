@@ -1,8 +1,8 @@
-import s from "./css/Menu.module.css"
-import { useDispatch, useSelector } from "react-redux"
-import { Link } from "react-router-dom/cjs/react-router-dom.min"
-import { setOption } from "../../../middlewares/redux/actions"
-import { SocialLinks } from "../Utils/SocialLinks/SocialLinks"
+import s from "./css/Menu.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { setOption } from "../../../middlewares/redux/actions";
+import { SocialLinks } from "../Utils/SocialLinks/SocialLinks";
 
 export const Menu = () => {
     const dispatch = useDispatch()
@@ -63,4 +63,4 @@ export const Menu = () => {
             </div>        
         </>
     )
-}
+};

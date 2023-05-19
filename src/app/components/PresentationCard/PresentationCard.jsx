@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import s from './css/PresentationCard.module.css'
-import { motion } from 'framer-motion'
+import s from './css/PresentationCard.module.css';
+import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 export const PresentationCard = (props) => {
     const {img, language, description} = props

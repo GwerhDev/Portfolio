@@ -1,11 +1,11 @@
-import s from "./css/Navigator.module.css"
-import { motion } from 'framer-motion'
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { Link } from "react-router-dom"
-import { setOption } from "../../../middlewares/redux/actions"
-import { disappear, optionActive } from "./js/functions"
-import { removeLocalStorage } from "../../../functions/RemoveLocalStorage"
+import s from "./css/Navigator.module.css";
+import { motion } from 'framer-motion';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { setOption } from "../../../middlewares/redux/actions";
+import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
+import { disappear, optionActive } from "../../../functions/NavigationFunctions";
 
 export const Navigator = () => {
   const dispatch = useDispatch()
@@ -143,4 +143,4 @@ export const Navigator = () => {
     </div>
     </motion.div>
   )
-}
+};
