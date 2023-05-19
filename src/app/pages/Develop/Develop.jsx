@@ -2,7 +2,7 @@ import s from "./css/Develop.module.css"
 import { motion } from 'framer-motion'
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { getProgramming } from "../../../middlewares/redux/actions"
+import { getDevelop } from "../../../middlewares/redux/actions"
 import { OptionTitle } from "../Options/OptionTitle"
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
 import { Skills } from "../../components/Skills/Skills"
@@ -30,7 +30,7 @@ export const Develop = () => {
   const [displayState, setDisplayState] = useState('none')
 
   useEffect(()=>{
-    dispatch(getProgramming())
+    dispatch(getDevelop())
   }, [dispatch])
 
   function showHide(){

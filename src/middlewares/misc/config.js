@@ -1,1 +1,1 @@
-export const URL_API = 'https://developerkiller.fly.dev/lalofreak'
+export const URL_API = process.env.URL_API;

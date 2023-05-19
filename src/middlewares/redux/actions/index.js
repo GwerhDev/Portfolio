@@ -1,13 +1,13 @@
 import axios from "axios";
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_PROGRAMMING, GET_DESIGN, GET_SOUND, SET_MENU, GET_LOGIN } from "../../misc/consts";
+import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_DEVELOP, GET_DESIGN, GET_SOUND, SET_MENU, GET_LOGIN } from "../../misc/consts";
 import { URL_API } from "../../misc/config";
 
-export const getProgramming = () => {
+export const getDevelop = () => {
     return async function (dispatch) {
         await axios.get(`${URL_API}/getdevelop`)
         .then(res => {
             dispatch({
-                type: GET_PROGRAMMING,
+                type: GET_DEVELOP,
                 payload: res.data
             })
         })
