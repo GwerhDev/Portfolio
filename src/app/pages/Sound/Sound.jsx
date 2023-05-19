@@ -1,14 +1,14 @@
-import s from "./css/Sound.module.css"
-import { motion } from 'framer-motion'
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { OptionTitle } from "../Options/OptionTitle"
-import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
-import { Gear } from "../../components/Gear/Gear"
-import { getSound } from "../../../middlewares/redux/actions"
-import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts"
-import { HiddenStates, ShownStates } from "../../../functions/ShownStates"
-import portfolioDevImg from "../../../assets/images/portfolio-dev-img.png"
+import s from "./css/Sound.module.css";
+import { motion } from 'framer-motion';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { OptionTitle } from "../../components/Utils/OptionTitle/OptionTitle";
+import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
+import { Gear } from "../../components/Gear/Gear";
+import { getSound } from "../../../middlewares/redux/actions";
+import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts";
+import { HiddenStates, ShownStates } from "../../../functions/ShownStates";
+import portfolioDevImg from "../../../assets/images/portfolio-dev-img.png";
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)

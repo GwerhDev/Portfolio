@@ -1,6 +1,6 @@
-import s from './css/Options.module.css';
+import s from './css/OptionTitle.module.css';
 import { useSelector } from 'react-redux';
-import showMoreIcon from '../../../assets/images/showmore-icon.png';
+import showMoreIcon from '../../../../assets/images/showmore-icon.png';
 
 export const OptionTitle = (props) => {
     const { title, color, displayButton, funct, cursor } = props

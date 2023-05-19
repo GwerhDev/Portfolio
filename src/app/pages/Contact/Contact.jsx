@@ -1,7 +1,7 @@
 import s from './css/Contact.module.css';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
-import { OptionTitle } from "../Options/OptionTitle";
+import { OptionTitle } from '../../components/Utils/OptionTitle/OptionTitle';
 import { useSelector } from "react-redux";
 import { URL_API } from "../../../middlewares/misc/config";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";

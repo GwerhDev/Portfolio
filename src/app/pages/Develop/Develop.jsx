@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getDevelop } from "../../../middlewares/redux/actions"
-import { OptionTitle } from "../Options/OptionTitle"
+import { OptionTitle } from "../../components/Utils/OptionTitle/OptionTitle"
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
 import { Skills } from "../../components/Skills/Skills"
 import { Featured } from "../../components/Featured/Featured"

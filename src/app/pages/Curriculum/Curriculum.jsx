@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setOption } from '../../../middlewares/redux/actions';
-import { OptionTitle } from '../Options/OptionTitle';
+import { OptionTitle } from '../../components/Utils/OptionTitle/OptionTitle';
 import pdfIcon from '../../../assets/images/pdf-icon.png';
 
 export const Curriculum = () => {

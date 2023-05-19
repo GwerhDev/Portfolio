@@ -1,7 +1,7 @@
 import s from "./css/Featured.module.css";
 import { useSelector } from "react-redux";
 import { RenderDriveImg } from "../../../functions/RenderDriveImg";
-import { OptionTitle } from "../../pages/Options/OptionTitle";
+import { OptionTitle } from "../Utils/OptionTitle/OptionTitle";
 import githubIcon from "../../../assets/images/github-icon.png";
 
 export const Featured = () => {

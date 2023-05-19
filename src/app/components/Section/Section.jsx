@@ -2,7 +2,7 @@ import s from './css/Section.module.css';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { OptionTitle } from '../../pages/Options/OptionTitle';
+import { OptionTitle } from '../Utils/OptionTitle/OptionTitle';
 import devIcon from '../../../assets/images/dev-icon.png';
 import designIcon from '../../../assets/images/design-icon.png';
 import soundIcon from '../../../assets/images/sound-icon.png';
