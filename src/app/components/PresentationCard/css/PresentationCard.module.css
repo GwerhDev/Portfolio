@@ -1,0 +1,141 @@
+.viewerCont{
+  background-color: #171717;
+  height: 100vh;
+}
+
+.parr{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  text-shadow: 0px 0px 4px #171717;
+}
+
+.introCont{
+  width: 400px;
+  line-height: 5px;
+}
+
+.viewerUl{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgCont{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 69vh;
+  height: 69vh;
+  right: -20px;
+  bottom: 0px;
+  border-radius: 100%;
+  transition-duration: .4s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background: radial-gradient(rgb(255, 255, 255) 20% , #8d8d8d 120%);
+}
+
+.portfolioDevImg{
+  position: absolute;
+  width: 50vh;
+  right: 0px;
+  bottom: 0px;
+  filter: grayscale(.7);
+}
+
+.title{
+  font-family: Trajan;
+  font-size: 3vw;
+  color: white;
+  padding-left: 60px;
+  padding-top: 20vh;
+  padding-right: 100px;
+  text-align: left;
+  text-shadow: 0px 0px 4px #171717;
+}
+
+.title p{
+  font-size: 1.4vw;
+  text-shadow: 0px 0px 4px #171717;
+
+}
+
+.resumeButton{
+  margin-top: 50px;
+  background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
+  border-radius: 3%;
+  transition-duration: .5s;
+  padding: 8px;
+  font-weight: thin; 
+  font-family: Trajan;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+}
+
+.resumeButton:hover{
+  cursor: pointer;
+  background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+  color: white;
+  scale: 1.01;
+  animation-name: resplandor;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
+  
+@media (max-width: 800px) {
+  .parr{
+    font-size: 12px;
+  }
+  .resumeButton{
+    margin-top: 20px;
+  }
+  .devLi{
+    font-size: 13px;
+  }
+  .viewerUl{
+    flex-direction: column;
+  }
+  .title{
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 80px;
+  }
+  .title p{
+    font-size: 2.5vw;
+  }
+  .portfolioDevImg{
+    width: 35vh;
+  }
+  .imgCont{
+    width: 47vh;
+    height: 47vh;
+  }
+
+  .imgCont:hover{
+    width: 50vh;
+    height: 50vh;
+  }
+
+  .introCont{
+    width: 100%;
+    line-height: 8px;
+  }
+}
+
+@keyframes resplandor {
+  0% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+}

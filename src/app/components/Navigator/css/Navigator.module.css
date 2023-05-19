@@ -1,0 +1,88 @@
+.navCont{
+  top: 30vh;
+  left: 15px;
+  height: auto;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.746);
+  position: fixed;
+  border: none;
+  border-radius: 15px;
+  transition-duration: 1s;
+  opacity: .6;
+}
+.navCont:hover{
+  opacity: 1;
+}
+.ulCont{
+  list-style: none;
+}
+.ulCont>li{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.profileImg{
+  background-image: url(../../../../assets/images/menu-icon.png);
+}
+.homeImg{
+  background-image: url(../../../../assets/images/home-icon.png);
+}
+.webImg{
+  background-image: url(../../../../assets/images/dev-icon.png);
+}
+.soundImg{
+  background-image: url(../../../../assets/images/sound-icon.png);
+}
+.designImg{
+  background-image: url(../../../../assets/images/design-icon.png);
+}
+.contactImg{
+  background-image: url(../../../../assets/images/contact-icon.png);
+}
+.logoutImg{
+  background-image: url(../../../../assets/images/logout-icon.png);
+}
+
+.profileImg,
+.homeImg,
+.webImg, 
+.soundImg, 
+.designImg, 
+.contactImg,
+.logoutImg{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: -30px;
+  border-radius: 100%;
+  background-size: cover;
+  filter: grayscale(0.2);
+  transition-duration: 1s;
+  scale: 1;
+}
+.profileImg:hover,
+.homeImg:hover,
+.webImg:hover, 
+.soundImg:hover, 
+.designImg:hover, 
+.contactImg:hover, 
+.logoutImg:hover{
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.menuItem{
+  transition-duration: .4s;
+  scale: 0;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-family: Trajan;
+  color: rgb(32, 32, 32);
+  font-size: 10px;
+  text-shadow: 0px 0px 2px white;
+  background-color: rgba(255, 255, 255, 0.931);
+}
