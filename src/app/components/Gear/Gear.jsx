@@ -9,10 +9,10 @@ export const Gear = (props) => {
     const {language} = props
     return (
         <div className={s.gearCont}>
-            <div style={{width:'100%', textAlign:'center', paddingTop:'100px'}}>
-                <h1 style={{fontFamily:'Trajan', color:'white', fontSize:'2.3rem'}}>{language==='EN'? 'Gear' : 'Equipamiento'}</h1>
+            <div className={s.titleCont}>
+                <h1>{language==='EN'? 'Gear' : 'Equipamiento'}</h1>
             </div>
-            <ul className={s.gearList} style={{marginLeft:'-40px'}}>
+            <ul className={s.gearList}>
             <motion.div
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}

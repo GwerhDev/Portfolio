@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import showMoreIcon from '../../../../assets/images/png/showmore-icon.png';
 
 export const Title = (props) => {
-    const { title, color, displayButton, funct, cursor } = props
+    const { title, color, displayButton, funct, cursor, angle } = props
     const language = useSelector(state=>state.language)
     return (
         <div className={s.contTitle} onClick={funct}>
@@ -18,7 +18,7 @@ export const Title = (props) => {
                 }}
             >
                 {title==='cv' && language==='EN'? 'resume': title}
-                <img id='showMoreIcon' src={showMoreIcon} alt="" width={'25px'} style={{display: displayButton?? 'none'}}/>
+                <img id='showMoreIcon' src={showMoreIcon} alt="" width={'25px'} style={{display: displayButton?? 'none', rotate: angle, transitionDuration: '.4s'}}/>
             </h1>
         </div>
     )

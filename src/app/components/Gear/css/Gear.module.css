@@ -19,12 +19,12 @@
     margin-top: 100px;
     font-family: Trajan;
     font-size: 10px;
+    margin-left: -40px;
 }
 
 .gearList div p{
     position: relative;
     bottom: -10px;
-
 }
 
 .imgCont{
@@ -50,4 +50,16 @@
 .imgCont img:hover{
     scale: 1.1;
     filter: grayscale(0);
+}
+
+.titleCont{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.titleCont h1{
+    font-family:Trajan;
+    color: white;
+    font-size: 2.3rem;
 }

@@ -16,8 +16,8 @@ export const Skills = (props) => {
     const { language } = props
     return (
         <div className={s.skillsCont}>
-            <div style={{width:'100%', textAlign:'center', paddingTop:'100px'}}>
-                <h1 style={{fontFamily:'Trajan', color:'white', fontSize:'2.3rem'}}>{language==='EN'? 'Skills' : 'Habilidades'}</h1>
+            <div className={s.titleCont}>
+                <h1>{language==='EN'? 'Skills' : 'Habilidades'}</h1>
             </div>
             <ul className={s.iconList} style={{marginLeft:'-40px'}}>
                 <li className={s.icon}>

@@ -1,22 +1,23 @@
-import s from "./css/Develop.module.css"
-import { motion } from 'framer-motion'
-import { useEffect, useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { getDevelop } from "../../../middlewares/redux/actions"
-import { Title } from "../../components/Utils/Title/Title"
-import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
-import { Skills } from "../../components/Skills/Skills"
-import { Featured } from "../../components/Featured/Featured"
-import { RenderDriveImg } from "../../../functions/RenderDriveImg"
-import { totalDevProyects } from "../../../functions/TotalProjects"
-import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts"
-import webIcon from "../../../assets/images/png/web-icon-black.png"
-import desktopIcon from "../../../assets/images/png/desktop-icon.png"
-import mobileIcon from "../../../assets/images/png/mobile-icon.png"
-import openwindowIcon from "../../../assets/images/png/openwindow-icon.png"
-import softwareIcon from "../../../assets/images/png/software-icon.png"
-import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png"
-import loadingImg from "../../../assets/images/gif/loading.gif"
+import s from "./css/Develop.module.css";
+import { motion } from 'framer-motion';
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getDevelop } from "../../../middlewares/redux/actions";
+import { Title } from "../../components/Utils/Title/Title";
+import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
+import { Skills } from "../../components/Skills/Skills";
+import { Featured } from "../../components/Featured/Featured";
+import { RenderDriveImg } from "../../../functions/RenderDriveImg";
+import { totalDevProyects } from "../../../functions/TotalProjects";
+import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts";
+import webIcon from "../../../assets/images/png/web-icon-black.png";
+import desktopIcon from "../../../assets/images/png/desktop-icon.png";
+import mobileIcon from "../../../assets/images/png/mobile-icon.png";
+import openwindowIcon from "../../../assets/images/png/openwindow-icon.png";
+import softwareIcon from "../../../assets/images/png/software-icon.png";
+import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png";
+import showMoreIcon from "../../../assets/images/png/showmore-icon.png";
+import loadingImg from "../../../assets/images/gif/loading.gif";
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
@@ -28,6 +29,7 @@ export const Develop = () => {
 
   const dispatch = useDispatch()
   const [displayState, setDisplayState] = useState('none')
+  const [angle, setAngle] = useState('0deg')
 
   useEffect(()=>{
     dispatch(getDevelop())
@@ -35,6 +37,7 @@ export const Develop = () => {
 
   function showHide(){
     displayState === 'none'? setDisplayState('flex') : setDisplayState('none')
+    angle === '0deg'? setAngle('-180deg') : setAngle('0deg')
   }
 
   const total = totalDevProyects(API)
@@ -52,6 +55,7 @@ export const Develop = () => {
           (language==='EN'? `show all (${total})`:`mostrar todo (${total})`) : (language==='EN'? `hide all (${total})`:`ocultar todo (${total})`)
         }
         cursor='pointer'
+        angle={angle}
       />
       <motion.div
         initial={{opacity: 0}}
@@ -62,6 +66,7 @@ export const Develop = () => {
           <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title1'} className={s.devLi} >
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState1==="none"? setShownState1("flex") : setShownState1("none")}}>
+              <img src={showMoreIcon} alt="" width={'25px'} style={{ rotate: shownState1==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
                 Web
                 <img style={{marginRight: "50px"}} src={webIcon} width="40px" height="40px" alt="web" />
               </h1>
@@ -102,6 +107,7 @@ export const Develop = () => {
           <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title2'} className={s.devLi}>
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState2==="none"? setShownState2("flex") : setShownState2("none")}}>
+                <img src={showMoreIcon} alt="" width={'25px'} style={{ rotate: shownState2==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
                 {language==='EN'?'Desktop':'Escritorio'}
                 <img style={{marginRight: "50px"}} src={desktopIcon} width="40px" height="40px" alt="desktop" />
               </h1>
@@ -142,6 +148,7 @@ export const Develop = () => {
           <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title3'} className={s.devLi}>
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState3==="none"? setShownState3("flex") : setShownState3("none")}}>
+                <img src={showMoreIcon} alt="" width={'25px'} style={{ rotate: shownState3==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
                 {language==='EN'?'Mobile': 'Movil'}
                 <img style={{marginRight: "50px"}} src={mobileIcon} width="40px" height="40px" alt="mobile" />
               </h1>
@@ -182,6 +189,7 @@ export const Develop = () => {
           <ul className={s.devUl} style={{display: displayState, flexDirection:'column'}}>
             <li key={'title4'} className={s.devLi} >
               <h1 style={{display: "flex", justifyContent:"space-between"}} onClick={()=> {shownState4==="none"? setShownState4("flex") : setShownState4("none")}}>
+                <img src={showMoreIcon} alt="" width={'25px'} style={{ rotate: shownState4==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
                 Software
                 <img style={{marginRight: "50px"}} src={softwareIcon} width="40px" height="40px" alt="software" />
               </h1>
