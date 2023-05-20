@@ -1,9 +1,9 @@
 import s from './css/Gear.module.css';
 import { motion } from 'framer-motion';
-import qu16Img from '../../../assets/images/qu16-img.png';
-import scarletImg from '../../../assets/images/18i20.png';
-import sessionImg from '../../../assets/images/akg-session-img.png';
-import titanImg from '../../../assets/images/titan15d.png';
+import qu16Img from '../../../assets/images/png/qu16-img.png';
+import scarletImg from '../../../assets/images/png/18i20.png';
+import sessionImg from '../../../assets/images/png/akg-session-img.png';
+import titanImg from '../../../assets/images/png/titan15d.png';
 
 export const Gear = (props) => {
     const {language} = props

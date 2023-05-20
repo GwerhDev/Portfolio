@@ -1,6 +1,6 @@
 import { UnderConstruction } from "../../components/Utils/UnderConstruction/UnderConstruction"
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
-import portfolioDevImg from "../../../assets/images/portfolio-dev-img.png"
+import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png"
 import { useSelector } from "react-redux"
 import { GET_DESCRIPTION_DESIGN } from "../../../middlewares/misc/consts"
 

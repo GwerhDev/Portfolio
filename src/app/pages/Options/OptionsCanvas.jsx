@@ -7,7 +7,7 @@ import { Intro } from './Intro';
 import { Bio } from './Bio';
 import { Cv } from './Cv';
 import { Link } from 'react-router-dom';
-import arrowIcon from '../../../assets/images/arrow-icon.png';
+import arrowIcon from '../../../assets/images/png/arrow-icon.png';
 
 export const OptionCanvas = () => {
     const option = useSelector(state=>state.option)

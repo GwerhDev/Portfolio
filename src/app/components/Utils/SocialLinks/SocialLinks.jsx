@@ -1,6 +1,6 @@
 import s from './css/SocialLinks.module.css'
-import linkedinIcon from "../../../../assets/images/linkedin-icon.png"
-import githubIcon from "../../../../assets/images/github-icon.png"
+import linkedinIcon from "../../../../assets/images/png/linkedin-icon.png"
+import githubIcon from "../../../../assets/images/png/github-icon.png"
 
 export const SocialLinks = (props) =>{
   const {gitHub, linkedIn} = props

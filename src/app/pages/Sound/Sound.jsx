@@ -8,7 +8,7 @@ import { Gear } from "../../components/Gear/Gear";
 import { getSound } from "../../../middlewares/redux/actions";
 import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts";
 import { HiddenStates, ShownStates } from "../../../functions/ShownStates";
-import portfolioDevImg from "../../../assets/images/portfolio-dev-img.png";
+import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png";
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)

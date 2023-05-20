@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Title } from '../Utils/Title/Title';
-import devIcon from '../../../assets/images/dev-icon.png';
-import designIcon from '../../../assets/images/design-icon.png';
-import soundIcon from '../../../assets/images/sound-icon.png';
+import devIcon from '../../../assets/images/png/dev-icon.png';
+import designIcon from '../../../assets/images/png/design-icon.png';
+import soundIcon from '../../../assets/images/png/sound-icon.png';
 //import visorIntroVideo from '../../../assets/videos/main-intro.mp4';
 
 export const Selection = () => {

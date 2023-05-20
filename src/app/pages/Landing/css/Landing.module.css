@@ -9,7 +9,7 @@
   background: linear-gradient(230deg, #282828fd, #0c0c0c 85%);
 }
 .webBg{
-  background-image: url(../../../../assets/images/web-bg-landing.png);
+  background-image: url(../../../../assets/images/png/web-bg-landing.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;

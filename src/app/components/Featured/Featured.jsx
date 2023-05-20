@@ -2,7 +2,7 @@ import s from "./css/Featured.module.css";
 import { useSelector } from "react-redux";
 import { RenderDriveImg } from "../../../functions/RenderDriveImg";
 import { Title } from "../Utils/Title/Title";
-import githubIcon from "../../../assets/images/github-icon.png";
+import githubIcon from "../../../assets/images/png/github-icon.png";
 
 export const Featured = () => {
     const language = useSelector(state=>state.language)

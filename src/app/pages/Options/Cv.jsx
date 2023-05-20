@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useSelector } from 'react-redux'
 import { URL_API } from '../../../middlewares/misc/config'
 import { Link } from 'react-router-dom'
-import googleLogo from '../../../assets/images/google-logo.png'
+import googleLogo from '../../../assets/images/png/google-logo.png'
 
 
 export const Cv = () => {

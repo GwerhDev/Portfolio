@@ -213,7 +213,7 @@
   width: 300px;
   height: 180px;
   margin-right: 50px;
-  background-image: url(../../../../assets/images/loading.gif);
+  background-image: url(../../../../assets/images/gif/loading.gif);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -225,7 +225,7 @@
   width: 180px;
   height: 316px;
   margin-right: 50px;
-  background-image: url(../../../../assets/images/loading.gif);
+  background-image: url(../../../../assets/images/gif/loading.gif);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;

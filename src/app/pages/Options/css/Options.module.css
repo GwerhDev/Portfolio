@@ -6,7 +6,7 @@
     right: 0px;
     overflow: auto;
     background-color: rgba(240, 248, 255, 0);
-    background-image: url(../../../../assets/images/web-bg.png);
+    background-image: url(../../../../assets/images/png/web-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -39,7 +39,7 @@
     padding: 20px;
     padding-top: 0px;
     background-color: rgba(0, 0, 0, 0.393);
-    background-image: url(../../../../assets/images/cont-bg.png);
+    background-image: url(../../../../assets/images/png/cont-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;

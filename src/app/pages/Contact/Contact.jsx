@@ -5,9 +5,9 @@ import { Title } from '../../components/Utils/Title/Title';
 import { useSelector } from "react-redux";
 import { URL_API } from "../../../middlewares/misc/config";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
-import defaultUserIcon from "../../../assets/images/user-icon.png";
-import logoutIcon from "../../../assets/images/logout-icon.png";
-import googleIcon from "../../../assets/images/gmail-icon.png";
+import defaultUserIcon from "../../../assets/images/png/user-icon.png";
+import logoutIcon from "../../../assets/images/png/logout-icon.png";
+import googleIcon from "../../../assets/images/png/gmail-icon.png";
 
 export const Contact = () => {
   const auth = localStorage.getItem('auth');
