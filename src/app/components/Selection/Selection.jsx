@@ -8,7 +8,7 @@ import designIcon from '../../../assets/images/design-icon.png';
 import soundIcon from '../../../assets/images/sound-icon.png';
 //import visorIntroVideo from '../../../assets/videos/main-intro.mp4';
 
-export const Section = () => {
+export const Selection = () => {
     const language = useSelector(state=>state.language)
     return (
         <div>
