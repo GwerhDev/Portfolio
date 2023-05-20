@@ -1,14 +1,13 @@
-import s from './css/Options.module.css'
-import { motion } from 'framer-motion'
-import { useDispatch, useSelector } from 'react-redux'
-import { setOption } from '../../../middlewares/redux/actions'
-import { Title } from '../../components/Utils/Title/Title'
-import { Intro } from './Intro'
-import { Bio } from './Bio'
-import { Cv } from './Cv'
-import { Link } from 'react-router-dom'
-import arrowIcon from '../../../assets/images/arrow-icon.png'
-
+import s from './css/Options.module.css';
+import { motion } from 'framer-motion';
+import { useDispatch, useSelector } from 'react-redux';
+import { setOption } from '../../../middlewares/redux/actions';
+import { Title } from '../../components/Utils/Title/Title';
+import { Intro } from './Intro';
+import { Bio } from './Bio';
+import { Cv } from './Cv';
+import { Link } from 'react-router-dom';
+import arrowIcon from '../../../assets/images/arrow-icon.png';
 
 export const OptionCanvas = () => {
     const option = useSelector(state=>state.option)
@@ -102,4 +101,4 @@ export const OptionCanvas = () => {
 
         </div>
     )
-}
+};
