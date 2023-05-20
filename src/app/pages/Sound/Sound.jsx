@@ -2,7 +2,7 @@ import s from "./css/Sound.module.css";
 import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { OptionTitle } from "../../components/Utils/OptionTitle/OptionTitle";
+import { Title } from "../../components/Utils/Title/Title";
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
 import { Gear } from "../../components/Gear/Gear";
 import { getSound } from "../../../middlewares/redux/actions";
@@ -22,7 +22,7 @@ export const Sound = () => {
   return (
     <div className={s.soundCont}>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_SOUND}/>
-      <OptionTitle title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
+      <Title title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
       <div className={s.works}>
         <ul className={s.devUl}>
           {

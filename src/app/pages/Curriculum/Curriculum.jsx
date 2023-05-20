@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setOption } from '../../../middlewares/redux/actions';
-import { OptionTitle } from '../../components/Utils/OptionTitle/OptionTitle';
+import { Title } from '../../components/Utils/Title/Title';
 import pdfIcon from '../../../assets/images/pdf-icon.png';
 
 export const Curriculum = () => {
@@ -23,7 +23,7 @@ export const Curriculum = () => {
     }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contCV}>
-            <OptionTitle title='curriculum vitae'/>            
+            <Title title='curriculum vitae'/>            
             { language === "EN"?
             <motion.div 
             initial={{opacity:0}}

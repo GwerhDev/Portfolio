@@ -2,7 +2,7 @@ import s from './css/OptionTitle.module.css';
 import { useSelector } from 'react-redux';
 import showMoreIcon from '../../../../assets/images/showmore-icon.png';
 
-export const OptionTitle = (props) => {
+export const Title = (props) => {
     const { title, color, displayButton, funct, cursor } = props
     const language = useSelector(state=>state.language)
     return (

@@ -2,7 +2,7 @@ import s from './css/Options.module.css'
 import { motion } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
 import { setOption } from '../../../middlewares/redux/actions'
-import { OptionTitle } from '../../components/Utils/OptionTitle/OptionTitle'
+import { Title } from '../../components/Utils/Title/Title'
 import { Intro } from './Intro'
 import { Bio } from './Bio'
 import { Cv } from './Cv'
@@ -24,7 +24,7 @@ export const OptionCanvas = () => {
     }
     return (
         <div className={s.contOptions}>
-            <OptionTitle title={langOption(option)} />
+            <Title title={langOption(option)} />
             <motion.div 
             initial={{opacity:0, x:-10}}
             transition={{duration: 1}}

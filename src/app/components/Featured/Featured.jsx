@@ -1,7 +1,7 @@
 import s from "./css/Featured.module.css";
 import { useSelector } from "react-redux";
 import { RenderDriveImg } from "../../../functions/RenderDriveImg";
-import { OptionTitle } from "../Utils/OptionTitle/OptionTitle";
+import { Title } from "../Utils/Title/Title";
 import githubIcon from "../../../assets/images/github-icon.png";
 
 export const Featured = () => {
@@ -10,7 +10,7 @@ export const Featured = () => {
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
-                <OptionTitle color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
+                <Title color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
             </div>
             <div className={s.infoCont}>
                 <div className={s.featuredWrap}>

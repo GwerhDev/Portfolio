@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getDevelop } from "../../../middlewares/redux/actions"
-import { OptionTitle } from "../../components/Utils/OptionTitle/OptionTitle"
+import { Title } from "../../components/Utils/Title/Title"
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
 import { Skills } from "../../components/Skills/Skills"
 import { Featured } from "../../components/Featured/Featured"
@@ -43,7 +43,7 @@ export const Develop = () => {
     <div className={s.devCont}>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
       <Featured/>
-      <OptionTitle 
+      <Title 
         color='black' 
         funct={showHide} 
         displayButton='flex'

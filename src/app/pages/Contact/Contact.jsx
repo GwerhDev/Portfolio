@@ -1,7 +1,7 @@
 import s from './css/Contact.module.css';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
-import { OptionTitle } from '../../components/Utils/OptionTitle/OptionTitle';
+import { Title } from '../../components/Utils/Title/Title';
 import { useSelector } from "react-redux";
 import { URL_API } from "../../../middlewares/misc/config";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
@@ -68,7 +68,7 @@ export const Contact = () => {
       transition={{duration: 1}}
       animate={{opacity:1}}
       >
-      <OptionTitle title={language==='EN'? 'contact' : 'contacto'} />
+      <Title title={language==='EN'? 'contact' : 'contacto'} />
       {showForm && (
         <div className={s.divFormCont}>
           <form className={s.formCont} onSubmit={handleSubmit}>
