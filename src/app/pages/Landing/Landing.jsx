@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Profile } from '../../components/Profile/Profile';
 import { SocialLinks } from '../../../app/components/Utils/SocialLinks/SocialLinks';
 import { removeLocalStorage } from '../../../functions/RemoveLocalStorage';
+import { Footer } from '../../components/Utils/Footer/Footer';
 
 export const Landing = () => {
   const language = useSelector(state=>state.language)
@@ -40,6 +41,7 @@ export const Landing = () => {
         <SocialLinks gitHub='https://github.com/LaloFreak' linkedIn='https://www.linkedin.com/in/lalofreak/' />
       </div>
       </motion.div>
+      <Footer/>
     </div>
   )
 }

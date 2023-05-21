@@ -1,12 +1,12 @@
-import s from './css/OptionTitle.module.css';
+import s from './css/Title.module.css';
 import { useSelector } from 'react-redux';
 import showMoreIcon from '../../../../assets/images/png/showmore-icon.png';
 
 export const Title = (props) => {
-    const { title, color, displayButton, funct, cursor, angle } = props
+    const { title, color, displayButton, funct, cursor, angle, backgroundColor } = props
     const language = useSelector(state=>state.language)
     return (
-        <div className={s.contTitle} onClick={funct}>
+        <div className={s.contTitle} onClick={funct} style={{backgroundColor: backgroundColor? 'rgba(143, 143, 143, 0.37)' : 'transparent'}}>
             <h1 style={{
                 display: 'flex', 
                 justifyContent: 'center', 
@@ -14,7 +14,8 @@ export const Title = (props) => {
                 color: color, 
                 fontSize:'20px', 
                 textShadow:'1.5px 1px 5px black',
-                cursor: cursor
+                cursor: cursor,
+                width: "auto",
                 }}
             >
                 {title==='cv' && language==='EN'? 'resume': title}

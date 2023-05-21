@@ -6,7 +6,6 @@ import { Curriculum } from './app/pages/Curriculum/Curriculum';
 import { Navigator } from './app/components/Navigator/Navigator';
 import { Language } from './app/components/Utils/Language/Language';
 import { Header } from './app/components/Utils/Header/Header';
-import { Footer } from './app/components/Utils/Footer/Footer';
 import { LateralCanvas } from './app/components/LateralCanvas/LateralCanvas';
 import { CanvasRouter } from './app/components/Utils/CanvasRouter/CanvasRouter';
 import AuthToken from './app/components/Auth/AuthToken';
@@ -84,7 +83,6 @@ function App() {
         </Route>
       </Switch>
       <Language/>
-      <Footer/>
     </div>
   );
 }

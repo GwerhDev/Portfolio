@@ -2,13 +2,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .title{
     width: 100vw;
-    margin-left: -40px;
 }
 
 .titleItem{
@@ -19,18 +19,32 @@
 }
 
 .infoCont{
-    padding-top: 9rem;
+    position: relative;
+    padding: 50px;
+    padding-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
 }
 
-.featuredWrap{
-    position: relative;
-    display: flex;
-    padding: 40px;
-    max-width: 600px;
+.featuredWrap,
+.secondMobile,
+.secondDesktop{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin-left: 40px;
     justify-content: space-around;
     background-color: rgba(143, 143, 143, 0.37);
     margin-bottom: 10px;
     border-radius: 15px;
+}
+.featuredWrap{
+    display: flex;
 }
 
 .wrapper {
@@ -71,7 +85,7 @@
 }
 
 .secondDesktop{
-    display: block
+    display: flex;
 }
 
 .titleItem img {
@@ -89,7 +103,7 @@
     scale: 1.1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .titleItem{
         width: 100%;
         height: auto;
@@ -103,13 +117,14 @@
     .wrapper{
         scale: .7
     }
-    .featuredWrap{
-        width: 200px;
+    .featuredWrap,
+    .secondMobile,
+    .secondDesktop{
         justify-content: center;
         flex-direction: column;
     }
     .secondMobile{
-        display: block
+        display: flex;
     }
     .secondDesktop{
         display: none

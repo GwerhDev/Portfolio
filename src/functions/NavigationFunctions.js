@@ -22,7 +22,7 @@ export function disappear(){
   
     document.addEventListener('click', function(event) {
         if (!Div1.contains(event.target) && !Div2.contains(event.target) && !Div3.contains(event.target)) {
-            Div1.style.transform='translateX(-30vw)';
+            Div1.style.transform='translateX(-40vw)';
             Div2.style.transform='translateX(0)';
             Div3.style.scale='0';
             Div4.style.scale='0';

@@ -6,11 +6,10 @@ import githubIcon from "../../../assets/images/png/github-icon.png";
 
 export const Featured = () => {
     const language = useSelector(state=>state.language)
-  
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
-                <Title color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
+                <Title backgroundColor={true} color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
             </div>
             <div className={s.infoCont}>
                 <div className={s.featuredWrap}>
@@ -29,37 +28,33 @@ export const Featured = () => {
                     </a> 
                 </div>
                 <div className={s.secondDesktop}>
-                    <div className={s.featuredWrap}>
-                        <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
-                            <div className={s.wrapper}>
-                                <div className={s.imageContainer}>
-                                    <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
-                                </div>
+                    <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
                             </div>
-                        </a> 
-                        <div className={s.titleItem}>
-                            <h2>la Ruina tv</h2>
-                            <a href="https://github.com/LaloFreak/La-Ruina-TV-client" target="_blank" rel="noreferrer">
-                                <img src={githubIcon} alt="github" />
-                            </a>
                         </div>
+                    </a> 
+                    <div className={s.titleItem}>
+                        <h2>la Ruina tv</h2>
+                        <a href="https://github.com/LaloFreak/La-Ruina-TV-client" target="_blank" rel="noreferrer">
+                            <img src={githubIcon} alt="github" />
+                        </a>
                     </div>
                 </div>
                 <div className={s.secondMobile}>
-                    <div className={s.featuredWrap}>
-                        <div className={s.titleItem}>
-                            <h2>la Ruina tv</h2>
-                            <a href="https://github.com/LaloFreak/La-Ruina-TV-client" target="_blank" rel="noreferrer">
-                                <img src={githubIcon} alt="github" />
-                            </a>                        </div>
-                        <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
-                            <div className={s.wrapper}>
-                                <div className={s.imageContainer}>
-                                    <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
-                                </div>
+                    <div className={s.titleItem}>
+                        <h2>la Ruina tv</h2>
+                        <a href="https://github.com/LaloFreak/La-Ruina-TV-client" target="_blank" rel="noreferrer">
+                            <img src={githubIcon} alt="github" />
+                        </a>                        </div>
+                    <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
                             </div>
-                        </a> 
-                    </div>
+                        </div>
+                    </a> 
                 </div>
                 <div className={s.featuredWrap}>
                     <div className={s.titleItem}>
