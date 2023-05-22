@@ -3,14 +3,23 @@
   justify-content: center;
   position: relative;
   top: 30px;
-  width: 50%;
+  width: 100%;
+  height: min-content;
+  vertical-align: middle;
+  justify-items: center;
+  padding: 0px;
 }
-
+.item a {
+  display: flex;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 100%;
+  padding: 0px;
+}
 .item img {
   width: 30px;
   height: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
   opacity: .7;
   filter: grayscale(1);
   transition-duration: .4s;

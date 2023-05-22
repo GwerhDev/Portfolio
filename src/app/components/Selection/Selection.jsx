@@ -25,7 +25,7 @@ export const Selection = () => {
                             language==='EN'? 'develop':'desarrollo'
                         }
                     </h3>
-                    <Link to='/portfolio/develop'>
+                    <Link to='/portfolio/develop' className={s.linkStyle}>
                         <div className={s.portfolioIconCont}>
                             <img src={devIcon} alt="" height={'110px'} />
                         </div>
@@ -36,7 +36,7 @@ export const Selection = () => {
                         {
                             language==='EN'? 'design':'diseno'
                         }                        </h3>
-                    <Link to='/portfolio/design'>
+                    <Link to='/portfolio/design' className={s.linkStyle}>
                         <div className={s.portfolioIconCont}>
                             <img src={designIcon} alt="" height={'110px'} />
                         </div>
@@ -47,7 +47,7 @@ export const Selection = () => {
                         {
                             language==='EN'? 'sound':'sonido'
                         }                        </h3>
-                    <Link to='/portfolio/sound'>
+                    <Link to='/portfolio/sound' className={s.linkStyle}>
                         <div className={s.portfolioIconCont}>
                             <img src={soundIcon} alt="" height={'110px'} />
                         </div>

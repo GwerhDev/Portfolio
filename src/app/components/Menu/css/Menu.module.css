@@ -2,19 +2,29 @@
     background: linear-gradient(230deg, rgb(230, 230, 230), #919191 85%);
     width: 80%;
     left: 10%;
-    height: auto;
+    height: 20px;
     position: relative;
     top: 10px;
     border-radius: 43%;
     transition-duration: .5s;
     color: #000000;
     font-weight: thin; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
 
-.divH2>h2{
+.linkMenu{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    color: #000000;
     font-size: 11px;
+    font-weight: bold;
     padding: 4px;
+}
+
+.linkMenu:hover{
+    color: white;
 }
 
 .divH2:hover{
@@ -29,4 +39,6 @@
     height: 60px;
     display: flex;
     justify-content: center;
+    vertical-align: middle;
+    justify-items: center;
 }

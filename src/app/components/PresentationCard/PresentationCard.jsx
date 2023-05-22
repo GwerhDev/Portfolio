@@ -28,22 +28,22 @@ export const PresentationCard = (props) => {
               }
             </b>
             <br />
-            <Link to='/home/cv'>
-              <button className={s.resumeButton}>
-                {
-                  language==='EN'?
-                  'check resume' : 'ver cv'
-                }
-              </button>
-            </Link>
-            <Link to='/contact'>
-              <button className={s.resumeButton}>
-                {
-                  language==='EN'?
-                  'contact' : 'contacto'
-                }
-              </button>
-            </Link>
+            <button className={s.resumeButton}>
+              <Link to='/home/cv' className={s.resumeLink}>
+                  {
+                    language==='EN'?
+                    'check resume' : 'ver cv'
+                  }
+              </Link>
+            </button>
+            <button className={s.resumeButton}>
+              <Link to='/contact' className={s.resumeLink}>
+                  {
+                    language==='EN'?
+                    'contact' : 'contacto'
+                  }
+              </Link>
+            </button>
           </div>
         </h1>
       </ul>

@@ -9,55 +9,44 @@ export const Menu = () => {
     const language = useSelector(state=>state.language)
     return (
         <>
-            <Link to="/home/introduction">
-                <div 
-                    className={s.divH2}
-                    onClick={()=>{return (
-                        dispatch(setOption('introduction')),
-                        document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                        document.querySelector('#navCont').style.transform='translateX(0)'
-                        )}}
-                >
-                    <h2>
-                        {
-                            language==='EN'?
-                            'Intro' : 'Intro'
-                        }
-                    </h2>
-                </div>
-            </Link>
+            <div 
+                className={s.divH2}
+                onClick={()=>{return (
+                    dispatch(setOption('introduction')),
+                    document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                    document.querySelector('#navCont').style.transform='translateX(0)'
+                    )}
+                }
+            >
+                <Link to="/home/introduction" className={s.linkMenu}>
+                    { language==='EN'? 'Intro' : 'Intro' }
+                </Link>
+            </div>
 
-            <Link to="/home/bio">
-                <div 
-                    className={s.divH2}
-                    onClick={()=>{return (
-                        dispatch(setOption('bio')),
-                        document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-                        document.querySelector('#navCont').style.transform='translateX(0)'
+            <div 
+                className={s.divH2}
+                onClick={()=>{return (
+                    dispatch(setOption('bio')),
+                    document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                    document.querySelector('#navCont').style.transform='translateX(0)'
+                )}}
+            >
+                <Link to="/home/bio" className={s.linkMenu}>
+                    Bio
+                </Link>
+            </div>
+            <div 
+                className={s.divH2}
+                onClick={()=>{return (
+                    dispatch(setOption('cv')),
+                    document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                    document.querySelector('#navCont').style.transform='translateX(0)'
                     )}}
-                >
-                    <h2>
-                        Bio
-                    </h2>
-                </div>
-            </Link>
-            <Link to="/home/cv">
-                <div 
-                    className={s.divH2}
-                    onClick={()=>{return (
-                        dispatch(setOption('cv')),
-                        document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
-                        document.querySelector('#navCont').style.transform='translateX(0)'
-                        )}}
-                >
-                    <h2>
-                        {
-                            language==='EN'?
-                                'Resume' : 'CV'
-                        }                    
-                    </h2>
-                </div>
-            </Link>
+                    >
+                <Link to="/home/cv" className={s.linkMenu}>
+                    { language==='EN'? 'Resume' : 'CV' }
+                </Link> 
+            </div>
             <div className={s.contSL}>
                 <SocialLinks gitHub='https://github.com/LaloFreak' linkedIn='https://www.linkedin.com/in/lalofreak/' />
             </div>        
