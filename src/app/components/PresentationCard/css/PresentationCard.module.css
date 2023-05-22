@@ -121,8 +121,11 @@
   }
   .title{
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     padding-top: 80px;
+    margin-left: -40px;
+    padding-right: 120px;
+    padding-left: 80px;
   }
   .title p{
     font-size: 2.5vw;
