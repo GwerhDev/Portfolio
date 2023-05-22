@@ -29,7 +29,7 @@ export const Skills = (props) => {
                     <h5 style={{color:'white'}}>CSS</h5>
                 </li>
                 <li className={s.icon}>
-                    <img className={s.svgIcons} src={pythonSVG} alt="" />               
+                    <img className={s.svgIcons} src={pythonSVG} style={{scale:'2'}} alt="" />               
                     <h5 style={{color:'white'}}>Python</h5>
                 </li>
                 <li className={s.icon}>

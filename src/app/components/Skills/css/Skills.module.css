@@ -1,11 +1,12 @@
 .skillsCont{
     width: 100%;
     padding-bottom: 100px;
-    position: absolute;
     border-color: white;
     border-top-style: solid;
     border-width: .1rem;
     background-color: #171717;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon{
@@ -15,19 +16,19 @@
 }
 
 .iconList{
+    max-width: 50%;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     grid-gap: 10px;
     list-style: none;
-    padding-top: 50px;
-    padding-left: 200px;
-    padding-right: 180px;
-    margin-left: 20px;
-    margin: 0;
+    padding-left: 30px;
+    padding-right: 50px;
+    left: 25%;
 }
 
 .svgIcons{
-    margin-right:10px;
+    margin-right: 10px;
     margin-left: 10px;
 }
 
@@ -42,4 +43,13 @@
     font-family:Trajan;
     color: white;
     font-size: 2.3rem;
+}
+
+@media (max-width: 950px) {
+    .titleCont h1{
+        font-size: 1.5rem;
+    }
+    .iconList{
+        scale: .9;
+    }
 }
