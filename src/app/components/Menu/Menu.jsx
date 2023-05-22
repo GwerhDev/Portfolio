@@ -27,7 +27,7 @@ export const Menu = () => {
                 className={s.divH2}
                 onClick={()=>{return (
                     dispatch(setOption('bio')),
-                    document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                    document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                 )}}
             >
@@ -39,7 +39,7 @@ export const Menu = () => {
                 className={s.divH2}
                 onClick={()=>{return (
                     dispatch(setOption('cv')),
-                    document.querySelector('#profileLalo').style.transform='translateX(-30vw)',
+                    document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                     )}}
                     >
