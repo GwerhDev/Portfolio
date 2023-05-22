@@ -5,10 +5,11 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
+    margin-left: -30px;
 }
 
 .title{
-    width: 100vw;
+    width: 100%;
 }
 
 .titleItem{
@@ -28,7 +29,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
+    max-width: 50%;
+    margin-left: -20px;
 }
 
 .featuredWrap,
@@ -37,7 +39,7 @@
     width: 100%;
     height: auto;
     padding: 50px;
-    margin-left: 40px;
+    margin-left: 45px;
     justify-content: space-around;
     background-color: rgba(143, 143, 143, 0.37);
     margin-bottom: 10px;

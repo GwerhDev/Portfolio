@@ -20,7 +20,7 @@ export const Selection = () => {
         >
             <ul className={s.porfolioList}>
                 <li>
-                    <h3 style={{fontFamily:'Trajan', color: 'white', fontSize:'.8rem'}}>                        
+                    <h3>                        
                         {
                             language==='EN'? 'develop':'desarrollo'
                         }

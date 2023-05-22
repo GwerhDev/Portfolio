@@ -46,18 +46,20 @@ export const Develop = () => {
     <div className={s.devCont}>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
       <Featured/>
-      <Title 
-        color='black' 
-        funct={showHide} 
-        displayButton='flex'
-        backgroundColor={true}
-        title={
-          displayState === 'none'?
-          (language==='EN'? `show all (${total})`:`mostrar todo (${total})`) : (language==='EN'? `hide all (${total})`:`ocultar todo (${total})`)
-        }
-        cursor='pointer'
-        angle={angle}
-      />
+      <div className={s.titleSection}>
+        <Title 
+          color='black' 
+          funct={showHide} 
+          displayButton='flex'
+          backgroundColor={true}
+          title={
+            displayState === 'none'?
+            (language==='EN'? `show all (${total})`:`mostrar todo (${total})`) : (language==='EN'? `hide all (${total})`:`ocultar todo (${total})`)
+          }
+          cursor='pointer'
+          angle={angle}
+        />
+      </div>
       <motion.div
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
