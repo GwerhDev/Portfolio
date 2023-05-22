@@ -11,6 +11,7 @@ import nodeSVG from '../../../assets/images/svg/node-icon.svg';
 import expressSVG from '../../../assets/images/svg/express-icon.svg';
 import postgresqlSVG from '../../../assets/images/svg/postgresql-icon.svg';
 import electronSVG from '../../../assets/images/svg/electronjs-icon.svg';
+import tensorflowSVG from '../../../assets/images/svg/tensorflow-icon.svg';
 
 export const Skills = (props) => {
     const { language } = props
@@ -49,9 +50,7 @@ export const Skills = (props) => {
                     <h5 style={{color:'white'}}>NextJS</h5>
                 </li>
                 <li className={s.icon}>
-                    <img className={s.svgIcons} src={reduxSVG} alt="" />
-
-                   
+                    <img className={s.svgIcons} src={reduxSVG} alt="" />                  
                     <h5 style={{color:'white'}}>Redux</h5>
                 </li>
                 <li className={s.icon}>
@@ -70,7 +69,10 @@ export const Skills = (props) => {
                     <img className={s.svgIcons} src={electronSVG} alt="" />
                     <h5 style={{color:'white'}}>ElectronJS</h5>
                 </li>
-
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={tensorflowSVG} alt="" />
+                    <h5 style={{color:'white'}}>TensorFlow</h5>
+                </li>
             </ul>
         </div>
     )
