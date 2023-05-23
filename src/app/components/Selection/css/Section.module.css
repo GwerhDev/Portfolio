@@ -15,6 +15,7 @@
     position: relative;
     left: 10px;
     text-align: center;
+    min-height: 300px;
 }
 
 .porfolioList h3 {
