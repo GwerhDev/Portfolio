@@ -59,6 +59,18 @@
     }
 }
 
+@media (max-width: 600px) {
+    
+    .porfolioList{
+        flex-direction: column;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
 @keyframes resplandor {
     0% {
         box-shadow: 0px 0px 10px rgb(255, 255, 255);
