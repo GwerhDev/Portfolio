@@ -83,6 +83,12 @@
     background-position: center;
     border-radius: 15px;
   }
+
+  .divImg{
+    width: 300px;
+    margin-right: 30px;
+    border-radius: 15px;
+  }
   
   .projectImgMobile {
     background-color: var(--color-primary);
@@ -117,6 +123,7 @@
       justify-content: center;
       align-items: center;
       vertical-align: middle;
+      margin-right: 0;
       padding-left: 0px;
       padding-right: 0px;
       margin-bottom: 15px;
