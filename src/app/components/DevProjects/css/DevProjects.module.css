@@ -54,7 +54,8 @@
   }
   
   .infoLi {
-    font-family: Trajan;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     font-size: 15px;
     list-style: none;
     text-align: left;

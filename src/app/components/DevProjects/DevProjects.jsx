@@ -67,16 +67,16 @@ export const DevProjects = (props) => {
                     </motion.div>
                     <li key={`web${index}`} className={s.infoLi}>
                       <a href={e.href} target='_blank' rel="noreferrer">
-                        <img src={openwindowIcon} alt="" width={'18px'}/>
                           {e.name}
+                        <img src={openwindowIcon} alt="" width={'18px'}/>
                       </a>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
                     </li>
@@ -113,13 +113,13 @@ export const DevProjects = (props) => {
                           {e.name}
                           <img src={openwindowIcon} alt="" width={'18px'}/>
                       </a>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
                     </li>
@@ -156,13 +156,13 @@ export const DevProjects = (props) => {
                         {e.name}
                         <img src={openwindowIcon} alt="" width={'18px'}/>
                       </a>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
                     </li>
@@ -199,13 +199,13 @@ export const DevProjects = (props) => {
                         {e.name}
                         <img src={openwindowIcon} alt="" width={'18px'}/>
                       </a>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
                     </li>

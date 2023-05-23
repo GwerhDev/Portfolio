@@ -64,13 +64,13 @@ export const SoundProjects = (props) => {
                           <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </li>
                       </motion.div>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontWeight:'bolder', fontSize:'12px'}}>
                         {language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontWeight:'bolder', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
-                      <h4 style={{fontFamily:'Arial, Helvetica, sans-serif', fontSize:'12px'}}>
+                      <h4 style={{fontFamily:'Poppins, sans-serif', fontWeight:'bolder', fontSize:'12px'}}>
                         {language==='EN'? `Year: ${e.year}` : `Año: ${e.year}`}
                       </h4>
                     </div>

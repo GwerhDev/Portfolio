@@ -47,7 +47,7 @@
 }
 .par{
     font-weight: thin; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     font-size: 14px;
 }
 
@@ -110,6 +110,22 @@
 
 .loginUserCont:hover{
     background-color: rgba(255, 255, 255, 0.562);
+}
+
+@media (max-width: 700px) {
+    .btnsCont{
+        scale: .7;
+        width: 100%;
+        margin-left: -8px;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .par{
+        text-align: start;
+        font-weight: bold;
+    }
+    
 }
 
 @keyframes animation {
