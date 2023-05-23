@@ -15,7 +15,7 @@
 
 .formCont{
     margin-top: 150px;
-    margin-left: -30px;
+    margin-left: -50px;
 }
 
 .formCont label{
@@ -46,22 +46,26 @@
 }
 
 .divFormCont{
-    width: 40%;
+    position: relative;
+    width: 50%;
     text-align: left;
-    margin-left: 33%;
+    margin-left: 25%;
+    left: 30px;
 }
 
 .showFormCont{
     font-family: Trajan;
     position: absolute;
-    text-shadow: 0px 0px 5px green;
     margin-top: 150px;
-    width: 70%;
-    right: 7.5%;
+    width: 50%;
+    margin-left: 25%;
     color: black;
-    background-color: rgba(209, 209, 209, 0.966);
-    padding: 100px;
+    background-color: rgba(192, 190, 190, 0.966);
     border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+    left: -18px;
+    box-shadow: 0px 0px 30px #000000;
 }
 
 .submitButton{
