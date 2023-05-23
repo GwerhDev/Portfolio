@@ -32,7 +32,7 @@ export const Selection = () => {
                     </Link>
                 </li>
                 <li>
-                        <h3 style={{fontFamily:'Trajan', color: 'white', fontSize:'.8rem'}}>
+                        <h3>
                         {
                             language==='EN'? 'design':'diseno'
                         }                        </h3>
@@ -43,7 +43,7 @@ export const Selection = () => {
                     </Link>
                 </li>
                 <li>
-                        <h3 style={{fontFamily:'Trajan', color: 'white', fontSize:'.8rem'}}>
+                        <h3>
                         {
                             language==='EN'? 'sound':'sonido'
                         }                        </h3>

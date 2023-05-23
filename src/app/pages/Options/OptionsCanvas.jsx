@@ -81,21 +81,24 @@ export const OptionCanvas = () => {
             :null}
             {option==='cv'?
             <><Cv/>
-            <div className={s.btnsCont}>
-                <div style={{display:'flex'}}>
-                    <Link to='/home/bio'>
-                        <img 
-                            className={s.menuback} 
-                            onClick={()=>{return dispatch(setOption('bio'))}}
-                            src={arrowIcon} 
-                            alt='next' 
-                            width='30px'
-                            style={{rotate: '180deg'}}  
-                        />
-                    </Link>
-                    <h3 style={{fontFamily: 'Trajan', fontSize:'18px', marginLeft:'10px'}}>bio</h3>
+            <div className={s.buttonsCont}>
+                <div className={s.btnsCont}>
+                    <div style={{display:'flex'}}>
+                        <Link to='/home/bio'>
+                            <img 
+                                className={s.menuback} 
+                                onClick={()=>{return dispatch(setOption('bio'))}}
+                                src={arrowIcon} 
+                                alt='next' 
+                                width='30px'
+                                style={{rotate: '180deg'}}  
+                            />
+                        </Link>
+                        <h3 style={{fontFamily: 'Trajan', fontSize:'18px', marginLeft:'10px'}}>bio</h3>
+                    </div>
                 </div>
-            </div></>
+            </div>
+            </>
             :null}
             </motion.div>
 
