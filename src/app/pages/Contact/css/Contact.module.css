@@ -15,6 +15,7 @@
 
 .formCont{
     margin-top: 150px;
+    margin-left: -30px;
 }
 
 .formCont label{
@@ -31,8 +32,6 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-
-
 }
 
 .formCont textarea{
