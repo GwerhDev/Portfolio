@@ -25,7 +25,6 @@
 }
 
 .imgCont{
-  background-color: rgb(255, 255, 255);
   position: absolute;
   width: 69vh;
   height: 69vh;
@@ -36,7 +35,6 @@
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  background: radial-gradient(rgb(255, 255, 255) 20% , #8d8d8d 120%);
 }
 
 .portfolioDevImg{

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 
 export const PresentationCard = (props) => {
-    const {img, language, description} = props
+    const { img, language, description, hideCircle } = props
     return (
       <div className={s.viewerCont}>
           <motion.div 
@@ -11,7 +11,7 @@ export const PresentationCard = (props) => {
           transition={{duration: 1}}
           animate={{opacity:1}}
           >
-        <div className={s.imgCont}>
+        <div className={s.imgCont} style={{ background: hideCircle? 'transparent' : 'radial-gradient(rgb(255, 255, 255) 20% , #8d8d8d 120%)'}}>
           <img className={s.portfolioDevImg} src={img} alt="" loading="lazy" />
         </div>
       <ul className={s.viewerUl}>

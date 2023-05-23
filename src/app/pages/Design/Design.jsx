@@ -9,7 +9,7 @@ export const Design = () => {
 
   return(
     <div>
-      <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DESIGN}/>
+      <PresentationCard language={language} hideCircle={false} img={portfolioDevImg} description={GET_DESCRIPTION_DESIGN}/>
       <UnderConstruction language={language}/>
     </div>
   )
