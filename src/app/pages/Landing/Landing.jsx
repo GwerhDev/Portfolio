@@ -14,7 +14,6 @@ export const Landing = () => {
   return (
     <div className={s.landingCont}>
       <div className={s.webBg}/>
-      <div className={s.webBg}/>
       <motion.div 
         initial={{opacity: 0, y: 10}}
         transition={{duration: 2, type: 'spring'}}
