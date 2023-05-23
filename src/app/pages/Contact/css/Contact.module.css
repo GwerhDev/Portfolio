@@ -60,12 +60,11 @@
     width: 50%;
     margin-left: 25%;
     color: black;
-    background-color: rgba(192, 190, 190, 0.966);
+    background-color: rgba(143, 143, 143, 0.37);
     border-radius: 15px;
     text-align: center;
     padding: 2rem;
     left: -18px;
-    box-shadow: 0px 0px 30px #000000;
 }
 
 .submitButton{

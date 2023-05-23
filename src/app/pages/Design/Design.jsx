@@ -10,7 +10,7 @@ export const Design = () => {
   return(
     <div>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DESIGN}/>
-      <UnderConstruction/>
+      <UnderConstruction language={language}/>
     </div>
   )
 }

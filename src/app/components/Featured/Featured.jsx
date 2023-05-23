@@ -1,15 +1,14 @@
 import s from "./css/Featured.module.css";
-import { useSelector } from "react-redux";
 import { RenderDriveImg } from "../../../functions/RenderDriveImg";
 import { Title } from "../Utils/Title/Title";
 import githubIcon from "../../../assets/images/png/github-icon.png";
 
-export const Featured = () => {
-    const language = useSelector(state=>state.language)
+export const Featured = (props) => {
+    const { language } = props
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
-                <Title backgroundColor={true} color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
+                <Title top="0px" backgroundColor={true} color='black' title={language==='EN'? 'featured projects':'proyectos destacados'}/>
             </div>
             <div className={s.infoCont}>
                 <div className={s.featuredWrap}>

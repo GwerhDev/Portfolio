@@ -1,0 +1,102 @@
+.soundCont{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .works{
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-top: -70px;
+  }
+  
+  .devUl{
+    position: relative;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    margin-top: 150px;
+    display: grid;
+    margin-bottom: 100px;
+    left: -10px;
+  }
+  
+  .devLi{
+    font-family: Trajan;
+    font-size: 20px;
+    list-style: none;
+    text-align: left;
+    transition-duration: .4s;
+  }
+  
+  .buttonClose{
+    background-color: #e2e2e2;
+    color: rgb(0, 0, 0);
+    transition-duration: .4s;
+    cursor: pointer;
+    border-width: 1px;
+    border-top-right-radius: 25px;
+  }
+  
+  .buttonClose:hover{
+    background-color: #171717;
+    color: white;
+  }
+  
+  .ulList{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 25px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.575);
+    transition-duration: .4s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+  }
+  .devLi p{
+    transition-delay: 1s;
+    cursor: pointer;
+  }
+  .ulList:hover{
+    box-shadow: 0px 0px 14px rgba(146, 146, 146, 0.541);
+  }
+  
+  
+  @keyframes animation {
+    from {
+      opacity: 1;
+      scale: 1
+    }
+    to {
+      opacity: .6;
+      scale: 1.2
+    }
+  }
+  
+  .ytPlayer{
+    background-color: #171717;
+    width: 280px;
+    height: 157.5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px black;
+    margin-top: 10px;
+    background-image: url(../../../../assets/images/gif/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+  }
+  
+  @media (max-width: 680px) {
+    .works{
+      margin-top: -70px;
+      margin-left: -25px;
+    }
+    .devLi{
+      font-size: 11px;
+      padding-left: -10px;
+      padding-right: 40px;
+    }
+  }

@@ -3,7 +3,6 @@
     max-width: 50%;
     margin-left: 25%;
     height: auto;
-    top: 70px;
     text-align: center;
     border-bottom: solid;
     border-bottom-color: rgb(239, 239, 239);
@@ -24,6 +23,15 @@
 
 .contTitle h1{
     font-size: 20px;
+    text-shadow: 1.5px 1px 5px black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Trajan;
+}
+
+.showMoreIcon{
+    transition-duration: .4s
 }
 
 @media (max-width: 950px) {

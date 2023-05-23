@@ -3,6 +3,22 @@
   src: url(./assets/fonts/TrajanusBricks.ttf);
 }
 
+:root {
+  --color-background: rgba(143, 143, 143, 0.37);
+  --color-background-hover: rgba(146, 146, 146, 0.541);
+  --color-background-light: rgba(255, 255, 255, 0.527);
+  --color-text: white;
+  --color-primary: #171717;
+  --color-secondary: #8d8d8d;
+  --color-button-gradient-start: rgb(185, 185, 185);
+  --color-button-gradient-end: #919191;
+  --color-button-hover-gradient-start: #1b1b1b;
+  --color-button-hover-gradient-end: #000000;
+  --color-shadow: rgba(0, 0, 0, 0.575);
+  --color-shadow-light: rgba(255, 255, 255, 0.288);
+  --color-link: black;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +39,7 @@ code {
   color: rgba(255, 255, 255, 0.774);
 }
 :link:hover{
-  color: white;
+  color: var(--color-text);
 }
 ::-webkit-scrollbar {
   z-index: 999;
@@ -34,9 +50,9 @@ code {
   background: linear-gradient(168deg, rgb(72, 72, 72) 20% , #171717 120%);
 }
 ::-webkit-scrollbar-thumb {
-  background: #fff2;
+  background: var(--color-background);
   border-radius: 1px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff4;
+  background: var(--color-background-hover);
 }

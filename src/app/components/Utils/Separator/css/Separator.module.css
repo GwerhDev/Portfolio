@@ -1,0 +1,15 @@
+.separator {
+    margin-left: -10px
+}
+
+@media (max-width: 950px) {
+    .separator{
+        scale: .7;
+    }
+}
+
+@media (max-width: 600px) {
+    .separator{
+        scale: .5;
+    }
+}
