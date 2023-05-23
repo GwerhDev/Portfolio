@@ -13,6 +13,7 @@ import openwindowIcon from "../../../assets/images/png/openwindow-icon.png";
 import softwareIcon from "../../../assets/images/png/software-icon.png";
 import showMoreIcon from "../../../assets/images/png/showmore-icon.png";
 import loadingImg from "../../../assets/images/gif/loading.gif";
+import { Separator } from "../Utils/Separator/Separator";
 
 export const DevProjects = (props) => {
   const { language } = props
@@ -79,6 +80,7 @@ export const DevProjects = (props) => {
                       <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
+                    <Separator width={'100%'}/>
                     </li>
                   </ul>
               )})
@@ -122,6 +124,7 @@ export const DevProjects = (props) => {
                       <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
+                      <Separator width={'100%'}/>
                     </li>
                   </ul>        
               )})
@@ -165,6 +168,7 @@ export const DevProjects = (props) => {
                       <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
+                      <Separator width={'100%'}/>
                     </li>
                   </ul>        
               )})
@@ -208,6 +212,7 @@ export const DevProjects = (props) => {
                       <h4 style={{fontFamily:'Poppins, sans-serif', fontSize:'12px'}}>
                         {language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`}
                       </h4>
+                      <Separator width={'100%'}/>
                     </li>
                   </ul>
               )})
