@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @font-face {
   font-family: Trajan;
-  src: url(./assets/fonts/TrajanusBricks.ttf);
+  src: url(../assets/fonts/TrajanusBricks.ttf);
 }
 
 :root {
@@ -27,6 +27,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
