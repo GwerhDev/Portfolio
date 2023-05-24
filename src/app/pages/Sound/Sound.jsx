@@ -19,10 +19,10 @@ export const Sound = () => {
   
   return (
     <div className={s.soundCont}>
-      <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_SOUND}/>
-      <Title title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
-      <SoundProjects language={language}/>
-      <Gear language={language}/>
+        <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_SOUND}/>
+        <Title title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
+        <SoundProjects language={language}/>
+        <Gear language={language}/>
     </div>
   )
 }

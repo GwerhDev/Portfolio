@@ -1,7 +1,10 @@
 .devCont {
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: auto;
   overflow: hidden;
+  background-image: url(../../../../assets/images/png/web-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: fit-content;
 }

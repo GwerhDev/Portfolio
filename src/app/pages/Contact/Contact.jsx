@@ -92,15 +92,15 @@ export const Contact = () => {
             }
             <label>
             {language==='EN'? 'Name' : 'Nombre'}
-              <input placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" value={formData.name} onChange={handleInputChange}/>
+              <input required placeholder={language==='EN'? 'Your name' : 'Tu nombre'} type="text" name="name" value={formData.name} onChange={handleInputChange}/>
             </label><br />
             <label>
             {language==='EN'? 'Email' : 'Correo'}
-              <input placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" style={user? {backgroundColor:'gray'}:{}} disabled={user?? false} value={formData.email} onChange={handleInputChange} />
+              <input required placeholder={language==='EN'? 'example@email.com' : 'ejemplo@email.com'} type="email" name="email" style={user? {backgroundColor:'gray'}:{}} disabled={user?? false} value={formData.email} onChange={handleInputChange} />
             </label><br />
             <label>
             {language==='EN'? 'Message:' : 'Mensaje:'}<br/>
-              <textarea placeholder={language==='EN'? 'Write your message here...' : 'Escribe tu mensaje aquí...'} name="message" onChange={handleInputChange} />
+              <textarea required placeholder={language==='EN'? 'Write your message here...' : 'Escribe tu mensaje aquí...'} name="message" onChange={handleInputChange} />
             </label><br/>
             <button className={s.submitButton} type="submit">{language==='EN'? 'send' : 'enviar'}</button>
           </form>
