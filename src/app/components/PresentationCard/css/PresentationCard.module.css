@@ -31,16 +31,12 @@
   right: -20px;
   bottom: 0px;
   border-radius: 100%;
-  transition-duration: .4s;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
 .portfolioDevImg{
   position: absolute;
   width: 50vh;
-  right: 0px;
+  right: 30px;
   bottom: 0px;
   filter: grayscale(.7);
 }
