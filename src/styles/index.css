@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 @font-face {
   font-family: Trajan;
   src: url(../assets/fonts/TrajanusBricks.ttf);
@@ -18,11 +19,14 @@
   --color-shadow: rgba(0, 0, 0, 0.575);
   --color-shadow-light: rgba(255, 255, 255, 0.288);
   --color-link: black;
+  --color-visited: black;
+  --font-styled: Trajan;
+  --font-global: 'Poppins', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-global);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
@@ -38,29 +42,35 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-:link, :visited{
+:link,
+:visited {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.774);
+  color: var(--color-visited);
 }
-:link:hover{
-  color: var(--color-text);
+
+:link:hover {
+  text-decoration: none;
+  color: var(--color-link);
 }
+
 ::-webkit-scrollbar {
   z-index: 999;
   width: 10px;
   height: 100%;
 }
+
 ::-webkit-scrollbar-track {
-  background: linear-gradient(168deg, rgb(72, 72, 72) 20% , #171717 120%);
+  background: linear-gradient(168deg, rgb(72, 72, 72) 20%, var(--color-primary) 120%);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-background);
   border-radius: 1px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-background-hover);
 }
