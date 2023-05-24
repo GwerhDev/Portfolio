@@ -1,14 +1,14 @@
 import { Switch, Route } from 'react-router-dom';
-import { Landing } from './app/pages/Landing/Landing';
-import { Home } from './app/pages/Home/Home';
-import { Curriculum } from './app/pages/Curriculum/Curriculum';
-import { Navigator } from './app/components/Navigator/Navigator';
-import { Language } from './app/components/Utils/Language/Language';
-import { Header } from './app/components/Utils/Header/Header';
-import { LateralCanvas } from './app/components/LateralCanvas/LateralCanvas';
-import { CanvasRouter } from './app/components/Utils/CanvasRouter/CanvasRouter';
-import AuthToken from './app/components/Auth/AuthToken';
-import MailAuthToken from './app/components/Auth/MailAuthToken';
+import { Landing } from '../pages/Landing/Landing';
+import { Home } from '../pages/Home/Home';
+import { Curriculum } from '../pages/Curriculum/Curriculum';
+import { Navigator } from '../components/Navigator/Navigator';
+import { Language } from '../components/Utils/Language/Language';
+import { Header } from '../components/Utils/Header/Header';
+import { LateralCanvas } from '../components/LateralCanvas/LateralCanvas';
+import { CanvasRouter } from '../components/Utils/CanvasRouter/CanvasRouter';
+import AuthToken from '../components/Auth/AuthToken';
+import MailAuthToken from '../components/Auth/MailAuthToken';
 
 function App() {
   return (
