@@ -53,7 +53,7 @@ export const DevProjects = (props) => {
             {
               API?.at(0)?.web?.map((e,index)=>{
                 return(
-                  <ul className={s.ulList} style={{ display: shownState1 }}>
+                  <ul key={`ulWeb${index}`} className={s.ulList} style={{ display: shownState1 }}>
                     <motion.div
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
@@ -97,7 +97,7 @@ export const DevProjects = (props) => {
             {
               API?.at(1)?.desktop?.map((e,index)=>{
                 return(
-                  <ul className={s.ulList} style={{ display: shownState2 }}>
+                  <ul key={`ulDesk${index}`} className={s.ulList} style={{ display: shownState2 }}>
                     <motion.div
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
@@ -141,7 +141,7 @@ export const DevProjects = (props) => {
             {
               API?.at(2)?.mobile?.map((e,index)=>{
                 return(
-                  <ul className={s.ulList} style={{ display: shownState3 }}>
+                  <ul key={`ulMob${index}`} className={s.ulList} style={{ display: shownState3 }}>
                     <motion.div
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}
@@ -185,7 +185,7 @@ export const DevProjects = (props) => {
             {
               API?.at(3)?.software?.map((e,index)=>{
                 return(
-                  <ul className={s.ulList} style={{ display: shownState4 }}>
+                  <ul key={`ulSoft${index}`} className={s.ulList} style={{ display: shownState4 }}>
                     <motion.div
                       initial={{opacity: 0}}
                       whileInView={{opacity: 1}}

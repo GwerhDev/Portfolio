@@ -7,11 +7,13 @@ import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts";
 import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png";
 import { DevProjects } from "../../components/DevProjects/DevProjects";
 import { Separator } from "../../components/Utils/Separator/Separator";
+import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   return ( 
     <div className={s.devCont}>
+      <InfoCanvas/>
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
       <Separator marginTop="0px"/>      
       <Featured language={language}/>

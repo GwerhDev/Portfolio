@@ -1,10 +1,65 @@
 .infoContainer{
-    width: 80vw;
-    height: 80vh;
-    padding: 100px;
-    background-color: rgba(0, 0, 0, 0.829);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.closeButton{
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-family: Trajan;
+    transition-duration: .4s;
+}
+
+.closeButton:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #171717;
+}
+
+.ulCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.infoDiv{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    margin: 0;
+    background-color: var(--color-primary);
     border-radius: 15px;
     box-shadow: 0px 0px 10px black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+    background-repeat: 'no-repeat';
+    background-size: '300%';
+    background-position: center;
 }
 
 .infoContainer p {

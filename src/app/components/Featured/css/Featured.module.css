@@ -21,8 +21,8 @@
 }
 
 .infoCont{
+    width: 100%;
     position: relative;
-    padding: 50px;
     padding-top: 0;
     display: flex;
     flex-direction: column;
@@ -30,17 +30,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 50%;
-    margin-left: -20px;
+    margin-left: 20px;
 }
 
 .featuredWrap,
 .secondMobile,
 .secondDesktop{
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 50px;
-    margin-left: 45px;
     justify-content: space-around;
     background-color: rgba(143, 143, 143, 0.37);
     margin-bottom: 10px;
@@ -100,6 +98,7 @@
     opacity: .7;
     filter: grayscale(1);
     transition-duration: .4s;
+    margin-bottom: -10px;
 }
   
 .titleItem img:hover {
@@ -108,15 +107,26 @@
 }
 
 @media screen and (max-width: 800px) {
+    .buttonsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
     .titleItem{
         width: 100%;
         height: auto;
-        font-size: 8px;
+        font-size: 9px;
         text-align: left;
         display: flex;
+        flex-direction: column;
         vertical-align: middle;
         align-items: center;
         justify-content: space-between;
+    }
+    .titleItem img{
+        margin-bottom: -3.5px;
     }
     .wrapper{
         scale: .7

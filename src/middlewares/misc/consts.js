@@ -6,7 +6,7 @@ export const GET_SOUND = 'GET_SOUND';
 export const GET_DESIGN = 'GET_DESIGN';
 export const SET_MENU = 'SET_MENU';
 export const GET_LOGIN = 'GET_LOGIN';
-
+export const SET_INFO_IMG = 'SET_INFO_IMG'
 
 
 export const GET_DESCRIPTION_DEV={

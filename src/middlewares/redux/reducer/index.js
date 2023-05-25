@@ -1,4 +1,4 @@
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_DEVELOP, GET_SOUND, GET_DESIGN, SET_MENU, GET_LOGIN } from "../../misc/consts"
+import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_DEVELOP, GET_SOUND, GET_DESIGN, SET_MENU, GET_LOGIN, SET_INFO_IMG } from "../../misc/consts"
 const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
 
@@ -9,7 +9,8 @@ const initialState = {
     sound: '',
     design: '',
     menu: '',
-    currentUser: ''
+    currentUser: '',
+    infoImg: ''
 }
 
 export default function rootReducer(state = initialState, action){
@@ -62,6 +63,11 @@ export default function rootReducer(state = initialState, action){
                     googlePic: action.payload.msg.googlePic,
                 } : user,
             };
+        case SET_INFO_IMG:
+            return {
+                ...state,
+                infoImg: action.payload
+            }
         default:
             return {...state}
     }
