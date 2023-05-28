@@ -27,7 +27,7 @@ function App() {
           <Landing/>
         </Route>
         <Route exact path='/home'>
-          <Header title={"LaloFreak | Deveñop, Disign & Sound"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"LaloFreak | Develop, Design & Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <Home/>
           <LateralCanvas/>
           <Navigator/>
