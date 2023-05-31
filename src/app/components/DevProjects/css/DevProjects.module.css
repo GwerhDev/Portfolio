@@ -204,6 +204,10 @@
     font-size: 18px;
   }
   
+  .devLi img{
+    margin-top: 2px;
+  }
+
   @media (max-width: 950px) {
     .text {
       display: flex;
