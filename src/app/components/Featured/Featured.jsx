@@ -22,13 +22,13 @@ export const Featured = (props) => {
                                 <InfoButton img={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')} />
                             </div>
                         </div>
-                        <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
-                            <div className={s.wrapper}>
-                                <div className={s.imageContainer}>
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
                                     <img src={ RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4') } alt="" />
-                                </div>
+                                </a> 
                             </div>
-                        </a> 
+                        </div>
                     </div>
                     <div className={s.featuredWrap} id='second'>
                         <div className={s.titleItem}>
@@ -38,13 +38,13 @@ export const Featured = (props) => {
                                 <InfoButton img={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') }/>
                             </div>               
                         </div>
-                        <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
-                            <div className={s.wrapper}>
-                                <div className={s.imageContainer}>
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
                                     <img src={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') } alt="" />
-                                </div>
+                                </a> 
                             </div>
-                        </a> 
+                        </div>
                     </div>
                     <div className={s.featuredWrap} id='third'>
                         <div className={s.titleItem}>
@@ -54,13 +54,13 @@ export const Featured = (props) => {
                                 <InfoButton img={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') }/>
                             </div>
                         </div>
-                        <a href="http://worldofgwerh.terminalkiller.site" target="_blank" rel="noreferrer">
-                            <div className={s.wrapper}>
-                                <div className={s.imageContainer}>
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <a href="http://worldofgwerh.terminalkiller.site" target="_blank" rel="noreferrer">
                                     <img src={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') } alt="" />
-                                </div>
-                            </div>  
-                        </a> 
+                                </a> 
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </Slider>
