@@ -17,7 +17,6 @@ export const Develop = () => {
       <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
       <Separator marginTop="0px"/>      
       <Featured language={language}/>
-      <Separator marginTop="-80px"/>      
       <DevProjects language={language}/>
       <Skills language={language}/>
     </div>

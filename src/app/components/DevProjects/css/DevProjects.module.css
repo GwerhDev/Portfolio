@@ -201,6 +201,7 @@
     vertical-align: middle;
     width: auto;
     height: auto;
+    font-size: 18px;
   }
   
   @media (max-width: 950px) {
@@ -226,8 +227,9 @@
     .devLi img {
       padding: 0px;
       margin: 0px;
-      margin-top: -3px;
-      scale: 0.7;
+      margin-top: 7px;
+      width: 18px;
+      height: 18px;
     }
   
     .parr {
@@ -239,7 +241,8 @@
     }
   
     .devLi h1 {
-      font-size: 15px;
+      font-size: 13px;
+      margin-top: 2px;
     }
   
     .viewerUl {
