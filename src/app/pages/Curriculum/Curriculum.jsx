@@ -38,7 +38,7 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show Complete CV
+                            Show Complete CV - English
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-aiOos4lB-VD7WBc3ly-lZTcCuIqAa74/view?usp=sharing' 
@@ -46,7 +46,7 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show FullStack Developer CV
+                            Show FullStack Developer CV - English
                     </a>
                 </ul>
             </div>
@@ -65,7 +65,7 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Completo
+                            Ver CV Completo - Español
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-gkdCuhXXkViQRRaYXZOA50_P7uMfDgX/view?usp=sharing' 
@@ -73,7 +73,7 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Desarrollador FullStack
+                            Ver CV Desarrollador FullStack - Español
                     </a>
                 </ul>
             </div>

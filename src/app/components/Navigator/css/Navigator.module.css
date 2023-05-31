@@ -22,7 +22,6 @@
   margin-bottom: 2px;
   position: relative;
 }
-
 .profileImg{
   background-image: url(../../../../assets/images/png/menu-icon.png);
 }
@@ -44,7 +43,6 @@
 .logoutImg{
   background-image: url(../../../../assets/images/png/logout-icon.png);
 }
-
 .profileImg,
 .homeImg,
 .webImg, 
@@ -74,7 +72,6 @@
   cursor: pointer;
   scale: 1.2;
 }
-
 .menuItem{
   transition-duration: .4s;
   scale: 0;
