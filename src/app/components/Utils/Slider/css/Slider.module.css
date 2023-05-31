@@ -22,7 +22,6 @@
   display: flex;
   justify-content: center;
   margin-left: 20px;
-
 }
 
 .buttons{
@@ -30,8 +29,8 @@
   background-color: rgba(143, 143, 143, 0.37);
   border: none;
   color: white;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 #prev{
@@ -46,4 +45,28 @@
 .buttons:hover{
   background-color: rgba(131, 131, 131, 0.425);
   cursor: pointer;
+}
+
+.prevButton{
+  rotate: 90deg;
+  opacity: .7;
+  transition-duration: .4s;
+}
+
+.nextButton{
+  rotate: -90deg;
+  opacity: .7;
+}
+
+@media screen and (max-width: 1000px) {
+  .buttons{
+    padding: 13px;
+  }
+  #prev{
+    margin-right: 10px;
+  }
+  
+  #next{
+    margin-left: 10px;
+  }
 }

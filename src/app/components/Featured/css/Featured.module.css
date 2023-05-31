@@ -75,13 +75,6 @@
     position: relative;
     backface-visibility: hidden;
 }
-.secondMobile{
-    display: none;
-}
-
-.secondDesktop{
-    display: flex;
-}
 
 .titleItem img {
     width: 30px;
@@ -99,7 +92,7 @@
     scale: 1.1;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     .buttonsContainer{
         display: flex;
         flex-direction: row;
@@ -110,26 +103,31 @@
     .titleItem{
         width: 100%;
         height: auto;
-        font-size: 9px;
+        font-size: 7px;
         text-align: center;
         display: flex;
         flex-direction: column;
         vertical-align: middle;
         align-items: center;
         justify-content: space-between;
-        margin-left: 25px;
     }
     .titleItem img{
         margin-bottom: -3.5px;
     }
     .wrapper{
-        scale: .7;
+        scale: .6;
     }
     .featuredWrap{
         justify-content: center;
+        align-items: center;
         flex-direction: column;
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-right: -10px;
+        margin-left: -10px;
     }
     .imageContainer{
-        margin-left: 100px;
+        margin-left: 35px;
     }
 }

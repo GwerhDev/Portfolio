@@ -76,7 +76,11 @@ code {
 }
 
 #second, #third{
-  transition-duration: .4;
-  opacity: 0;
-  scale: 0;
+  transition: .7s;
+  opacity: 0.4;
+  transform: rotateY(90deg)
+}
+
+#first {
+  transition: .7s;
 }
