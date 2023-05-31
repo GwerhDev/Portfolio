@@ -6,7 +6,7 @@
     padding: 0;
     background-color: rgba(0, 0, 0, 0.582);
     box-shadow: 0px 0px 10px black;
-    z-index: 1;
+    z-index: 99;
     display: none;
     justify-content: center;
     vertical-align: middle;

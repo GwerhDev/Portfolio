@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -73,4 +73,10 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-background-hover);
+}
+
+#second, #third{
+  transition-duration: .4;
+  opacity: 0;
+  scale: 0;
 }
