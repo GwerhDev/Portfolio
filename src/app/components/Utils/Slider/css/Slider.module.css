@@ -51,6 +51,11 @@
   transition-duration: .4s;
 }
 
+.buttons:disabled{
+  opacity: .4;
+  cursor: default;
+}
+
 .nextButton{
   rotate: -90deg;
   opacity: .7;

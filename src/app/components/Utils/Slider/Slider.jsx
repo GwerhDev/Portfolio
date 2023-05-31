@@ -9,7 +9,7 @@ export const Slider = ({ children }) => {
 
   return (
     <div className={s.container}>
-      <button id={s.prev} className={s.buttons} onClick={()=>{return previous(k, setK)}}>
+      <button id={s.prev} disabled={k<=1} className={s.buttons} onClick={()=>{return previous(k, setK)}}>
         <img className={s.prevButton} width={20} src={arrowIcon} alt="" />
       </button>
       <div className={s.slider} id={'slider'} ref={sliderRef}>
