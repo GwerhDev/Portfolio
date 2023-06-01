@@ -14,6 +14,7 @@ export const Menu = () => {
                 onClick={()=>{return (
                     dispatch(setOption('introduction')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                    document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                     )}
                 }
@@ -28,6 +29,7 @@ export const Menu = () => {
                 onClick={()=>{return (
                     dispatch(setOption('bio')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                    document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                 )}}
             >
@@ -40,6 +42,7 @@ export const Menu = () => {
                 onClick={()=>{return (
                     dispatch(setOption('cv')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                    document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                     )}}
                     >

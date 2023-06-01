@@ -8,5 +8,6 @@
     position: absolute;
     overflow-y: auto;
     transform: translateX(-40vw);
+    opacity: 0;
     transition-duration: 1s;
 }

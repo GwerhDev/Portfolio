@@ -34,6 +34,7 @@ export const Navigator = () => {
             id='profile'
             onClick={()=>{return (
               document.querySelector('#profileLalo').style.transform='translateX(0)',
+              document.querySelector('#profileLalo').style.opacity='1',
               document.querySelector('#navCont').style.transform='translateX(40vw)'
               )}}
               onMouseEnter={()=>{return(document.querySelector('#menu').style.scale='1')}}
@@ -50,6 +51,7 @@ export const Navigator = () => {
               onClick={()=>{return (
                 dispatch(setOption('home')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                document.querySelector('#profileLalo').style.opacity='0',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
                 onMouseEnter={()=>{return(document.querySelector('#menuHome').style.scale='1')}}
@@ -67,6 +69,7 @@ export const Navigator = () => {
               onClick={()=>{return (
                 dispatch(setOption('develop')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                document.querySelector('#profileLalo').style.opacity='0',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
                 onMouseEnter={()=>{return(document.querySelector('#menuDevelop').style.scale='1')}}
@@ -84,6 +87,7 @@ export const Navigator = () => {
               onClick={()=>{return (
                 dispatch(setOption('design')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                document.querySelector('#profileLalo').style.opacity='0',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
                 onMouseEnter={()=>{return(document.querySelector('#menuDesign').style.scale='1')}}
@@ -101,6 +105,7 @@ export const Navigator = () => {
               onClick={()=>{return (
                 dispatch(setOption('sound')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                document.querySelector('#profileLalo').style.opacity='0',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
                 onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
@@ -118,6 +123,7 @@ export const Navigator = () => {
               onClick={()=>{return (
                 dispatch(setOption('contact')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
+                document.querySelector('#profileLalo').style.opacity='0',
                 document.querySelector('#navCont').style.transform='translateX(0vw)'
                 )}}
                 onMouseEnter={()=>{return(document.querySelector('#menuContact').style.scale='1')}}
