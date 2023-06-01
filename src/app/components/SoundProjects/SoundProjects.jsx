@@ -15,7 +15,7 @@ export const SoundProjects = (props) => {
   }, [dispatch])
   
   return (
-    <>
+    <div className={s.worksContainer}>
       <div className={s.works}>
         <ul className={s.devUl}>
           {
@@ -84,6 +84,6 @@ export const SoundProjects = (props) => {
           }
         </ul>
       </div>
-    </>
+    </div>
   )
 }
