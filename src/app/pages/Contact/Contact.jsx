@@ -68,7 +68,11 @@ export const Contact = () => {
       transition={{duration: 1}}
       animate={{opacity:1}}
       >
-      <Title title={language==='EN'? 'contact' : 'contacto'} />
+      <div className={s.titleContainer}>
+        <div className={s.titleContPerc}>
+          <Title title={language==='EN'? 'contact' : 'contacto'} />
+        </div>
+      </div>
       {showForm && (
         <div className={s.divFormCont}>
           <form className={s.formCont} onSubmit={handleSubmit}>

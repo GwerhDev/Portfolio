@@ -8,12 +8,10 @@
     display: flex;
     margin: 0;
     padding: 0;
-    max-width: 70%;
-    margin-left: 15%;
-    margin-top: 10rem;
+    max-width: 100%;
+    margin-top: 8rem;
     justify-content: space-around;
     position: relative;
-    left: 10px;
     text-align: center;
     min-height: 300px;
 }

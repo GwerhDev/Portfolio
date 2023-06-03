@@ -22,6 +22,19 @@
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContPerc{
+    width: 60%;
 }
 
 .pdfCont{

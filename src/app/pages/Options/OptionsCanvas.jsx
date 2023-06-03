@@ -23,7 +23,8 @@ export const OptionCanvas = () => {
     }
     return (
         <div className={s.contOptions}>
-            <Title title={langOption(option)} />
+            <div className={s.titleContainer}>
+                <Title title={langOption(option)} />
             <motion.div 
             initial={{opacity:0, x:-10}}
             transition={{duration: 1}}
@@ -101,6 +102,7 @@ export const OptionCanvas = () => {
             </>
             :null}
             </motion.div>
+            </div>
 
         </div>
     )

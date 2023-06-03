@@ -1,43 +1,44 @@
 .slider{
-  width: 50vw;
+  width: 100%;
   transition-duration: .4s;
-  display: flex;
-  justify-content: space-around;
 }
 
 .sliderCont{
-  width: 50vw;
+  width: 100%;
 }
 
 .sliderViewer{
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   transition-duration: .4s;
-  justify-content: space-between;
 }
 
 .container{
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 20px;
 }
 
 .buttons{
   z-index: 1;
-  background-color: rgba(143, 143, 143, 0.37);
+  background-color: rgba(143, 143, 143, 0);
   border: none;
   color: white;
+  padding: 10px;
+  transition-duration: .4s;
 }
 
 #prev{
+  position: relative;
   border-bottom-left-radius: 15px;
-
+  left: 40px;
 }
 
 #next{
+  position: relative;
   border-bottom-right-radius: 15px;
+  right: 40px;
 }
 
 .buttons:hover{
@@ -49,6 +50,7 @@
   rotate: 90deg;
   opacity: .7;
   transition-duration: .4s;
+
 }
 
 .buttons:disabled{
@@ -63,7 +65,7 @@
 
 @media screen and (max-width: 1100px) {
   .buttons{
-    padding: 0px;
+    padding: 5px;
   }
   #prev{
     margin-right: 10px;

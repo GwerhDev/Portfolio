@@ -23,7 +23,11 @@ export const Curriculum = () => {
     }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contCV}>
-            <Title title='curriculum vitae'/>            
+            <div className={s.titleContainer}>
+                <div className={s.titleContPerc}>
+                    <Title title='curriculum vitae'/>            
+                </div>
+            </div>
             { language === "EN"?
             <motion.div 
             initial={{opacity:0}}

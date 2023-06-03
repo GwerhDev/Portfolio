@@ -4,6 +4,7 @@
   height: auto;
   top: 10px;
   right: 20px;
+  z-index: 4;
 }
 .ulCont>button{
   font-family: Trajan;
