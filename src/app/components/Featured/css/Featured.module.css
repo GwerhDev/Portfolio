@@ -40,10 +40,11 @@
     backdrop-filter: blur(10px);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    padding-right: 80px;
 }
 
 .wrapper {
-    width: 320px;
+    width: 360px;
     height: 180px;
     perspective: 1000px;
     position: relative;
