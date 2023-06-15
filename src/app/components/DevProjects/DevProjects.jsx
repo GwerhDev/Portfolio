@@ -34,7 +34,7 @@ export const DevProjects = (props) => {
   return ( 
     <div className={s.devContainer}>
       <div className={s.titleSection}>
-        <Title color='black' backgroundColor={true} title={ language==='EN'? `more (${total})`:`mas (${total})` }/>
+        <Title color='black' backgroundColor={true} title={ language==='EN'? `all (${total})`:`todos (${total})` }/>
       </div>
       <div className={s.devProjectContainer}>
         <motion.div
