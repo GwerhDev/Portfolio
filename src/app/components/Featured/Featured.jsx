@@ -19,7 +19,16 @@ export const Featured = (props) => {
                             <h2>Artificial Intelligence app</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/LaloFreak/ArtificialIntelligence-Client"/>
-                                <InfoButton img={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')} />
+                                <InfoButton 
+                                    img={ RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4') }
+                                    title="ARTIFICIAL INTELLIGENCE APP - TESTING"
+                                    type="featured"
+                                    description=""
+                                    technologies=""
+                                    role=""
+                                    url="https://terminalkiller.site/#/ai-testing"
+                                    github="https://github.com/LaloFreak/ArtificialIntelligence-Client"
+                                />                            
                             </div>
                         </div>
                         <div className={s.wrapper}>
@@ -35,7 +44,16 @@ export const Featured = (props) => {
                             <h2>la Ruina tv</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/LaloFreak/La-Ruina-TV-client"/>   
-                                <InfoButton img={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') }/>
+                                <InfoButton 
+                                    img={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') }
+                                    title="LA RUINA TV"
+                                    type="featured"
+                                    technologies=""
+                                    description=""
+                                    role=""
+                                    url="https://tv.laruinarecords.cl"
+                                    github="https://github.com/LaloFreak/La-Ruina-TV-client"
+                                />
                             </div>               
                         </div>
                         <div className={s.wrapper}>
@@ -51,8 +69,17 @@ export const Featured = (props) => {
                             <h2>world of Gwerh</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/LaloFreak/World-of-Gwerh"/>
-                                <InfoButton img={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') }/>
-                            </div>
+                                <InfoButton 
+                                    img={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') }
+                                    title="WORLD OF GWERH"
+                                    type="featured"
+                                    description=""
+                                    technologies=""
+                                    role=""
+                                    url="http://worldofgwerh.terminalkiller.site"
+                                    github="https://github.com/LaloFreak/World-of-Gwerh"
+                                />                            
+                        </div>
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>

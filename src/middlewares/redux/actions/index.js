@@ -1,5 +1,15 @@
 import axios from "axios";
-import { RESET_OPTION, SET_OPTION, SET_LANGUAGE, GET_DEVELOP, GET_DESIGN, GET_SOUND, SET_MENU, GET_LOGIN, SET_INFO_IMG } from "../../misc/consts";
+import { 
+    RESET_OPTION, 
+    SET_OPTION, 
+    SET_LANGUAGE, 
+    GET_DEVELOP, 
+    GET_DESIGN, 
+    GET_SOUND, 
+    SET_MENU, 
+    GET_LOGIN, 
+    SET_INFO
+ } from "../../misc/consts";
 import { URL_API } from "../../misc/config";
 
 export const getDevelop = () => {
@@ -75,9 +85,9 @@ export function loginWithGoogle(accessToken){
     }
 }
 
-export function setInfoImg(img){
+export function setInfo(info){
     return { 
-        type: SET_INFO_IMG,
-        payload: img
+        type: SET_INFO,
+        payload: info
     }
 }
