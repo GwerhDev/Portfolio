@@ -73,7 +73,7 @@
 
 .cathegoryDescription{
   height: auto;
-  width: 50%;
+  width:40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,5 +102,9 @@
   }
   .cathegoryDescription p{
     font-size: 12px;
+  }
+
+  .cathegoryDescription{
+    width: 100%;
   }
 }
