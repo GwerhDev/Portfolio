@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import s from './css/DevList.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { RenderDriveImg } from '../../../functions/RenderDriveImg';
-import { setInfo } from '../../../middlewares/redux/actions';
+import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 import loadingImg from "../../../assets/images/gif/loading.gif";
 
 export const DevList = (props) => {
-  const API = useSelector(state=>state.programming);
-  const dispatch = useDispatch();
   const { language } = props;
+  const dispatch = useDispatch();
+  const API = useSelector(state=>state.programming);
+  useEffect(()=>{
+    dispatch(getDevelop())
+  }, [dispatch])
+
   return (
     <div className={s.devCont}>
       <ul className={s.devUlCont}>
