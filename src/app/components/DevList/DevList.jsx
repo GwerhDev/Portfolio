@@ -1,22 +1,25 @@
 import React, { useEffect } from 'react';
-import s from './css/DevList.module.css'
+import s from './css/DevList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { RenderDriveImg } from '../../../functions/RenderDriveImg';
 import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
+import { NavFilter } from '../NavFilter/NavFilter';
 import loadingImg from "../../../assets/images/gif/loading.gif";
 
 export const DevList = (props) => {
   const { language } = props;
   const dispatch = useDispatch();
-  const API = useSelector(state=>state.programming);
-  useEffect(()=>{
-    dispatch(getDevelop())
-  }, [dispatch])
+  const API = useSelector(state => state.programming);
+
+  useEffect(() => {
+    dispatch(getDevelop());
+  }, [dispatch]);
 
   return (
     <div className={s.devCont}>
-      <ul className={s.devUlCont}>
+      <NavFilter language={language}/>
+      <ul className={s.devUlCont} id='devListWebSection'>
         <div className={s.cathegoryDescription}>
           <h1>Web</h1>
           <p>{language==='EN'?'Web Applications':'Aplicaciones Web'}</p>
@@ -48,7 +51,7 @@ export const DevList = (props) => {
           )
         })}
       </ul>
-      <ul className={s.devUlCont}>
+      <ul className={s.devUlCont} id='devListDesktopSection'>
         <div className={s.cathegoryDescription}>
           <h1>{language==='EN'?'Desktop':'Escritorio'}</h1>
           <p>{language==='EN'?'Desktop Applications':'Aplicaciones de Escritorio'}</p>
@@ -80,10 +83,10 @@ export const DevList = (props) => {
           )
         })}
       </ul>
-      <ul className={s.devUlCont}>
+      <ul className={s.devUlCont} id='devListMobileSection'>
         <div className={s.cathegoryDescription}>
           <h1>{language==='EN'?'Mobile':'Movil'}</h1>
-          <p>{language==='EN'?'Desktop Applications':'Aplicaciones de Escritorio'}</p>
+          <p>{language==='EN'?'Mobile Applications':'Aplicaciones de Móvil'}</p>
         </div>
         {
           API?.at(2)?.mobile?.map((e,index)=>{
@@ -112,7 +115,7 @@ export const DevList = (props) => {
           )
         })}
       </ul>
-      <ul className={s.devUlCont}>
+      <ul className={s.devUlCont} id='devListSoftwareSection'>
         <div className={s.cathegoryDescription}>
           <h1>Software</h1>
           <p>{language==='EN'?'Software developing':'Desarrollo de Software'}</p>

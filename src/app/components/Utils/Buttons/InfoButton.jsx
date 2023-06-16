@@ -6,7 +6,6 @@ import { setInfo } from '../../../../middlewares/redux/actions';
 
 export const InfoButton = (props) => {
   const { img, title, type, description, technologies, role, url, github, language } = props;
-  console.log(description)
   const dispatch = useDispatch()
   return (
     <button className={s.button} onClick={()=>{
