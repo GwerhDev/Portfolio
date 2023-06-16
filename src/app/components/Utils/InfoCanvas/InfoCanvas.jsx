@@ -25,22 +25,24 @@ export const InfoCanvas = () => {
                                 width: info.type !== 'mobile'? `300px`: 'auto',                            
                             }} 
                         />
-                        <p>{info.description}</p>
-                        <p>{info.technologies}</p>
-                        <p>{info.role}</p>
                         <div className={s.buttonsCont}>
-                            <button className={s.divButton}>
+                            <button className={s.divButtonA}>
                                 <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'> 
                                     <p>Visitar</p>
-                                    <img src={linkIcon} alt="" height="20px" />
                                 </a>
                             </button>
-                            <button className={s.divButton}>
+                            <button className={s.divButtonA}>
                                 <a className={s.divButton} href={info.github} target='_blank' rel='noreferrer'> 
                                     <p>GitHub</p>
-                                    <img src={linkIcon} alt="" height="20px" />
                                 </a>
                             </button>
+                        </div>
+                        <div className={s.externalTextCont}>
+                            <div className={s.textCont}>
+                                <p>{info.description}</p>
+                                <p>{info.technologies}</p>
+                                <p>{info.role}</p>
+                            </div>
                         </div>
                     </div>
                 </ul>

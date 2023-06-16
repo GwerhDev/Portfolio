@@ -68,18 +68,50 @@
     display: flex;
 }
 
+.divButtonA{
+    background-color: transparent;
+    border: none;
+}
+
 .divButton{
     display: flex;
-    background-color: #171717;
+    width: 100px;
     justify-content: center;
+    background: linear-gradient(230deg, rgb(185, 185, 185), #bfbfbf 85%);
     align-items: center;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    transition: .4s;
+}
+
+.divButton p{
+    color: #171717;
+    text-shadow: none;
+    transition: .4s;
+}
+
+.divButton:hover{
+    background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+}
+
+.divButton:hover p{
+    color: white;
 }
 
 .buttonsCont{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.textCont{
+    max-width: 280px;
+    text-align: left;
+}
+
+.externalTextCont{
+    display: flex;
+    justify-content: center;
 }

@@ -6,7 +6,49 @@ import { GithubButton } from "../Utils/Buttons/GithubButton";
 import { Slider } from "../Utils/Slider/Slider";
 
 export const Featured = (props) => {
-    const { language } = props
+    const { language } = props;
+    const description = {
+        first:{
+            en: "Description: Tests and training for my first AI Application", 
+            es: "Descripción: Pruebas y entrenamiento para mi primera Aplicación IA"
+        },
+        second:{
+            en: "Description: Multimedia Platform", 
+            es: "Descripción: Plataforma Multimedia"
+        },
+        third:{
+            en: "Description: Art & Entertainment", 
+            es: "Descripción: Arte y Entretenimiento"
+        },
+    }
+    const technologies = {
+        first:{
+            en: "Technologies: ReactJs, NodeJs, Python, TensorFlowJs", 
+            es: "Tecnologías: ReactJs, NodeJs, Python, TensorFlowJs"
+        },
+        second:{
+            en: "Technologies: ReactJs, NodeJs, ExpressJs", 
+            es: "Tecnologías: ReactJs, NodeJs, ExpressJs"
+        },
+        third:{
+            en: "Technologies: ReactJs, NodeJs", 
+            es: "Tecnologías: ReactJs, NodeJs"
+        },
+    }
+    const role = {
+        first:{
+            en: "Role: IA Training, Machine Learning, FullStack Developer, UI/UX Designer", 
+            es: "Rol: Entrenamiento IA, Machine Learning, Desarrollador FullStack, Diseñador UI/UX"
+        },
+        second:{
+            en: "Role: FullStack Developer, UI/UX Designer", 
+            es: "Rol: Desarrollador FullStack, Diseñador UI/UX"
+        },
+        third:{
+            en: "Role: FullStack Developer, UI/UX Designer", 
+            es: "Rol: Desarrollador FullStack, Diseñador UI/UX"
+        },
+    }
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
@@ -23,11 +65,12 @@ export const Featured = (props) => {
                                     img={ RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4') }
                                     title="ARTIFICIAL INTELLIGENCE APP - TESTING"
                                     type="featured"
-                                    description=""
-                                    technologies=""
-                                    role=""
+                                    description={description.first}
+                                    technologies={technologies.first}
+                                    role={role.first}
                                     url="https://terminalkiller.site/#/ai-testing"
                                     github="https://github.com/LaloFreak/ArtificialIntelligence-Client"
+                                    language={language}
                                 />                            
                             </div>
                         </div>
@@ -48,9 +91,9 @@ export const Featured = (props) => {
                                     img={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') }
                                     title="LA RUINA TV"
                                     type="featured"
-                                    technologies=""
-                                    description=""
-                                    role=""
+                                    description={description.second}
+                                    technologies={technologies.second}
+                                    role={role.second}
                                     url="https://tv.laruinarecords.cl"
                                     github="https://github.com/LaloFreak/La-Ruina-TV-client"
                                 />
@@ -73,9 +116,9 @@ export const Featured = (props) => {
                                     img={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') }
                                     title="WORLD OF GWERH"
                                     type="featured"
-                                    description=""
-                                    technologies=""
-                                    role=""
+                                    description={description.third}
+                                    technologies={technologies.third}
+                                    role={role.third}
                                     url="http://worldofgwerh.terminalkiller.site"
                                     github="https://github.com/LaloFreak/World-of-Gwerh"
                                 />                            
