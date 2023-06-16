@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const PresentationCard = (props) => {
     const { img, language, description, hideCircle } = props
     return (
-      <div className={s.viewerCont}>
+      <div className={s.viewerCont} id='presentationCardSection'>
           <motion.div 
           initial={{opacity:0}}
           transition={{duration: 1}}

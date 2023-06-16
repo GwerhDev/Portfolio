@@ -1,4 +1,4 @@
-export const ScrollToSection = (id) => {
+export const ScrollToSection = (id, behavior) => {
   const element = document.getElementById(id);
-  element.scrollIntoView({ behavior: 'smooth' });
+  element.scrollIntoView({ behavior: behavior?? 'smooth' });
 };

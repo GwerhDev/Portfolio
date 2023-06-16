@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.liAll{
+  text-decoration: overline underline;
+}
+
 .mobile{
   display: none;
 }

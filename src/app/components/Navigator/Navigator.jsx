@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { setOption } from "../../../middlewares/redux/actions";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import { disappear, optionActive } from "../../../functions/NavigationFunctions";
+import { ScrollToSection } from "../../../functions/ScrollToSection";
 
 export const Navigator = () => {
   const dispatch = useDispatch()
@@ -67,6 +68,7 @@ export const Navigator = () => {
               className={s.webImg}
               id='develop'
               onClick={()=>{return (
+                ScrollToSection('presentationCardSection','auto'),
                 dispatch(setOption('develop')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                 document.querySelector('#profileLalo').style.opacity='0',
@@ -85,6 +87,7 @@ export const Navigator = () => {
               className={s.designImg}
               id='design'
               onClick={()=>{return (
+                ScrollToSection('presentationCardSection','auto'),
                 dispatch(setOption('design')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                 document.querySelector('#profileLalo').style.opacity='0',
@@ -103,6 +106,7 @@ export const Navigator = () => {
               className={s.soundImg}
               id='sound'
               onClick={()=>{return (
+                ScrollToSection('presentationCardSection','auto'),
                 dispatch(setOption('sound')),
                 document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                 document.querySelector('#profileLalo').style.opacity='0',

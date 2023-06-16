@@ -1,34 +1,40 @@
 import React from 'react';
 import s from './css/NavFilter.module.css';
-import { ScrollToSection } from '../../../functions/ScrollToSection';
+import NavFilterFunctions from '../../../functions/NavFilterFunctions';
 
 export const NavFilter = (props) => {
   const { language } = props;
 
   const handleSelectChange = (event) => {
     const selectedSection = event.target.value;
-    ScrollToSection(selectedSection);
+    NavFilterFunctions(selectedSection);
   };
 
   return (
     <div className={s.navExtContainer}>
       <div className={s.navIntContainer}>
         <ul className={`${s.navList} ${s.desktop}`}>
-          <li onClick={() => ScrollToSection('devListWebSection')}>
+          <li id='allLi' className={s.liAll} onClick={() => NavFilterFunctions('all','allLi')}>
+            {language === 'EN' ? 'all' : 'todo'}
+          </li>
+          <li id='webLi' onClick={() => NavFilterFunctions('devListWebSection','webLi')}>
             web
           </li>
-          <li onClick={() => ScrollToSection('devListDesktopSection')}>
+          <li id='desktopLi' onClick={() => NavFilterFunctions('devListDesktopSection','desktopLi')}>
             {language === 'EN' ? 'desktop' : 'escritorio'}
           </li>
-          <li onClick={() => ScrollToSection('devListMobileSection')}>
+          <li id='mobileLi' onClick={() => NavFilterFunctions('devListMobileSection','mobileLi')}>
             {language === 'EN' ? 'mobile' : 'movil'}
           </li>
-          <li onClick={() => ScrollToSection('devListSoftwareSection')}>
+          <li id='softwareLi' onClick={() => NavFilterFunctions('devListSoftwareSection','softwareLi')}>
             software
           </li>
         </ul>
         <ul className={`${s.navList} ${s.mobile}`}>
-          <select name="" id="" onChange={handleSelectChange}>
+          <select onChange={handleSelectChange}>
+            <option value="all">
+              {language === 'EN' ? 'all' : 'todo'}
+            </option>
             <option value="devListWebSection">web</option>
             <option value="devListDesktopSection">
               {language === 'EN' ? 'desktop' : 'escritorio'}
