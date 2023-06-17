@@ -6,8 +6,8 @@ export const NavFilter = (props) => {
   const { language } = props;
 
   const handleSelectChange = (event) => {
-    const selectedSection = event.target.value;
-    NavFilterFunctions(selectedSection);
+    const id = event.target.value;
+    NavFilterFunctions(id);
   };
 
   return (
@@ -35,14 +35,18 @@ export const NavFilter = (props) => {
             <option value="all">
               {language === 'EN' ? 'all' : 'todo'}
             </option>
-            <option value="devListWebSection">web</option>
+            <option value="devListWebSection">
+              web
+            </option>
             <option value="devListDesktopSection">
               {language === 'EN' ? 'desktop' : 'escritorio'}
             </option>
             <option value="devListMobileSection">
               {language === 'EN' ? 'mobile' : 'movil'}
             </option>
-            <option value="devListSoftwareSection">software</option>
+            <option value="devListSoftwareSection">
+              software
+            </option>
           </select>
         </ul>
       </div>

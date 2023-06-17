@@ -47,7 +47,7 @@ export const DevProjects = (props) => {
               <li key={'title1'} className={s.devLi} onClick={()=> {shownState1==="none"? setShownState1("flex") : setShownState1("none")}}>
                 <h1>
                     <img src={showMoreIcon} alt="" width="15px" style={{ rotate: shownState1==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
-                    <div className={s.text}>Web</div>
+                    <div className={s.text} id="title">Web</div>
                     <img src={webIcon} width="20px" height="20px" alt="web" />
                 </h1>
               </li>
@@ -91,7 +91,7 @@ export const DevProjects = (props) => {
               <li key={'title2'} className={s.devLi} onClick={()=> {shownState2==="none"? setShownState2("flex") : setShownState2("none")}}>
                 <h1>
                   <img src={showMoreIcon} alt="" width="15px" style={{ rotate: shownState2==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
-                    <div className={s.text}>{language==='EN'?'Desktop':'Escritorio'}</div>
+                    <div className={s.text} id='title'>{language==='EN'?'Desktop':'Escritorio'}</div>
                   <img src={desktopIcon} width="20px" height="20px" alt="desktop" />
                 </h1>
               </li>
@@ -135,7 +135,7 @@ export const DevProjects = (props) => {
               <li key={'title3'} className={s.devLi} onClick={()=> {shownState3==="none"? setShownState3("flex") : setShownState3("none")}}>
                 <h1>
                   <img src={showMoreIcon} alt="" width="15px" style={{ rotate: shownState3==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
-                  <div className={s.text}>{language==='EN'?'Mobile': 'Movil'}</div>
+                  <div className={s.text} id="title">{language==='EN'?'Mobile': 'Movil'}</div>
                   <img src={mobileIcon} width="20px" height="20px" alt="mobile" />
                 </h1>
               </li>
@@ -179,7 +179,7 @@ export const DevProjects = (props) => {
               <li key={'title4'} className={s.devLi} onClick={()=> {shownState4==="none"? setShownState4("flex") : setShownState4("none")}}>
                 <h1>
                   <img src={showMoreIcon} alt="" width="15px" style={{ rotate: shownState4==="none"? '0deg' : '180deg', transitionDuration: '.4s'}}/>
-                  <div className={s.text}>Software</div>
+                  <div className={s.text} id="title">Software</div>
                   <img src={softwareIcon} width="20px" height="20px" alt="software" />
                 </h1>
               </li>

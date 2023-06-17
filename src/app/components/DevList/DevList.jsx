@@ -21,7 +21,7 @@ export const DevList = (props) => {
       <NavFilter language={language}/>
       <ul className={s.devUlCont} id='devListWebSection'>
         <div className={s.cathegoryDescription}>
-          <h1>Web</h1>
+          <h1 id="title">Web</h1>
           <p>{language==='EN'?'Web Applications':'Aplicaciones Web'}</p>
         </div>
         {
@@ -53,7 +53,7 @@ export const DevList = (props) => {
       </ul>
       <ul className={s.devUlCont} id='devListDesktopSection'>
         <div className={s.cathegoryDescription}>
-          <h1>{language==='EN'?'Desktop':'Escritorio'}</h1>
+          <h1 id="title">{language==='EN'?'Desktop':'Escritorio'}</h1>
           <p>{language==='EN'?'Desktop Applications':'Aplicaciones de Escritorio'}</p>
         </div>
         {
@@ -85,7 +85,7 @@ export const DevList = (props) => {
       </ul>
       <ul className={s.devUlCont} id='devListMobileSection'>
         <div className={s.cathegoryDescription}>
-          <h1>{language==='EN'?'Mobile':'Movil'}</h1>
+          <h1 id="title">{language==='EN'?'Mobile':'Movil'}</h1>
           <p>{language==='EN'?'Mobile Applications':'Aplicaciones de Móvil'}</p>
         </div>
         {
@@ -117,7 +117,7 @@ export const DevList = (props) => {
       </ul>
       <ul className={s.devUlCont} id='devListSoftwareSection'>
         <div className={s.cathegoryDescription}>
-          <h1>Software</h1>
+          <h1 id="title">Software</h1>
           <p>{language==='EN'?'Software developing':'Desarrollo de Software'}</p>
         </div>
         {
