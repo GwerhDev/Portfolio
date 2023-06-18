@@ -32,6 +32,9 @@ export const NavFilter = (props) => {
         </ul>
         <ul className={`${s.navList} ${s.mobile}`}>
           <select onChange={handleSelectChange}>
+          <option value="devListDesktopSection">
+              {language === 'EN' ? 'All' : 'Todo'}
+            </option>
             <option value="devListWebSection">
               Web
             </option>
