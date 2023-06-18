@@ -32,20 +32,17 @@ export const NavFilter = (props) => {
         </ul>
         <ul className={`${s.navList} ${s.mobile}`}>
           <select onChange={handleSelectChange}>
-            <option value="all">
-              {language === 'EN' ? 'all' : 'todo'}
-            </option>
             <option value="devListWebSection">
-              web
+              Web
             </option>
             <option value="devListDesktopSection">
-              {language === 'EN' ? 'desktop' : 'escritorio'}
+              {language === 'EN' ? 'Desktop' : 'Escritorio'}
             </option>
             <option value="devListMobileSection">
-              {language === 'EN' ? 'mobile' : 'movil'}
+              {language === 'EN' ? 'Mobile' : 'Movil'}
             </option>
             <option value="devListSoftwareSection">
-              software
+              Software
             </option>
           </select>
         </ul>

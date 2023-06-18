@@ -56,6 +56,7 @@ select{
   font-family: Trajan;
   text-indent: 15px;
   height: 40px;
+  font-size: 17px;
 }
 
 select:active, 
