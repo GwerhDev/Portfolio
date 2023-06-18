@@ -122,7 +122,7 @@ export const Featured = (props) => {
                                     url="http://worldofgwerh.terminalkiller.site"
                                     github="https://github.com/LaloFreak/World-of-Gwerh"
                                 />                            
-                        </div>
+                            </div>
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>

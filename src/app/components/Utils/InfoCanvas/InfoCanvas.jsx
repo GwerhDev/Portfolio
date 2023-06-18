@@ -4,10 +4,11 @@ import s from './css/InfoCanvas.module.css'
 import linkIcon from '../../../../assets/images/png/openwindow-white-icon.png'
 
 export const InfoCanvas = () => {
+    const language = useSelector(state=>state.language)
     const info = useSelector(state=>state.info)
     return (
         <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e)}>
-            <div className={s.infoDiv} style={{backgroundImage:`url(${info.img})`}}>
+            <div className={s.infoDiv} style={{ backgroundImage:`url(${info.img})` }}>
                 <ul className={s.ulCont} id='ulCont'>
                     {/* <button className={s.closeButton} onClick={() => closeInfoCanvas()}>x</button> */}
                     <a href={info.url} target='_blank' rel='noreferrer'> 
@@ -28,7 +29,7 @@ export const InfoCanvas = () => {
                         <div className={s.buttonsCont}>
                             <button className={s.divButtonA}>
                                 <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'> 
-                                    <p>Visitar</p>
+                                    <p>{language==='EN'? "Visit" : "Visitar"}</p>
                                 </a>
                             </button>
                             <button className={s.divButtonA}>
