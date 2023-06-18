@@ -33,7 +33,6 @@
 
 .navList li:hover{
   transition-duration: 4s;
-  text-decoration: overline underline;
   cursor: pointer;
 }
 
