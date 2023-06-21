@@ -12,6 +12,7 @@ import expressSVG from '../../../assets/images/svg/express-icon.svg';
 import postgresqlSVG from '../../../assets/images/svg/postgresql-icon.svg';
 import electronSVG from '../../../assets/images/svg/electronjs-icon.svg';
 import tensorflowSVG from '../../../assets/images/svg/tensorflow-icon.svg';
+import threeSVG from '../../../assets/images/svg/threejs-icon.svg';
 
 export const Skills = (props) => {
     const { language } = props
@@ -72,6 +73,10 @@ export const Skills = (props) => {
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={tensorflowSVG} alt="" />
                     <h5 style={{color:'white'}}>TensorFlow</h5>
+                </li>
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={threeSVG} alt="" />
+                    <h5 style={{color:'white'}}>ThreeJS</h5>
                 </li>
             </ul>
         </div>
