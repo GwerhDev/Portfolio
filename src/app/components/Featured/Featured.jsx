@@ -60,7 +60,7 @@ export const Featured = (props) => {
                         <div className={s.titleItem}>
                             <h2>Artificial Intelligence app</h2>
                             <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/LaloFreak/ArtificialIntelligence-Client"/>
+                                <GithubButton url="https://github.com/GwerhDev/ArtificialIntelligence-Client"/>
                                 <InfoButton 
                                     img={ RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4') }
                                     title="ARTIFICIAL INTELLIGENCE APP - TESTING"
@@ -69,7 +69,7 @@ export const Featured = (props) => {
                                     technologies={technologies.first}
                                     role={role.first}
                                     url="https://terminalkiller.site/#/ai-testing"
-                                    github="https://github.com/LaloFreak/ArtificialIntelligence-Client"
+                                    github="https://github.com/GwerhDev/ArtificialIntelligence-Client"
                                     language={language}
                                 />                            
                             </div>
@@ -86,7 +86,7 @@ export const Featured = (props) => {
                         <div className={s.titleItem}>
                             <h2>la Ruina tv</h2>
                             <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/LaloFreak/La-Ruina-TV-client"/>   
+                                <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client"/>   
                                 <InfoButton 
                                     img={ RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_') }
                                     title="LA RUINA TV"
@@ -95,7 +95,7 @@ export const Featured = (props) => {
                                     technologies={technologies.second}
                                     role={role.second}
                                     url="https://tv.laruinarecords.cl"
-                                    github="https://github.com/LaloFreak/La-Ruina-TV-client"
+                                    github="https://github.com/GwerhDev/La-Ruina-TV-client"
                                 />
                             </div>               
                         </div>
@@ -111,7 +111,7 @@ export const Featured = (props) => {
                         <div className={s.titleItem}>
                             <h2>world of Gwerh</h2>
                             <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/LaloFreak/World-of-Gwerh"/>
+                                <GithubButton url="https://github.com/GwerhDev/World-of-Gwerh"/>
                                 <InfoButton 
                                     img={ RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI') }
                                     title="WORLD OF GWERH"
@@ -120,7 +120,7 @@ export const Featured = (props) => {
                                     technologies={technologies.third}
                                     role={role.third}
                                     url="http://worldofgwerh.terminalkiller.site"
-                                    github="https://github.com/LaloFreak/World-of-Gwerh"
+                                    github="https://github.com/GwerhDev/World-of-Gwerh"
                                 />                            
                             </div>
                         </div>
