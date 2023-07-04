@@ -97,7 +97,7 @@ export const Featured = (props) => {
                                     url="https://tv.laruinarecords.cl"
                                     github="https://github.com/GwerhDev/La-Ruina-TV-client"
                                 />
-                            </div>               
+                            </div>
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
