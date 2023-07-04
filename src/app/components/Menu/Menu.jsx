@@ -51,7 +51,7 @@ export const Menu = () => {
                 </Link> 
             </div>
             <div className={s.contSL}>
-                <SocialLinks gitHub='https://github.com/LaloFreak' linkedIn='https://www.linkedin.com/in/lalofreak/' />
+                <SocialLinks gitHub='https://github.com/GwerhDev' linkedIn='https://www.linkedin.com/in/gwerh/'/>
             </div>        
         </>
     )
