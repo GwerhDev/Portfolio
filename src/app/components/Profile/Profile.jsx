@@ -16,7 +16,7 @@ export const Profile = () => {
             onClick={()=> profilePicClick(dispatch, resetOption)}
         />
         <h2 className={s.name}>Gerardo guarda</h2>
-        <h3 className={s.alias}>lalofreak</h3>
+        <h3 className={s.alias}>gwerh</h3>
     </>
     )
 };

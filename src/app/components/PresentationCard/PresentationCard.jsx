@@ -17,7 +17,7 @@ export const PresentationCard = (props) => {
       <ul className={s.viewerUl}>
         <h1 className={s.title}>Gerardo guarda
         <br/>
-          <p>lalofreak</p>
+          <p>gwerh</p>
           <div className={s.introCont}>
             <b className={s.parr}>
               {
