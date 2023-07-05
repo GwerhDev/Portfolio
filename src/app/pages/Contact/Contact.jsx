@@ -90,7 +90,7 @@ export const Contact = () => {
                   <img src={defaultUserIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black', marginLeft:'-40px'}} width='50px' height='50px' alt="" />
                 </a>
                 <a href={`${URL_API}/mail/google`} style={{borderRadius:'100%', cursor:'pointer', width:'25px', height:'25px', marginLeft:'-7px', backgroundColor:'white'}}>
-                  <img src={googleIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black'}} width='25px' alt="" /> <br />
+                  <img src={googleIcon} style={{borderRadius:'100%', boxShadow:'0px 0px 4px black', filter:'grayscale(.4)'}} width='25px' alt="" /> <br />
                 </a>
               </ul>
             }
@@ -108,6 +108,7 @@ export const Contact = () => {
             </label><br/>
             <button className={s.submitButton} type="submit">{language==='EN'? 'send' : 'enviar'}</button>
           </form>
+          <p>Puedes contactarme mediante otros servicios al correo <i>gwerh.dev@gmail.com</i></p>
         </div>
       )}
       {!showForm && (
