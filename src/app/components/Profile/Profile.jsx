@@ -1,7 +1,7 @@
 import s from "./css/Profile.module.css";
 import { useDispatch } from "react-redux";
 import { resetOption } from "../../../middlewares/redux/actions";
-import picLaloFreak from "../../../assets/images/png/LaloFreak.jpg";
+import picLaloFreak from "../../../assets/images/png/LaloFreak.png";
 import { profilePicClick } from "../../../functions/ProfileFunctions";
 
 export const Profile = () => {

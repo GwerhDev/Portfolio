@@ -8,14 +8,14 @@ import { Separator } from "../../components/Utils/Separator/Separator";
 import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
 import { DevList } from "../../components/DevList/DevList";
 /* import { DevProjects } from "../../components/DevProjects/DevProjects"; */
-import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png";
+import devIcon from '../../../assets/images/png/dev-icon.png';
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   return ( 
     <div className={s.devCont}>
       <InfoCanvas/>
-      <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_DEV}/>
+      <PresentationCard language={language} img={devIcon} description={GET_DESCRIPTION_DEV}/>
       <Separator marginTop="0px"/>      
       <Featured language={language}/>
       <DevList language={language}/>

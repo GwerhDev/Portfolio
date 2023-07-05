@@ -7,7 +7,7 @@ import { Gear } from "../../components/Gear/Gear";
 import { getSound } from "../../../middlewares/redux/actions";
 import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts";
 import { SoundProjects } from "../../components/SoundProjects/SoundProjects";
-import portfolioDevImg from "../../../assets/images/png/portfolio-dev-img.png";
+import soundIcon from '../../../assets/images/png/sound-icon.png';
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
@@ -19,7 +19,7 @@ export const Sound = () => {
   
   return (
     <div className={s.soundCont}>
-        <PresentationCard language={language} img={portfolioDevImg} description={GET_DESCRIPTION_SOUND}/>
+        <PresentationCard language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND}/>
       <div className={s.titleContainer}>
         <Title title={language==='EN'? 'portfolio: sound':'portafolio: sonido'}/>
       </div>
