@@ -108,7 +108,9 @@ export const Contact = () => {
             </label><br/>
             <button className={s.submitButton} type="submit">{language==='EN'? 'send' : 'enviar'}</button>
           </form>
-          <p>{language==="EN"? "You can also contact me through other services: " : "Puedes contactarme mediante otros servicios al correo: "} <i>gwerh.dev@gmail.com</i></p>
+          <div className={s.pInfoCont}>
+            <p className={s.pInfo}>{language==="EN"? "You can also contact me through other services: " : "Puedes contactarme mediante otros servicios al correo: "} <i>gwerh.dev@gmail.com</i></p>
+          </div>
         </div>
       )}
       {!showForm && (

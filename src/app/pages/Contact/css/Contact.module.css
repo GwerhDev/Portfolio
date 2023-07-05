@@ -13,6 +13,22 @@
     overflow: auto;
 }
 
+.pInfoCont{
+    width: 100%;
+    position: relative;
+    left: -50px;
+    padding: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #aaaaaa4b;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.pInfo{
+    font-size: 13px;
+}
+
 .titleContainer{
     width: 100%;
     display: flex;
