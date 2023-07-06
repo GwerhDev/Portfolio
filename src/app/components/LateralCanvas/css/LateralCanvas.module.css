@@ -10,4 +10,8 @@
     transform: translateX(-40vw);
     opacity: 0;
     transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
