@@ -46,18 +46,19 @@
     padding: 100px;
     padding-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    columns: 2;
+    align-items: center;
+    font-weight: 600;
 }
 
 .pdfUl a{
     background-color: rgba(177, 177, 177, 0.37);
     padding: 50px;
-    width: 350px;
+    width: 100%;
     border-radius: 15px;
     transition-duration: .4s;
-    margin-left: 25px;
-    margin-right: 5px;
+    margin-bottom: 15px;
     backdrop-filter: blur(10px);
 }
 

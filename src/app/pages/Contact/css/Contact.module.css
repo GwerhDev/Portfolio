@@ -23,6 +23,7 @@
     background-color: #aaaaaa4b;
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    font-weight: 600;
 }
 
 .pInfo{

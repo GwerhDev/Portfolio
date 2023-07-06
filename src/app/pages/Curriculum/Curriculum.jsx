@@ -42,7 +42,7 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show Complete CV - English
+                            Show Complete Resume - English
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-aiOos4lB-VD7WBc3ly-lZTcCuIqAa74/view?usp=sharing' 
@@ -50,7 +50,23 @@ export const Curriculum = () => {
                         rel='noreferrer'
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show FullStack Developer CV - English
+                            Show FullStack Developer Resume - English
+                    </a>
+                    <a 
+                        href='/' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Show FrontEnd Developer Resume - English
+                    </a>
+                    <a 
+                        href='/' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Show BackEnd Developer Resume - English
                     </a>
                 </ul>
             </div>
@@ -78,6 +94,22 @@ export const Curriculum = () => {
                         >
                             <img src={pdfIcon} alt="" height='80px'/><br />
                             Ver CV Desarrollador FullStack - Español
+                    </a>
+                    <a 
+                        href='/' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Ver CV Desarrollador FrontEnd - Español
+                    </a>
+                    <a 
+                        href='/' 
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                            <img src={pdfIcon} alt="" height='80px'/><br />
+                            Ver CV Desarrollador BackEnd - Español
                     </a>
                 </ul>
             </div>

@@ -32,7 +32,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: var(--color-primary);
 }
 
 .App {
@@ -40,7 +39,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: var(--color-primary);
 }
 
 code {

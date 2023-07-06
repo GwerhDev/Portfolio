@@ -109,7 +109,7 @@ export const Contact = () => {
             <button className={s.submitButton} type="submit">{language==='EN'? 'send' : 'enviar'}</button>
           </form>
           <div className={s.pInfoCont}>
-            <p className={s.pInfo}>{language==="EN"? "You can also contact me through other services: " : "Puedes contactarme mediante otros servicios al correo: "} <i>gwerh.dev@gmail.com</i></p>
+            <p className={s.pInfo}>{language==="EN"? "You can also contact me through other services: " : "Puedes contactarme mediante otros servicios al correo: "} <a style={{color: 'green', textDecoration: 'underline'}} href='mailto:gwerh.dev@gmail.com'>gwerh.dev@gmail.com</a></p>
           </div>
         </div>
       )}
