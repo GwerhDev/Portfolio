@@ -71,18 +71,16 @@
 }
 
 .resumeButton{
-  margin-top: 50px;
+  margin: 0;
   background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
   border-radius: 3%;
   transition-duration: .5s;
-  padding: 8px;
-  padding-left: 0px;
-  padding-right: 0px;
   font-weight: thin; 
   font-family: Trajan;
   border-radius: 10px;
   border: none;
-  margin-right: 10px;
+  height: 35px;
+  position: relative;
 }
 
 .resumeButton:hover{
@@ -101,28 +99,50 @@
   cursor: pointer;
 }
 
+.buttonsCont{
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .resumeLink{
   border-radius: 3%;
   transition-duration: .5s;
-  padding: 8px;
   font-weight: thin; 
   font-family: Trajan;
   border-radius: 10px;
   border: none;
   width: max-content;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
 }
   
 @media (max-width: 800px) {
+  .buttonsCont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .resumeButton{
+    width: 100%;
+  }
   .viewerCont{
     display: flex;
     justify-content: center;
     margin-top: 0px;
   }
   .parr{
-    font-size: 11px;
+    font-size: 10px;
   }
   .resumeButton{
+    margin: 0;
+  }
+  .resumeLink{
+    width: 100%;
     margin-top: 20px;
+    padding: 0;
   }
   .viewerUl{
     flex-direction: column;
@@ -130,7 +150,7 @@
   }
   .title{
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .title p{
     font-size: 2.5vw;
