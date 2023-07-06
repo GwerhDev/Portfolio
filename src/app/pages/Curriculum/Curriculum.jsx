@@ -18,8 +18,8 @@ export const Curriculum = () => {
     useEffect(() => {
         dispatch(setOption('cv'))
         if (!user){
-            history.push('/home/cv')
-        }
+/*             history.push('/home/cv')
+ */        }
     }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contCV}>
@@ -53,7 +53,7 @@ export const Curriculum = () => {
                             Show FullStack Developer Resume - English
                     </a>
                     <a 
-                        href='/' 
+                        href='https://drive.google.com/file/d/1DXCbRpgy_RbVZQ2yTrP5-bu2PeF9iLgX/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
@@ -61,7 +61,7 @@ export const Curriculum = () => {
                             Show FrontEnd Developer Resume - English
                     </a>
                     <a 
-                        href='/' 
+                        href='https://drive.google.com/file/d/1patjSYftc3JV5ZfuJXUjLsT_FQ-9zUTN/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
@@ -96,7 +96,7 @@ export const Curriculum = () => {
                             Ver CV Desarrollador FullStack - Español
                     </a>
                     <a 
-                        href='/' 
+                        href='https://drive.google.com/file/d/1-yvbdm5b0DWNqE-eZNUjEFl5t4bkByIX/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
@@ -104,7 +104,7 @@ export const Curriculum = () => {
                             Ver CV Desarrollador FrontEnd - Español
                     </a>
                     <a 
-                        href='/' 
+                        href='https://drive.google.com/file/d/1OFl154_9JumqW79AMkFfzHvkPvdEg1GJ/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
