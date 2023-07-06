@@ -12,12 +12,9 @@ export const PresentationCard = (props) => {
           animate={{opacity:1}}
         >
           <div className={s.viewerCont} id='presentationCardSection' style={{backgroundImage: `url(${background})`}}>
-            <div className={s.imgCont}>
-              <img className={s.portfolioImg} src={img} alt="" loading="lazy" />
-            </div>
             <ul className={s.viewerUl}>
               <h1 className={s.title}>Gerardo guarda
-              <br/>
+                <br/>
                 <p>gwerh</p>
                 <div className={s.introCont}>
                   <b className={s.parr}>
@@ -45,6 +42,9 @@ export const PresentationCard = (props) => {
                         }
                     </Link>
                   </button>
+                  <div className={s.imgCont}>
+                    <img className={s.portfolioImg} src={img} alt="" loading="lazy" />
+                  </div>
                 </div>
               </h1>
             </ul>
