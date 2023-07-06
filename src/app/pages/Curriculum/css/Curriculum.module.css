@@ -15,7 +15,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     animation-name: animation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -35,6 +35,7 @@
 
 .titleContPerc{
     width: 60%;
+    margin-left: 12px;
 }
 
 .pdfCont{
