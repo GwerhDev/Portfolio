@@ -1,5 +1,7 @@
 .container{
   background-color: var(--color-primary);
+  padding: 0;
+  margin: 0;
 }
 
 .viewerCont{
@@ -8,6 +10,7 @@
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -16px;
 }
 
 .parr{
@@ -19,16 +22,17 @@
 
 .introCont{
   width: 400px;
-  line-height: 5px;
+  line-height: 8px;
 }
 
 .viewerUl{
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: left;
 }
 
 .imgCont{
@@ -50,7 +54,6 @@
   font-size: 3vw;
   color: white;
   padding-left: 60px;
-  padding-top: 20vh;
   padding-right: 100px;
   text-align: left;
   text-shadow: 0px 0px 4px #171717;
@@ -106,7 +109,7 @@
   
 @media (max-width: 800px) {
   .parr{
-    font-size: 12px;
+    font-size: 11px;
   }
   .resumeButton{
     margin-top: 20px;
@@ -120,9 +123,7 @@
   .title{
     text-align: center;
     font-size: 5vw;
-    padding-top: 80px;
     margin-left: -40px;
-    padding-right: 120px;
     padding-left: 80px;
   }
   .title p{
