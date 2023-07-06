@@ -2,6 +2,8 @@
   background-color: #171717;
   height: 100vh;
   width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parr{
@@ -27,19 +29,16 @@
 
 .imgCont{
   position: absolute;
-  width: 69vh;
-  height: 69vh;
-  right: -20px;
   bottom: 0px;
-  border-radius: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.portfolioDevImg{
-  position: absolute;
-  width: 50vh;
-  right: 30px;
-  bottom: 0px;
-  filter: grayscale(.7);
+.portfolioImg{
+  width: 200px;
+  margin-right: 100px;
+  margin-bottom: 40px;
 }
 
 .title{
@@ -125,19 +124,13 @@
   .title p{
     font-size: 2.5vw;
   }
-  .portfolioDevImg{
-    width: 35vh;
-  }
   .imgCont{
-    width: 47vh;
-    height: 47vh;
+    justify-content: center;
   }
-
-  .imgCont:hover{
-    width: 50vh;
-    height: 50vh;
+  .portfolioImg{
+    width: 100px;
+    margin-right: 0px;
   }
-
   .introCont{
     width: 100%;
     line-height: 8px;

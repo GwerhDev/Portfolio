@@ -9,13 +9,14 @@ import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
 import { DevList } from "../../components/DevList/DevList";
 /* import { DevProjects } from "../../components/DevProjects/DevProjects"; */
 import devIcon from '../../../assets/images/png/dev-icon.png';
+import devBack from '../../../assets/images/jpg/dev-bg.jpg';
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)
   return ( 
     <div className={s.devCont}>
       <InfoCanvas/>
-      <PresentationCard language={language} img={devIcon} description={GET_DESCRIPTION_DEV}/>
+      <PresentationCard background={devBack} language={language} img={devIcon} description={GET_DESCRIPTION_DEV}/>
       <Separator marginTop="0px"/>      
       <Featured language={language}/>
       <DevList language={language}/>

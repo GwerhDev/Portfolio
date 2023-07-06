@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 
 export const PresentationCard = (props) => {
-    const { img, language, description } = props
+    const { img, language, description, background } = props
     return (
-      <div className={s.viewerCont} id='presentationCardSection'>
+      <div className={s.viewerCont} id='presentationCardSection' style={{backgroundImage: `url(${background})`}}>
           <motion.div 
           initial={{opacity:0}}
           transition={{duration: 1}}
           animate={{opacity:1}}
           >
         <div className={s.imgCont}>
-          <img className={s.portfolioDevImg} src={img} alt="" loading="lazy" />
+          <img className={s.portfolioImg} src={img} alt="" loading="lazy" />
         </div>
       <ul className={s.viewerUl}>
         <h1 className={s.title}>Gerardo guarda

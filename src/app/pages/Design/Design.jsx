@@ -4,13 +4,14 @@ import { PresentationCard } from "../../components/PresentationCard/Presentation
 import { useSelector } from "react-redux"
 import { GET_DESCRIPTION_DESIGN } from "../../../middlewares/misc/consts"
 import designIcon from '../../../assets/images/png/design-icon.png';
+import designBack from '../../../assets/images/jpg/design-bg.jpg';
 
 export const Design = () => {
   const language = useSelector(state=>state.language)
 
   return(
     <div className={s.designCont}>
-      <PresentationCard language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN}/>
+      <PresentationCard background={designBack} language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN}/>
       <UnderConstruction language={language}/>
     </div>
   )
