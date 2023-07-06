@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 export const PresentationCard = (props) => {
     const { img, language, description, background } = props
     return (
+      <div className={s.container}>
+      <motion.div 
+        initial={{opacity:0}}
+        transition={{duration: 1}}
+        animate={{opacity:1}}
+      >
       <div className={s.viewerCont} id='presentationCardSection' style={{backgroundImage: `url(${background})`}}>
-          <motion.div 
-          initial={{opacity:0}}
-          transition={{duration: 1}}
-          animate={{opacity:1}}
-          >
         <div className={s.imgCont}>
           <img className={s.portfolioImg} src={img} alt="" loading="lazy" />
         </div>
@@ -47,6 +48,7 @@ export const PresentationCard = (props) => {
           </div>
         </h1>
       </ul>
+      </div>
       </motion.div>
       </div>
 
