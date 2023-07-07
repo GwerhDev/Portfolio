@@ -1,6 +1,5 @@
 .imgProfile{
     border-radius: 100%;
-    margin-top: 60px;
     border: none;
     filter: grayscale(.5);
     transition-duration: .5s;

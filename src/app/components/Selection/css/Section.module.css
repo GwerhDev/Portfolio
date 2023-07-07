@@ -3,6 +3,11 @@
     max-height: 100vh;
 }
 
+.selectionContainer{
+    background-color: var(--color-primary);
+    background-attachment: fixed;
+}
+
 .porfolioList {
     list-style: none;
     display: flex;
@@ -11,13 +16,13 @@
     max-width: 100%;
     margin-top: 8rem;
     justify-content: space-around;
+    letter-spacing: .3rem;
     position: relative;
     text-align: center;
     min-height: 300px;
 }
 
 .porfolioList h3 {
-    font-family: Trajan;
     color: white;
     font-size: .8rem;
 }

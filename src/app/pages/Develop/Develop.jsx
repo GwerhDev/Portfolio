@@ -6,8 +6,7 @@ import { Featured } from "../../components/Featured/Featured";
 import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts";
 import { Separator } from "../../components/Utils/Separator/Separator";
 import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
-import { DevList } from "../../components/DevList/DevList";
-/* import { DevProjects } from "../../components/DevProjects/DevProjects"; */
+import { DevProjects } from "../../components/DevProjects/DevProjects";
 import devIcon from '../../../assets/images/png/dev-icon.png';
 import devBack from '../../../assets/images/jpg/dev-bg.jpg';
 
@@ -19,8 +18,7 @@ export const Develop = () => {
       <PresentationCard background={devBack} language={language} img={devIcon} description={GET_DESCRIPTION_DEV}/>
       <Separator marginTop="0px"/>      
       <Featured language={language}/>
-      <DevList language={language}/>
-      {/* <DevProjects language={language}/> */}
+      <DevProjects language={language}/>
       <Skills language={language}/>
     </div>
   )

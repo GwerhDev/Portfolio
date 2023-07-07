@@ -5,7 +5,7 @@
 
 .contCV{
     position: absolute;
-    background: linear-gradient(230deg, #ccccccfd, #ededed 85%);
+    background-color: #cccccc;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -34,7 +34,7 @@
 }
 
 .pdfCont{
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -42,9 +42,9 @@
 }
 
 .pdfUl{
+    padding: 0;
     width: 100vw;
-    margin-top: 70px;
-    padding-top: 50px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -54,14 +54,14 @@
 }
 
 .pdfUl a{
-    background-color: rgba(177, 177, 177, 0.37);
+    background-color: rgba(158, 158, 158, 0.603);
     padding: 5px;
     padding-left: 50px;
     padding-right: 50px;
     width: 50%;
     border-radius: 15px;
     transition-duration: .4s;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,6 @@
         padding-left: 10px;
         padding-right: 10px;
         max-width: 250px;
-        margin-bottom: 20px;
         font-size: 11px;
     }
 }
