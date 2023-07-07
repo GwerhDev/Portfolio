@@ -38,7 +38,7 @@ export const DevList = (props) => {
                   technologies: language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                   role: language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                   url: e.href,
-                  github: e.github
+                  github: e.repository
                 })), 
                 openInfoCanvas()
               )
@@ -70,7 +70,7 @@ export const DevList = (props) => {
                     technologies: language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                     role: language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                     url: e.href,
-                    github: e.github
+                    github: e.repository
                   })), 
                   openInfoCanvas()
                 )
@@ -102,7 +102,7 @@ export const DevList = (props) => {
                     technologies: language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                     role: language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                     url: e.href,
-                    github: e.github
+                    github: e.repository
                   })), 
                   openInfoCanvas()
                 )
@@ -134,7 +134,7 @@ export const DevList = (props) => {
                     technologies: language==='EN'? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                     role: language==='EN'? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                     url: e.href,
-                    github: e.github
+                    github: e.repository
                   })), 
                   openInfoCanvas()
                 )
