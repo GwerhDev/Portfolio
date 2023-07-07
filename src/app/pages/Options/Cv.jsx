@@ -60,7 +60,7 @@ export const Cv = () => {
                     </a>
                 </>
                 :
-                <a href={`${URL_API}/auth/google`}>
+                <a href={`${URL_API}/auth/resume/google`}>
                 <button className={s.googleButton}>
                     <img src={googleLogo} alt="" height='40px' />
                 </button>

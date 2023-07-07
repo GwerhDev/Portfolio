@@ -72,7 +72,7 @@ export function setLanguage(e){
 
 export function loginWithGoogle(accessToken){
     return async function (dispatch){ 
-        await axios.post(`${URL_API}/users/loginwithgoogle`, {accessToken})
+        await axios.post(`${URL_API}/users/login-with-google`, {accessToken})
         .then(res => {
             console.log(res.data)
             dispatch({

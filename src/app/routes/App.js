@@ -7,8 +7,8 @@ import { Language } from '../components/Utils/Language/Language';
 import { Header } from '../components/Utils/Header/Header';
 import { LateralCanvas } from '../components/LateralCanvas/LateralCanvas';
 import { CanvasRouter } from '../components/Utils/CanvasRouter/CanvasRouter';
-import AuthToken from '../components/Auth/AuthToken';
-import MailAuthToken from '../components/Auth/MailAuthToken';
+import ResumeAuthToken from '../pages/Auth/ResumeAuthToken';
+import MailAuthToken from '../pages/Auth/MailAuthToken';
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
           <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <MailAuthToken />
         </Route>
-        <Route path='/auth'>
+        <Route path='/resume/auth'>
           <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
-          <AuthToken />
+          <ResumeAuthToken />
         </Route>
         <Route exact path='/'>
           <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
