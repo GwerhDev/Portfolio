@@ -74,6 +74,7 @@ export function loginWithGoogle(accessToken){
     return async function (dispatch){ 
         await axios.post(`${URL_API}/users/loginwithgoogle`, {accessToken})
         .then(res => {
+            console.log(res.data)
             dispatch({
                 type: GET_LOGIN,
                 payload: res.data

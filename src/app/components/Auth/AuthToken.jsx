@@ -10,7 +10,7 @@ const AuthToken = () => {
   const authToken = params.get('token');
   const dispatch = useDispatch()
   const currentUser = useSelector(state => state.currentUser)
-
+  
   useEffect(() => {
     if (authToken) {
       dispatch(loginWithGoogle(authToken))

@@ -64,10 +64,10 @@ export default function rootReducer(state = initialState, action){
                 language: action.payload,
             }
         case GET_LOGIN:
+            console.log(action.payload)
             return {
                 ...state,
                 currentUser: action.payload.msg ? {
-                    userId: action.payload.msg.userId,
                     userAlias: action.payload.msg.userAlias,
                     email: action.payload.msg.email,
                     googlePic: action.payload.msg.googlePic,
