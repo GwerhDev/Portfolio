@@ -33,8 +33,11 @@ export const SoundProjects = (props) => {
                         transition={{duration: 1.5}}
                         >
                         <li key={`liYT${index}`} className={s.ytPlayer}>
-                          <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        </li>
+                          <a href={`https://www.youtube.com/watch?v=${e.idYt}`} target="_blank" rel="noreferrer">
+                            <img src={`https://i.ytimg.com/vi/${e.idYt}/maxresdefault.jpg`} alt="" width="280" height="157.5" />
+                          </a>
+{/*                           <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+ */}                        </li>
                       </motion.div>
                       <p>
                         {e.name}

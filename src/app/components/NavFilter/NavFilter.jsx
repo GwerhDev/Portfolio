@@ -8,6 +8,7 @@ export const NavFilter = (props) => {
 
   const handleSelectChange = (event) => {
     const id = event.target.value;
+    setFilter(id)
     NavFilterFunctions(id);
   };
 
@@ -15,31 +16,31 @@ export const NavFilter = (props) => {
     <div className={s.navExtContainer}>
       <div className={s.navIntContainer}>
         <ul className={`${s.navList} ${s.desktop}`}>
-          <li id='webLi' onClick={() => { return ( NavFilterFunctions('devListWebSection','webLi'), setFilter(1) )}}>
+          <li id='webLi' onClick={() => { return ( NavFilterFunctions('devListWebSection','webLi'), handleSelectChange, setFilter('devListWebSection') )}}>
             web
           </li>
-          <li id='desktopLi' onClick={() => { return ( NavFilterFunctions('devListDesktopSection','desktopLi'), setFilter(2) )}}>
+          <li id='desktopLi' onClick={() => { return ( NavFilterFunctions('devListDesktopSection','desktopLi'), handleSelectChange, setFilter('devListDesktopSection') )}}>
             {language === 'EN' ? 'desktop' : 'escritorio'}
           </li>
-          <li id='mobileLi' onClick={() => { return ( NavFilterFunctions('devListMobileSection','mobileLi'), setFilter(3) )}}>
+          <li id='mobileLi' onClick={() => { return ( NavFilterFunctions('devListMobileSection','mobileLi'), handleSelectChange, setFilter('devListMobileSection') )}}>
             {language === 'EN' ? 'mobile' : 'movil'}
           </li>
-          <li id='softwareLi' onClick={() => { return ( NavFilterFunctions('devListSoftwareSection','softwareLi'), setFilter(4) )}}>
+          <li id='softwareLi' onClick={() => { return ( NavFilterFunctions('devListSoftwareSection','softwareLi'), handleSelectChange, setFilter('devListSoftwareSection') )}}>
             software
           </li>
         </ul>
         <ul className={`${s.navList} ${s.mobile}`}>
-          <select onChange={handleSelectChange}>
-            <option value="devListWebSection" defaultValue={filter === 1}>
+          <select onChange={handleSelectChange} value={filter}>
+            <option value="devListWebSection">
               Web
             </option>
-            <option value="devListDesktopSection" defaultValue={filter === 2}>
+            <option value="devListDesktopSection">
               {language === 'EN' ? 'Desktop' : 'Escritorio'}
             </option>
-            <option value="devListMobileSection" defaultValue={filter === 3}>
+            <option value="devListMobileSection">
               {language === 'EN' ? 'Mobile' : 'Móvil'}
             </option>
-            <option value="devListSoftwareSection" defaultValue={filter === 4}>
+            <option value="devListSoftwareSection">
               Software
             </option>
           </select>
