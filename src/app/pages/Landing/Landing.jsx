@@ -13,7 +13,6 @@ export const Landing = () => {
   useEffect(()=> {removeLocalStorage()},[])
   return (
     <div className={s.landingCont}>
-      <div className={s.webBg}/>
       <motion.div initial={{opacity: 0, y: 10}} transition={{duration: 2, type: 'spring'}}animate={{opacity: 1, y: 0}}>
         <Profile />
         <p style={{color:'white'}}>
