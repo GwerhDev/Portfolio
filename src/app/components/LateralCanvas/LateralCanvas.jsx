@@ -9,7 +9,7 @@ export const LateralCanvas = () => {
         <div className={s.profileLalo} id="profileLalo">
             <Profile/>
             <Menu/>
-            <Footer/>            
+            <Footer/>         
         </div>
     )
 };
