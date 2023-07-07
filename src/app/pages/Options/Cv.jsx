@@ -53,7 +53,7 @@ export const Cv = () => {
                         
                     </p>
                     <br/>
-                    <a href={`${URL_API}/auth/google`} onClick={()=>{return localStorage.removeItem('auth')}}>
+                    <a href={`${URL_API}/auth/resume/google`} onClick={()=>{return localStorage.removeItem('auth')}}>
                         <button className={s.googleButton} onClick={()=>{return localStorage.removeItem('auth')}}>
                             <img src={googleLogo} alt="" height='40px' />
                         </button>
