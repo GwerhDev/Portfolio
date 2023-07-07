@@ -17,7 +17,7 @@ import loadingImg from "../../../assets/images/gif/loading.gif";
 
 export const DevProjects = (props) => {
   const { language } = props
-  const API = useSelector(state=>state.programming)
+  const API = useSelector(state=>state.develop)
   const [shownState1, setShownState1] = useState("none")
   const [shownState2, setShownState2] = useState("none")
   const [shownState3, setShownState3] = useState("none")

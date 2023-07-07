@@ -20,7 +20,7 @@ export const Menu = () => {
                 }
             >
                 <Link to="/home/introduction" className={s.linkMenu}>
-                    { language==='EN'? 'Intro' : 'Intro' }
+                    { language==='EN'? 'intro' : 'intro' }
                 </Link>
             </div>
 
@@ -34,7 +34,7 @@ export const Menu = () => {
                 )}}
             >
                 <Link to="/home/bio" className={s.linkMenu}>
-                    Bio
+                    bio
                 </Link>
             </div>
             <div 
@@ -47,7 +47,7 @@ export const Menu = () => {
                     )}}
                     >
                 <Link to="/home/cv" className={s.linkMenu}>
-                    { language==='EN'? 'Resume' : 'CV' }
+                    { language==='EN'? 'resume' : 'cv' }
                 </Link> 
             </div>
             <div className={s.contSL}>

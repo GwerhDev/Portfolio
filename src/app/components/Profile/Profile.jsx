@@ -1,13 +1,13 @@
 import s from "./css/Profile.module.css";
-import picLaloFreak from "../../../assets/images/png/LaloFreak.png";
+import picGwerhDev from "../../../assets/images/png/LaloFreak.png";
 
 export const Profile = () => {
     return (
     <>
         <img 
-            className={s.imgProfile} 
-            src={picLaloFreak} 
-            alt="LaloFreak" 
+            className={s.imgProfile}
+            src={picGwerhDev} 
+            alt="GwerhDev" 
             width="150px" 
         />
         <h2 className={s.name}>Gerardo guarda</h2>

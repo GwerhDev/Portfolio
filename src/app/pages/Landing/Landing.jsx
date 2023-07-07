@@ -14,31 +14,27 @@ export const Landing = () => {
   return (
     <div className={s.landingCont}>
       <div className={s.webBg}/>
-      <motion.div 
-        initial={{opacity: 0, y: 10}}
-        transition={{duration: 2, type: 'spring'}}
-        animate={{opacity: 1, y: 0}}
-      >
+      <motion.div initial={{opacity: 0, y: 10}} transition={{duration: 2, type: 'spring'}}animate={{opacity: 1, y: 0}}>
         <Profile />
-      <p style={{color:'white'}}>
-        {
-          language==='EN'?
-          'Develop, Design & Sound':
-          'Desarrollo, Diseño & Sonido'
-        }
-      </p>
-      <Link to='/home'>
-        <div className={s.enterBtn}>
-        {
-          language==='EN'?
-          'enter':
-          'entrar'
-        }        
+        <p style={{color:'white'}}>
+          {
+            language==='EN'?
+            'Develop, Design & Sound':
+            'Desarrollo, Diseño & Sonido'
+          }
+        </p>
+        <div className={s.enterBtnCont}>
+          <Link to='/home' className={s.enterBtn}>
+            {
+              language==='EN'?
+              'enter':
+              'entrar'
+            }        
+          </Link>
         </div>
-      </Link>
-      <div className={s.contSL}>
-        <SocialLinks gitHub='https://github.com/GwerhDev' linkedIn='https://www.linkedin.com/in/gwerhdev/' />
-      </div>
+        <div className={s.contSL}>
+          <SocialLinks gitHub='https://github.com/GwerhDev' linkedIn='https://www.linkedin.com/in/gwerhdev/' />
+        </div>
       </motion.div>
       <Footer/>
     </div>

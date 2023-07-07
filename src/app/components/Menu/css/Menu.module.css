@@ -3,13 +3,13 @@
     width: 80%;
     height: 20px;
     position: relative;
-    top: 10px;
-    border-radius: 43%;
+    border-radius: 5px;
     transition-duration: .5s;
     color: #000000;
     font-weight: thin; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Trajan;
     margin-top: 10px;
+    padding: 1px;
 }
 
 .linkMenu{
@@ -17,7 +17,7 @@
     justify-content: center;
     vertical-align: middle;
     color: #000000;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     padding: 4px;
 }
