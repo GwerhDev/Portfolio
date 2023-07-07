@@ -41,32 +41,32 @@ export const Curriculum = () => {
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show Complete Resume - English
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Show Complete Resume - English</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-aiOos4lB-VD7WBc3ly-lZTcCuIqAa74/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show FullStack Developer Resume - English
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Show FullStack Developer Resume - English</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1DXCbRpgy_RbVZQ2yTrP5-bu2PeF9iLgX/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show FrontEnd Developer Resume - English
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Show FrontEnd Developer Resume - English</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1patjSYftc3JV5ZfuJXUjLsT_FQ-9zUTN/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Show BackEnd Developer Resume - English
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Show BackEnd Developer Resume - English</p>
                     </a>
                 </ul>
             </div>
@@ -84,32 +84,32 @@ export const Curriculum = () => {
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Completo - Español
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Ver CV Completo - Español</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-gkdCuhXXkViQRRaYXZOA50_P7uMfDgX/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Desarrollador FullStack - Español
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Ver CV Desarrollador FullStack - Español</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1-yvbdm5b0DWNqE-eZNUjEFl5t4bkByIX/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Desarrollador FrontEnd - Español
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Ver CV Desarrollador FrontEnd - Español</p>
                     </a>
                     <a 
                         href='https://drive.google.com/file/d/1OFl154_9JumqW79AMkFfzHvkPvdEg1GJ/view?usp=sharing' 
                         target='_blank'
                         rel='noreferrer'
                         >
-                            <img src={pdfIcon} alt="" height='80px'/><br />
-                            Ver CV Desarrollador BackEnd - Español
+                            <img src={pdfIcon} alt="" height='50px'/>
+                            <p>Ver CV Desarrollador BackEnd - Español</p> 
                     </a>
                 </ul>
             </div>
