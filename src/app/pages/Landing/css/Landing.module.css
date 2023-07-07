@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
 }
 
 .webBg{
@@ -22,6 +23,7 @@
   width: 100vw;
   min-height: 100vh;
   position: fixed;
+  top: 0;
   opacity: .5;
   animation-name: animation;
   animation-duration: 10s;
