@@ -1,7 +1,7 @@
 import s from "./css/Develop.module.css";
 import { useSelector } from "react-redux";
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
-import { Skills } from "../../components/Skills/Skills";
+import { DevSkills } from "../../components/DevSkills/DevSkills";
 import { Featured } from "../../components/Featured/Featured";
 import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts";
 import { Separator } from "../../components/Utils/Separator/Separator";
@@ -19,7 +19,7 @@ export const Develop = () => {
       <Separator marginTop="0px"/>      
       <Featured language={language}/>
       <DevProjects language={language}/>
-      <Skills language={language}/>
+      <DevSkills language={language}/>
     </div>
   )
 }

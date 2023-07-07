@@ -1,4 +1,4 @@
-import s from './css/Skills.module.css';
+import s from './css/DevSkills.module.css';
 import htmlSVG from '../../../assets/images/svg/html-icon.svg';
 import cssSVG from '../../../assets/images/svg/css-icon.svg';
 import pythonSVG from '../../../assets/images/svg/python-icon.svg';
@@ -14,7 +14,7 @@ import electronSVG from '../../../assets/images/svg/electronjs-icon.svg';
 import tensorflowSVG from '../../../assets/images/svg/tensorflow-icon.svg';
 import threeSVG from '../../../assets/images/svg/threejs-icon.svg';
 
-export const Skills = (props) => {
+export const DevSkills = (props) => {
     const { language } = props
     return (
         <div className={s.skillsCont}>

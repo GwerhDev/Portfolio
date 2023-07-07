@@ -1,0 +1,49 @@
+.designContainer{
+  margin-top: 100px;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.section{
+  background-color: rgba(143, 143, 143, 0.37);
+  width: 60%;
+  font-family: Trajan;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 50px;
+  margin-bottom: 10px;
+}
+
+.logotypesContainer{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logotypesContainer img{
+  opacity: .5;
+  transition-duration: .4s;
+}
+
+.logotypesContainer img:hover{
+  opacity: 1;
+}
+
+.header p{
+  font-family: Poppins;
+}
+
+@media (max-width: 600px) {
+  .section{
+    padding: 10px;
+  }
+}

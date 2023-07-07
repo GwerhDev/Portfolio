@@ -7,4 +7,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.titleContainer{
+  width: 60%;
 }
