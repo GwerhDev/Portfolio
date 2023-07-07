@@ -99,6 +99,9 @@
   background-repeat: no-repeat;
   background-size: 45px;
   background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {

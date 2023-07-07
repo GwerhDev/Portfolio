@@ -34,7 +34,7 @@ export const SoundProjects = (props) => {
                         >
                         <li key={`liYT${index}`} className={s.ytPlayer}>
                           <a href={`https://www.youtube.com/watch?v=${e.idYt}`} target="_blank" rel="noreferrer">
-                            <img src={`https://i.ytimg.com/vi/${e.idYt}/maxresdefault.jpg`} alt="" width="280" height="157.5" />
+                            <img src={`https://i.ytimg.com/vi/${e.idYt}/hqdefault.jpg`} alt="yt" width="280" />
                           </a>
 {/*                           <iframe width="280" height="157.5" src={`https://www.youtube.com/embed/${e.idYt}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
  */}                        </li>
