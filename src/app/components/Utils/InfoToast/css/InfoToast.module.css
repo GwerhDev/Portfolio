@@ -2,6 +2,7 @@
   width: 100%;
   height: 50px;
   font-weight: 600;
+  font-size: 15px;
   color: rgb(0, 0, 0);
   padding: 5px;
   border-radius: 5px;
@@ -11,4 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .infoContainer{
+    display: none;
+  }
 }
