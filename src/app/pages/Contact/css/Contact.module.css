@@ -132,6 +132,7 @@
     border-radius: 5px;
     transition-duration: .4s;
     background: linear-gradient(168deg, rgb(102, 101, 101) 20%, #7a7a7a 120%);
+    font-weight: 100;
 }
 
 .pInfo a:hover {

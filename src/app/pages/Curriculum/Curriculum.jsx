@@ -18,8 +18,8 @@ export const Curriculum = () => {
     useEffect(() => {
         dispatch(setOption('cv'))
         if (!user){
-            history.push('/home/cv')
-        }
+/*             history.push('/home/cv')
+ */        }
     }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contCV}>
