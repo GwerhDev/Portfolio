@@ -8,6 +8,33 @@
   margin-bottom: 100px;
 }
 
+.logoList{
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 25px;
+  transition-duration: .4s;
+}
+
+.logoList:hover{
+  border: solid;
+}
+
+.logoList img{
+  margin-bottom: -30px;
+}
+
+h6{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 200;
+}
+
 .section{
   background-color: rgba(143, 143, 143, 0.37);
   width: 60%;
@@ -15,7 +42,7 @@
   backdrop-filter: blur(10px);
   border-radius: 15px;
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 50px;
@@ -25,8 +52,9 @@
 .logotypesContainer{
   height: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  vertical-align: middle;
 }
 
 .logotypesContainer img{

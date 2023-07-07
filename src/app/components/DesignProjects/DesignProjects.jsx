@@ -14,13 +14,22 @@ export const DesignProjects = (props) => {
           <p>{language === 'EN' ? 'Logotypes for all kind of projects': 'Logotipos para todo tipo de proyectos'}</p>
         </div>
         <div className={s.logotypesContainer}>
-          <img src={laruinarecordsLogo} alt="" height="50px"/>
+          <div className={s.logoList}>
+            <img src={laruinarecordsLogo} alt="" height="50px"/>
+            <h6>La Ruina Records</h6>
+          </div>
         </div>
         <div className={s.logotypesContainer}>
-          <img src={laruinatvLogo} alt="" height="50px"/>
+          <div className={s.logoList}>
+            <img src={laruinatvLogo} alt="" height="50px"/>
+            <h6>La Ruina TV</h6>
+          </div>
         </div>
         <div className={s.logotypesContainer}>
-          <img src={advanc3dLogo} alt="" height="50px"/>
+          <div className={s.logoList}>
+            <img src={advanc3dLogo} alt="" height="50px"/>
+            <h6>Advanc3D</h6>
+          </div>
         </div>
       </section>
       <section className={s.section}>
