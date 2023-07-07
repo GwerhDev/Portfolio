@@ -5,6 +5,16 @@
   src: url(../assets/fonts/TrajanusBricks.ttf);
 }
 
+#webLi{
+  text-decoration: overline underline;
+}
+
+#devListDesktopSection,
+#devListMobileSection,
+#devListSoftwareSection{
+  display: none;
+}
+
 :root {
   --color-background: rgba(143, 143, 143, 0.37);
   --color-background-hover: rgba(146, 146, 146, 0.541);

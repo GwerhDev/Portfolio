@@ -15,7 +15,7 @@ const userLang = lang ? JSON.parse(lang) : 'EN';
 const initialState = {
     option: 'home',
     language: userLang,
-    programming: '',
+    develop: '',
     sound: '',
     design: '',
     menu: '',
@@ -30,7 +30,7 @@ export default function rootReducer(state = initialState, action){
         case GET_DEVELOP:
             return {
                 ...state,
-                programming: action.payload
+                develop: action.payload
             }
         case GET_SOUND:
             return {
@@ -64,7 +64,6 @@ export default function rootReducer(state = initialState, action){
                 language: action.payload,
             }
         case GET_LOGIN:
-            console.log(action.payload)
             return {
                 ...state,
                 currentUser: action.payload.msg ? {

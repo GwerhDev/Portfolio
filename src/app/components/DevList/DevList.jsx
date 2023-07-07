@@ -10,7 +10,7 @@ import loadingImg from "../../../assets/images/gif/loading.gif";
 export const DevList = (props) => {
   const { language } = props;
   const dispatch = useDispatch();
-  const API = useSelector(state => state.programming);
+  const API = useSelector(state => state.develop);
 
   useEffect(() => {
     dispatch(getDevelop());
