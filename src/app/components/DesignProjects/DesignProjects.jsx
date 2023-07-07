@@ -10,8 +10,8 @@ export const DesignProjects = (props) => {
     <div className={s.designContainer}>
       <section className={s.section}>
         <div className={s.header}>
-          <h1>{language === 'EN' ? 'Logotypes': 'Logotipos'}</h1>
-          <p>{language === 'EN' ? 'Logotypes for all kind of projects': 'Logotipos para todo tipo de proyectos'}</p>
+          <h1>{language === 'EN' ? 'Isotypes': 'Isotipos'}</h1>
+          <p>{language === 'EN' ? 'Isotypes for all kind of projects': 'Isotipos para todo tipo de proyectos'}</p>
         </div>
         <div className={s.logotypesContainer}>
           <div className={s.logoList}>
@@ -28,7 +28,7 @@ export const DesignProjects = (props) => {
         <div className={s.logotypesContainer}>
           <div className={s.logoList}>
             <img src={advanc3dLogo} alt="" height="50px"/>
-            <h6>Advanc3D</h6>
+            <h6>ADvanc3D</h6>
           </div>
         </div>
       </section>
