@@ -32,7 +32,7 @@ export const Contact = () => {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`${URL_API}/sendemail`, {
+    fetch(`${URL_API}/users/sendemail`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
