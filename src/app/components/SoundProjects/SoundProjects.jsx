@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getSound } from "../../../middlewares/redux/actions";
+import { Loader } from "../Utils/Loader/Loader";
 
 export const SoundProjects = (props) => {
   const { language } = props
@@ -57,7 +58,7 @@ export const SoundProjects = (props) => {
                   </ul>
               </ul>
             )})
-            : null
+            : <Loader/>
           }
         </ul>
       </div>
