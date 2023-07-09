@@ -58,7 +58,7 @@ export const SoundProjects = (props) => {
                   </ul>
               </ul>
             )})
-            : <Loader/>
+            : <Loader language={language}/>
           }
         </ul>
       </div>

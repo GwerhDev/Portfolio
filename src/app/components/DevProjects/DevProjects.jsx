@@ -6,6 +6,7 @@ import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 import { NavFilter } from '../NavFilter/NavFilter';
 import loadingImg from "../../../assets/images/gif/loading.gif";
+import { Loader } from '../Utils/Loader/Loader';
 
 export const DevProjects = (props) => {
   const { language } = props;
@@ -25,7 +26,7 @@ export const DevProjects = (props) => {
           <p>{language==='EN'?'Web Applications':'Aplicaciones Web'}</p>
         </div>
         {
-          API?.at(0)?.web?.map((e,index)=>{
+          API? API.at(0)?.web?.map((e,index)=>{
           return(
             <li 
             onClick={()=>{
@@ -49,7 +50,8 @@ export const DevProjects = (props) => {
               </div>
             </li>
           )
-        })}
+        }) : <Loader language={language}/>
+      }
       </ul>
       <ul className={s.devUlCont} id='devListDesktopSection'>
         <div className={s.cathegoryDescription}>
@@ -57,7 +59,7 @@ export const DevProjects = (props) => {
           <p>{language==='EN'?'Desktop Applications':'Aplicaciones de Escritorio'}</p>
         </div>
         {
-          API?.at(1)?.desktop?.map((e,index)=>{
+          API? API.at(1)?.desktop?.map((e,index)=>{
           return(
             <li 
               onClick={()=>{
@@ -81,7 +83,8 @@ export const DevProjects = (props) => {
               </div>
             </li>
           )
-        })}
+        }) : <Loader language={language}/>
+      }
       </ul>
       <ul className={s.devUlCont} id='devListMobileSection'>
         <div className={s.cathegoryDescription}>
@@ -89,7 +92,7 @@ export const DevProjects = (props) => {
           <p>{language==='EN'?'Mobile Applications':'Aplicaciones de Móvil'}</p>
         </div>
         {
-          API?.at(2)?.mobile?.map((e,index)=>{
+          API? API.at(2)?.mobile?.map((e,index)=>{
           return(
             <li 
               onClick={()=>{
@@ -113,7 +116,8 @@ export const DevProjects = (props) => {
               </div>
             </li>
           )
-        })}
+        }) : <Loader language={language}/>
+      }
       </ul>
       <ul className={s.devUlCont} id='devListSoftwareSection'>
         <div className={s.cathegoryDescription}>
@@ -121,7 +125,7 @@ export const DevProjects = (props) => {
           <p>{language==='EN'?'Software developing':'Desarrollo de Software'}</p>
         </div>
         {
-          API?.at(3)?.software?.map((e,index)=>{
+          API? API.at(3)?.software?.map((e,index)=>{
           return(
             <li 
               onClick={()=>{
@@ -145,7 +149,8 @@ export const DevProjects = (props) => {
               </div>
             </li>
           )
-        })}
+        }) : <Loader language={ language }/>
+      }
       </ul>
     </div>
   )
