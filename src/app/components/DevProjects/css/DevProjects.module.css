@@ -11,16 +11,15 @@
 }
 
 .projectSection{
-  width: 60%;
+  width: 70%;
   background-color: var(--color-background);
   backdrop-filter: blur(10px);
   border-radius: 15px;
 }
 
 .devUlCont {
-  padding: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
