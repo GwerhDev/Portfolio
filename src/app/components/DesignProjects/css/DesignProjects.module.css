@@ -39,7 +39,7 @@ h6{
 
 .section{
   background-color: rgba(143, 143, 143, 0.37);
-  width: 60%;
+  width: 70%;
   font-family: Trajan;
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -80,7 +80,7 @@ h6{
 
 @media (max-width: 600px) {
   .section{
-    padding: 10px;
+    padding: 0px;
   }
   .header h1,
   .header p{
