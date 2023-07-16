@@ -19,6 +19,7 @@ export const OptionCanvas = () => {
         if(language==='ES' && option === 'sound') return 'sonido'
         if(language==='ES' && option === 'design') return 'diseno '
         if(language==='ES' && option === 'contact') return 'contacto'
+        if(language==='ES' && option === 'resume') return 'cv'
         else return option
     }
     return (
