@@ -25,11 +25,7 @@ export const Selection = () => {
         >
             <ul className={s.porfolioList}>
                 <li>
-                    <h3>                        
-                        {
-                            language==='EN'? 'DEVELOP':'DESARROLLO'
-                        }
-                    </h3>
+                    <h3> { language==='EN'? 'DEVELOP':'DESARROLLO' } </h3>
                     <Link to='/portfolio/develop' className={s.linkStyle} 
                         onMouseEnter={()=> { return (document.getElementById('portfolioInfoContainer').style.scale='1', setInfoToast(portfolioInfo.develop))}}
                         onMouseLeave={()=>document.getElementById('portfolioInfoContainer').style.scale='0'}>
@@ -39,10 +35,7 @@ export const Selection = () => {
                     </Link>
                 </li>
                 <li>
-                        <h3>
-                        {
-                            language==='EN'? 'DESIGN':'DISEÑO'
-                        }                        </h3>
+                    <h3> { language==='EN'? 'DESIGN':'DISEÑO' } </h3>
                     <Link to='/portfolio/design' className={s.linkStyle} 
                         onMouseEnter={()=> { return (document.getElementById('portfolioInfoContainer').style.scale='1', setInfoToast(portfolioInfo.design))}}
                         onMouseLeave={()=>document.getElementById('portfolioInfoContainer').style.scale='0'}>
