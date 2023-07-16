@@ -63,6 +63,7 @@
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .devLi p{

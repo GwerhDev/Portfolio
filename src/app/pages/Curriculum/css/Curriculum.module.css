@@ -30,7 +30,7 @@
 }
 
 .titleContPerc{
-    width: 60%;
+    width: 70%;
 }
 
 .pdfCont{
@@ -56,22 +56,26 @@
 
 .pdfUl a{
     background-color: rgba(158, 158, 158, 0.603);
-    padding: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70%;
     border-radius: 15px;
     transition-duration: .4s;
     margin-bottom: 5px;
     backdrop-filter: blur(10px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .pdfUl p{
     width: 100%;
     text-align: center;
+    margin-right: 20px;
+}
+
+.pdfUl img{
+    margin-left: 20px;
 }
 
 .pdfUl a:hover{
@@ -90,9 +94,6 @@
         align-items: center;
     }
     .pdfUl a{
-        padding-left: 10px;
-        padding-right: 10px;
-        max-width: 250px;
         font-size: 11px;
     }
 }
