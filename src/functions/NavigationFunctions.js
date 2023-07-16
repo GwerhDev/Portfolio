@@ -5,7 +5,7 @@ export function optionActive(e) {
     document.querySelector(`#sound`).style.boxShadow=('0px 0px 4px transparent');
     document.querySelector(`#design`).style.boxShadow=('0px 0px 4px transparent');
     document.querySelector(`#contact`).style.boxShadow=('0px 0px 4px transparent');
-    if(e !== 'introduction' && e !== 'bio' && e !== 'cv') return document.querySelector(`#${e}`).style.boxShadow=('0px 0px 10px white');
+    if(e !== 'intro' && e !== 'bio' && e !== 'resume') return document.querySelector(`#${e}`).style.boxShadow=('0px 0px 10px white');
     else return document.querySelector(`#profile`).style.boxShadow=('0px 0px 10px white');
 }
   

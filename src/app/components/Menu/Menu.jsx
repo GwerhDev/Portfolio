@@ -12,14 +12,14 @@ export const Menu = () => {
             <div 
                 className={s.divH2}
                 onClick={()=>{return (
-                    dispatch(setOption('introduction')),
+                    dispatch(setOption('intro')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                     )}
                 }
             >
-                <Link to="/home/introduction" className={s.linkMenu}>
+                <Link to="/home/intro" className={s.linkMenu}>
                     { language==='EN'? 'intro' : 'intro' }
                 </Link>
             </div>
@@ -40,13 +40,13 @@ export const Menu = () => {
             <div 
                 className={s.divH2}
                 onClick={()=>{return (
-                    dispatch(setOption('cv')),
+                    dispatch(setOption('resume')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
                     )}}
                     >
-                <Link to="/home/cv" className={s.linkMenu}>
+                <Link to="/home/resume" className={s.linkMenu}>
                     { language==='EN'? 'resume' : 'cv' }
                 </Link> 
             </div>

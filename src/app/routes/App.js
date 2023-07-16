@@ -32,9 +32,9 @@ function App() {
           <LateralCanvas/>
           <Navigator/>
         </Route>
-        <Route exact path='/home/introduction'>
-          <Header title={"Gwerh | Introduction"} content={"Desarrollo, Diseño y Sonido"} />
-          <CanvasRouter option='introduction' />
+        <Route exact path='/home/intro'>
+          <Header title={"Gwerh | Intro"} content={"Desarrollo, Diseño y Sonido"} />
+          <CanvasRouter option='intro' />
           <LateralCanvas/>
           <Navigator/>
         </Route>
@@ -44,9 +44,9 @@ function App() {
           <LateralCanvas/>
           <Navigator/>
         </Route>
-        <Route exact path='/home/cv'>
+        <Route exact path='/home/resume'>
           <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />
-          <CanvasRouter option='cv' />
+          <CanvasRouter option='resume' />
           <LateralCanvas/>
           <Navigator/>
         </Route>
@@ -74,7 +74,7 @@ function App() {
           <LateralCanvas/>
           <Navigator/>
         </Route>
-        <Route exact path='/download/cv'>
+        <Route exact path='/download/resume'>
           <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />  
           <Curriculum/>
           <LateralCanvas/>

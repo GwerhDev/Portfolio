@@ -20,7 +20,7 @@ const ResumeAuthToken = () => {
   useEffect(() => {
     if (currentUser) {
       localStorage.setItem('auth', JSON.stringify(currentUser))
-      history.push('/download/cv')
+      history.push('/download/resume')
       window.location.reload()
     }
   }, [currentUser, history])

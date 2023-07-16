@@ -14,7 +14,7 @@ export const OptionCanvas = () => {
     const language = useSelector(state=>state.language)
     const dispatch = useDispatch()
     const langOption = (option) => {
-        if(language==='ES' && option === 'introduction') return 'introduccion'
+        if(language==='ES' && option === 'intro') return 'intro'
         if(language==='ES' && option === 'develop') return 'desarrollo'
         if(language==='ES' && option === 'sound') return 'sonido'
         if(language==='ES' && option === 'design') return 'diseno '
@@ -31,7 +31,7 @@ export const OptionCanvas = () => {
             animate={{opacity:1, x:0}}
             >
 
-            {option==='introduction'?
+            {option==='intro'?
             <><Intro/>
             <div className={s.btnsCont}>
                 <img src='true' alt='' />
@@ -54,10 +54,10 @@ export const OptionCanvas = () => {
 
             <div className={s.btnsCont}>
                 <div style={{display:'flex'}}>
-                    <Link to='/home/introduction'>
+                    <Link to='/home/intro'>
                         <img 
                         className={s.menuback} 
-                        onClick={()=>{return dispatch(setOption('introduction'))}} 
+                        onClick={()=>{return dispatch(setOption('intro'))}} 
                         src={arrowIcon} 
                         alt='next' 
                         width='30px'
@@ -68,10 +68,10 @@ export const OptionCanvas = () => {
                 </div>
                 <div style={{display:'flex'}}>
                     <h3 style={{fontFamily: 'Trajan', fontSize:'18px', marginRight:'10px'}}>cv</h3>
-                    <Link to='/home/cv'>
+                    <Link to='/home/resume'>
                         <img 
                         className={s.menuback} 
-                        onClick={()=>{return dispatch(setOption('cv'))}} 
+                        onClick={()=>{return dispatch(setOption('resume'))}} 
                         src={arrowIcon} 
                         alt='next' 
                         width='30px'
@@ -80,7 +80,7 @@ export const OptionCanvas = () => {
                 </div>
             </div></>
             :null}
-            {option==='cv'?
+            {option==='resume'?
             <><Cv/>
             <div className={s.buttonsCont}>
                 <div className={s.btnsCont}>

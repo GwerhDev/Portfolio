@@ -37,7 +37,7 @@ export const Cv = () => {
                     {
                         language==='EN'? 'Continue as:' : 'Continuar como:' 
                     }
-                    <Link to='/download/cv'>
+                    <Link to='/download/resume'>
                         <div className={s.loginUserCont}>
                             <p style={{fontFamily:'Trajan', color: 'white', textShadow:'0px 0px 3px black'}}>
                                 {user.userAlias}

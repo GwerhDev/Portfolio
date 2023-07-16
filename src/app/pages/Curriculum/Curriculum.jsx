@@ -16,13 +16,13 @@ export const Curriculum = () => {
     const user = auth ? JSON.parse(auth) : null;
 
     useEffect(() => {
-        dispatch(setOption('cv'))
+        dispatch(setOption('resume'))
         if (!user){
-            history.push('/home/cv')
-        }
+/*             history.push('/home/resume')
+ */        }
     }, [dispatch, currentUser, history, user])
     return (
-        <div className={s.contCV}>
+        <div className={s.contResume}>
             <div className={s.titleContainer}>
                 <div className={s.titleContPerc}>
                     <Title title='curriculum vitae'/>            

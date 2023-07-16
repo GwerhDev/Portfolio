@@ -27,7 +27,7 @@ export const PresentationCard = (props) => {
                   </b>
                   <br />
                   <div className={s.buttonsCont}>
-                    <Link to='/home/cv' className={s.actionLink}>
+                    <Link to='/home/resume' className={s.actionLink}>
                       <button className={s.actionButton}>
                             {
                               language==='EN'?
