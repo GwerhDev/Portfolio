@@ -14,3 +14,8 @@ span{
   font-size: 14px;
   font-weight: 500;
 }
+
+.jokeTitle:hover{
+  text-decoration: underline;
+  color: rgb(17, 17, 17);
+}
