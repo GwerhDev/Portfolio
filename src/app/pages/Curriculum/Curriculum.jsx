@@ -18,14 +18,14 @@ export const Curriculum = () => {
     useEffect(() => {
         dispatch(setOption('resume'))
         if (!user){
-/*             history.push('/home/resume')
- */        }
+            history.push('/home/resume')
+        }
     }, [dispatch, currentUser, history, user])
     return (
         <div className={s.contResume}>
             <div className={s.titleContainer}>
                 <div className={s.titleContPerc}>
-                    <Title backgroundColor={true} color={'white'} title='curriculum vitae'/>            
+                    <Title backgroundColor={true} color={'white'} title='curriculum vitae'/>
                 </div>
             </div>
             { language === "EN"?

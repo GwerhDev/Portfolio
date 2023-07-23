@@ -8,9 +8,10 @@ import {
     GET_SOUND, 
     SET_MENU, 
     GET_LOGIN, 
-    SET_INFO
+    SET_INFO,
+    GET_WIKI
  } from "../../misc/consts";
-import { URL_API } from "../../misc/config";
+import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../misc/config";
 
 export const getDevelop = () => {
     return async function (dispatch) {
@@ -90,5 +91,37 @@ export function setInfo(info){
     return { 
         type: SET_INFO,
         payload: info
+    }
+}
+
+export function getWiki(query){
+    return async function (dispatch){ 
+        await axios.get(`${URL_WIKI_API}?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${query}`)
+        .then(res => {
+            console.log(res.data)
+            dispatch({
+                type: GET_WIKI,
+                payload: res.data
+            })
+        })
+        .catch((e) => {
+            console.log(e);
+        })
+    }
+}
+
+export function getDevDailyJoke(){
+    return async function (dispatch){ 
+        await axios.get(`${URL_DEVDAILYJOKE_API}`)
+        .then(res => {
+            console.log(res.data)
+            dispatch({
+                type: GET_WIKI,
+                payload: res.data
+            })
+        })
+        .catch((e) => {
+            console.log(e);
+        })
     }
 }
