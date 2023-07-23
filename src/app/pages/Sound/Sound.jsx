@@ -21,7 +21,7 @@ export const Sound = () => {
   return (
     <div className={s.soundCont}>
         <PresentationCard background={soundBack} language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND}/>
-        <div className={s.titleContainer}><Title title={language==='EN'? 'releases':'lanzamientos'}/></div>
+        <div className={s.titleContainer}><Title backgroundColor={true} color={"white"} title={language==='EN'? 'releases':'lanzamientos'}/></div>
         <SoundProjects language={language}/>
         <Gear language={language}/>
     </div>

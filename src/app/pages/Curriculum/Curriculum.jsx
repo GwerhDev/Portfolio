@@ -25,7 +25,7 @@ export const Curriculum = () => {
         <div className={s.contResume}>
             <div className={s.titleContainer}>
                 <div className={s.titleContPerc}>
-                    <Title title='curriculum vitae'/>            
+                    <Title backgroundColor={true} color={'white'} title='curriculum vitae'/>            
                 </div>
             </div>
             { language === "EN"?

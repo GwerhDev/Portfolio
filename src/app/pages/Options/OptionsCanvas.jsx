@@ -25,7 +25,7 @@ export const OptionCanvas = () => {
     return (
         <div className={s.contOptions}>
             <div className={s.titleContainer}>
-                <Title title={langOption(option)} />
+                <Title backgroundColor={true} color={'white'} title={langOption(option)} />
                 <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     transition={{ duration: 1 }}

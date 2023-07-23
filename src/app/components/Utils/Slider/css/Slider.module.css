@@ -1,6 +1,8 @@
 .slider{
   width: 100%;
+  min-height: 300px;
   transition-duration: .4s;
+  transform: translateX(0);
 }
 
 .sliderCont{
@@ -8,6 +10,7 @@
 }
 
 .sliderViewer{
+  position: absolute;
   width: 100%;
   height: auto;
   display: flex;
@@ -17,7 +20,7 @@
 .container{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .buttons{
@@ -30,15 +33,11 @@
 }
 
 #prev{
-  position: relative;
   border-bottom-left-radius: 15px;
-  left: 40px;
 }
 
 #next{
-  position: relative;
   border-bottom-right-radius: 15px;
-  right: 40px;
 }
 
 .buttons:hover{
@@ -56,6 +55,10 @@
 .buttons:disabled{
   opacity: .4;
   cursor: default;
+}
+
+.buttons:disabled:hover{
+  background-color: transparent;
 }
 
 .nextButton{

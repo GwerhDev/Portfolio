@@ -52,7 +52,7 @@ export const Featured = (props) => {
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
-                <Title top="0px" backgroundColor={true} color='black' title={language==='EN'? 'featured projects (3)':'proyectos destacados (3)'}/>
+                <Title top="0px" backgroundColor={true} color='white' title={language==='EN'? 'featured projects (3)':'proyectos destacados (3)'}/>
             </div>
             <Slider>
                 <div className={s.infoCont}>

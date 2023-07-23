@@ -70,7 +70,7 @@ export const Contact = () => {
       >
       <div className={s.titleContainer}>
         <div className={s.titleContPerc}>
-          <Title title={language==='EN'? 'contact' : 'contacto'} />
+          <Title backgroundColor={true} color={'white'} title={language==='EN'? 'contact' : 'contacto'} />
         </div>
       </div>
       {showForm && (
