@@ -41,7 +41,6 @@ export const Contact = () => {
     })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       setMessage(data.message);
       setShowForm(false);
     })

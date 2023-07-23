@@ -9,7 +9,8 @@ import {
     SET_MENU, 
     GET_LOGIN, 
     SET_INFO,
-    GET_WIKI
+    GET_WIKI,
+    GET_DEVDAILYJOKE
  } from "../../misc/consts";
 import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../misc/config";
 
@@ -75,14 +76,13 @@ export function loginWithGoogle(accessToken){
     return async function (dispatch){ 
         await axios.post(`${URL_API}/users/login-with-google`, {accessToken})
         .then(res => {
-            console.log(res.data)
             dispatch({
                 type: GET_LOGIN,
                 payload: res.data
             })
         })
         .catch((e) => {
-            console.log(e);
+            console.error(e);
         })
     }
 }
@@ -98,30 +98,29 @@ export function getWiki(query){
     return async function (dispatch){ 
         await axios.get(`${URL_WIKI_API}?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${query}`)
         .then(res => {
-            console.log(res.data)
             dispatch({
                 type: GET_WIKI,
                 payload: res.data
             })
         })
         .catch((e) => {
-            console.log(e);
+            console.error(e);
         })
     }
 }
 
-export function getDevDailyJoke(){
-    return async function (dispatch){ 
-        await axios.get(`${URL_DEVDAILYJOKE_API}`)
+export function getDevDailyJoke(lang){
+    const url = `${URL_DEVDAILYJOKE_API}/${lang}`
+    return async function (dispatch){
+        await axios.get(url)
         .then(res => {
-            console.log(res.data)
             dispatch({
-                type: GET_WIKI,
+                type: GET_DEVDAILYJOKE,
                 payload: res.data
             })
         })
         .catch((e) => {
-            console.log(e);
+            console.error(e);
         })
     }
 }

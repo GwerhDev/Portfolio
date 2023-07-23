@@ -7,7 +7,8 @@ import {
     GET_DESIGN, 
     SET_MENU, 
     GET_LOGIN, 
-    SET_INFO
+    SET_INFO,
+    GET_DEVDAILYJOKE
  } from "../../misc/consts"
 const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
@@ -34,7 +35,8 @@ const initialState = {
             es: 'Proyectos y lanzamientos relacionados a la post-producción de sonido',
             en: 'Projects and releases related to post-production of sound',
         }
-    }
+    },
+    devDailyJoke: ''
 }
 
 export default function rootReducer(state = initialState, action){
@@ -90,6 +92,11 @@ export default function rootReducer(state = initialState, action){
             return {
                 ...state,
                 info: action.payload
+            }
+        case GET_DEVDAILYJOKE:
+            return {
+                ...state,
+                devDailyJoke: action.payload,
             }
         default:
             return {...state}

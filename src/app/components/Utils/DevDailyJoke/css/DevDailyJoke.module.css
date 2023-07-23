@@ -1,0 +1,16 @@
+.jokeContainer{
+  width: 70%;
+  text-align: center;
+  color: black;
+  background-color: var(--color-background-light);
+  padding: 15px;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  border-radius: 15px;
+}
+
+span{
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
