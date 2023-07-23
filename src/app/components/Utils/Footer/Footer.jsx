@@ -8,7 +8,7 @@ export const Footer = () => {
         {currentYear()} &copy; Theme by LaloFreak.{' '}
         <a
           style={{ color: 'white', textDecoration: 'underline' }}
-          href='https://github.com/LaloFreak/Portfolio'
+          href='https://github.com/GwerhDev/Portfolio'
           alt='repository'
           target='_blank'
           rel='noreferrer'
