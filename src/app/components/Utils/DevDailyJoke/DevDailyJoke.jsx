@@ -9,12 +9,15 @@ export const DevDailyJoke = (props) => {
   return (
     <div className={s.jokeContainer}>
       <h3>
-        <a className={s.jokeTitle} href='https://github.com/GwerhDev/DevDailyJoke-API' target='_blank' rel='noreferrer'>
-          {language==='EN'? '"DEVJOKE" OF THE DAY': '"DEVJOKE" DEL DÍA'}
-          <img src={openWindow} alt="DevDailyJoke" width="18px"/>
-        </a>
+        {language==='EN'? 'DEVJOKE OF THE DAY': 'DEVJOKE DEL DÍA'}
       </h3>
-      { devDailyJoke? <span>{ `"${devDailyJoke}"` }</span> : <div><Loader/></div> }
+      <a className={s.jokeSubtitle} href='https://github.com/GwerhDev/DevDailyJoke-API' target='_blank' rel='noreferrer'>
+        <i>{language==='EN'? 'repository': 'repositorio'}</i>
+        <img src={openWindow} alt="DevDailyJoke" width="13px"/>
+      </a>
+      <p className={s.pInfo}>
+        { devDailyJoke? <span>{ `"${devDailyJoke}"` }</span> : <div><Loader/></div> }
+      </p>
     </div>
   )
 }

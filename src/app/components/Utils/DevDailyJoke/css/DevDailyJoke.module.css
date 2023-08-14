@@ -17,7 +17,29 @@ span{
   font-weight: 500;
 }
 
-.jokeTitle:hover{
+.pInfo{
+  margin-top: -10px;
+}
+
+i{
+  font-size: 12px;
+}
+
+.jokeSubtitle{
+  position: relative;
+  top: -20px;
+}
+
+.jokeSubtitle:hover{
   text-decoration: underline;
   color: rgb(17, 17, 17);
+}
+
+@media (max-width: 680px) {
+  .jokeSubtitle{
+    font-size: 14px;
+  }
+  span{
+    font-size: 13px;
+  }
 }

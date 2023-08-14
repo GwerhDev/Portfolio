@@ -17,7 +17,7 @@ export const Selection = () => {
 
     return (
         <div className={s.selectionContainer}>
-            <Title title={language==='EN'? 'select portfolio' : 'seleccionar portafolio'} color='white' />
+            <Title title={language==='EN'? 'select' : 'seleccionar'} color='white' />
             <motion.div 
             initial={{opacity:0, y:-100}}
             transition={{duration: 1}}

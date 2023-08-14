@@ -25,9 +25,7 @@ export const Bio = () => {
                             <h4 className={s.par}>
                                 Over the years, I began to dedicate my time to developing web applications, to later apply to the FullStack Web Developer Bootcamp at SoyHenry.            </h4>
 
-                            <h4 className={s.par}>
-                                Background: FullStack Developer SoyHenry, Ing. Electrónica en Universidad Santa María, Lic. en Artes mención Sonido en Universidad de Chile
-                            </h4></>)
+                            </>)
                         :
                         (<>
                             <h4 className={s.par}>
@@ -42,9 +40,7 @@ export const Bio = () => {
                             <h4 className={s.par}>
                                 Con los años, comencé a dedicar mi tiempo al desarrollo de aplicaciones web, para posteriormente aplicar en el Bootcamp de FullStack Web Developer en SoyHenry.
                             </h4>
-                            <h4 className={s.par}>
-                                Background: Desarrollador FullStack en Henry, Ing. Electrónica en Universidad Santa María, Lic. en Artes mención Sonido en Universidad de Chile
-                            </h4></>
+                            </>
                         )
                 }
             </motion.div>

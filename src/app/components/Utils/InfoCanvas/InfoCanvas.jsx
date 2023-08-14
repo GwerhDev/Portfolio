@@ -29,12 +29,12 @@ export const InfoCanvas = () => {
                         <div className={s.buttonsCont}>
                             <button className={s.divButtonA}>
                                 <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'> 
-                                    <p>{language==='EN'? "Visit" : "Visitar"}</p>
+                                    <p>{language==='EN'? "visit" : "visitar"}</p>
                                 </a>
                             </button>
                             <button className={s.divButtonA}>
                                 <a className={s.divButton} href={info.github} target='_blank' rel='noreferrer'> 
-                                    <p>GitHub</p>
+                                    <p>github</p>
                                 </a>
                             </button>
                         </div>

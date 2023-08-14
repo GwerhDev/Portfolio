@@ -75,9 +75,10 @@
 
 .divButton{
     display: flex;
-    width: 100px;
-    justify-content: center;
+    width: 115px;
+    height: 35px;
     background: linear-gradient(230deg, rgb(185, 185, 185), #bfbfbf 85%);
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding-left: 10px;
@@ -91,6 +92,8 @@
     color: #171717;
     text-shadow: none;
     transition: .4s;
+    font-family: Trajan;
+    padding-top: 0;
 }
 
 .divButton:hover{

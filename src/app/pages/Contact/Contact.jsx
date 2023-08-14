@@ -113,10 +113,12 @@ export const Contact = () => {
         </div>
       )}
       {!showForm && (
-        <div className={s.showFormCont}>
-          <p style={{
-            textShadow: message.EN === "Failed to send email."? "0px 0px 5px red" : "0px 0px 5px green"
-            }}>{language==="EN"? message.EN : message.ES}</p>
+        <div className={s.sformCont}>
+          <div className={s.showFormCont}>
+            <p style={{
+              textShadow: message.EN === "Failed to send email."? "0px 0px 5px red" : "0px 0px 5px green"
+              }}>{language==="EN"? message.EN : message.ES}</p>
+          </div>
         </div>
       )}
     </motion.div>

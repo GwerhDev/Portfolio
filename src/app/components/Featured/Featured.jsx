@@ -52,13 +52,13 @@ export const Featured = (props) => {
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
-                <Title top="0px" backgroundColor={true} color='white' title={language==='EN'? 'featured projects (3)':'proyectos destacados (3)'}/>
+                <Title top="0px" backgroundColor={true} color='white' title={language==='EN'? 'featured (3)':'destacados (3)'}/>
             </div>
             <Slider>
                 <div className={s.infoCont}>
                     <div className={s.featuredWrap} id='first'>
                         <div className={s.titleItem}>
-                            <h2>Artificial Intelligence app</h2>
+                            <h2>artificial intelligence app</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/ArtificialIntelligence-Client"/>
                                 <InfoButton 
@@ -84,7 +84,7 @@ export const Featured = (props) => {
                     </div>
                     <div className={s.featuredWrap} id='second'>
                         <div className={s.titleItem}>
-                            <h2>la Ruina tv</h2>
+                            <h2>la ruina tv</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client"/>   
                                 <InfoButton 
@@ -109,7 +109,7 @@ export const Featured = (props) => {
                     </div>
                     <div className={s.featuredWrap} id='third'>
                         <div className={s.titleItem}>
-                            <h2>world of Gwerh</h2>
+                            <h2>world of gwerh</h2>
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/World-of-Gwerh"/>
                                 <InfoButton 

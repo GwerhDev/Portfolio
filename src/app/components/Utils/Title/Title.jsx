@@ -10,7 +10,15 @@ export const Title = (props) => {
             <div className={s.contTitle} onClick={funct} style={{top: top?? '70px', cursor, backgroundColor: backgroundColor? '#171717d5' : 'transparent'}}>
                 <h1 style={{ color }}>
                     {title==='cv' && language==='EN'? 'resume': title}
-                    <img id='showMoreIcon' className={s.showMoreIcon} src={showMoreIcon} alt="" width={'25px'} style={{display: displayButton?? 'none', rotate: angle }}/>
+                    <img 
+                        id='showMoreIcon' 
+                        className={s.showMoreIcon} 
+                        src={showMoreIcon} alt="" width={'25px'} 
+                        style={{
+                            display: displayButton?? 'none', 
+                            rotate: angle,
+                            borderColor: 'transparent',
+                        }}/>
                 </h1>
             </div>
         </div>

@@ -17,17 +17,17 @@
     width: 100%;
     position: relative;
     left: -50px;
-    padding: 20px;
+    padding: 0;
     margin-bottom: 100px;
     text-align: center;
     background-color: #aaaaaa4b;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     font-weight: 600;
-}
-
-.pInfo{
-    font-size: 13px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titleContainer{
@@ -38,7 +38,7 @@
 }
 
 .titleContPerc{
-    width: 60%;
+    width: 70%;
 }
 
 .formCont{
@@ -83,18 +83,21 @@
     left: 30px;
 }
 
+.sformCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
 .showFormCont{
     font-family: Trajan;
-    position: absolute;
-    margin-top: 150px;
     width: 50%;
-    margin-left: 25%;
     color: black;
     background-color: rgba(143, 143, 143, 0.37);
     border-radius: 15px;
     text-align: center;
     padding: 2rem;
-    left: -18px;
 }
 
 .submitButton{
@@ -124,6 +127,7 @@
 
 .pInfo {
     line-height: 23px;
+    font-size: 13px;
 }
 
 .pInfo a {
@@ -137,5 +141,5 @@
 
 .pInfo a:hover {
     color: white;
-    background: #171717d5;
+    background: linear-gradient(168deg, rgb(102, 101, 101) 20%, #171717d5 120%);
 }
