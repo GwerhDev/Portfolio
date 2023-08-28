@@ -13,6 +13,8 @@ import postgresqlSVG from '../../../assets/images/svg/postgresql-icon.svg';
 import electronSVG from '../../../assets/images/svg/electronjs-icon.svg';
 import tensorflowSVG from '../../../assets/images/svg/tensorflow-icon.svg';
 import threeSVG from '../../../assets/images/svg/threejs-icon.svg';
+import angularSVG from '../../../assets/images/svg/angular-icon.svg';
+import vueSVG from '../../../assets/images/svg/vue-icon.svg';
 
 export const DevSkills = (props) => {
     const { language } = props
@@ -45,6 +47,14 @@ export const DevSkills = (props) => {
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={reactSVG} alt="" />                 
                     <h5 style={{color:'white'}}>ReactJS</h5>
+                </li>
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={angularSVG} alt="" />                 
+                    <h5 style={{color:'white'}}>AngularJS</h5>
+                </li>
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={vueSVG} alt="" />                 
+                    <h5 style={{color:'white'}}>VueJS</h5>
                 </li>
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={nextSVG} alt="" />                 
