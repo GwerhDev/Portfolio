@@ -15,6 +15,7 @@ import tensorflowSVG from '../../../assets/images/svg/tensorflow-icon.svg';
 import threeSVG from '../../../assets/images/svg/threejs-icon.svg';
 import angularSVG from '../../../assets/images/svg/angular-icon.svg';
 import vueSVG from '../../../assets/images/svg/vue-icon.svg';
+import djangoSVG from '../../../assets/images/svg/django-icon.svg';
 
 export const DevSkills = (props) => {
     const { language } = props
@@ -59,6 +60,10 @@ export const DevSkills = (props) => {
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={nextSVG} alt="" />                 
                     <h5 style={{color:'white'}}>NextJS</h5>
+                </li>
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={djangoSVG} alt="" />                 
+                    <h5 style={{color:'white'}}>Django</h5>
                 </li>
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={reduxSVG} alt="" />                  
