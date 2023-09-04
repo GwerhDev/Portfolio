@@ -12,7 +12,7 @@ import {
     GET_WIKI,
     GET_DEVDAILYJOKE
  } from "../../misc/consts";
-import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../misc/config";
+import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
 
 export const getDevelop = () => {
     return async function (dispatch) {

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
 import { Title } from '../../components/Utils/Title/Title';
 import { useSelector } from "react-redux";
-import { URL_API } from "../../../middlewares/misc/config";
+import { URL_API } from "../../../middlewares/config";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import defaultUserIcon from "../../../assets/images/png/user-icon.png";
 import logoutIcon from "../../../assets/images/png/logout-icon.png";

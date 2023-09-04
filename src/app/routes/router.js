@@ -10,7 +10,7 @@ import { CanvasRouter } from '../components/Utils/CanvasRouter/CanvasRouter';
 import ResumeAuthToken from '../pages/Auth/ResumeAuthToken';
 import MailAuthToken from '../pages/Auth/MailAuthToken';
 
-function App() {
+function Router() {
   return (
     <div className="App">
       <Switch>
@@ -86,4 +86,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;
