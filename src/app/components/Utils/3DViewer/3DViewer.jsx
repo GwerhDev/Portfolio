@@ -12,10 +12,10 @@ export function Viewer(props) {
   useEffect(() => {
     const canvas = canvasRef.current;
     canvas.width = 300;
-    canvas.height = 300;
+    canvas.height = 200;
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x919191);
-    const camera = new THREE.PerspectiveCamera(105, 1, 2, 1000);
+    const camera = new THREE.PerspectiveCamera(70, canvas.width / canvas.height, 1, 1000);
     const renderer = new THREE.WebGLRenderer({ canvas });
     renderer.setSize(canvas.width, canvas.height);
     const loader = new OBJLoader();
