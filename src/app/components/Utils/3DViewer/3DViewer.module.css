@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loaderContainer {
+  z-index: 99;
+  color: white;
+  font-family: Poppins;
+  background-color: rgb(134, 81, 81);
+  height: 3px;
+}
+
+canvas {
+  border-top-left-radius: 8px;  
+  border-top-right-radius: 8px;
+}

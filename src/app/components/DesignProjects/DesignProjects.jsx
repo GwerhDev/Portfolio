@@ -1,13 +1,22 @@
 import React from 'react';
 import s from './css/DesignProjects.module.css';
-import laruinarecordsLogo from '../../../assets/images/svg/laruinarecords-logo.svg';
 import advanc3dLogo from '../../../assets/images/svg/advanc3d-logo.svg';
 import laruinatvLogo from '../../../assets/images/svg/laruinatv-logo.svg';
+import laruinarecordsLogo from '../../../assets/images/svg/laruinarecords-logo.svg';
+import { Viewer } from '../Utils/3DViewer/3DViewer';
+import object from '../../../assets/objects/1.obj';
 
 export const DesignProjects = (props) => {
   const { language } = props
   return (
     <div className={s.designContainer}>
+      <section className={s.section}>
+        <div className={s.header}>
+          <h1>{language === 'EN' ? '3d Models': 'Modelos 3d'}</h1>
+          <p>{language === 'EN' ? 'Models for 3d printers and applications' : 'Modelos para impresoras 3D y aplicaciones'}</p>
+          <Viewer file={object}/>
+        </div>
+      </section>
       <section className={s.section}>
         <div className={s.header}>
           <h1>{language === 'EN' ? 'Isotypes': 'Isotipos'}</h1>
@@ -32,18 +41,12 @@ export const DesignProjects = (props) => {
           </div>
         </div>
       </section>
-      <section className={s.section}>
-        <div className={s.header}>
-          <h1>{language === 'EN' ? '3d Models': 'Modelos 3d'}</h1>
-          <p>{language === 'EN' ? 'Models for 3d printers and applications' : 'Modelos para impresoras 3D y aplicaciones'}</p>
-        </div>
-      </section>
-      <section className={s.section}>
+{/*       <section className={s.section}>
         <div className={s.header}>
           <h1>{language === 'EN' ? 'Web design' : 'Diseno web'}</h1>
           <p>{language === 'EN' ? 'Templates for web design' : 'Plantillas para diseño web'}</p>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
