@@ -4,8 +4,8 @@ import advanc3dLogo from '../../../assets/images/svg/advanc3d-logo.svg';
 import laruinatvLogo from '../../../assets/images/svg/laruinatv-logo.svg';
 import laruinarecordsLogo from '../../../assets/images/svg/laruinarecords-logo.svg';
 import { Viewer } from '../Utils/3DViewer/3DViewer';
-import object1 from '../../../assets/objects/1.obj';
-import object2 from '../../../assets/objects/2.obj';
+import object1 from '../../../assets/models/1.obj';
+import object2 from '../../../assets/models/2.obj';
 import { useDispatch } from 'react-redux';
 import { getDesign } from '../../../middlewares/redux/actions';
 
