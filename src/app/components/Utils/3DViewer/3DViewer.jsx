@@ -7,7 +7,6 @@ export function Viewer(props) {
   const { file } = props;
   const canvasRef = useRef(null);
   const [progressBar, setProgressBar] = useState(0);
-  const [zoom, setZoom] = useState(5);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -31,7 +30,7 @@ export function Viewer(props) {
         console.error('Error al cargar el archivo .obj', error);
       }
     );
-    camera.position.z = zoom;
+    camera.position.z = 5;
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(0, 1, 1);
     scene.add(light);
@@ -64,20 +63,14 @@ export function Viewer(props) {
     canvas.addEventListener('mouseup', () => {
       isDragging = false;
     });
-    canvas.addEventListener('wheel', (event) => {
-      if (event.deltaY < 0) {
-        setZoom((prevZoom) => prevZoom - 0.1);
-      } else {
-        setZoom((prevZoom) => prevZoom + 0.1);
-      }
-    });
+
     const animate = () => {
       requestAnimationFrame(animate);
-      camera.position.z = zoom;
       renderer.render(scene, camera);
     };
     animate();
-  }, [file, zoom]);
+  }, [file]);
+
   return (
     <div className={s.container}>
       <div className={s.container}>
