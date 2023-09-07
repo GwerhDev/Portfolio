@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import s from './css/DesignProjects.module.css';
+import s from './DesignProjects.module.css';
 import advanc3dLogo from '../../../assets/images/svg/advanc3d-logo.svg';
 import laruinatvLogo from '../../../assets/images/svg/laruinatv-logo.svg';
 import laruinarecordsLogo from '../../../assets/images/svg/laruinarecords-logo.svg';
@@ -13,7 +13,7 @@ const objects = [object1, object2]
 
 export const DesignProjects = (props) => {
   const { language } = props;
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getDesign())

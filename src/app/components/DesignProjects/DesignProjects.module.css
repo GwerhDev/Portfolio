@@ -72,10 +72,11 @@ h6{
 }
 
 .ulContainer {
-  display: flex;
+  display: grid;
   padding: 0;
-  padding-top: 20px;
-  justify-content: space-evenly;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 li {
