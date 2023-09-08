@@ -24,7 +24,7 @@ const initialState = {
     info: {},
     portfolioInfo: {
         develop: {
-            es: 'Proyectos y applicaciones relacionados a la programación y el desarrollo web',
+            es: 'Proyectos y aplicaciones relacionados a la programación y el desarrollo web',
             en: 'Projects and applications related to web development and programming',
         },
         design: {
