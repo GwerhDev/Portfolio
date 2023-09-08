@@ -38,17 +38,33 @@ export const Featured = (props) => {
     const role = {
         first:{
             en: "Role: IA Training, Machine Learning, FullStack Developer, UI/UX Designer", 
-            es: "Rol: Entrenamiento IA, Machine Learning, Desarrollador FullStack, Diseñador UI/UX"
+            es: "Rol: Entrenamiento IA, Machine Learning, Desarrollador FullStack, Diseñador UI/UX",
+
         },
         second:{
             en: "Role: FullStack Developer, UI/UX Designer", 
-            es: "Rol: Desarrollador FullStack, Diseñador UI/UX"
+            es: "Rol: Desarrollador FullStack, Diseñador UI/UX",
         },
         third:{
             en: "Role: FullStack Developer, UI/UX Designer", 
-            es: "Rol: Desarrollador FullStack, Diseñador UI/UX"
+            es: "Rol: Desarrollador FullStack, Diseñador UI/UX",
         },
     }
+    const github = {
+        first: {
+            frontend: "https://github.com/GwerhDev/ArtificialIntelligence-Client",
+            backend: ""
+        },
+        second: {
+            frontend: "https://github.com/GwerhDev/La-Ruina-TV-client",
+            backend: ""
+        },
+        third: {
+            frontend: "https://github.com/GwerhDev/World-of-Gwerh",
+            backend: ""
+        }
+    }
+
     return (
         <div className={s.featuredCont} id="flex-column-center">
             <div className={s.title}>
@@ -69,7 +85,7 @@ export const Featured = (props) => {
                                     technologies={technologies.first}
                                     role={role.first}
                                     url="https://terminalkiller.site/#/ai-testing"
-                                    github="https://github.com/GwerhDev/ArtificialIntelligence-Client"
+                                    github={github.first}
                                     language={language}
                                 />                            
                             </div>
@@ -95,7 +111,7 @@ export const Featured = (props) => {
                                     technologies={technologies.second}
                                     role={role.second}
                                     url="https://tv.laruinarecords.cl"
-                                    github="https://github.com/GwerhDev/La-Ruina-TV-client"
+                                    github={github.second}
                                 />
                             </div>
                         </div>
@@ -120,7 +136,7 @@ export const Featured = (props) => {
                                     technologies={technologies.third}
                                     role={role.third}
                                     url="http://worldofgwerh.terminalkiller.site"
-                                    github="https://github.com/GwerhDev/World-of-Gwerh"
+                                    github={github.third}
                                 />                            
                             </div>
                         </div>

@@ -75,7 +75,6 @@
 
 .divButton{
     display: flex;
-    width: 115px;
     height: 35px;
     background: linear-gradient(230deg, rgb(185, 185, 185), #bfbfbf 85%);
     justify-content: center;
@@ -86,6 +85,7 @@
     border-radius: 10px;
     transition: .4s;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .divButton p{
@@ -106,6 +106,7 @@
 
 .buttonsCont{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 5px;
 }

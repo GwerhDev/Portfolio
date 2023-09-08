@@ -27,16 +27,45 @@ export const InfoCanvas = () => {
                             }} 
                         />
                         <div className={s.buttonsCont}>
-                            <button className={s.divButtonA}>
-                                <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'> 
-                                    <p>{language==='EN'? "visit" : "visitar"}</p>
-                                </a>
-                            </button>
-                            <button className={s.divButtonA}>
-                                <a className={s.divButton} href={info.github} target='_blank' rel='noreferrer'> 
-                                    <p>github</p>
-                                </a>
-                            </button>
+                            {
+                                info.url?.length?
+                                <button className={s.divButtonA}>
+                                    <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'> 
+                                        <p>{language==='EN'? "visit" : "visitar"}</p>
+                                    </a>
+                                </button>
+                                : null
+                            }
+
+                            {
+                                info.github?.frontend?.length?
+                                <button className={s.divButtonA}>
+                                    <a className={s.divButton} href={info.github?.frontend} target='_blank' rel='noreferrer'> 
+                                        <p>github - frontend</p>
+                                    </a>
+                                </button>
+                                : null
+                            }
+
+                            {
+                                info.github?.backend?.length?
+                                <button className={s.divButtonA}>
+                                    <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'> 
+                                        <p>github - backend</p>
+                                    </a>
+                                </button>
+                                : null
+                            }
+
+{
+                                info.github?.code?.length?
+                                <button className={s.divButtonA}>
+                                    <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'> 
+                                        <p>github</p>
+                                    </a>
+                                </button>
+                                : null
+                            }
                         </div>
                         <div className={s.externalTextCont}>
                             <div className={s.textCont}>
