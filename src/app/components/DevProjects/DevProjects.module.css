@@ -82,7 +82,6 @@
 .cathegoryDescription{
   height: auto;
   width: 205px;
-  padding-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
