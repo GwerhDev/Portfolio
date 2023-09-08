@@ -9,6 +9,7 @@ import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts";
 import { SoundProjects } from "../../components/SoundProjects/SoundProjects";
 import soundIcon from '../../../assets/images/png/sound-icon.png';
 import soundBack from '../../../assets/images/jpg/sound-bg.jpg';
+import { SoundSkills } from "../../components/SoundSkills/SoundSkills";
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)
@@ -24,6 +25,7 @@ export const Sound = () => {
         <div className={s.titleContainer}><Title backgroundColor={true} color={"white"} title={language==='EN'? 'releases':'lanzamientos'}/></div>
         <SoundProjects language={language}/>
         <Gear language={language}/>
+        <SoundSkills language={language}/>
     </div>
   )
 }

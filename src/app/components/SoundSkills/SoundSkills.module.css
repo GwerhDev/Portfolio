@@ -1,0 +1,53 @@
+.skillsCont{
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  filter: grayscale(1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.iconList{
+  max-width: 70%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleCont{
+  width: 100%;
+  text-align: center;
+}
+
+.titleCont h1{
+  font-family:Trajan;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.icon h5{
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (max-width: 950px) {
+  .titleCont h1{
+      font-size: 1.5rem;
+  }
+  .iconList{
+      scale: .9;
+  }
+}
