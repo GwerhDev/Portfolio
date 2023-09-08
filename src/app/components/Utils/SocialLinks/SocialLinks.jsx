@@ -1,4 +1,4 @@
-import s from './css/SocialLinks.module.css'
+import s from './SocialLinks.module.css'
 import linkedinIcon from "../../../../assets/images/png/linkedin-icon.png"
 import githubIcon from "../../../../assets/images/png/github-icon.png"
 

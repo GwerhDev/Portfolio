@@ -1,4 +1,4 @@
-import s from "./css/Profile.module.css";
+import s from "./Profile.module.css";
 import picGwerhDev from "../../../assets/images/png/LaloFreak.png";
 
 export const Profile = () => {

@@ -1,5 +1,5 @@
+import s from './NavFilter.module.css';
 import React, { useState } from 'react';
-import s from './css/NavFilter.module.css';
 import NavFilterFunctions from '../../../functions/NavFilterFunctions';
 
 export const NavFilter = (props) => {

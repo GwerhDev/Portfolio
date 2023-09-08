@@ -1,6 +1,6 @@
 import React from 'react'
 import { openInfoCanvas } from '../../../../functions/InfoCanvasFunctions'
-import s from './css/InfoButton.module.css'
+import s from './InfoButton.module.css'
 import { useDispatch } from 'react-redux';
 import { setInfo } from '../../../../middlewares/redux/actions';
 

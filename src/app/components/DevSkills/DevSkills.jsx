@@ -1,4 +1,4 @@
-import s from './css/DevSkills.module.css';
+import s from './DevSkills.module.css';
 import htmlSVG from '../../../assets/images/svg/html-icon.svg';
 import cssSVG from '../../../assets/images/svg/css-icon.svg';
 import pythonSVG from '../../../assets/images/svg/python-icon.svg';
@@ -64,6 +64,10 @@ export const DevSkills = (props) => {
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={djangoSVG} alt="" />                 
                     <h5 style={{color:'white'}}>Django</h5>
+                </li>
+                <li className={s.icon}>
+                    <img className={s.svgIcons} src={reactSVG} alt="" />                 
+                    <h5 style={{color:'white'}}>ReactNative</h5>
                 </li>
                 <li className={s.icon}>
                     <img className={s.svgIcons} src={reduxSVG} alt="" />                  

@@ -1,4 +1,4 @@
-import s from './css/Language.module.css'
+import s from './Language.module.css'
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { setLanguage } from "../../../../middlewares/redux/actions"

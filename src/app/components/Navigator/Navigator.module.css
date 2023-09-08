@@ -23,25 +23,25 @@
   position: relative;
 }
 .profileImg{
-  background-image: url(../../../../assets/images/png/menu-icon.png);
+  background-image: url(../../../assets/images/png/menu-icon.png);
 }
 .homeImg{
-  background-image: url(../../../../assets/images/png/home-icon.png);
+  background-image: url(../../../assets/images/png/home-icon.png);
 }
 .webImg{
-  background-image: url(../../../../assets/images/png/dev-icon.png);
+  background-image: url(../../../assets/images/png/dev-icon.png);
 }
 .soundImg{
-  background-image: url(../../../../assets/images/png/sound-icon.png);
+  background-image: url(../../../assets/images/png/sound-icon.png);
 }
 .designImg{
-  background-image: url(../../../../assets/images/png/design-icon.png);
+  background-image: url(../../../assets/images/png/design-icon.png);
 }
 .contactImg{
-  background-image: url(../../../../assets/images/png/contact-icon.png);
+  background-image: url(../../../assets/images/png/contact-icon.png);
 }
 .logoutImg{
-  background-image: url(../../../../assets/images/png/logout-icon.png);
+  background-image: url(../../../assets/images/png/logout-icon.png);
 }
 .profileImg,
 .homeImg,

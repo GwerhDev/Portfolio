@@ -1,4 +1,4 @@
-import s from './css/PresentationCard.module.css';
+import s from './PresentationCard.module.css';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 

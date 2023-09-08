@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './css/InfoToast.module.css'
+import s from './InfoToast.module.css'
 
 export const InfoToast = (props) => {
   const { info, language } = props;

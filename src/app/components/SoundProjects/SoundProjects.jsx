@@ -1,4 +1,4 @@
-import s from "./css/SoundProjects.module.css";
+import s from "./SoundProjects.module.css";
 import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";

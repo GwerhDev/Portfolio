@@ -1,4 +1,4 @@
-import s from "./css/Menu.module.css";
+import s from "./Menu.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { setOption } from "../../../middlewares/redux/actions";

@@ -1,4 +1,4 @@
-import s from "./css/CanvasRouter.module.css";
+import s from "./CanvasRouter.module.css";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setOption } from "../../../../middlewares/redux/actions";

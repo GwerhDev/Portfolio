@@ -1,4 +1,4 @@
-import s from "./css/Featured.module.css";
+import s from "./Featured.module.css";
 import { RenderDriveImg } from "../../../functions/RenderDriveImg";
 import { Title } from "../Utils/Title/Title";
 import { InfoButton } from "../Utils/Buttons/InfoButton";

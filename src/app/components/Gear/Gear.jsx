@@ -1,4 +1,4 @@
-import s from './css/Gear.module.css';
+import s from './Gear.module.css';
 import { motion } from 'framer-motion';
 import qu16Img from '../../../assets/images/png/qu16-img.png';
 import scarletImg from '../../../assets/images/png/18i20.png';

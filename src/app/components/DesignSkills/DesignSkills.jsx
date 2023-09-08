@@ -1,4 +1,4 @@
-import s from './css/DesignSkills.module.css';
+import s from './DesignSkills.module.css';
 import photoshopSVG from '../../../assets/images/svg/photoshop-icon.svg';
 import premiereproSVG from '../../../assets/images/svg/premierepro-icon.svg';
 import illustratorSVG from '../../../assets/images/svg/illustrator-icon.svg';

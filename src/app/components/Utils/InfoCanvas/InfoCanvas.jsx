@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { handleClickOutside } from '../../../../functions/InfoCanvasFunctions'
-import s from './css/InfoCanvas.module.css'
+import s from './InfoCanvas.module.css'
 import linkIcon from '../../../../assets/images/png/openwindow-white-icon.png'
 
 export const InfoCanvas = () => {

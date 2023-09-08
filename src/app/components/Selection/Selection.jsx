@@ -1,8 +1,8 @@
+import s from './Section.module.css';
 import { useState } from 'react';
-import s from './css/Section.module.css';
 import { motion } from 'framer-motion';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Title } from '../Utils/Title/Title';
 import { InfoToast } from '../Utils/InfoToast/InfoToast';
 import devIcon from '../../../assets/images/png/dev-icon.png';

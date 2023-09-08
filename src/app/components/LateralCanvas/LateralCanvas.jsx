@@ -1,4 +1,4 @@
-import s from "./css/LateralCanvas.module.css";
+import s from "./LateralCanvas.module.css";
 import { Menu } from "../Menu/Menu";
 import { Profile } from "../Profile/Profile";
 import { Footer } from "../Utils/Footer/Footer";

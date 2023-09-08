@@ -1,4 +1,4 @@
-import s from './css/Title.module.css';
+import s from './Title.module.css';
 import { useSelector } from 'react-redux';
 import showMoreIcon from '../../../../assets/images/png/showmore-icon.png';
 

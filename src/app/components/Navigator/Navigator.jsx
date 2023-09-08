@@ -1,4 +1,4 @@
-import s from "./css/Navigator.module.css";
+import s from "./Navigator.module.css";
 import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";

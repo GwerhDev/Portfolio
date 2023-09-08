@@ -1,5 +1,5 @@
+import s from './DevDailyJoke.module.css';
 import React from 'react';
-import s from './css/DevDailyJoke.module.css';
 import { Loader } from '../Loader/Loader';
 import openWindow from '../../../../assets/images/png/openwindow-icon.png'
 
