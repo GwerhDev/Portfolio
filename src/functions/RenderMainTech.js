@@ -1,13 +1,14 @@
-import angularSVG from '../assets/images/svg/angular-icon.svg';
-import reactSVG from '../assets/images/svg/react-icon.svg';
 import vueSVG from '../assets/images/svg/vue-icon.svg';
-import threeSVG from '../assets/images/svg/threejs-icon.svg';
 import nextSVG from '../assets/images/svg/next-icon.svg';
-import electronSVG from '../assets/images/svg/electronjs-icon.svg';
 import nodeSVG from '../assets/images/svg/node-icon.svg';
+import reactSVG from '../assets/images/svg/react-icon.svg';
+import djangoSVG from '../assets/images/svg/django-icon.svg';
+import threeSVG from '../assets/images/svg/threejs-icon.svg';
+import angularSVG from '../assets/images/svg/angular-icon.svg';
+import electronSVG from '../assets/images/svg/electronjs-icon.svg';
 import tensorflowSVG from '../assets/images/svg/tensorflow-icon.svg';
 
-export function MainTechRender(e) {
+export function RenderMainTech(e) {
   switch(e) {
     case "Angular":
       return angularSVG;
@@ -27,6 +28,8 @@ export function MainTechRender(e) {
       return nodeSVG;
     case "TensorFlow":
       return tensorflowSVG;
+    case "Django":
+      return djangoSVG;
     default:
       return;
   }

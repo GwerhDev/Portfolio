@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import s from './DevProjects.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { RenderDriveImg } from '../../../functions/RenderDriveImg';
+import { RenderMainTech } from '../../../functions/RenderMainTech';
 import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 import { NavFilter } from '../NavFilter/NavFilter';
 import loadingImg from "../../../assets/images/gif/loading.gif";
 import { Loader } from '../Utils/Loader/Loader';
-import { MainTechRender } from '../../../functions/MainTechRender';
 
 export const DevProjects = (props) => {
   const { language } = props;
@@ -49,7 +49,7 @@ export const DevProjects = (props) => {
                 key={`ulWeb${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
-                    e.technologies.main? <img src={MainTechRender(e.technologies.main)} alt="" width={30}/> : null
+                    e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
                   }                
                   <h1>{e.name}</h1>
                 </div>
@@ -85,7 +85,7 @@ export const DevProjects = (props) => {
                 key={`ulDesk${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
-                    e.technologies.main? <img src={MainTechRender(e.technologies.main)} alt="" width={30}/> : null
+                    e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
                   }   
                   <h1>{e.name}</h1>
                 </div>
@@ -121,7 +121,7 @@ export const DevProjects = (props) => {
                 key={`ulMobile${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
-                    e.technologies.main? <img src={MainTechRender(e.technologies.main)} alt="" width={30}/> : null
+                    e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
                   }   
                   <h1>{e.name}</h1>
                 </div>
@@ -157,7 +157,7 @@ export const DevProjects = (props) => {
                 key={`ulSoft${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderDriveImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
-                    e.technologies.main? <img src={MainTechRender(e.technologies.main)} alt="" width={30}/> : null
+                    e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
                   }   
                   <h1>{e.name}</h1>
                 </div>
