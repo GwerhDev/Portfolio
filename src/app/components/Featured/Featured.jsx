@@ -53,11 +53,11 @@ export const Featured = (props) => {
     const github = {
         first: {
             frontend: "https://github.com/GwerhDev/ArtificialIntelligence-Client",
-            backend: ""
+            backend: "https://github.com/GwerhDev/ArtificialIntelligence-API"
         },
         second: {
-            frontend: "https://github.com/GwerhDev/La-Ruina-TV-client",
-            backend: ""
+            frontend: "https://github.com/GwerhDev/La-Ruina-TV-Client",
+            backend: "https://github.com/GwerhDev/La-Ruina-TV-API"
         },
         third: {
             frontend: "https://github.com/GwerhDev/World-of-Gwerh",
