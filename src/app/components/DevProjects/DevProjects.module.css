@@ -94,11 +94,14 @@
 }
 
 @media (max-width: 950px) {
-  .title{
+  .title {
     display: none;
   }
   .cathegoryDescription h1{
     font-size: 18px;
+  }
+  .devUlCont {
+    margin-top: 0;
   }
   .devUlCont li {
     flex: 0 0 115px;
@@ -118,6 +121,6 @@
   }
   .cathegoryDescription{
     width: 100%;
-    padding-right: 0;
+    padding-bottom: 0;
   }
 }
