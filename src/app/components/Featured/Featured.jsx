@@ -72,33 +72,7 @@ export const Featured = (props) => {
             </div>
             <Slider>
                 <div className={s.infoCont}>
-                    <div className={s.featuredWrap} id='second'>
-                        <div className={s.titleItem}>
-                            <h2>la ruina tv</h2>
-                            <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client" />
-                                <InfoButton
-                                    img={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')}
-                                    title="LA RUINA TV"
-                                    type="featured"
-                                    description={description.second}
-                                    technologies={technologies.second}
-                                    role={role.second}
-                                    url="https://tv.laruinarecords.cl"
-                                    github={github.second}
-                                />
-                            </div>
-                        </div>
-                        <div className={s.wrapper}>
-                            <div className={s.imageContainer}>
-                                <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
-                                    <img src={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')} alt="" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={s.featuredWrap} id='first'>
+                <div className={s.featuredWrap} id='first'>
                         <div className={s.titleItem}>
                             <h2>artificial intelligence app</h2>
                             <div className={s.buttonsContainer}>
@@ -120,6 +94,32 @@ export const Featured = (props) => {
                             <div className={s.imageContainer}>
                                 <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
                                     <img src={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')} alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={s.featuredWrap} id='second'>
+                        <div className={s.titleItem}>
+                            <h2>la ruina tv</h2>
+                            <div className={s.buttonsContainer}>
+                                <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client" />
+                                <InfoButton
+                                    img={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')}
+                                    title="LA RUINA TV"
+                                    type="featured"
+                                    description={description.second}
+                                    technologies={technologies.second}
+                                    role={role.second}
+                                    url="https://tv.laruinarecords.cl"
+                                    github={github.second}
+                                />
+                            </div>
+                        </div>
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                                    <img src={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')} alt="" />
                                 </a>
                             </div>
                         </div>
