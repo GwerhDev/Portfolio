@@ -84,7 +84,7 @@ export const Featured = (props) => {
                                     description={description.first}
                                     technologies={technologies.first}
                                     role={role.first}
-                                    url="https://terminalkiller.site/#/ai-testing"
+                                    url="https://terminalkiller.netlify.app/#/ai-testing"
                                     github={github.first}
                                     language={language}
                                 />
@@ -92,7 +92,7 @@ export const Featured = (props) => {
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
-                                <a href="https://terminalkiller.site/#/ai-testing" target="_blank" rel="noreferrer">
+                                <a href="https://terminalkiller.netlify.app/#/ai-testing" target="_blank" rel="noreferrer">
                                     <img src={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')} alt="" />
                                 </a>
                             </div>
@@ -137,14 +137,14 @@ export const Featured = (props) => {
                                     description={description.third}
                                     technologies={technologies.third}
                                     role={role.third}
-                                    url="http://worldofgwerh.terminalkiller.site"
+                                    url="http://worldofgwerh.netlify.app"
                                     github={github.third}
                                 />
                             </div>
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
-                                <a href="http://worldofgwerh.terminalkiller.site" target="_blank" rel="noreferrer">
+                                <a href="http://worldofgwerh.netlify.app" target="_blank" rel="noreferrer">
                                     <img src={RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI')} alt="" />
                                 </a>
                             </div>
