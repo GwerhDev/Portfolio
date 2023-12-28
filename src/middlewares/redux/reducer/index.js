@@ -8,7 +8,8 @@ import {
     SET_MENU, 
     GET_LOGIN, 
     SET_INFO,
-    GET_DEVDAILYJOKE
+    GET_DEVDAILYJOKE,
+    GET_LASTS
  } from "../../misc/consts"
 const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
@@ -22,6 +23,7 @@ const initialState = {
     menu: '',
     currentUser: '',
     info: {},
+    lasts: [],
     portfolioInfo: {
         develop: {
             es: 'Proyectos y aplicaciones relacionados a la programación y el desarrollo web',
@@ -43,6 +45,11 @@ export default function rootReducer(state = initialState, action){
     const auth = localStorage.getItem('auth');
     const user = auth ? JSON.parse(auth) : null;
     switch(action.type){
+        case GET_LASTS:
+            return {
+                ...state,
+                lasts: action.payload,
+            }
         case GET_DEVELOP:
             return {
                 ...state,

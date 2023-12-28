@@ -9,6 +9,7 @@
   padding-top: 0px;
   border-radius: 15px;
   overflow-y: auto;
+  font-family: var(--font-global);
 }
 
 span{

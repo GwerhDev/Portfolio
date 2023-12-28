@@ -1,4 +1,4 @@
-.contOptions{
+.contOptions {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -15,11 +15,11 @@
     align-items: center;
 }
 
-.titleContainer{
+.titleContainer {
     width: 70%;
 }
 
-.contTitle{
+.contTitle {
     position: relative;
     width: 100%;
     height: auto;
@@ -32,7 +32,7 @@
     padding-right: 50px;
 }
 
-.cont{
+.cont {
     width: 100%;
     height: 350px;
     color: rgb(255, 255, 255);
@@ -47,20 +47,20 @@
     border-radius: 15px;
     box-shadow: 0px 0px 10px white;
 }
-.par{
-    font-weight: thin; 
-    font-family: 'Poppins', sans-serif; 
+
+.par {
+    font-weight: thin;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
-.buttonsCont{
+.buttonsCont {
     width: 100%;
 }
 
-.btnsCont{
+.btnsCont {
     position: relative;
     width: 100%;
     padding-left: 0px;
@@ -70,19 +70,19 @@
     justify-content: space-between;
 }
 
-.menuback:hover{
+.menuback:hover {
     cursor: pointer;
     scale: 1.1;
 }
 
-.menuback{
+.menuback {
     transition-duration: .4s;
     width: 35px;
     height: 35px;
     margin-top: 12px;
 }
 
-.googleButton{
+.googleButton {
     width: 150px;
     height: 40px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
@@ -92,18 +92,18 @@
     filter: grayscale(.3);
 }
 
-.googleButton:hover{
+.googleButton:hover {
     cursor: pointer;
     scale: 1.04;
 }
 
-.googlePic{
+.googlePic {
     border-radius: 100%;
     margin-top: -20px;
     margin-bottom: 20px;
 }
 
-.loginUserCont{
+.loginUserCont {
     margin-top: 20px;
     width: auto;
     border: solid;
@@ -113,12 +113,12 @@
     transition-duration: .4s;
 }
 
-.loginUserCont:hover{
+.loginUserCont:hover {
     background-color: rgba(255, 255, 255, 0.562);
 }
 
 @media (max-width: 700px) {
-    .btnsCont{
+    .btnsCont {
         scale: .7;
         width: 100%;
         margin-left: -8px;
@@ -126,20 +126,21 @@
 
     }
 
-    .par{
+    .par {
         text-align: start;
         font-weight: bold;
     }
-    
+
 }
 
 @keyframes animation {
     from {
-      opacity: 1;
-      scale: 1
+        opacity: 1;
+        scale: 1
     }
+
     to {
-      opacity: .6;
-      scale: 1.2
+        opacity: .6;
+        scale: 1.2
     }
 }

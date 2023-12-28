@@ -10,7 +10,8 @@ import {
     GET_LOGIN, 
     SET_INFO,
     GET_WIKI,
-    GET_DEVDAILYJOKE
+    GET_DEVDAILYJOKE,
+    GET_LASTS
  } from "../../misc/consts";
 import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
 
@@ -116,6 +117,22 @@ export function getDevDailyJoke(lang){
         .then(res => {
             dispatch({
                 type: GET_DEVDAILYJOKE,
+                payload: res.data
+            })
+        })
+        .catch((e) => {
+            console.error(e);
+        })
+    }
+}
+
+export function getGithubEvents() {
+    const url = `${URL_API}/github/GwerhDev/lasts`
+    return async function (dispatch){
+        await axios.get(url)
+        .then(res => {
+            dispatch({
+                type: GET_LASTS,
                 payload: res.data
             })
         })

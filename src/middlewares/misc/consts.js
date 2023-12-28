@@ -11,6 +11,7 @@ export const GET_LOGIN = 'GET_LOGIN';
 export const SET_INFO = 'SET_INFO';
 export const GET_WIKI = 'GET_WIKI';
 export const GET_DEVDAILYJOKE = 'GET_DEVDAILYJOKE';
+export const GET_LASTS = 'GET_LASTS';
 
 export const GET_DESCRIPTION_DEV={
     en:'Fullstack Web Developer oriented to Multimedia, Scalable Apps, Machine Learning and Artificial Intelligence.',
