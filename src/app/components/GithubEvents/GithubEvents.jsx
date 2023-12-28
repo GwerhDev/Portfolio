@@ -16,10 +16,12 @@ export const GithubEvents = (props) => {
   }, [dispatch]);
 
   useEffect(() => {
-    setInterval(() => {
+    let interval = null;
+    interval = setInterval(() => {
       setCurrent(lasts[index]);
       setIndex((index + 1) % lasts.length);
-    }, 12000);
+    }, 15000);
+    return () => (clearInterval(interval));
   }, [current, lasts, index]);
 
   return (
