@@ -111,14 +111,14 @@ export const Featured = (props) => {
                                     description={description.second}
                                     technologies={technologies.second}
                                     role={role.second}
-                                    url="https://tv.laruinarecords.cl"
+                                    url="https://tv.laruina.cl"
                                     github={github.second}
                                 />
                             </div>
                         </div>
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
-                                <a href="https://tv.laruinarecords.cl" target="_blank" rel="noreferrer">
+                                <a href="https://tv.laruina.cl" target="_blank" rel="noreferrer">
                                     <img src={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')} alt="" />
                                 </a>
                             </div>
