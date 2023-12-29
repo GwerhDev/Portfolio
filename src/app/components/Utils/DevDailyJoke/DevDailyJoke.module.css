@@ -21,6 +21,7 @@ span{
 .pTitle {
   font-family: var(--font-global);
   font-size: 18px;
+  font-weight: 600;
 }
 
 .pInfo{
