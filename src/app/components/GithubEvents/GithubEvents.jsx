@@ -19,6 +19,7 @@ export const GithubEvents = (props) => {
 
   useEffect(() => {
     let interval = null;
+    setCurrent(lasts[index]);
     interval = setInterval(() => {
       setCurrent(lasts[index]);
       setIndex((index + 1) % lasts.length);
