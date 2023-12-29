@@ -30,7 +30,7 @@ export const GithubEvents = (props) => {
     <ul className={s.container}>
       <li>
         <img className={s.clock} src={clockIcon} alt="" />
-        <h4 className={s.sectionTitle}>{language === "EN" ? "Lasts Projects" : "Últimos Proyectos"}</h4>
+        <h4 className={s.sectionTitle}>{language === "EN" ? "Recent activity" : "Actividad reciente"}</h4>
         <h2 className={s.title}>
           <span>
             <img className={s.githubIcon} src={githubIcon} alt="" width="35px" />
