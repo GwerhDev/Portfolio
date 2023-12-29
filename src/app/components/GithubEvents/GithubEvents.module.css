@@ -28,6 +28,18 @@
   padding: 1rem;
 }
 
+.ownerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+}
+
+.ownerContainer img {
+  border-radius: 100%;
+}
+
 
 @media (max-width: 950px) {
   .sectionTitle {
@@ -50,5 +62,13 @@
 
   .githubIcon {
     width: 25px;
+  }
+
+  .ownerContainer img {
+    height: 22px;
+  }
+
+  .ownerContainer {
+    font-size: 13px;
   }
 }

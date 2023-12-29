@@ -40,6 +40,10 @@ export const GithubEvents = (props) => {
             {current?.name? <img className={s.openwindowIcon} src={openwindowIcon} alt="" width="25px" /> : null}
           </a>
         </h2>
+        <div className={s.ownerContainer}>
+          <img src={current?.owner?.avatarUrl || null} alt="" height="30px" />
+          <a href={current?.owner?.url || null}><p>{current?.owner?.name || null}</p></a>
+        </div>
         {
           current?.lastUpdated
           ?
