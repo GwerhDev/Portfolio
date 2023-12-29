@@ -2,7 +2,9 @@ import s from './GithubEvents.module.css';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getGithubEvents } from '../../../middlewares/redux/actions';
+import clockIcon from '../../../assets/images/svg/clock-icon.svg';
 import githubIcon from '../../../assets/images/png/github-icon.png';
+import openwindowIcon from '../../../assets/images/png/openwindow-icon.png';
 
 export const GithubEvents = (props) => {
   const { language } = props;
@@ -27,13 +29,15 @@ export const GithubEvents = (props) => {
   return (
     <ul className={s.container}>
       <li>
-        <h4>{language === "EN" ? "Lasts Projects" : "Últimos Proyectos"}</h4>
+        <img className={s.clock} src={clockIcon} alt="" />
+        <h4 className={s.sectionTitle}>{language === "EN" ? "Lasts Projects" : "Últimos Proyectos"}</h4>
         <h2 className={s.title}>
           <span>
-            <img src={githubIcon} alt="" width="35px" />
+            <img className={s.githubIcon} src={githubIcon} alt="" width="35px" />
           </span>
           <a href={current?.repoUrl} target='_blank' rel="noreferrer">
-            {current?.name || "Cargando..."}
+            {current?.name? "/" + current?.name : "Cargando..."}
+            {current?.name? <img className={s.openwindowIcon} src={openwindowIcon} alt="" width="25px" /> : null}
           </a>
         </h2>
         {

@@ -21,3 +21,33 @@
   padding-bottom: .8rem;
   backdrop-filter: blur(10px);
 }
+
+.clock {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+}
+
+
+@media (max-width: 950px) {
+  .sectionTitle {
+    font-size: .7rem;
+  }
+
+  .title{
+    font-size: .9rem;
+    gap: .5rem;
+  }
+
+  .clock {
+    width: 35px;
+  }
+
+  .openwindowIcon {
+    width: 13px;
+  }
+
+  .githubIcon {
+    width: 25px;
+  }
+}
