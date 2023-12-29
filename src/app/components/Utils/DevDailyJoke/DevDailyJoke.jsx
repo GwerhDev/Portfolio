@@ -8,9 +8,9 @@ export const DevDailyJoke = (props) => {
 
   return (
     <div className={s.jokeContainer}>
-      <h3>
+      <p className={s.pTitle}>
         {language==='EN'? 'DEVJOKE OF THE DAY': 'DEVJOKE DEL DÍA'}
-      </h3>
+      </p>
       <a className={s.jokeSubtitle} href='https://github.com/GwerhDev/DevDailyJoke-API' target='_blank' rel='noreferrer'>
         <i>{language==='EN'? 'repository': 'repositorio'}</i>
         <img src={openWindow} alt="DevDailyJoke" width="13px"/>

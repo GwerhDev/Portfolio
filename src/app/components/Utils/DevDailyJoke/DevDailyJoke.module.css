@@ -18,6 +18,11 @@ span{
   font-weight: 500;
 }
 
+.pTitle {
+  font-family: var(--font-global);
+  font-size: 18px;
+}
+
 .pInfo{
   margin-top: -10px;
 }
@@ -32,8 +37,7 @@ i{
 }
 
 .jokeSubtitle:hover{
-  text-decoration: underline;
-  color: rgb(17, 17, 17);
+  color: rgb(59, 59, 59);
 }
 
 @media (max-width: 680px) {
