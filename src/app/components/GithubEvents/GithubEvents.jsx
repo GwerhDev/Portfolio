@@ -42,7 +42,9 @@ export const GithubEvents = (props) => {
         </h2>
         <div className={s.ownerContainer}>
           <img src={current?.owner?.avatarUrl || null} alt="" height="30px" />
-          <a href={current?.owner?.url || null}><p>{current?.owner?.name || null}</p></a>
+          <a href={current?.owner?.url || null} target='_blank' rel='noreferrer'>
+            <p>{current?.owner?.name || null}</p>
+          </a>
         </div>
         {
           current?.lastUpdated
