@@ -5,11 +5,11 @@ import { Title } from "../../components/Utils/Title/Title";
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
 import { Gear } from "../../components/Gear/Gear";
 import { getSound } from "../../../middlewares/redux/actions";
-import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/consts";
+import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/descriptions";
 import { SoundProjects } from "../../components/SoundProjects/SoundProjects";
+import { SoundSkills } from "../../components/SoundSkills/SoundSkills";
 import soundIcon from '../../../assets/images/png/sound-icon.png';
 import soundBack from '../../../assets/images/jpg/sound-bg.jpg';
-import { SoundSkills } from "../../components/SoundSkills/SoundSkills";
 
 export const Sound = () => {
   const language = useSelector(state=>state.language)

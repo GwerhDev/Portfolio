@@ -1,5 +1,6 @@
 import s from './Footer.module.css';
 import { currentYear } from '../../../../functions/FooterFunctions';
+import { PORTFOLIO_REPO_URL } from '../../../../middlewares/config';
 
 export const Footer = () => {
   return (
@@ -8,7 +9,7 @@ export const Footer = () => {
         {currentYear()} &copy; Theme by LaloFreak.{' '}
         <a
           style={{ color: 'white', textDecoration: 'underline' }}
-          href='https://github.com/GwerhDev/Portfolio'
+          href={PORTFOLIO_REPO_URL}
           alt='repository'
           target='_blank'
           rel='noreferrer'

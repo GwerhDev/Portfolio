@@ -4,3 +4,7 @@ import { DEVELOPMENT } from "../misc/consts";
 export const URL_API = environment === DEVELOPMENT ? "http://localhost:8080/gwerh":"https://developers-terminalkiller.fly.dev/gwerh";
 export const URL_WIKI_API = "https://es.wikipedia.org/w/api.php";
 export const URL_DEVDAILYJOKE_API = "https://devdailyjoke-api.fly.dev";
+
+export const GITHUB_URL = "https://github.com/GwerhDev";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/gwerhdev/";
+export const PORTFOLIO_REPO_URL = "https://github.com/GwerhDev/Portfolio";

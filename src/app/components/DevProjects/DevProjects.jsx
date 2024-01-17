@@ -34,7 +34,7 @@ export const DevProjects = (props) => {
               onClick={()=>{
                 return (
                   dispatch(setInfo({
-                    img: e.idImg? RenderDriveImg(e.idImg): loadingImg,
+                    img: e.idImg? RenderDriveImg(e.idImg) : loadingImg,
                     title: e.name,
                     type: 'web',
                     description: language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`,

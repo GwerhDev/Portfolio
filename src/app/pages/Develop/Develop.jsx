@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
 import { DevSkills } from "../../components/DevSkills/DevSkills";
 import { Featured } from "../../components/Featured/Featured";
-import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/consts";
+import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/descriptions";
 import { Separator } from "../../components/Utils/Separator/Separator";
 import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
 import { DevProjects } from "../../components/DevProjects/DevProjects";
+import { GithubEvents } from "../../components/GithubEvents/GithubEvents";
 import devIcon from '../../../assets/images/png/dev-icon.png';
 import devBack from '../../../assets/images/jpg/dev-bg.jpg';
-import { GithubEvents } from "../../components/GithubEvents/GithubEvents";
 
 export const Develop = () => {
   const language = useSelector(state=>state.language)

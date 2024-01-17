@@ -9,13 +9,16 @@ import { removeLocalStorage } from '../../../functions/RemoveLocalStorage';
 import { Footer } from '../../components/Utils/Footer/Footer';
 import { getDevDailyJoke } from '../../../middlewares/redux/actions';
 import { DevDailyJoke } from '../../components/Utils/DevDailyJoke/DevDailyJoke';
+import { GITHUB_URL, LINKEDIN_URL } from '../../../middlewares/config';
 
 export const Landing = () => {
   const language = useSelector(state=>state.language);
   const devDailyJoke = useSelector(state=>state.devDailyJoke);
   const dispatch = useDispatch();
+  
   useEffect(()=> { removeLocalStorage() },[]);
   useEffect(()=> { dispatch(getDevDailyJoke(language==='EN'? 'en':'es')) },[dispatch, language]);
+
   return (
     <div className={s.landingCont}>
       <motion.div initial={{opacity: 0, y: 10}} transition={{duration: 2, type: 'spring'}}animate={{opacity: 1, y: 0}}>
@@ -33,7 +36,7 @@ export const Landing = () => {
           </Link>
         </div>
         <div className={s.contSL}>
-          <SocialLinks gitHub='https://github.com/GwerhDev' linkedIn='https://www.linkedin.com/in/gwerhdev/' />
+          <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
         </div>
 
       </motion.div>

@@ -1,1 +1,1 @@
-export async function RenderDriveImg (id) { return `https://drive.google.com/uc?export=view&id=${id}` }
+export function RenderDriveImg (id) { return `https://drive.google.com/uc?export=view&id=${id}` }
