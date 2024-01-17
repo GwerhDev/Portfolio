@@ -1,9 +1,9 @@
 import s from "./Featured.module.css";
-import { RenderDriveImg } from "../../../functions/RenderDriveImg";
 import { Title } from "../Utils/Title/Title";
 import { InfoButton } from "../Utils/Buttons/InfoButton";
 import { GithubButton } from "../Utils/Buttons/GithubButton";
 import { Slider } from "../Utils/Slider/Slider";
+import { RenderGithubImg } from "../../../functions/RenderGithubImg";
 
 export const Featured = (props) => {
     const { language } = props;
@@ -78,7 +78,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/ArtificialIntelligence-Client" />
                                 <InfoButton
-                                    img={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')}
+                                    img={RenderGithubImg("637593876/d4a1e612-7c03-4e5d-8f29-1c1f073c4bbf")}
                                     title="ARTIFICIAL INTELLIGENCE APP - TESTING"
                                     type="featured"
                                     description={description.first}
@@ -93,7 +93,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="https://terminalkiller.netlify.app/#/ai-testing" target="_blank" rel="noreferrer">
-                                    <img src={RenderDriveImg('10cQSHYR-JMfMMXBETucRpuw19rnyaCQ4')} alt="" />
+                                    <img src={RenderGithubImg("637593876/d4a1e612-7c03-4e5d-8f29-1c1f073c4bbf")} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -105,7 +105,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client" />
                                 <InfoButton
-                                    img={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')}
+                                    img={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")}
                                     title="LA RUINA TV"
                                     type="featured"
                                     description={description.second}
@@ -119,7 +119,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="https://tv.laruina.cl" target="_blank" rel="noreferrer">
-                                    <img src={RenderDriveImg('1WyQV_2EN83yPOC0dUQgFhPb8bzj-YxW_')} alt="" />
+                                    <img src={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/World-of-Gwerh" />
                                 <InfoButton
-                                    img={RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI')}
+                                    img={RenderGithubImg("633933924/c5112fe3-0c21-4618-835b-9e5ef28aec5e")}
                                     title="WORLD OF GWERH"
                                     type="featured"
                                     description={description.third}
@@ -145,7 +145,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="http://worldofgwerh.netlify.app" target="_blank" rel="noreferrer">
-                                    <img src={RenderDriveImg('1bToH3PblA0YjvVeeWN_L4u7HRg891XYI')} alt="" />
+                                    <img src={RenderGithubImg("633933924/c5112fe3-0c21-4618-835b-9e5ef28aec5e")} alt="" />
                                 </a>
                             </div>
                         </div>
