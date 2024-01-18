@@ -29,7 +29,8 @@ export const DevProjects = (props) => {
           </div>
           {
             API? API.at(0)?.web?.map((e,index)=>{
-            return(
+            return (
+              e.published &&
               <li 
               onClick={()=>{
                 return (
@@ -66,6 +67,7 @@ export const DevProjects = (props) => {
           {
             API? API.at(1)?.desktop?.map((e,index)=>{
             return(
+              e.published &&
               <li 
                 onClick={()=>{
                   return (
@@ -101,7 +103,8 @@ export const DevProjects = (props) => {
           </div>
           {
             API? API.at(2)?.mobile?.map((e,index)=>{
-            return(
+            return (
+              e.published &&
               <li 
                 onClick={()=>{
                   return (
@@ -137,7 +140,8 @@ export const DevProjects = (props) => {
           </div>
           {
             API? API.at(3)?.software?.map((e,index)=>{
-            return(
+            return (
+              e.published &&
               <li 
                 onClick={()=>{
                   return (
