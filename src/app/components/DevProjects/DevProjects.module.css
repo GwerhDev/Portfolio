@@ -72,7 +72,7 @@
 }
 
 .backImgCanvas h1{
-  font-family: Poppins;
+  font-family: var(--font-global);
   color: white;
   font-size: 12px;
   position: relative;
@@ -108,7 +108,7 @@
     height: 190px;
   }
   .backImgCanvas h1{
-    font-family: Poppins;
+    font-family: var(--font-global);
     color: white;
     font-size: 8.5px;
     position: relative;

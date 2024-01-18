@@ -50,7 +50,7 @@
 
 .par {
     font-weight: thin;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-global);
     font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;

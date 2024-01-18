@@ -27,7 +27,7 @@
     transition-duration: .5s;
     color: #000000;
     font-weight: thin; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: var(--font-global);
 }
 
 .divH2>h2{

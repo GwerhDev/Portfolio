@@ -68,7 +68,7 @@
 
 .devLi p{
   transition-delay: 1s;
-  font-family: Poppins;
+  font-family: var(--font-global);
   width: 280px;
   text-align: left;
 }

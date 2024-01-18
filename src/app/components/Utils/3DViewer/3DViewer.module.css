@@ -8,7 +8,7 @@
 .loaderContainer {
   z-index: 99;
   color: white;
-  font-family: Poppins;
+  font-family: var(--font-global);
   background-color: rgb(134, 81, 81);
   height: 3px;
 }

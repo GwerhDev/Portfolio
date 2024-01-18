@@ -15,13 +15,14 @@
 span{
   color: black;
   font-size: 14px;
+  font-family: var(--font-global);
   font-weight: 500;
 }
 
 .pTitle {
   font-family: var(--font-global);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .pInfo{

@@ -50,7 +50,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-weight: 600;
+    font-family: var(--font-global);
+    font-weight: 500;
     font-size: 13px;
 }
 
