@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import { handleClickOutside } from '../../../../functions/InfoCanvasFunctions'
 import s from './InfoCanvas.module.css'
 import linkIcon from '../../../../assets/images/png/openwindow-white-icon.png'
+import { URL_API } from '../../../../middlewares/config'
 
 export const InfoCanvas = () => {
     const language = useSelector(state=>state.language)
@@ -38,6 +39,16 @@ export const InfoCanvas = () => {
                             }
 
                             {
+                                info.download?.length?
+                                <button className={s.divButtonA}>
+                                    <a className={s.divButton} href={ URL_API + "/download/" + info.download} target='_blank' rel='noreferrer'> 
+                                        <p>{language==='EN'? "download" : "descargar"}</p>
+                                    </a>
+                                </button>
+                                : null
+                            }
+
+                            {
                                 info.github?.frontend?.length?
                                 <button className={s.divButtonA}>
                                     <a className={s.divButton} href={info.github?.frontend} target='_blank' rel='noreferrer'> 
@@ -57,7 +68,7 @@ export const InfoCanvas = () => {
                                 : null
                             }
 
-{
+                            {
                                 info.github?.code?.length?
                                 <button className={s.divButtonA}>
                                     <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'> 
