@@ -6,7 +6,6 @@ import { RenderMainTech } from '../../../functions/RenderMainTech';
 import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 import { NavFilter } from '../NavFilter/NavFilter';
-import { Loader } from '../Utils/Loader/Loader';
 import loadingImg from "../../../assets/images/gif/loading.gif";
 
 export const DevProjects = (props) => {
@@ -56,7 +55,7 @@ export const DevProjects = (props) => {
                 </div>
               </li>
             )
-          }) : <Loader language={language}/>
+          }) : <li className={s.emptyCard}></li>
         }
         </ul>
         <ul className={s.devUlCont} id='devListDesktopSection'>
@@ -93,7 +92,7 @@ export const DevProjects = (props) => {
                 </div>
               </li>
             )
-          }) : <Loader language={language}/>
+          }) : <li className={s.emptyCard}></li>
         }
         </ul>
         <ul className={s.devUlCont} id='devListMobileSection'>
@@ -130,7 +129,7 @@ export const DevProjects = (props) => {
                 </div>
               </li>
             )
-          }) : <Loader language={language}/>
+          }) : <li className={s.emptyCard}></li>
         }
         </ul>
         <ul className={s.devUlCont} id='devListSoftwareSection'>
@@ -168,7 +167,7 @@ export const DevProjects = (props) => {
                 </div>
               </li>
             )
-          }) : <Loader language={ language }/>
+          }) : <li className={s.emptyCard}></li>
         }
         </ul>
       </section>
