@@ -11,7 +11,6 @@ export const InfoCanvas = () => {
         <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e)}>
             <div className={s.infoDiv} style={{ backgroundImage:`url(${info.img})` }}>
                 <ul className={s.ulCont} id='ulCont'>
-                    {/* <button className={s.closeButton} onClick={() => closeInfoCanvas()}>x</button> */}
                     <a href={info.url} target='_blank' rel='noreferrer'> 
                         <div className={s.titleCont}>
                             <p>{info.title}</p>
@@ -41,7 +40,7 @@ export const InfoCanvas = () => {
                             {
                                 info.download?.length?
                                 <button className={s.divButtonA}>
-                                    <a className={s.divButton} href={ URL_API + "/download/" + info.download} target='_blank' rel='noreferrer'> 
+                                    <a className={s.divButton} href={info.download} target='_blank' rel='noreferrer'> 
                                         <p>{language==='EN'? "download" : "descargar"}</p>
                                     </a>
                                 </button>
