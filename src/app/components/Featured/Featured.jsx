@@ -9,41 +9,40 @@ export const Featured = (props) => {
     const { language } = props;
     const description = {
         first: {
+            en: "Description: Companion app for 'Diablo Immortal' e-sport clan",
+            es: "Aplicación complementaria para clan e-sport 'Diablo Immortal'"
+        },
+        second: {
             en: "Description: Tests and training for my first AI Application",
             es: "Descripción: Pruebas y entrenamiento para mi primera Aplicación IA"
         },
-        second: {
+        third: {
             en: "Description: Multimedia Platform",
             es: "Descripción: Plataforma Multimedia"
-        },
-        third: {
-            en: "Description: Art & Entertainment",
-            es: "Descripción: Arte y Entretenimiento"
         },
     }
     const technologies = {
         first: {
+            en: "Technologies: VueJs, Pinia, NodeJs, ExpressJs",
+            es: "Tecnologías: VueJs, Pinia, NodeJs, ExpressJs"
+        },
+        second: {
             en: "Technologies: ReactJs, NodeJs, Python, TensorFlowJs",
             es: "Tecnologías: ReactJs, NodeJs, Python, TensorFlowJs"
         },
-        second: {
+        third: {
             en: "Technologies: ReactJs, NodeJs, ExpressJs",
             es: "Tecnologías: ReactJs, NodeJs, ExpressJs"
-        },
-        third: {
-            en: "Technologies: ReactJs, NodeJs",
-            es: "Tecnologías: ReactJs, NodeJs"
         },
     }
     const role = {
         first: {
-            en: "Role: IA Training, Machine Learning, FullStack Developer, UI/UX Designer",
-            es: "Rol: Entrenamiento IA, Machine Learning, Desarrollador FullStack, Diseñador UI/UX",
-
+            en: "Role: FullStack Developer, UX/UI",
+            es: "Rol: FullStack Developer, UX/UI",
         },
         second: {
-            en: "Role: FullStack Developer, UI/UX Designer",
-            es: "Rol: Desarrollador FullStack, Diseñador UI/UX",
+            en: "Role: IA Training, Machine Learning, FullStack Developer, UI/UX Designer",
+            es: "Rol: Entrenamiento IA, Machine Learning, Desarrollador FullStack, Diseñador UI/UX",
         },
         third: {
             en: "Role: FullStack Developer, UI/UX Designer",
@@ -52,16 +51,16 @@ export const Featured = (props) => {
     }
     const github = {
         first: {
+            frontend: "https://github.com/GwerhDev/Shadowgardians-Client",
+            backend: "https://github.com/GwerhDev/Shadowgardians-API"
+        },
+        second: {
             frontend: "https://github.com/GwerhDev/ArtificialIntelligence-Client",
             backend: "https://github.com/GwerhDev/ArtificialIntelligence-API"
         },
-        second: {
+        third: {
             frontend: "https://github.com/GwerhDev/La-Ruina-TV-Client",
             backend: "https://github.com/GwerhDev/La-Ruina-TV-API"
-        },
-        third: {
-            frontend: "https://github.com/GwerhDev/World-of-Gwerh",
-            backend: ""
         }
     }
 
@@ -72,7 +71,33 @@ export const Featured = (props) => {
             </div>
             <Slider>
                 <div className={s.infoCont}>
-                <div className={s.featuredWrap} id='first'>
+                    <div className={s.featuredWrap} id='first'>
+                        <div className={s.titleItem}>
+                            <h2>shadowgardians</h2>
+                            <div className={s.buttonsContainer}>
+                                <GithubButton url="https://github.com/GwerhDev/shadowgardians-Client" />
+                                <InfoButton
+                                    img={RenderGithubImg("735921185/53b47368-5867-432f-88c3-0d860152625a")}
+                                    title="SHADOWGARDIANS"
+                                    type="featured"
+                                    description={description.first}
+                                    technologies={technologies.first}
+                                    role={role.first}
+                                    url="https://shadowgardians.netlify.app"
+                                    github={github.third}
+                                />
+                            </div>
+                        </div>
+                        <div className={s.wrapper}>
+                            <div className={s.imageContainer}>
+                                <a href="https://shadowgardians.netlify.app" target="_blank" rel="noreferrer">
+                                    <img src={RenderGithubImg("735921185/53b47368-5867-432f-88c3-0d860152625a")} alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={s.featuredWrap} id='second'>
                         <div className={s.titleItem}>
                             <h2>artificial intelligence app</h2>
                             <div className={s.buttonsContainer}>
@@ -81,11 +106,11 @@ export const Featured = (props) => {
                                     img={RenderGithubImg("637593876/d4a1e612-7c03-4e5d-8f29-1c1f073c4bbf")}
                                     title="ARTIFICIAL INTELLIGENCE APP - TESTING"
                                     type="featured"
-                                    description={description.first}
-                                    technologies={technologies.first}
-                                    role={role.first}
+                                    description={description.second}
+                                    technologies={technologies.second}
+                                    role={role.second}
                                     url="https://terminalkiller.netlify.app/#/ai-testing"
-                                    github={github.first}
+                                    github={github.second}
                                     language={language}
                                 />
                             </div>
@@ -99,7 +124,7 @@ export const Featured = (props) => {
                         </div>
                     </div>
 
-                    <div className={s.featuredWrap} id='second'>
+                    <div className={s.featuredWrap} id='third'>
                         <div className={s.titleItem}>
                             <h2>la ruina tv</h2>
                             <div className={s.buttonsContainer}>
@@ -108,11 +133,11 @@ export const Featured = (props) => {
                                     img={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")}
                                     title="LA RUINA TV"
                                     type="featured"
-                                    description={description.second}
-                                    technologies={technologies.second}
-                                    role={role.second}
+                                    description={description.third}
+                                    technologies={technologies.third}
+                                    role={role.third}
                                     url="https://tv.laruina.cl"
-                                    github={github.second}
+                                    github={github.third}
                                 />
                             </div>
                         </div>
@@ -120,32 +145,6 @@ export const Featured = (props) => {
                             <div className={s.imageContainer}>
                                 <a href="https://tv.laruina.cl" target="_blank" rel="noreferrer">
                                     <img src={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")} alt="" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={s.featuredWrap} id='third'>
-                        <div className={s.titleItem}>
-                            <h2>world of gwerh</h2>
-                            <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/GwerhDev/World-of-Gwerh" />
-                                <InfoButton
-                                    img={RenderGithubImg("633933924/c5112fe3-0c21-4618-835b-9e5ef28aec5e")}
-                                    title="WORLD OF GWERH"
-                                    type="featured"
-                                    description={description.third}
-                                    technologies={technologies.third}
-                                    role={role.third}
-                                    url="http://worldofgwerh.netlify.app"
-                                    github={github.third}
-                                />
-                            </div>
-                        </div>
-                        <div className={s.wrapper}>
-                            <div className={s.imageContainer}>
-                                <a href="http://worldofgwerh.netlify.app" target="_blank" rel="noreferrer">
-                                    <img src={RenderGithubImg("633933924/c5112fe3-0c21-4618-835b-9e5ef28aec5e")} alt="" />
                                 </a>
                             </div>
                         </div>
