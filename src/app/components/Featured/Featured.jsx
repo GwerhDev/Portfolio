@@ -75,7 +75,7 @@ export const Featured = (props) => {
                         <div className={s.titleItem}>
                             <h2>shadowgardians</h2>
                             <div className={s.buttonsContainer}>
-                                <GithubButton url="https://github.com/GwerhDev/shadowgardians-Client" />
+                                <GithubButton url="https://github.com/GwerhDev/Shadowgardians-Client" />
                                 <InfoButton
                                     img={RenderGithubImg("735921185/53b47368-5867-432f-88c3-0d860152625a")}
                                     title="SHADOWGARDIANS"
