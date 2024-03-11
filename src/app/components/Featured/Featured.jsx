@@ -84,7 +84,8 @@ export const Featured = (props) => {
                                     technologies={technologies.first}
                                     role={role.first}
                                     url="https://shadowgardians.netlify.app"
-                                    github={github.third}
+                                    github={github.first}
+                                    language={language}
                                 />
                             </div>
                         </div>
@@ -138,6 +139,7 @@ export const Featured = (props) => {
                                     role={role.third}
                                     url="https://tv.laruina.cl"
                                     github={github.third}
+                                    language={language}
                                 />
                             </div>
                         </div>
