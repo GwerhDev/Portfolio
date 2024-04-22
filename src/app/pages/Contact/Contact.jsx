@@ -1,4 +1,4 @@
-import s from './css/Contact.module.css';
+import s from './Contact.module.css';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
 import { Title } from '../../components/Utils/Title/Title';
@@ -13,10 +13,10 @@ export const Contact = () => {
   const auth = localStorage.getItem('auth');
   const user = auth ? JSON.parse(auth) : null;
 
-  const name = user? user.userAlias : ""
-  const email = user? user.email : ""
+  const name = user? user.userAlias : "";
+  const email = user? user.email : "";
 
-  const language = useSelector(state=>state.language)
+  const language = useSelector(state=>state.language);
   const [formData, setFormData] = useState({
     name: name,
     email: email,
@@ -64,8 +64,8 @@ export const Contact = () => {
     <div className={s.webBg}>
       <motion.div 
       initial={{opacity:0}}
-      transition={{duration: 1}}
       animate={{opacity:1}}
+      transition={{duration: 1}}
       >
       <div className={s.titleContainer}>
         <div className={s.titleContPerc}>

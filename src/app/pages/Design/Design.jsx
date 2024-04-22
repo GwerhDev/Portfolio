@@ -1,4 +1,4 @@
-import s from './css/Design.module.css'
+import s from './Design.module.css'
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard"
 import { useSelector } from "react-redux"
 import { GET_DESCRIPTION_DESIGN } from '../../../middlewares/misc/descriptions';

@@ -1,4 +1,4 @@
-import s from './css/Landing.module.css';
+import s from './Landing.module.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';

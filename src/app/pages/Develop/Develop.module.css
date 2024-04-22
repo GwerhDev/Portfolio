@@ -1,14 +1,14 @@
 .devCont {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: auto;
   overflow: hidden;
-  background-image: url(../../../../assets/images/png/web-bg.png);
+  background-image: url(../../../assets/images/png/web-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: fit-content;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }

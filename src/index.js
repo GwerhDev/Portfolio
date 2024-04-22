@@ -1,8 +1,8 @@
 import './styles/index.css';
-import Router from './app/routes/router';
 import React from 'react';
+import Router from './app/routes/router';
 import ReactDOM from 'react-dom/client';
-import store from './middlewares/redux/store'
+import store from './middlewares/redux/store';
 import { Provider } from 'react-redux';
 import { HashRouter } from "react-router-dom";
 

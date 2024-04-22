@@ -1,6 +1,6 @@
 @font-face {
     font-family: Trajan;
-    src: url(../../../../assets/fonts/TrajanusBricks.ttf);
+    src: url(../../../assets/fonts/TrajanusBricks.ttf);
 }
 
 .contResume{
@@ -11,7 +11,7 @@
     background-attachment: fixed;
     align-items: center;
     align-content: center;
-    background-image: url(../../../../assets/images/png/web-bg.png);
+    background-image: url(../../../assets/images/png/web-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

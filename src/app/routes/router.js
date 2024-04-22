@@ -24,64 +24,64 @@ function Router() {
         </Route>
         <Route exact path='/'>
           <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
-          <Landing/>
+          <Landing />
         </Route>
         <Route exact path='/home'>
           <Header title={"Gwerh | Develop, Design & Sound"} content={"Desarrollo, Diseño y Sonido"} />
-          <Home/>
-          <LateralCanvas/>
-          <Navigator/>
+          <Home />
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/home/intro'>
           <Header title={"Gwerh | Intro"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='intro' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/home/bio'>
           <Header title={"Gwerh | Bio"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='bio' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/home/resume'>
           <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='resume' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/develop'>
           <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='develop' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/sound'>
           <Header title={"Gwerh | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='sound' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/design'>
           <Header title={"Gwerh | Portfolio: Design"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='design' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/contact'>
           <Header title={"Gwerh | Contact"} content={"Desarrollo, Diseño y Sonido"} />
           <CanvasRouter option='contact' />
-          <LateralCanvas/>
-          <Navigator/>
+          <LateralCanvas />
+          <Navigator />
         </Route>
         <Route exact path='/download/resume'>
-          <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />  
-          <Curriculum/>
-          <LateralCanvas/>
-          <Navigator/>
+          <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />
+          <Curriculum />
+          <LateralCanvas />
+          <Navigator />
         </Route>
       </Switch>
-      <Language/>
+      <Language />
     </div>
   );
 }

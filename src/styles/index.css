@@ -47,6 +47,8 @@ body {
 }
 
 .App {
+  margin: 0;
+  padding: 0;
   text-align: center;
   width: 100vw;
   min-height: 100vh;
@@ -88,8 +90,8 @@ code {
 }
 
 #second, #third{
-  transition: .7s;
   opacity: 0.4;
+  transition: .7s;
   transform: rotateY(90deg);
 }
 
