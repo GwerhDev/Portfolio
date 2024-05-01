@@ -52,7 +52,7 @@ export const GithubEvents = (props) => {
           ?
           <span>{language === "EN" ? "Last update" : "Última actualización"}: <i>{new Date(current?.lastUpdated).toLocaleString()}</i></span>
           :
-          <span>{language === "EN" ? "Connecting with Github" : "Estableciando conexión con GitHub"}</span>
+          <span>{language === "EN" ? "Connecting with Github" : "Estableciendo conexión con GitHub"}</span>
         }
       </li>
     </ul>
