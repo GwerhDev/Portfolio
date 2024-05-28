@@ -3,7 +3,6 @@ import { Title } from "../Utils/Title/Title";
 import { InfoButton } from "../Utils/Buttons/InfoButton";
 import { GithubButton } from "../Utils/Buttons/GithubButton";
 import { Slider } from "../Utils/Slider/Slider";
-import { RenderGithubImg } from "../../../functions/RenderGithubImg";
 
 export const Featured = (props) => {
     const { language } = props;
@@ -77,7 +76,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/Shadowgardians-Client" />
                                 <InfoButton
-                                    img={RenderGithubImg("735921185/53b47368-5867-432f-88c3-0d860152625a")}
+                                    img={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/shadowgardians-img.png"}
                                     title="SHADOWGARDIANS"
                                     type="featured"
                                     description={description.first}
@@ -92,7 +91,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="https://shadowgardians.netlify.app" target="_blank" rel="noreferrer">
-                                    <img src={RenderGithubImg("735921185/53b47368-5867-432f-88c3-0d860152625a")} alt="" />
+                                    <img src={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/shadowgardians-img.png"} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -104,7 +103,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/ArtificialIntelligence-Client" />
                                 <InfoButton
-                                    img={RenderGithubImg("637593876/d4a1e612-7c03-4e5d-8f29-1c1f073c4bbf")}
+                                    img={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/ia-testing-img.png"}
                                     title="ARTIFICIAL INTELLIGENCE APP - TESTING"
                                     type="featured"
                                     description={description.second}
@@ -119,7 +118,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="https://terminalkiller.netlify.app/#/ai-testing" target="_blank" rel="noreferrer">
-                                    <img src={RenderGithubImg("637593876/d4a1e612-7c03-4e5d-8f29-1c1f073c4bbf")} alt="" />
+                                    <img src={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/ia-testing-img.png"} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -131,7 +130,7 @@ export const Featured = (props) => {
                             <div className={s.buttonsContainer}>
                                 <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client" />
                                 <InfoButton
-                                    img={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")}
+                                    img={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/laruinatv-img.png"}
                                     title="LA RUINA TV"
                                     type="featured"
                                     description={description.third}
@@ -146,7 +145,7 @@ export const Featured = (props) => {
                         <div className={s.wrapper}>
                             <div className={s.imageContainer}>
                                 <a href="https://tv.laruina.cl" target="_blank" rel="noreferrer">
-                                    <img src={RenderGithubImg("636264591/2cfa1046-050b-4d02-ba08-c4a9a97a44a8")} alt="" />
+                                    <img src={"https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/laruinatv-img.png"} alt="" />
                                 </a>
                             </div>
                         </div>

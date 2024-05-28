@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import s from './DevProjects.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { RenderGithubImg } from '../../../functions/RenderGithubImg';
 import { RenderMainTech } from '../../../functions/RenderMainTech';
 import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
@@ -34,7 +33,7 @@ export const DevProjects = (props) => {
               onClick={()=>{
                 return (
                   dispatch(setInfo({
-                    img: e.idImg? RenderGithubImg(e.idImg) : loadingImg,
+                    img: e.img? e.img : loadingImg,
                     title: e.name,
                     type: 'web',
                     description: language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`,
@@ -46,7 +45,7 @@ export const DevProjects = (props) => {
                   openInfoCanvas()
                 )
               }}
-                key={`ulWeb${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderGithubImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
+                key={`ulWeb${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.img? e.img : loadingImg})`, backgroundSize:`${e.img? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
                     e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
@@ -71,7 +70,7 @@ export const DevProjects = (props) => {
                 onClick={()=>{
                   return (
                     dispatch(setInfo({
-                      img: e.idImg? RenderGithubImg(e.idImg): loadingImg,
+                      img: e.img? e.img : loadingImg,
                       title: e.name,
                       type: 'desktop',
                       description: language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`,
@@ -83,7 +82,7 @@ export const DevProjects = (props) => {
                     openInfoCanvas()
                   )
                 }}
-                key={`ulDesk${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderGithubImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
+                key={`ulDesk${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.img? e.img : loadingImg})`, backgroundSize:`${e.img? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
                     e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
@@ -108,7 +107,7 @@ export const DevProjects = (props) => {
                 onClick={()=>{
                   return (
                     dispatch(setInfo({
-                      img: e.idImg? RenderGithubImg(e.idImg): loadingImg,
+                      img: e.img? e.img : loadingImg,
                       title: e.name,
                       type: 'mobile',
                       description: language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`,
@@ -120,7 +119,7 @@ export const DevProjects = (props) => {
                     openInfoCanvas()
                   )
                 }}
-                key={`ulMobile${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderGithubImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
+                key={`ulMobile${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.img? e.img : loadingImg})`, backgroundSize:`${e.img? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
                     e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
@@ -145,7 +144,7 @@ export const DevProjects = (props) => {
                 onClick={()=>{
                   return (
                     dispatch(setInfo({
-                      img: e.idImg? RenderGithubImg(e.idImg): loadingImg,
+                      img: e.img? e.img : loadingImg,
                       title: e.name,
                       type: 'software',
                       description: language==='EN'? `Description: ${e.description.en}` : `Descripción: ${e.description.es}`,
@@ -158,7 +157,7 @@ export const DevProjects = (props) => {
                     openInfoCanvas()
                   )
                 }}
-                key={`ulSoft${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.idImg? RenderGithubImg(e.idImg): loadingImg})`, backgroundSize:`${e.idImg? 'cover': '30px'} `}}>
+                key={`ulSoft${index}`} className={s.devLiCont} style={{backgroundImage:`url(${e.img? e.img : loadingImg})`, backgroundSize:`${e.img? 'cover': '30px'} `}}>
                 <div className={s.backImgCanvas}>
                   {                   
                     e.technologies.main? <img src={RenderMainTech(e.technologies.main)} alt="" width={30}/> : null
