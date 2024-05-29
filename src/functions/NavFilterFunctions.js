@@ -1,10 +1,10 @@
 function d(e) { return document.getElementById(e).style }
 
-export default function NavFilterFunctions(id, idCathegory) {
-  d('webLi').textDecoration='none';
-  d('desktopLi').textDecoration='none';
-  d('mobileLi').textDecoration='none';
-  d('softwareLi').textDecoration='none';
+export function NavFilterFunctions(id, idCathegory) {
+  d('webLi').backgroundColor='transparent';
+  d('desktopLi').backgroundColor='transparent';
+  d('mobileLi').backgroundColor='transparent';
+  d('softwareLi').backgroundColor='transparent';
   
   d('devListWebSection').display='none';
   d('devListDesktopSection').display='none';
@@ -15,6 +15,15 @@ export default function NavFilterFunctions(id, idCathegory) {
   
   return (
     d(id).display='flex',
-    d(idCathegory).textDecoration='overline underline'
+    d(idCathegory).backgroundColor='#171717d5'
   )
+}
+
+export function NavFilterEnterFunctions(idCathegory) {
+  d(idCathegory).backgroundColor='#171717d5'
+}
+
+export function NavFilterLeaveFunctions(filter, idCathegory) {
+  if(!filter) return d(idCathegory).backgroundColor='transparent';
+  return;
 }

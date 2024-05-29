@@ -1,6 +1,6 @@
 import s from './NavFilter.module.css';
 import React, { useState } from 'react';
-import NavFilterFunctions from '../../../functions/NavFilterFunctions';
+import { NavFilterFunctions, NavFilterEnterFunctions, NavFilterLeaveFunctions } from '../../../functions/NavFilterFunctions';
 
 export const NavFilter = (props) => {
   const { language } = props;
@@ -16,16 +16,29 @@ export const NavFilter = (props) => {
     <div className={s.navExtContainer}>
       <div className={s.navIntContainer}>
         <ul className={`${s.navList} ${s.desktop}`}>
-          <li id='webLi' onClick={() => { return ( NavFilterFunctions('devListWebSection','webLi'), handleSelectChange, setFilter('devListWebSection') )}}>
+          <li id='webLi'
+            onClick={() => { return (NavFilterFunctions('devListWebSection', 'webLi'), handleSelectChange, setFilter('devListWebSection')) }}
+            onMouseEnter={() => { NavFilterEnterFunctions('webLi') }}
+            onMouseLeave={() => { NavFilterLeaveFunctions(filter === 'devListWebSection', 'webLi') }}
+          >
             web
           </li>
-          <li id='desktopLi' onClick={() => { return ( NavFilterFunctions('devListDesktopSection','desktopLi'), handleSelectChange, setFilter('devListDesktopSection') )}}>
+          <li id='desktopLi' onClick={() => { return (NavFilterFunctions('devListDesktopSection', 'desktopLi'), handleSelectChange, setFilter('devListDesktopSection')) }}
+            onMouseEnter={() => { NavFilterEnterFunctions('desktopLi') }}
+            onMouseLeave={() => { NavFilterLeaveFunctions(filter === 'devListDesktopSection', 'desktopLi') }}
+          >
             {language === 'EN' ? 'desktop' : 'escritorio'}
           </li>
-          <li id='mobileLi' onClick={() => { return ( NavFilterFunctions('devListMobileSection','mobileLi'), handleSelectChange, setFilter('devListMobileSection') )}}>
+          <li id='mobileLi' onClick={() => { return (NavFilterFunctions('devListMobileSection', 'mobileLi'), handleSelectChange, setFilter('devListMobileSection')) }}
+            onMouseEnter={() => { NavFilterEnterFunctions('mobileLi') }}
+            onMouseLeave={() => { NavFilterLeaveFunctions(filter === 'devListMobileSection', 'mobileLi') }}
+          >
             {language === 'EN' ? 'mobile' : 'movil'}
           </li>
-          <li id='softwareLi' onClick={() => { return ( NavFilterFunctions('devListSoftwareSection','softwareLi'), handleSelectChange, setFilter('devListSoftwareSection') )}}>
+          <li id='softwareLi' onClick={() => { return (NavFilterFunctions('devListSoftwareSection', 'softwareLi'), handleSelectChange, setFilter('devListSoftwareSection')) }}
+            onMouseEnter={() => { NavFilterEnterFunctions('softwareLi') }}
+            onMouseLeave={() => { NavFilterLeaveFunctions(filter === 'devListSoftwareSection', 'softwareLi') }}
+          >
             software
           </li>
         </ul>
