@@ -1,4 +1,4 @@
-.navCont{
+.navCont {
   top: 30vh;
   left: 15px;
   height: auto;
@@ -10,46 +10,58 @@
   transition-duration: 1s;
   opacity: .6;
   backdrop-filter: blur(10px);
+  z-index: 99;
 }
-.navCont:hover{
+
+.navCont:hover {
   opacity: 1;
 }
-.ulCont{
+
+.ulCont {
   list-style: none;
 }
-.ulCont>li{
+
+.ulCont>li {
   margin-top: 2px;
   margin-bottom: 2px;
   position: relative;
 }
-.profileImg{
+
+.profileImg {
   background-image: url(../../../assets/images/png/menu-icon.png);
 }
-.homeImg{
+
+.homeImg {
   background-image: url(../../../assets/images/png/home-icon.png);
 }
-.webImg{
+
+.webImg {
   background-image: url(../../../assets/images/png/dev-icon.png);
 }
-.soundImg{
+
+.soundImg {
   background-image: url(../../../assets/images/png/sound-icon.png);
 }
-.designImg{
+
+.designImg {
   background-image: url(../../../assets/images/png/design-icon.png);
 }
-.contactImg{
+
+.contactImg {
   background-image: url(../../../assets/images/png/contact-icon.png);
 }
-.logoutImg{
+
+.logoutImg {
   background-image: url(../../../assets/images/png/logout-icon.png);
 }
+
 .profileImg,
 .homeImg,
-.webImg, 
-.soundImg, 
-.designImg, 
+.webImg,
+.soundImg,
+.designImg,
 .contactImg,
-.logoutImg{
+.logoutImg {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 30px;
@@ -62,17 +74,19 @@
   transition-duration: 1s;
   scale: 1;
 }
+
 .profileImg:hover,
 .homeImg:hover,
-.webImg:hover, 
-.soundImg:hover, 
-.designImg:hover, 
-.contactImg:hover, 
-.logoutImg:hover{
+.webImg:hover,
+.soundImg:hover,
+.designImg:hover,
+.contactImg:hover,
+.logoutImg:hover {
   cursor: pointer;
   scale: 1.2;
 }
-.menuItem{
+
+.menuItem {
   transition-duration: .4s;
   scale: 0;
   position: absolute;

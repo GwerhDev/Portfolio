@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 import arrowIcon from '../../../assets/images/png/arrow-icon.png';
 
 export const OptionCanvas = () => {
-    const option = useSelector(state => state.option)
-    const language = useSelector(state => state.language)
-    const dispatch = useDispatch()
+    const option = useSelector(state => state.option);
+    const language = useSelector(state => state.language);
+    const dispatch = useDispatch();
     const langOption = (option) => {
         if (language === 'ES' && option === 'intro') return 'intro'
         if (language === 'ES' && option === 'develop') return 'desarrollo'
@@ -22,10 +22,11 @@ export const OptionCanvas = () => {
         if (language === 'ES' && option === 'resume') return 'cv'
         else return option
     }
+
     return (
         <div className={s.contOptions}>
             <div className={s.titleContainer}>
-                <Title backgroundColor={true} color={'white'} title={langOption(option)} />
+                <Title backgroundImage={true} backgroundColor={true} color={'white'} title={langOption(option)} />
                 <motion.div
                     initial={{ opacity: 0, x: -10 }}
                     transition={{ duration: 1 }}

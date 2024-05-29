@@ -9,13 +9,15 @@ import { disappear, optionActive } from "../../../functions/NavigationFunctions"
 import { ScrollToSection } from "../../../functions/ScrollToSection";
 
 export const Navigator = () => {
-  const dispatch = useDispatch()
-  const option = useSelector(state=>state.option)
-  const language = useSelector(state=>state.language)
+  const dispatch = useDispatch();
+  const option = useSelector(state=>state.option);
+  const language = useSelector(state=>state.language);
+
   useEffect(()=>{
     optionActive(option? option : '')
     disappear()
-  }, [option])
+  }, [option]);
+  
   return (
     <motion.div 
       initial={{opacity:0, x:-100}}
