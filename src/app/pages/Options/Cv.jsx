@@ -1,9 +1,9 @@
-import s from './css/Options.module.css'
-import { motion } from 'framer-motion'
-import { useSelector } from 'react-redux'
-import { URL_API } from '../../../middlewares/config'
-import { Link } from 'react-router-dom'
-import googleLogo from '../../../assets/images/png/google-logo.png'
+import s from './css/Options.module.css';
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import { URL_API } from '../../../middlewares/config';
+import { Link } from 'react-router-dom';
+import googleLogo from '../../../assets/images/png/google-logo.png';
 
 export const Cv = () => {
     const language = useSelector(state => state.language)

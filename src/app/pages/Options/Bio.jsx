@@ -1,6 +1,6 @@
-import { useSelector } from 'react-redux'
-import s from './css/Options.module.css'
-import { motion } from 'framer-motion'
+import s from './css/Options.module.css';
+import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 
 
 export const Bio = () => {
