@@ -4,11 +4,13 @@ import * as THREE from 'three';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 
 export function Viewer(props) {
-  const { file } = props;
+  const { fileUrl } = props;
   const canvasRef = useRef(null);
   const [progressBar, setProgressBar] = useState(0);
 
   useEffect(() => {
+    if (!fileUrl) return;
+
     const canvas = canvasRef.current;
     canvas.width = 300;
     canvas.height = 200;
@@ -18,8 +20,9 @@ export function Viewer(props) {
     const renderer = new THREE.WebGLRenderer({ canvas });
     renderer.setSize(canvas.width, canvas.height);
     const loader = new OBJLoader();
+
     loader.load(
-      file,
+      fileUrl,
       (object) => {
         scene.add(object);
       },
@@ -30,17 +33,20 @@ export function Viewer(props) {
         console.error('Error al cargar el archivo .obj', error);
       }
     );
+
     camera.position.z = 5;
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(0, 1, 1);
     scene.add(light);
     const ambientLight = new THREE.AmbientLight(0xffffff, .2);
     scene.add(ambientLight);
+
     let isDragging = false;
     let previousMousePosition = {
       x: 0,
       y: 0
     };
+
     canvas.addEventListener('mousedown', (event) => {
       isDragging = true;
       previousMousePosition = {
@@ -48,6 +54,7 @@ export function Viewer(props) {
         y: event.clientY
       };
     });
+
     canvas.addEventListener('mousemove', (event) => {
       if (isDragging) {
         const deltaX = event.clientX - previousMousePosition.x;
@@ -60,6 +67,7 @@ export function Viewer(props) {
         };
       }
     });
+
     canvas.addEventListener('mouseup', () => {
       isDragging = false;
     });
@@ -69,7 +77,7 @@ export function Viewer(props) {
       renderer.render(scene, camera);
     };
     animate();
-  }, [file]);
+  }, [fileUrl]);
 
   return (
     <div className={s.container}>
