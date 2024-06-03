@@ -113,8 +113,8 @@ code {
 }
 
 .section-container {
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;

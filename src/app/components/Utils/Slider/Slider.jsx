@@ -5,7 +5,7 @@ import arrowIcon from '../../../../assets/images/png/showmore-icon.png'
 
 export const Slider = ({ children }) => {
   const sliderRef = useRef(null);
-  const [k, setK] = useState(1)
+  const [k, setK] = useState(1);
 
   return (
     <div className={s.container}>

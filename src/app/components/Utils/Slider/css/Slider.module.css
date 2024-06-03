@@ -1,15 +1,16 @@
-.slider{
+.slider {
   width: 100%;
   min-height: 300px;
   transition-duration: .4s;
   transform: translateX(0);
+  display: flex;
 }
 
-.sliderCont{
+.sliderCont {
   width: 100%;
 }
 
-.sliderViewer{
+.sliderViewer {
   position: absolute;
   width: 100%;
   height: auto;
@@ -17,13 +18,13 @@
   transition-duration: .4s;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.buttons{
+.buttons {
   z-index: 1;
   background-color: rgba(143, 143, 143, 0);
   border: none;
@@ -32,49 +33,50 @@
   transition-duration: .4s;
 }
 
-#prev{
+#prev {
   border-bottom-left-radius: 15px;
 }
 
-#next{
+#next {
   border-bottom-right-radius: 15px;
 }
 
-.buttons:hover{
+.buttons:hover {
   background-color: rgba(131, 131, 131, 0.425);
   cursor: pointer;
 }
 
-.prevButton{
+.prevButton {
   rotate: 90deg;
   opacity: .7;
   transition-duration: .4s;
 
 }
 
-.buttons:disabled{
+.buttons:disabled {
   opacity: .4;
   cursor: default;
 }
 
-.buttons:disabled:hover{
+.buttons:disabled:hover {
   background-color: transparent;
 }
 
-.nextButton{
+.nextButton {
   rotate: -90deg;
   opacity: .7;
 }
 
 @media screen and (max-width: 1100px) {
-  .buttons{
+  .buttons {
     padding: 5px;
   }
-  #prev{
+
+  #prev {
     margin-right: 10px;
   }
-  
-  #next{
+
+  #next {
     margin-left: 10px;
   }
 }
