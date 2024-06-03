@@ -1,8 +1,15 @@
-.skillsCont{
+.container {
+  background-color: #171717;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #171717;
+  display: flex;
+  justify-content: center;
+}
+
+.skillsCont {
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +23,7 @@
 }
 
 .iconList{
-  max-width: 70%;
+  max-width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));

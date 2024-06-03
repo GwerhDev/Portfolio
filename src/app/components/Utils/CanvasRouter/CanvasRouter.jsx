@@ -17,21 +17,21 @@ export const CanvasRouter = (props) => {
             <div className={s.bgCanvas}>
                 {
                     option==='develop'? 
-                    <div><Develop/></div>
+                    <Develop/>
                     :
                     (
                         option==='sound'? 
-                        <div><Sound/></div>
+                        <Sound/>
                         :
                         (
                             option==='design'? 
-                            <div><Design/></div>
+                            <Design/>
                             :
                             (
                                 option==='contact'? 
-                                <div><Contact/></div>
+                                <Contact/>
                                 :
-                                <div><OptionCanvas/></div>
+                                <OptionCanvas/>
                             )
                         )
                     )

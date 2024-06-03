@@ -10,7 +10,7 @@
   transition-duration: 1s;
   opacity: .6;
   backdrop-filter: blur(10px);
-  z-index: 99;
+  z-index: 999;
 }
 
 .navCont:hover {

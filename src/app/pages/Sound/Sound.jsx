@@ -1,4 +1,4 @@
-import s from "./css/Sound.module.css";
+import s from "./Sound.module.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Title } from "../../components/Utils/Title/Title";
@@ -12,20 +12,24 @@ import soundIcon from '../../../assets/images/png/sound-icon.png';
 import soundBack from '../../../assets/images/jpg/sound-bg.jpg';
 
 export const Sound = () => {
-  const language = useSelector(state=>state.language)
+  const language = useSelector(state => state.language)
   const dispatch = useDispatch()
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     dispatch(getSound())
   }, [dispatch])
-  
+
   return (
     <div className={s.soundCont}>
-        <PresentationCard background={soundBack} language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND}/>
-        <div className={s.titleContainer}><Title backgroundColor={true} color={"white"} title={language==='EN'? 'releases':'lanzamientos'}/></div>
-        <SoundProjects language={language}/>
-        <Gear language={language}/>
-        <SoundSkills language={language}/>
+      <PresentationCard background={soundBack} language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND} />
+      <main className="main-container">
+        <section className="section-container">
+          <div className={s.titleContainer}><Title backgroundColor={true} color={"white"} title={language === 'EN' ? 'releases' : 'lanzamientos'} /></div>
+          <SoundProjects language={language} />
+        </section>
+      </main>
+      <Gear language={language} />
+      <SoundSkills language={language} />
     </div>
   )
 }

@@ -12,27 +12,27 @@ import { DevDailyJoke } from '../../components/Utils/DevDailyJoke/DevDailyJoke';
 import { GITHUB_URL, LINKEDIN_URL } from '../../../middlewares/config';
 
 export const Landing = () => {
-  const language = useSelector(state=>state.language);
-  const devDailyJoke = useSelector(state=>state.devDailyJoke);
+  const language = useSelector(state => state.language);
+  const devDailyJoke = useSelector(state => state.devDailyJoke);
   const dispatch = useDispatch();
-  
-  useEffect(()=> { removeLocalStorage() },[]);
-  useEffect(()=> { dispatch(getDevDailyJoke(language==='EN'? 'en':'es')) },[dispatch, language]);
+
+  useEffect(() => { removeLocalStorage() }, []);
+  useEffect(() => { dispatch(getDevDailyJoke(language === 'EN' ? 'en' : 'es')) }, [dispatch, language]);
 
   return (
     <div className={s.landingCont}>
-      <motion.div initial={{opacity: 0, y: 10}} transition={{duration: 2, type: 'spring'}}animate={{opacity: 1, y: 0}}>
+      <motion.div initial={{ opacity: 0, y: 10 }} transition={{ duration: 2, type: 'spring' }} animate={{ opacity: 1, y: 0 }}>
         <Profile />
-        <p style={{color:'white'}}>
-          { language==='EN'? 'Develop, Design & Sound': 'Desarrollo, Diseño & Sonido' }
+        <p style={{ color: 'white' }}>
+          {language === 'EN' ? 'Develop, Design & Sound' : 'Desarrollo, Diseño & Sonido'}
         </p>
         <div className={s.enterBtnCont}>
           <Link to='/home' className={s.enterBtn}>
             {
-              language==='EN'?
-              'enter':
-              'entrar'
-            }        
+              language === 'EN' ?
+                'enter' :
+                'entrar'
+            }
           </Link>
         </div>
         <div className={s.contSL}>
@@ -42,7 +42,7 @@ export const Landing = () => {
       </motion.div>
       <div className={s.jokeCont}>
         <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )

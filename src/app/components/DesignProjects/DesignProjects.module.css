@@ -1,14 +1,14 @@
-.designContainer{
+.designContainer {
   margin-top: 50px;
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+  width: 100%;
 }
 
-.logoList{
+.logoList {
   height: 150px;
   width: 150px;
   border-radius: 15px;
@@ -21,25 +21,25 @@
   transition-duration: .4s;
 }
 
-.logoList:hover{
+.logoList:hover {
   border: solid;
   border-width: 1.5px;
   transition-duration: .2s;
 }
 
-.logoList img{
+.logoList img {
   margin-bottom: -30px;
 }
 
-h6{
+h6 {
   font-family: var(--font-global);
   font-size: 15px;
   font-weight: 200;
 }
 
-.section{
+.section {
   background-color: rgba(143, 143, 143, 0.37);
-  width: 70%;
+  width: 100%;
   font-family: Trajan;
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -47,11 +47,10 @@ h6{
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 50px;
   margin-bottom: 10px;
 }
 
-.logotypesContainer{
+.logotypesContainer {
   height: 200px;
   display: flex;
   justify-content: space-around;
@@ -61,11 +60,11 @@ h6{
   transition-duration: .2s;
 }
 
-.logotypesContainer:hover{
+.logotypesContainer:hover {
   opacity: 1;
 }
 
-.header p{
+.header p {
   font-family: var(--font-global);
   padding-left: 10px;
   padding-right: 10px;
@@ -75,7 +74,7 @@ h6{
   display: grid;
   padding: 0;
   padding: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   gap: 20px;
 }
 
@@ -84,18 +83,20 @@ li {
 }
 
 @media (max-width: 950px) {
+
   .header h1,
-  .header p{
+  .header p {
     font-size: .9rem;
   }
 }
 
 @media (max-width: 600px) {
-  .section{
+  .section {
     padding: 0px;
   }
+
   .header h1,
-  .header p{
+  .header p {
     font-size: .8rem;
   }
 }

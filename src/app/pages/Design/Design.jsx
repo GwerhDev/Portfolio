@@ -8,12 +8,16 @@ import designBack from '../../../assets/images/jpg/design-bg.jpg';
 import designIcon from '../../../assets/images/png/design-icon.png';
 
 export const Design = () => {
-  const language = useSelector(state=>state.language)
+  const language = useSelector(state => state.language)
 
-  return(
+  return (
     <div className={s.designCont}>
-      <PresentationCard background={designBack} language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN}/>
-      <DesignProjects language={language}/>
+      <PresentationCard background={designBack} language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN} />
+      <main className="main-container">
+        <section className="section-container">
+          <DesignProjects language={language} />
+        </section>
+      </main>
       <DesignSkills language={language} />
     </div>
   )

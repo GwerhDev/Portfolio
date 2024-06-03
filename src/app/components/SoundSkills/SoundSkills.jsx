@@ -7,23 +7,25 @@ export const SoundSkills = (props) => {
   const { language } = props
   return (
     <div className={s.skillsCont}>
-      <div className={s.titleCont}>
-        <h1>{language==='EN'? 'Skills' : 'Habilidades'}</h1>
-      </div>
-      <ul className={s.iconList} style={{marginLeft:'-40px'}}>
-        <li className={s.icon}>
+      <section className="section-container">
+        <div className={s.titleCont}>
+          <h1>{language === 'EN' ? 'Skills' : 'Habilidades'}</h1>
+        </div>
+        <ul className={s.iconList} style={{ marginLeft: '-40px' }}>
+          <li className={s.icon}>
             <img className={s.svgIcons} src={reaperSVG} alt="" />
-            <h5 style={{color:'white'}}>Reaper</h5>
-        </li>
-        <li className={s.icon}>
+            <h5 style={{ color: 'white' }}>Reaper</h5>
+          </li>
+          <li className={s.icon}>
             <img className={s.svgIcons} src={protoolsSVG} alt="" />
-            <h5 style={{color:'white'}}>ProTools</h5>
-        </li>
-        <li className={s.icon}>
+            <h5 style={{ color: 'white' }}>ProTools</h5>
+          </li>
+          <li className={s.icon}>
             <img className={s.svgIcons} src={cubaseSVG} alt="" />
-            <h5 style={{color:'white'}}>Cubase</h5>
-        </li>
-      </ul>
+            <h5 style={{ color: 'white' }}>Cubase</h5>
+          </li>
+        </ul>
+      </section>
     </div>
   )
 }

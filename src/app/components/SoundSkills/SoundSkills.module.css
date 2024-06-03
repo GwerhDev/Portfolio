@@ -4,7 +4,6 @@
   padding-bottom: 100px;
   background-color: #171717;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -16,7 +15,7 @@
 }
 
 .iconList{
-  max-width: 70%;
+  max-width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));

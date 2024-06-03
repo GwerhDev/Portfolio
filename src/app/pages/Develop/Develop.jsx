@@ -12,15 +12,20 @@ import devIcon from '../../../assets/images/png/dev-icon.png';
 import devBack from '../../../assets/images/jpg/dev-bg.jpg';
 
 export const Develop = () => {
-  const language = useSelector(state => state.language)
+  const language = useSelector(state => state.language);
+
   return (
     <div className={s.devCont}>
       <InfoCanvas />
       <PresentationCard background={devBack} language={language} img={devIcon} description={GET_DESCRIPTION_DEV} />
-      <Separator marginTop="0px" />
-      <Featured language={language} />
-      <DevProjects language={language} />
-      <GithubEvents language={language} />
+      <div className="main-container">
+        <section className="section-container">
+          <Separator marginTop="0px" />
+          <Featured language={language} />
+          <DevProjects language={language} />
+          <GithubEvents language={language} />
+        </section>
+      </div>
       <DevSkills language={language} />
     </div>
   )

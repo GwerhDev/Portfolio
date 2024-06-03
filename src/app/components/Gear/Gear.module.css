@@ -1,70 +1,69 @@
-.gearCont{
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #171717;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.gearCont {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gearList {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 10px;
-    list-style: none;
-    font-family: Trajan;
-    font-size: 10px;
-    width: 70%;
-    justify-items: center;
-    align-items: center;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+  list-style: none;
+  font-family: Trajan;
+  font-size: 10px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
 }
 
-.gearList div p{
-    position: relative;
-    bottom: -10px;
+.gearList div p {
+  position: relative;
+  bottom: -10px;
 }
 
-.imgCont{
-    width: 300px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.767);
-    padding: 25px;
-    border-radius: 15px;
-    transition-duration: .4s;
-    margin-bottom: 40px;
+.imgCont {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.767);
+  padding: 25px;
+  border-radius: 15px;
+  transition-duration: .4s;
+  margin-bottom: 40px;
 }
 
-.imgCont:hover{
-    background-color: rgb(255, 255, 255);
+.imgCont:hover {
+  background-color: rgb(255, 255, 255);
 }
 
-.imgCont img{
-    transition-duration: .4s;
-    filter: grayscale(.4);
+.imgCont img {
+  transition-duration: .4s;
+  filter: grayscale(.4);
 }
 
-.imgCont img:hover{
-    scale: 1.1;
-    filter: grayscale(0);
+.imgCont img:hover {
+  scale: 1.1;
+  filter: grayscale(0);
 }
 
-.titleCont{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
+.titleCont {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-.titleCont h1{
-    font-family:Trajan;
-    color: white;
-    font-size: 2.3rem;
+.titleCont h1 {
+  font-family: Trajan;
+  color: white;
+  font-size: 2.3rem;
 }
 
 @media (max-width: 950px) {
-    .titleCont h1{
-        font-size: 1.5rem;
-    }
+  .titleCont h1 {
+    font-size: 1.5rem;
+  }
 }

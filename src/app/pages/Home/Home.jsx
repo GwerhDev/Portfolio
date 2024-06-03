@@ -5,17 +5,17 @@ import { setOption } from '../../../middlewares/redux/actions';
 import { Selection } from '../../components/Selection/Selection';
 
 export const Home = () => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(setOption('home'))
-    }, [dispatch]);
+  useEffect(() => {
+    dispatch(setOption('home'));
+  }, [dispatch]);
 
-    return (
-        <div className={s.homeCont}>
-            <div className={s.sectionCont}>
-                <Selection />
-            </div>
-        </div>
-    )
+  return (
+    <div className={s.container}>
+      <div className={s.homeCont}>
+        <Selection />
+      </div>
+    </div>
+  )
 }

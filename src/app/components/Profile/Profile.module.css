@@ -1,4 +1,5 @@
-.imgProfile{
+.imgProfile {
+    margin-top: 30px;
     border-radius: 100%;
     border: none;
     filter: grayscale(.5);
@@ -6,12 +7,12 @@
     box-shadow: 0px 0px 8px rgb(255, 255, 255);
 }
 
-.imgProfile:hover{
+.imgProfile:hover {
     filter: grayscale(.3);
     box-shadow: 0px 0px 15px white;
 }
 
-.alias{
+.alias {
     font-size: 15px;
     animation-name: resplandorAlias;
     animation-duration: 4s;
@@ -23,7 +24,7 @@
     font-weight: thin;
 }
 
-.name{
+.name {
     font-size: 25px;
     animation-name: resplandorName;
     animation-duration: 4s;
@@ -37,43 +38,55 @@
 }
 
 @keyframes resplandorName {
-    from {filter: drop-shadow(0px 0px 1px rgb(255, 255, 174));}
-    to {filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0));}
+    from {
+        filter: drop-shadow(0px 0px 1px rgb(255, 255, 174));
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0));
+    }
 }
+
 @keyframes resplandorAlias {
-    from {filter: drop-shadow(0px 0px 2px rgba(254, 254, 159, 0.768));}
-    to {filter: drop-shadow(0px 0px 3px rgb(251, 251, 251));}
+    from {
+        filter: drop-shadow(0px 0px 2px rgba(254, 254, 159, 0.768));
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 3px rgb(251, 251, 251));
+    }
 }
 
 @media (max-width: 680px) {
-    .imgProfile{
+    .imgProfile {
         scale: .7;
     }
 }
 
 @media (max-width: 620px) {
-    .name{
+    .name {
         font-size: 15px;
         margin-top: -10px;
     }
-    .alias{
+
+    .alias {
         font-size: 10px;
     }
 }
 
 @media (max-width: 550px) {
-    .name{
+    .name {
         font-size: 13px;
         margin-top: -10px;
     }
-    .alias{
+
+    .alias {
         font-size: 9px;
     }
 }
 
 @media (max-width: 500px) {
-    .imgProfile{
+    .imgProfile {
         scale: .6;
     }
 }
-

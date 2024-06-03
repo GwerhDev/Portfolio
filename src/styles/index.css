@@ -42,15 +42,16 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
-  background: var(--color-primary);
+  overflow-x: hidden;
+  background: linear-gradient(230deg, #282828fd, #0c0c0c 90%);
+  background-color: var(--color-primary);
 }
 
 .App {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -98,3 +99,26 @@ code {
 #first {
   transition: .7s;
 }
+
+.main-container {
+  background-image: url(../assets/images/png/web-bg.png);
+  background-color: #ccccccfd;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
