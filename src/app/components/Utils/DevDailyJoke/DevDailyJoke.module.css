@@ -1,19 +1,18 @@
-.jokeContainer{
+.jokeContainer {
   width: 100%;
   max-height: 150px;
   text-align: center;
-  color: black;
-  background-color: var(--color-background-light);
+  border: linear-gradient(168deg, rgb(88, 132, 173) 20%, rgb(130, 84, 161) 100%);
+  border: dashed 3px var(--color-secondary);
   padding: 15px;
   padding-bottom: 20px;
   padding-top: 0px;
   border-radius: 15px;
-  overflow-y: auto;
   font-family: var(--font-global);
 }
 
-span{
-  color: black;
+span {
+  color: white;
   font-size: 14px;
   font-family: var(--font-global);
   font-weight: 500;
@@ -23,30 +22,33 @@ span{
   font-family: var(--font-global);
   font-size: 18px;
   font-weight: 500;
+  color: white;
 }
 
-.pInfo{
+.pInfo {
   margin-top: -10px;
 }
 
-i{
+i {
   font-size: 12px;
 }
 
-.jokeSubtitle{
+.jokeSubtitle {
   position: relative;
   top: -20px;
+  color: rgb(206, 206, 206);
 }
 
-.jokeSubtitle:hover{
-  color: rgb(59, 59, 59);
+.jokeSubtitle:hover {
+  color: rgb(175, 175, 175);
 }
 
 @media (max-width: 680px) {
-  .jokeSubtitle{
+  .jokeSubtitle {
     font-size: 14px;
   }
-  span{
+
+  span {
     font-size: 13px;
   }
 }

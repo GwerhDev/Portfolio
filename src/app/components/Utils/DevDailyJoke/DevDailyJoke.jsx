@@ -16,7 +16,13 @@ export const DevDailyJoke = (props) => {
         <img src={openWindow} alt="DevDailyJoke" width="13px" />
       </a>
       <span className={s.pInfo}>
-        {devDailyJoke ? <p>{`"${devDailyJoke}"`}</p> : <div><Loader /></div>}
+        {
+          devDailyJoke
+            ?
+            <p>{`"${devDailyJoke}"`}</p>
+            :
+            <div><Loader /></div>
+        }
       </span>
     </div>
   )
