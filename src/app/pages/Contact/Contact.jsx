@@ -61,7 +61,7 @@ export const Contact = () => {
   }, [showForm]);
 
   return (
-    <main className="main-container">
+    <main className="main-container align-start">
       <section className="section-container">
         <div className={s.container}>
           <motion.div

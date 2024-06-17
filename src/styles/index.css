@@ -101,15 +101,20 @@ code {
 }
 
 .main-container {
-  background-image: url(../assets/images/png/web-bg.png);
-  background-color: #ccccccfd;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   background-size: cover;
+  justify-content: center;
+  background-color: #ccccccfd;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  background-image: url(../assets/images/png/web-bg.png);
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 .section-container {

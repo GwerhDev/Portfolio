@@ -25,7 +25,7 @@ export const OptionCanvas = () => {
 
   return (
     <div className={s.contOptions}>
-      <main className="main-container">
+      <main className="main-container align-start">
         <section className="section-container">
           <div className={s.titleContainer}>
             <Title backgroundColor={true} color={'white'} title={langOption(option)} />
