@@ -44,6 +44,7 @@ const initialState = {
 export default function rootReducer(state = initialState, action){
     const auth = localStorage.getItem('auth');
     const user = auth ? JSON.parse(auth) : null;
+    
     switch(action.type){
         case GET_LASTS:
             return {

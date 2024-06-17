@@ -10,9 +10,10 @@ import { Cv } from './Cv';
 import arrowIcon from '../../../assets/images/png/arrow-icon.png';
 
 export const OptionCanvas = () => {
+  const dispatch = useDispatch();
   const option = useSelector(state => state.option);
   const language = useSelector(state => state.language);
-  const dispatch = useDispatch();
+  
   const langOption = (option) => {
     if (language === 'ES' && option === 'intro') return 'intro'
     if (language === 'ES' && option === 'develop') return 'desarrollo'

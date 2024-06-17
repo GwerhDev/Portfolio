@@ -2,21 +2,25 @@ import s from './Contact.module.css';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from "react";
 import { Title } from '../../components/Utils/Title/Title';
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { URL_API } from "../../../middlewares/config";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import defaultUserIcon from "../../../assets/images/png/user-icon.png";
 import logoutIcon from "../../../assets/images/png/logout-icon.png";
 import googleIcon from "../../../assets/images/png/gmail-icon.png";
+import { setOption } from '../../../middlewares/redux/actions';
 
-export const Contact = () => {
+export const Contact = (props) => {
+  const dispatch = useDispatch();
+  const language = useSelector(state => state.language);
+  const { option } = props;
+
   const auth = localStorage.getItem('auth');
   const user = auth ? JSON.parse(auth) : null;
 
   const name = user ? user.userAlias : "";
   const email = user ? user.email : "";
 
-  const language = useSelector(state => state.language);
   const [formData, setFormData] = useState({
     name: name,
     email: email,
@@ -60,6 +64,10 @@ export const Contact = () => {
     return () => clearTimeout(timer);
   }, [showForm]);
 
+  useEffect(() => {
+    dispatch(setOption(option));
+  }, [dispatch, option]);
+  
   return (
     <main className="main-container align-start">
       <section className="section-container">

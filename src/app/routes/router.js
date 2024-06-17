@@ -1,14 +1,18 @@
 import { Switch, Route } from 'react-router-dom';
 import { Landing } from '../pages/Landing/Landing';
 import { Home } from '../pages/Home/Home';
+import { Develop } from '../pages/Develop/Develop';
 import { Curriculum } from '../pages/Curriculum/Curriculum';
 import { Navigator } from '../components/Navigator/Navigator';
 import { Language } from '../components/Utils/Language/Language';
 import { Header } from '../components/Utils/Header/Header';
 import { LateralCanvas } from '../components/LateralCanvas/LateralCanvas';
-import { CanvasRouter } from '../components/Utils/CanvasRouter/CanvasRouter';
+import { CanvasRouter } from '../pages/Options/CanvasRouter';
 import ResumeAuthToken from '../pages/Auth/ResumeAuthToken';
 import MailAuthToken from '../pages/Auth/MailAuthToken';
+import { Design } from '../pages/Design/Design';
+import { Sound } from '../pages/Sound/Sound';
+import { Contact } from '../pages/Contact/Contact';
 
 function Router() {
   return (
@@ -52,26 +56,26 @@ function Router() {
         </Route>
         <Route exact path='/portfolio/develop'>
           <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
-          <CanvasRouter option='develop' />
-          <LateralCanvas />
           <Navigator />
+          <Develop option='develop' />
+          <LateralCanvas />
         </Route>
         <Route exact path='/portfolio/sound'>
           <Header title={"Gwerh | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <Navigator />
-          <CanvasRouter option='sound' />
+          <Sound option='sound' />
           <LateralCanvas />
         </Route>
         <Route exact path='/portfolio/design'>
           <Header title={"Gwerh | Portfolio: Design"} content={"Desarrollo, Diseño y Sonido"} />
           <Navigator />
-          <CanvasRouter option='design' />
+          <Design option='design' />
           <LateralCanvas />
         </Route>
         <Route exact path='/contact'>
           <Header title={"Gwerh | Contact"} content={"Desarrollo, Diseño y Sonido"} />
           <Navigator />
-          <CanvasRouter option='contact' />
+          <Contact option='contact' />
           <LateralCanvas />
         </Route>
         <Route exact path='/download/resume'>
