@@ -22,6 +22,10 @@
   backdrop-filter: blur(10px);
 }
 
+.container li span {
+  color: black;
+}
+
 .clock {
   position: absolute;
   right: 0;
