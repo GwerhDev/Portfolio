@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
 import s from './DesignProjects.module.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getDesign } from '../../../middlewares/redux/actions';
+import { Viewer } from '../Utils/3DViewer/3DViewer';
 import advanc3dLogo from '../../../assets/images/svg/advanc3d-logo.svg';
 import laruinatvLogo from '../../../assets/images/svg/laruinatv-logo.svg';
 import laruinarecordsLogo from '../../../assets/images/svg/laruinarecords-logo.svg';
-import { Viewer } from '../Utils/3DViewer/3DViewer';
-import { useDispatch, useSelector } from 'react-redux';
-import { getDesign } from '../../../middlewares/redux/actions';
 
 export const DesignProjects = (props) => {
   const { language } = props;
