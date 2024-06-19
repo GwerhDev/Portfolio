@@ -5,6 +5,7 @@
   align-items: center;
   padding: 0;
   margin-bottom: 100px;
+  color: white;
 }
 
 .title {
@@ -12,6 +13,11 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  color: white;
+}
+
+.title a {
+  color: white;
 }
 
 .container li {
@@ -20,10 +26,7 @@
   width: 100%;
   padding-bottom: .8rem;
   backdrop-filter: blur(10px);
-}
-
-.container li span {
-  color: black;
+  color: white;
 }
 
 .clock {
@@ -38,12 +41,16 @@
   justify-content: center;
   align-items: center;
   gap: .6rem;
+  color: white;
 }
 
 .ownerContainer img {
   border-radius: 100%;
 }
 
+.ownerContainer a p {
+  color: white;
+}
 
 @media (max-width: 950px) {
   .sectionTitle {

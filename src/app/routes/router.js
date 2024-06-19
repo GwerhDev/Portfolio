@@ -23,6 +23,7 @@ function Router() {
       {
         location.pathname !== '/' && <Navigator />
       }
+      
       {
         location.pathname !== '/' && <LateralCanvas />
       }

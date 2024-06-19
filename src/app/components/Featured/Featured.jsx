@@ -73,7 +73,7 @@ export const Featured = (props) => {
           <div className={s.infoCont}>
             <div className={s.featuredWrap} id='first'>
               <div className={s.titleItem}>
-                <h2>shadowgardians</h2>
+                <p>shadowgardians</p>
                 <div className={s.buttonsContainer}>
                   <GithubButton url="https://github.com/GwerhDev/Shadowgardians-Client" />
                   <InfoButton
@@ -100,7 +100,7 @@ export const Featured = (props) => {
 
             <div className={s.featuredWrap} id='second'>
               <div className={s.titleItem}>
-                <h2>artificial intelligence app</h2>
+                <p>artificial intelligence app</p>
                 <div className={s.buttonsContainer}>
                   <GithubButton url="https://github.com/GwerhDev/ArtificialIntelligence-Client" />
                   <InfoButton
@@ -127,7 +127,7 @@ export const Featured = (props) => {
 
             <div className={s.featuredWrap} id='third'>
               <div className={s.titleItem}>
-                <h2>la ruina tv</h2>
+                <p>la ruina tv</p>
                 <div className={s.buttonsContainer}>
                   <GithubButton url="https://github.com/GwerhDev/La-Ruina-TV-client" />
                   <InfoButton

@@ -7,7 +7,7 @@ import { Title } from '../../components/Utils/Title/Title';
 import { Intro } from './Intro';
 import { Bio } from './Bio';
 import { Cv } from './Cv';
-import arrowIcon from '../../../assets/images/png/arrow-icon.png';
+import arrowIcon from '../../../assets/images/svg/arrow-icon.svg';
 
 export const OptionCanvas = () => {
   const dispatch = useDispatch();
