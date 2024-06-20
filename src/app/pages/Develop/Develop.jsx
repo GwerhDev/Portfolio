@@ -29,7 +29,6 @@ export const Develop = (props) => {
 
   return (
     <div className={s.devCont}>
-      <InfoCanvas />
       <PresentationCard background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <div className="main-container">
         <section className="section-container" id="projects-section">
@@ -42,6 +41,7 @@ export const Develop = (props) => {
       <section id="skills-section">
         <DevSkills language={language} />
       </section>
+      <InfoCanvas />
     </div>
   )
 }

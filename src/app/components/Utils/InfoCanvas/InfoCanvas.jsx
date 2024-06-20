@@ -4,8 +4,9 @@ import s from './InfoCanvas.module.css'
 import linkIcon from '../../../../assets/images/svg/openwindow-icon.svg'
 
 export const InfoCanvas = () => {
-    const language = useSelector(state=>state.language)
-    const info = useSelector(state=>state.info)
+    const language = useSelector(state=>state.language);
+    const info = useSelector(state=>state.info);
+    
     return (
         <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e)}>
             <div className={s.infoDiv} style={{ backgroundImage:`url(${info.img})` }}>
