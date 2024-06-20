@@ -7,26 +7,28 @@ import { DesignSkills } from '../../components/DesignSkills/DesignSkills';
 import designBack from '../../../assets/images/jpg/design-bg.jpg';
 import designIcon from '../../../assets/images/png/design-icon.png';
 import { useEffect } from 'react';
-import { setOption } from '../../../middlewares/redux/actions';
+import { setSelection } from '../../../middlewares/redux/actions';
 
 export const Design = (props) => {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
-  const { option } = props;
+  const { selection } = props;
 
   useEffect(() => {
-    dispatch(setOption(option));
-  }, [dispatch, option]);
+    dispatch(setSelection(selection));
+  }, [dispatch, selection]);
 
   return (
     <div className={s.designCont}>
       <PresentationCard background={designBack} language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN} />
       <main className="main-container">
-        <section className="section-container">
+        <section className="section-container" id='projects-section'>
           <DesignProjects language={language} />
         </section>
       </main>
-      <DesignSkills language={language} />
+      <section id="skills-section">
+        <DesignSkills language={language} />
+      </section>
     </div>
   )
 }

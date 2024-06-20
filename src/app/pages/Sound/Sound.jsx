@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Title } from "../../components/Utils/Title/Title";
 import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
 import { Gear } from "../../components/Gear/Gear";
-import { getSound, setOption } from "../../../middlewares/redux/actions";
+import { getSound, setSelection } from "../../../middlewares/redux/actions";
 import { GET_DESCRIPTION_SOUND } from "../../../middlewares/misc/descriptions";
 import { SoundProjects } from "../../components/SoundProjects/SoundProjects";
 import { SoundSkills } from "../../components/SoundSkills/SoundSkills";
@@ -14,11 +14,11 @@ import soundBack from '../../../assets/images/jpg/sound-bg.jpg';
 export const Sound = (props) => {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
-  const { option } = props;
+  const { selection } = props;
 
   useEffect(() => {
-    dispatch(setOption(option));
-  }, [dispatch, option]);
+    dispatch(setSelection(selection));
+  }, [dispatch, selection]);
 
   useEffect(() => {
     dispatch(getSound());

@@ -1,14 +1,12 @@
+import { Selection } from "../Selection/Selection";
 import s from "./LateralCanvas.module.css";
-import { Menu } from "../Menu/Menu";
-import { Profile } from "../Profile/Profile";
-import { Footer } from "../Utils/Footer/Footer";
 
 export const LateralCanvas = () => {
   return (
     <div className={s.profileLalo} id="profileLalo">
-      <Profile />
-      <Menu />
-      <Footer />
+      <span className={s.innerContainer}>
+        <Selection />
+      </span>
     </div>
   )
 };

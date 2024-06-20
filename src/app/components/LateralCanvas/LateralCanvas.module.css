@@ -1,6 +1,7 @@
 .profileLalo{
     background: linear-gradient(to left, #000000, #0e0e0e 99%);
     top: 0;
+    left: 0;
     width: 40vw;
     height: 100vh;
     box-shadow: 0px 0px 30px #434343;
@@ -11,7 +12,12 @@
     transform: translateX(-40vw);
     opacity: 0;
     transition-duration: 1s;
+}
+
+.innerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }

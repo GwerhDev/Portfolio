@@ -1,11 +1,11 @@
 .landingCont{
   width: 100vw;
+  min-height: 100vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
 }
 
 .enterBtnCont{
@@ -31,7 +31,7 @@
 
 .enterBtn:hover{
   cursor: pointer;
-  background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
   color: white;
   scale: 1.1;
   animation-name: resplandor;
@@ -47,17 +47,6 @@
 .contSL{
   display: flex;
   justify-content: center;
-}
-
-.jokeCont{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 @media (max-width: 550px) {

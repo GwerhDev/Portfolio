@@ -1,18 +1,16 @@
 .container {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .viewerCont {
-  min-height: 720px;
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 0px;
+  align-items: flex-start;
 }
 
 .parr {
@@ -31,7 +29,6 @@
 .viewerUl {
   width: 100%;
   max-width: 1440px;
-  height: 50vh;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -39,7 +36,6 @@
   padding-right: 70px;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .imgCont {
@@ -71,6 +67,8 @@
 
 .actionButton {
   margin: 0;
+  padding: 0;
+  margin-top: 2rem;
   background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
   border-radius: 3%;
   font-weight: thin;
@@ -81,30 +79,24 @@
   position: relative;
   transition-duration: .5s;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .actionButton:hover {
   cursor: pointer;
-  background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
+  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
   color: white;
   scale: 1.01;
   animation-name: resplandor;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
-  box-shadow: 0px 0px 1px rgb(255, 255, 255);
 }
 
 .actionLink:hover {
   color: white;
   cursor: pointer;
-}
-
-.buttonsCont {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .actionLink {
@@ -124,6 +116,17 @@
   width: 100%;
   margin-top: 20px;
   padding: 0;
+}
+
+.jokeCont{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 @media (max-width: 800px) {

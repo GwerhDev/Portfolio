@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setOption } from '../../../middlewares/redux/actions';
+import { setSelection } from '../../../middlewares/redux/actions';
 import { Title } from '../../components/Utils/Title/Title';
 import pdfIcon from '../../../assets/images/png/pdf-icon.png';
 
@@ -16,7 +16,7 @@ export const Curriculum = () => {
   const user = auth ? JSON.parse(auth) : null;
 
   useEffect(() => {
-    dispatch(setOption('resume'))
+    dispatch(setSelection('resume'))
     if (!user) {
       history.push('/home/resume')
     }

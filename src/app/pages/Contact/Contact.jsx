@@ -8,12 +8,12 @@ import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import defaultUserIcon from "../../../assets/images/png/user-icon.png";
 import logoutIcon from "../../../assets/images/png/logout-icon.png";
 import googleIcon from "../../../assets/images/png/gmail-icon.png";
-import { setOption } from '../../../middlewares/redux/actions';
+import { setSelection } from '../../../middlewares/redux/actions';
 
 export const Contact = (props) => {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
-  const { option } = props;
+  const { selection } = props;
 
   const auth = localStorage.getItem('auth');
   const user = auth ? JSON.parse(auth) : null;
@@ -65,8 +65,8 @@ export const Contact = (props) => {
   }, [showForm]);
 
   useEffect(() => {
-    dispatch(setOption(option));
-  }, [dispatch, option]);
+    dispatch(setSelection(selection));
+  }, [dispatch, selection]);
   
   return (
     <main className="main-container align-start">

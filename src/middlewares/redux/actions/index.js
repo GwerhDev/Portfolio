@@ -48,7 +48,7 @@ export const getSound = () => {
         })
     }}
 
-export function setOption(e){
+export function setSelection(e){
     return {
         type: SET_OPTION,
         payload: e

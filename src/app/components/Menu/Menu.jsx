@@ -1,7 +1,7 @@
 import s from "./Menu.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { setOption } from "../../../middlewares/redux/actions";
+import { setSelection } from "../../../middlewares/redux/actions";
 import { SocialLinks } from "../Utils/SocialLinks/SocialLinks";
 import { GITHUB_URL, LINKEDIN_URL } from "../../../middlewares/config";
 
@@ -13,7 +13,7 @@ export const Menu = () => {
             <div 
                 className={s.divH2}
                 onClick={()=>{return (
-                    dispatch(setOption('intro')),
+                    dispatch(setSelection('intro')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
@@ -28,7 +28,7 @@ export const Menu = () => {
             <div 
                 className={s.divH2}
                 onClick={()=>{return (
-                    dispatch(setOption('bio')),
+                    dispatch(setSelection('bio')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'
@@ -41,7 +41,7 @@ export const Menu = () => {
             <div 
                 className={s.divH2}
                 onClick={()=>{return (
-                    dispatch(setOption('resume')),
+                    dispatch(setSelection('resume')),
                     document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
                     document.querySelector('#profileLalo').style.opacity='0',
                     document.querySelector('#navCont').style.transform='translateX(0)'

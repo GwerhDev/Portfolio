@@ -6,6 +6,7 @@
   justify-content: center;
   padding-left: 10px;
   z-index: 999;
+  left: 0;
 }
 
 .navCont {
@@ -52,6 +53,14 @@
   background-image: url(../../../assets/images/png/design-icon.png);
 }
 
+.experienceImg {
+  background-image: url(../../../assets/images/svg/experience-icon.svg);
+}
+
+.skillsImg {
+  background-image: url(../../../assets/images/svg/skills-icon.svg);
+}
+
 .contactImg {
   background-image: url(../../../assets/images/png/contact-icon.png);
 }
@@ -65,7 +74,9 @@
 .webImg,
 .soundImg,
 .designImg,
+.experienceImg,
 .contactImg,
+.skillsImg,
 .logoutImg {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -85,6 +96,8 @@
 .webImg:hover,
 .soundImg:hover,
 .designImg:hover,
+.experienceImg:hover,
+.skillsImg:hover,
 .contactImg:hover,
 .logoutImg:hover {
   cursor: pointer;

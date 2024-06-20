@@ -1,23 +1,19 @@
 import s from './Landing.module.css';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Profile } from '../../components/Profile/Profile';
 import { SocialLinks } from '../../../app/components/Utils/SocialLinks/SocialLinks';
 import { removeLocalStorage } from '../../../functions/RemoveLocalStorage';
-import { Footer } from '../../components/Utils/Footer/Footer';
-import { getDevDailyJoke } from '../../../middlewares/redux/actions';
-import { DevDailyJoke } from '../../components/Utils/DevDailyJoke/DevDailyJoke';
 import { GITHUB_URL, LINKEDIN_URL } from '../../../middlewares/config';
 
 export const Landing = () => {
   const language = useSelector(state => state.language);
-  const devDailyJoke = useSelector(state => state.devDailyJoke);
-  const dispatch = useDispatch();
 
-  useEffect(() => { removeLocalStorage() }, []);
-  useEffect(() => { dispatch(getDevDailyJoke(language === 'EN' ? 'en' : 'es')) }, [dispatch, language]);
+  useEffect(() => {
+    removeLocalStorage()
+  }, []);
 
   return (
     <div className={s.landingCont}>
@@ -27,7 +23,7 @@ export const Landing = () => {
           {language === 'EN' ? 'Develop, Design & Sound' : 'Desarrollo, Diseño & Sonido'}
         </p>
         <div className={s.enterBtnCont}>
-          <Link to='/home' className={s.enterBtn}>
+          <Link to='/selection' className={s.enterBtn}>
             {
               language === 'EN' ?
                 'enter' :
@@ -40,10 +36,6 @@ export const Landing = () => {
         </div>
 
       </motion.div>
-      <div className={s.jokeCont}>
-        <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
-        <Footer />
-      </div>
     </div>
   )
 }

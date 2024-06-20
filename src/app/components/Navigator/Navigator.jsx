@@ -1,159 +1,166 @@
 import s from "./Navigator.module.css";
 import { motion } from 'framer-motion';
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { setOption } from "../../../middlewares/redux/actions";
+import { setSelection } from "../../../middlewares/redux/actions";
 import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import { disappear, optionActive } from "../../../functions/NavigationFunctions";
 import { ScrollToSection } from "../../../functions/ScrollToSection";
 
 export const Navigator = () => {
-  const dispatch = useDispatch();
-  const option = useSelector(state=>state.option);
-  const language = useSelector(state=>state.language);
+  const selection = useSelector(state => state.selection);
+  const language = useSelector(state => state.language);
 
-  useEffect(()=>{
-    optionActive(option? option : '')
-    disappear()
-  }, [option]);
-  
+  function activeSelection() {
+    switch (selection) {
+      case 'develop':
+        return s.webImg;
+      case 'design':
+        return s.designImg;
+      case 'sound':
+        return s.soundImg;
+      default:
+        return;
+    }
+  }
+
+  useEffect(() => {
+    optionActive(selection ? selection : '');
+    disappear();
+  }, [selection]);
+
   return (
-    <motion.div 
+    <motion.div
       className={s.nav}
-      initial={{opacity:0, x:-100}}
-      transition={{duration: 1}}
-      animate={{opacity:1, x:0}}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 1 }}
+      animate={{ opacity: 1, x: 0 }}
       drag='y'
       dragConstraints={{
         top: -80,
         bottom: 50,
       }}
     >
-    <div className={s.navCont} id='navCont'>
-      <ul className={s.ulCont}>
-        <li>
-          <div 
-            className={s.profileImg}
-            id='profile'
-            onClick={()=>{return (
-              document.querySelector('#profileLalo').style.transform='translateX(0)',
-              document.querySelector('#profileLalo').style.opacity='1',
-              document.querySelector('#navCont').style.transform='translateX(40vw)'
-              )}}
-              onMouseEnter={()=>{return(document.querySelector('#menu').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menu').style.scale='0')}}
-              >
+      <div className={s.navCont} id='navCont'>
+        <ul className={s.ulCont}>
+          <li>
+            <div
+              className={s.profileImg}
+              id='profile'
+              onClick={() => {
+                return (
+                  document.querySelector('#profileLalo').style.transform = 'translateX(0)',
+                  document.querySelector('#profileLalo').style.opacity = '1',
+                  document.querySelector('#navCont').style.transform = 'translateX(40vw)'
+                )
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menu').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menu').style.scale = '0') }}
+            >
               <button className={s.menuItem} id='menu' disabled>
-                {language==='EN'? 'menu':'menu'}
-            </button>
-          </div>
-          <Link to='/home'>
-            <div 
+                {language === 'EN' ? 'menu' : 'menu'}
+              </button>
+            </div>
+
+            <div
               className={s.homeImg}
               id='home'
-              onClick={()=>{return (
-                dispatch(setOption('home')),
-                document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                document.querySelector('#profileLalo').style.opacity='0',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuHome').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuHome').style.scale='0')}}
-                >
-              <button className={s.menuItem} id='menuHome' disabled>
-                {language==='EN'? 'Home':'Inicio'}
-              </button>
-            </div>
-          </Link>
-          <Link to='/portfolio/develop'>
-            <div 
-              className={s.webImg}
-              id='develop'
-              onClick={()=>{return (
-                ScrollToSection('presentationCardSection','auto'),
-                dispatch(setOption('develop')),
-                document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                document.querySelector('#profileLalo').style.opacity='0',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuDevelop').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuDevelop').style.scale='0')}}
-                >
-              <button className={s.menuItem} id='menuDevelop' disabled>
-                {language==='EN'? 'develop':'desarrollo'}
-              </button>
-            </div>
-          </Link>
-          <Link to='/portfolio/design'>
-            <div 
-              className={s.designImg}
-              id='design'
-              onClick={()=>{return (
-                ScrollToSection('presentationCardSection','auto'),
-                dispatch(setOption('design')),
-                document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                document.querySelector('#profileLalo').style.opacity='0',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuDesign').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuDesign').style.scale='0')}}
-                >
-                <button className={s.menuItem} id='menuDesign' disabled>
-                {language==='EN'? 'design':'diseno'}
-              </button>
-            </div>          
-          </Link>
-          <Link to='/portfolio/sound'>
-            <div 
-              className={s.soundImg}
-              id='sound'
-              onClick={()=>{return (
-                ScrollToSection('presentationCardSection','auto'),
-                dispatch(setOption('sound')),
-                document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                document.querySelector('#profileLalo').style.opacity='0',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuSound').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuSound').style.scale='0')}}
-                >
-              <button className={s.menuItem} id='menuSound' disabled>
-                {language==='EN'? 'sound':'sonido'}
-              </button>
-            </div> 
-          </Link>
-          <Link to='/contact'>
-            <div 
-              className={s.contactImg}
-              id='contact'
-              onClick={()=>{return (
-                dispatch(setOption('contact')),
-                document.querySelector('#profileLalo').style.transform='translateX(-40vw)',
-                document.querySelector('#profileLalo').style.opacity='0',
-                document.querySelector('#navCont').style.transform='translateX(0vw)'
-                )}}
-                onMouseEnter={()=>{return(document.querySelector('#menuContact').style.scale='1')}}
-                onMouseLeave={()=>{return(document.querySelector('#menuContact').style.scale='0')}}
+              onClick={() => {
+                return (
+                  ScrollToSection('presentation-section'),
+                  setSelection(selection),
+                  document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)',
+                  document.querySelector('#profileLalo').style.opacity = '0',
+                  document.querySelector('#navCont').style.transform = 'translateX(0vw)'
+                )
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menuHome').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menuHome').style.scale = '0') }}
             >
+              <button className={s.menuItem} id='menuHome' disabled>
+                {language === 'EN' ? 'Home' : 'Inicio'}
+              </button>
+            </div>
+            <div
+              className={activeSelection()}
+              id='projects'
+              onClick={() => {
+                return (
+                  ScrollToSection('projects-section', 'smooth'),
+                  document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)',
+                  document.querySelector('#profileLalo').style.opacity = '0',
+                  document.querySelector('#navCont').style.transform = 'translateX(0vw)'
+                )
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menuProjects').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menuProjects').style.scale = '0') }}
+            >
+              <button className={s.menuItem} id='menuProjects' disabled>
+                {
+                  language === 'EN' ? 'projects' : 'proyectos'
+                }
+              </button>
+            </div>
+
+{/*             <div
+              className={s.experienceImg}
+              id='experience'
+              onClick={() => {
+                return (
+                  ScrollToSection('experienceSection', 'auto'),
+                  document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)',
+                  document.querySelector('#profileLalo').style.opacity = '0',
+                  document.querySelector('#navCont').style.transform = 'translateX(0vw)'
+                )
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
+            >
+              <button className={s.menuItem} id='menuExperience' disabled>
+                {language === 'EN' ? 'experience' : 'experiencia'}
+              </button>
+            </div> */}
+
+            <div
+              className={s.skillsImg}
+              id='skills'
+              onClick={() => {
+                return (
+                  ScrollToSection('skills-section', 'smooth'),
+                  document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)',
+                  document.querySelector('#profileLalo').style.opacity = '0',
+                  document.querySelector('#navCont').style.transform = 'translateX(0vw)'
+                )
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menuSkills').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menuSkills').style.scale = '0') }}
+            >
+              <button className={s.menuItem} id='menuSkills' disabled>
+                {language === 'EN' ? 'skills' : 'habilidades'}
+              </button>
+            </div>
+            <a id='contact' href='mailto:gwerh.dev@gmail.com' >
+              <div  className={s.contactImg}>
+
+              </div>
               <button className={s.menuItem} id='menuContact' disabled>
-              {language==='EN'? 'contact':'contacto'}
+                {language === 'EN' ? 'contact' : 'contacto'}
               </button>
-            </div>
-          </Link>
-          <Link to='/'>
-            <div className={s.logoutImg} onClick={()=>{return removeLocalStorage()}}
-              onMouseEnter={()=>{return(document.querySelector('#menuLogout').style.scale='1')}}
-              onMouseLeave={()=>{return(document.querySelector('#menuLogout').style.scale='0')}}
+            </a>
+            <Link to='/'>
+              <div className={s.logoutImg} onClick={() => { return removeLocalStorage() }}
+                onMouseEnter={() => { return (document.querySelector('#menuLogout').style.scale = '1') }}
+                onMouseLeave={() => { return (document.querySelector('#menuLogout').style.scale = '0') }}
               >
-              <button className={s.menuItem} id='menuLogout' disabled>
-              {language==='EN'? 'logout':'salir'}
-              </button>
-            </div>
-          </Link>
-        </li>
-      </ul>
-    </div>
+                <button className={s.menuItem} id='menuLogout' disabled>
+                  {language === 'EN' ? 'logout' : 'salir'}
+                </button>
+              </div>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </motion.div>
   )
 };

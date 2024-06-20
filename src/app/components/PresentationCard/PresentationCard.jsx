@@ -1,9 +1,11 @@
 import s from './PresentationCard.module.css';
 import { motion } from 'framer-motion';
-import { Link } from "react-router-dom";
+import { Profile } from '../Profile/Profile';
+import { SocialLinks } from '../Utils/SocialLinks/SocialLinks';
+import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
 
 export const PresentationCard = (props) => {
-  const { img, language, description } = props
+  const { language, description, devDailyJoke } = props
   return (
     <div className={s.container}>
       <motion.div
@@ -11,10 +13,9 @@ export const PresentationCard = (props) => {
         transition={{ duration: 1 }}
         animate={{ opacity: 1 }}
       >
-        <div className={s.viewerCont} id='presentationCardSection'>
+        <div className={s.viewerCont} id='presentation-section'>
           <ul className={s.viewerUl}>
-            <h1 className={s.title}>Gerardo guarda</h1>
-            <p className={s.subtitle}>gwerh</p>
+            <Profile />
             <div className={s.description}>
               <p className={s.parr}>
                 {
@@ -24,28 +25,22 @@ export const PresentationCard = (props) => {
                     description.es
                 }
               </p>
-              <div className={s.buttonsCont}>
-                <Link to='/home/resume' className={s.actionLink}>
-                  <button className={s.actionButton}>
-                    {
-                      language === 'EN' ?
-                        'check resume' : 'ver cv'
-                    }
-                  </button>
-                </Link>
-                <Link to='/contact' className={s.actionLink}>
-                  <button className={s.actionButton}>
-                    {
-                      language === 'EN' ?
-                        'contact' : 'contacto'
-                    }
-                  </button>
-                </Link>
+
+              <a href='mailto:gwerh.dev@gmail.com' className={s.actionButton}>
+                {
+                  language === 'EN' ?
+                    'contact' : 'contacto'
+                }
+              </a>
+
+              <SocialLinks />
+            </div>
+            {
+              devDailyJoke &&
+              <div className={s.jokeCont}>
+                <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
               </div>
-            </div>
-            <div className={s.imgCont}>
-              <img className={s.portfolioImg} src={img} alt="" loading="lazy" />
-            </div>
+            }
           </ul>
         </div>
       </motion.div>

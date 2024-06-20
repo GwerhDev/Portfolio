@@ -10,32 +10,38 @@ import { InfoCanvas } from "../../components/Utils/InfoCanvas/InfoCanvas";
 import { DevProjects } from "../../components/DevProjects/DevProjects";
 import { GithubEvents } from "../../components/GithubEvents/GithubEvents";
 import { useEffect } from "react";
-import { setOption } from '../../../middlewares/redux/actions';
-import devIcon from '../../../assets/images/png/dev-icon.png';
+import { getDevDailyJoke, setSelection } from '../../../middlewares/redux/actions';
 import devBack from '../../../assets/images/jpg/dev-bg.jpg';
 
 export const Develop = (props) => {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
-  const { option } = props;
+  const devDailyJoke = useSelector(state => state.devDailyJoke);
+  const { selection } = props;
 
   useEffect(() => {
-    dispatch(setOption(option));
-  }, [dispatch, option]);
+    dispatch(getDevDailyJoke(language === 'EN' ? 'en' : 'es'));
+  }, [dispatch, language]);
+
+  useEffect(() => {
+    dispatch(setSelection(selection));
+  }, [dispatch, selection]);
 
   return (
     <div className={s.devCont}>
       <InfoCanvas />
-      <PresentationCard background={devBack} language={language} img={devIcon} description={GET_DESCRIPTION_DEV} />
+      <PresentationCard background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <div className="main-container">
-        <section className="section-container">
+        <section className="section-container" id="projects-section">
           <Separator marginTop="0px" />
           <Featured language={language} />
           <DevProjects language={language} />
           <GithubEvents language={language} />
         </section>
       </div>
-      <DevSkills language={language} />
+      <section id="skills-section">
+        <DevSkills language={language} />
+      </section>
     </div>
   )
 }

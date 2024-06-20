@@ -24,14 +24,19 @@
   --color-secondary: #8d8d8d;
   --color-button-gradient-start: rgb(185, 185, 185);
   --color-button-gradient-end: #919191;
-  --color-button-hover-gradient-start: #1b1b1b;
-  --color-button-hover-gradient-end: #000000;
+  --color-button-hover-gradient-start: #2b2236;
+  --color-button-hover-gradient-end: #291f2f;
   --color-shadow: rgba(0, 0, 0, 0.575);
   --color-shadow-light: rgba(255, 255, 255, 0.288);
   --color-link: black;
   --color-visited: black;
   --font-styled: Trajan;
   --font-global: 'Poppins', sans-serif;
+
+  background: linear-gradient(230deg, #1e1928fd, #0c0c0c 75%);
+  background-repeat: no-repeat;
+
+  width: 100vw;
 }
 
 body {
@@ -43,17 +48,19 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(230deg, #1b1624fd, #0c0c0c 75%);
-  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 code {
@@ -99,10 +106,7 @@ code {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-size: cover;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .align-start {
@@ -110,13 +114,13 @@ code {
 }
 
 .section-container {
-  padding-left: 70px;
-  padding-right: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 1440px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 a:hover {

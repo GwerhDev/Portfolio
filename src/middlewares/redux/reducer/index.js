@@ -15,7 +15,7 @@ const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
 
 const initialState = {
-    option: 'home',
+    selection: 'home',
     language: userLang,
     develop: '',
     sound: '',
@@ -69,12 +69,12 @@ export default function rootReducer(state = initialState, action){
         case SET_OPTION:
             return {
                 ...state,
-                option: action.payload
+                selection: action.payload
             }
         case RESET_OPTION:
             return {
                 ...state,
-                option: 'home'
+                selection: 'home'
             }
         case SET_MENU:
             return {
