@@ -17,6 +17,7 @@
   transition-duration: 1s;
   opacity: .6;
   backdrop-filter: blur(10px);
+  position: fixed;
 }
 
 .navCont:hover {
