@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  gap: 1rem;
+}
+
+.leftSection,
+.rightSection {
+  width: 100%;
+}
+
+.leftSection {
+  background-size: cover;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.rightSection {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.description {
+  color: rgb(193, 187, 210);
+  font-size: 13px;
+}
+
+.role {
+  font-size: 9px;
+}

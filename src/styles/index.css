@@ -127,3 +127,13 @@ code {
 a:hover {
   color: rgb(216, 216, 216);
 }
+
+h1 {
+  font-family: Trajan;
+  color: white;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}

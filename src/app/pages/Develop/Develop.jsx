@@ -33,6 +33,7 @@ export const Develop = (props) => {
       <div className="main-container">
         <section className="section-container" id="projects-section">
           <Separator marginTop="0px" />
+          <h1>{language === "EN" ? "Projects" : "Proyectos"}</h1>
           <Featured language={language} />
           <DevProjects language={language} />
           <GithubEvents language={language} />
