@@ -10,6 +10,7 @@
     border-bottom: solid;
     border-bottom-color: rgba(239, 239, 239, 0.863);
     border-radius: 15px;
+    padding: .5rem;
     padding-right: 50px;
     padding-left: 50px;
     display: flex;
