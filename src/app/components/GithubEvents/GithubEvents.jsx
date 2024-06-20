@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getGithubEvents } from '../../../middlewares/redux/actions';
 import clockIcon from '../../../assets/images/svg/clock-icon.svg';
 import githubIcon from '../../../assets/images/png/github-icon.png';
-import openwindowIcon from '../../../assets/images/png/openwindow-icon.png';
+import openwindowIcon from '../../../assets/images/svg/openwindow-icon.svg';
 
 export const GithubEvents = (props) => {
   const { language } = props;

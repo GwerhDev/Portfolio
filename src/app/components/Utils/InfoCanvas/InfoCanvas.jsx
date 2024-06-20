@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { handleClickOutside } from '../../../../functions/InfoCanvasFunctions'
 import s from './InfoCanvas.module.css'
-import linkIcon from '../../../../assets/images/png/openwindow-white-icon.png'
+import linkIcon from '../../../../assets/images/svg/openwindow-icon.svg'
 
 export const InfoCanvas = () => {
     const language = useSelector(state=>state.language)

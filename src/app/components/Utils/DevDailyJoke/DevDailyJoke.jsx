@@ -1,7 +1,7 @@
 import s from './DevDailyJoke.module.css';
 import React from 'react';
 import { Loader } from '../Loader/Loader';
-import openWindow from '../../../../assets/images/png/openwindow-icon.png'
+import openWindow from '../../../../assets/images/svg/openwindow-icon.svg'
 
 export const DevDailyJoke = (props) => {
   const { language, devDailyJoke } = props;
