@@ -1,4 +1,4 @@
-.lanCont{
+.lanCont {
   position: fixed;
   width: auto;
   height: auto;
@@ -6,14 +6,16 @@
   right: 20px;
   z-index: 10;
 }
-.ulCont>button{
+
+.ulCont>button {
   font-family: Trajan;
   background: linear-gradient(230deg, rgb(185, 185, 185), #bfbfbf 85%);
   border-width: 1px;
   border-radius: 15%;
   font-size: 15px;
 }
-.ulCont>button:hover{
+
+.ulCont>button:hover {
   cursor: pointer;
   background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
   color: white;

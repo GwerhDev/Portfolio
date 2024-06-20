@@ -1,3 +1,7 @@
+.componentContainer {
+    width: 100%;
+}
+
 .contTitle{
     position: relative;
     max-width: 100%;

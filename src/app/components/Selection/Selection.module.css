@@ -5,19 +5,17 @@
 
 .porfolioList {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
     margin: 0;
     padding: 0;
     width: 100%;
     margin-top: 8rem;
-    justify-content: space-around;
     letter-spacing: .3rem;
     position: relative;
     text-align: center;
     min-height: 300px;
-    flex-direction: column;
-    flex-direction: column;
-    vertical-align: middle;
     justify-content: center;
     align-items: center;
     padding-bottom: 40px;
@@ -48,13 +46,15 @@
     display: flex;
     height: auto;
     width: auto;
-    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1000px) {
     .portfolioIconCont {
+        padding: 0;
         scale: .8;
-        margin-top: -20px;
     }
     .porfolioList h3{
         scale: .8;

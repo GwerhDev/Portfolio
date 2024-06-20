@@ -1,17 +1,3 @@
-.soundCont{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.titleContainer{
-  width: 100%;
+.soundCont {
+  width: 100vw;
 }

@@ -1,0 +1,37 @@
+.contactButton {
+  background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition-duration: .5s;
+  color: #000000;
+  font-weight: thin;
+  font-family: Trajan;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: none;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
+  color: white;
+  animation-name: resplandor;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+@keyframes resplandor {
+  0% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+
+  50% {
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+}

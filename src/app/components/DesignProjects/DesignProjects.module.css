@@ -65,10 +65,13 @@ h6 {
   opacity: 1;
 }
 
+.header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .header p {
   font-family: var(--font-global);
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .ulContainer {

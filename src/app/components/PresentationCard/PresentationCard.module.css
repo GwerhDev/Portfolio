@@ -1,13 +1,13 @@
 .container {
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .viewerCont {
   width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -21,14 +21,16 @@
 }
 
 .description {
-  max-width: 500px;
+  gap: 1rem;
   line-height: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .viewerUl {
   width: 100%;
-  max-width: 1440px;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   padding: 0;

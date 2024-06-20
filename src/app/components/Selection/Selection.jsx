@@ -18,6 +18,7 @@ export const Selection = () => {
 
   function closePanel() {
     if (location.pathname !== '/selection') {
+      window.scrollTo(0, 0);
       document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)';
       document.querySelector('#profileLalo').style.opacity = '0';
       document.querySelector('#navCont').style.transform = 'translateX(0vw)';
@@ -38,39 +39,39 @@ export const Selection = () => {
         <ul className={s.porfolioList}>
           <li>
             <h3> {language === 'EN' ? 'DEVELOP' : 'DESARROLLO'} </h3>
-            <Link to='/portfolio/develop' className={s.linkStyle}
-              onClick={closePanel}
-              onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.develop)) }}
-              onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
-              <div className={s.portfolioIconCont}>
+            <div className={s.linkStyle}>
+              <Link to='/portfolio/develop' className={s.portfolioIconCont}
+                onClick={closePanel}
+                onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.develop)) }}
+                onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={devIcon} alt="" height={'110px'} />
-              </div>
-            </Link>
+              </Link>
+            </div>
           </li>
           <li>
             <h3> {language === 'EN' ? 'DESIGN' : 'DISEÑO'} </h3>
-            <Link to='/portfolio/design' className={s.linkStyle}
-              onClick={closePanel}
-              onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.design)) }}
-              onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
-              <div className={s.portfolioIconCont}>
+            <div className={s.linkStyle}>
+              <Link to='/portfolio/design' className={s.portfolioIconCont}
+                onClick={closePanel}
+                onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.design)) }}
+                onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={designIcon} alt="" height={'110px'} />
-              </div>
-            </Link>
+              </Link>
+            </div>
           </li>
           <li>
             <h3>
               {
                 language === 'EN' ? 'SOUND' : 'SONIDO'
               }                        </h3>
-            <Link to='/portfolio/sound' className={s.linkStyle}
-              onClick={closePanel}
-              onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.sound)) }}
-              onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
-              <div className={s.portfolioIconCont}>
+            <div className={s.linkStyle}>
+              <Link to='/portfolio/sound' className={s.portfolioIconCont}
+                onClick={closePanel}
+                onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.sound)) }}
+                onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={soundIcon} alt="" height={'110px'} />
-              </div>
-            </Link>
+              </Link>
+            </div>
           </li>
         </ul>
         <InfoToast language={language} info={infoToast} />

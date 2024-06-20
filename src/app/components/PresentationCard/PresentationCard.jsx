@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import { Profile } from '../Profile/Profile';
 import { SocialLinks } from '../Utils/SocialLinks/SocialLinks';
 import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
+import { ContactButton } from '../Utils/Buttons/ContactButton';
 
 export const PresentationCard = (props) => {
-  const { language, description, devDailyJoke } = props
+  const { language, description, devDailyJoke } = props;
+  
   return (
     <div className={s.container}>
       <motion.div
@@ -16,7 +18,7 @@ export const PresentationCard = (props) => {
         <div className={s.viewerCont} id='presentation-section'>
           <ul className={s.viewerUl}>
             <Profile />
-            <div className={s.description}>
+            <span className={s.description}>
               <p className={s.parr}>
                 {
                   language === 'EN' ?
@@ -26,15 +28,10 @@ export const PresentationCard = (props) => {
                 }
               </p>
 
-              <a href='mailto:gwerh.dev@gmail.com' className={s.actionButton}>
-                {
-                  language === 'EN' ?
-                    'contact' : 'contacto'
-                }
-              </a>
+              <ContactButton message={language === 'EN' ? 'contact' : 'contacto'} email='gwerh.dev@gmail.com' />
 
               <SocialLinks />
-            </div>
+            </span>
             {
               devDailyJoke &&
               <div className={s.jokeCont}>

@@ -1,79 +1,14 @@
 .landingCont{
   width: 100vw;
   min-height: 100vh;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.enterBtnCont{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.enterBtn{
-  background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition-duration: .5s;
-  color: #000000;
-  font-weight: thin; 
-  font-family: Trajan;
-  padding: 5px;
-}
-
-.enterBtn:hover{
-  cursor: pointer;
-  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
   color: white;
-  scale: 1.1;
-  animation-name: resplandor;
-  animation-duration: .5s;
-  animation-timing-function: ease-in-out;
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
+
 .img{
   width: 200px;
   border-radius: 100%;
-}
-
-.contSL{
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 550px) {
-  .enterBtn{
-    font-size: 12px;
-  }
-}
-
-@keyframes animation {
-  from {
-    opacity: .2;
-    scale: 1.1
-  }
-  to {
-    opacity: 0;
-    scale: 1
-  }
-}
-
-@keyframes resplandor {
-  0% {
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  }
-  50% {
-    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0);
-  }
-  100% {
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  }
 }
