@@ -87,7 +87,7 @@ export const Featured = (props) => {
       />
 
       <Card
-        title="Shadowgardians"
+        title="Testing AI & Components"
         image={image.second}
         language={language}
         description={description.second}
