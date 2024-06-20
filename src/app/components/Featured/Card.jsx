@@ -1,7 +1,7 @@
 import s from './Card.module.css';
 
 export const Card = (props) => {
-  const { image, description, role, language, title } = props;
+  const { image, description, role, language, title, url, github } = props;
 
   return (
     <article className={s.card}>
@@ -15,6 +15,13 @@ export const Card = (props) => {
         <div className={s.role}>
           <p>{language === 'EN' ? role.en : role.es}</p>
         </div>
+
+        <span className={s.buttons}>
+          <a className={s.link} href={url} target="_blank" rel="noreferrer">{language === 'EN' ? "visit" : "visitar"}</a>
+          <a className={s.link} href={github} target="_blank" rel="noreferrer">github</a>
+        </span>
+
+
       </section>
     </article>)
 }

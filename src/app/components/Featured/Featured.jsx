@@ -67,6 +67,12 @@ export const Featured = (props) => {
     third: "https://streamby.s3.sa-east-1.amazonaws.com/GwerhDev/Portfolio/image/laruinatv-img.png"
   }
 
+  const url = {
+    first: "https://shadowgardians.netlify.app",
+    second: "https://terminalkiller.netlify.app/#/ai-testing",
+    third: "https://tv.laruina.cl/"
+  }
+
   return (
     <div className={s.container}>
       <Card
@@ -76,7 +82,8 @@ export const Featured = (props) => {
         description={description.first}
         technologies={technologies.first}
         role={role.first}
-        github={github.first}
+        github={github.first.frontend}
+        url={url.first}
       />
 
       <Card
@@ -86,7 +93,8 @@ export const Featured = (props) => {
         description={description.second}
         technologies={technologies.second}
         role={role.second}
-        github={github.second}
+        github={github.second.frontend}
+        url={url.second}
       />
 
       <Card
@@ -96,7 +104,8 @@ export const Featured = (props) => {
         description={description.third}
         technologies={technologies.third}
         role={role.third}
-        github={github.third}
+        github={github.third.frontend}
+        url={url.third}
       />
 
     </div>
