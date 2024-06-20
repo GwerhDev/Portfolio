@@ -18,11 +18,7 @@ function Router() {
   const location = useLocation();
 
   return (
-    <div className="App">
-      {
-        location.pathname !== '/' && location.pathname !== '/selection' && <Navigator />
-      }
-      
+    <div className="App">      
       {
         location.pathname !== '/' && location.pathname !== '/selection' && <LateralCanvas />
       }
@@ -49,14 +45,17 @@ function Router() {
         <Route exact path='/portfolio/develop'>
           <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
           <Develop selection='develop' />
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/sound'>
           <Header title={"Gwerh | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />
           <Sound selection='sound' />
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/design'>
           <Header title={"Gwerh | Portfolio: Design"} content={"Desarrollo, Diseño y Sonido"} />
           <Design selection='design' />
+          <Navigator />
         </Route>
         <Route exact path='/contact'>
           <Header title={"Gwerh | Contact"} content={"Desarrollo, Diseño y Sonido"} />
