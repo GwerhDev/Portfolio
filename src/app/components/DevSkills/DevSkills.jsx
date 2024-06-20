@@ -19,6 +19,7 @@ import djangoSVG from '../../../assets/images/svg/django-icon.svg';
 
 export const DevSkills = (props) => {
   const { language } = props;
+  
   return (
     <div className={s.container}>
       <section className="section-container">

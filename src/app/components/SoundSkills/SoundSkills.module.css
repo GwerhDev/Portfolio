@@ -1,4 +1,4 @@
-.skillsCont{
+.skillsCont {
   width: 100%;
   min-height: 100vh;
   padding-top: 100px;
@@ -7,13 +7,13 @@
   justify-content: center;
 }
 
-.icon{
+.icon {
   filter: grayscale(1);
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.iconList{
+.iconList {
   max-width: 100%;
   position: relative;
   display: grid;
@@ -25,27 +25,24 @@
   align-items: center;
 }
 
-.titleCont{
+.titleCont {
   width: 100%;
   text-align: center;
 }
 
-.titleCont h1{
-  font-family:Trajan;
+.titleCont h1 {
+  font-family: Trajan;
   color: white;
-  font-size: 2.3rem;
   font-weight: 500;
 }
-.icon h5{
+
+.icon h5 {
   text-align: center;
   font-size: 10px;
 }
 
 @media (max-width: 950px) {
-  .titleCont h1{
-      font-size: 1.5rem;
-  }
-  .iconList{
-      scale: .9;
+  .iconList {
+    scale: .9;
   }
 }
