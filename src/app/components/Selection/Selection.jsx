@@ -19,8 +19,8 @@ export const Selection = () => {
   function closePanel() {
     if (location.pathname !== '/selection') {
       window.scrollTo(0, 0);
-      document.querySelector('#profileLalo').style.transform = 'translateX(-40vw)';
-      document.querySelector('#profileLalo').style.opacity = '0';
+      document.querySelector('#lateralPanel').style.transform = 'translateX(-40vw)';
+      document.querySelector('#lateralPanel').style.opacity = '0';
       document.querySelector('#navCont').style.transform = 'translateX(0vw)';
     }
 

@@ -1,12 +1,12 @@
 export function optionActive(e) {
-    document.querySelector(`#profile`).style.boxShadow=('0px 0px 4px transparent');
+    document.querySelector(`#lateralMenu`).style.boxShadow=('0px 0px 4px transparent');
     document.querySelector(`#home`).style.boxShadow=('0px 0px 4px transparent');
     document.querySelector(`#projects`).style.boxShadow=('0px 0px 4px transparent');
 /*     document.querySelector(`#experience`).style.boxShadow=('0px 0px 4px transparent');
  */}
   
 export function disappear(){
-    const Div1 = document.getElementById('profileLalo');
+    const Div1 = document.getElementById('lateralPanel');
     const Div2 = document.getElementById('navCont');
     const Div3 = document.getElementById('menu');
     const Div4 = document.getElementById('menuHome');

@@ -54,7 +54,7 @@ export const Navigator = () => {
       <div className={s.navCont} id='navCont'>
         <ul className={s.ulCont}>
           <li
-            id='profile'
+            id='lateralMenu'
             onClick={openPanel}
             onMouseEnter={() => { return (document.querySelector('#menu').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menu').style.scale = '0') }}
