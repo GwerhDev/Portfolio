@@ -2,8 +2,9 @@ import s from './PresentationCard.module.css';
 import { motion } from 'framer-motion';
 import { Profile } from '../Profile/Profile';
 import { SocialLinks } from '../Utils/SocialLinks/SocialLinks';
-import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
 import { AnchorButton } from '../Utils/Buttons/AnchorButton';
+import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
+import { GITHUB_URL, LINKEDIN_URL } from "../../../middlewares/config";
 
 export const PresentationCard = (props) => {
   const { language, description, devDailyJoke, joke } = props;
@@ -30,8 +31,8 @@ export const PresentationCard = (props) => {
 
               <AnchorButton message={language === 'EN' ? 'contact' : 'contacto'} href='mailto:gwerh.dev@gmail.com' />
 
-              <SocialLinks />
-            </span>
+              <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
+              </span>
             {
               joke &&
               <div className={s.jokeCont}>
