@@ -44,7 +44,8 @@ export const DevProjects = (props) => {
                         technologies: language === 'EN' ? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
-                        github: e.repository
+                        github: e.repository,
+                        gallery: e.gallery
                       })),
                       openInfoCanvas()
                     )
@@ -81,7 +82,8 @@ export const DevProjects = (props) => {
                         technologies: language === 'EN' ? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
-                        github: e.repository
+                        github: e.repository,
+                        gallery: e.gallery
                       })),
                       openInfoCanvas()
                     )
@@ -118,7 +120,8 @@ export const DevProjects = (props) => {
                         technologies: language === 'EN' ? `Technologies: ${e.technologies.en}` : `Tecnologías: ${e.technologies.es}`,
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
-                        github: e.repository
+                        github: e.repository,
+                        gallery: e.gallery
                       })),
                       openInfoCanvas()
                     )
@@ -156,7 +159,8 @@ export const DevProjects = (props) => {
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
                         github: e.repository,
-                        download: e.download
+                        download: e.download,
+                        gallery: e.gallery
                       })),
                       openInfoCanvas()
                     )

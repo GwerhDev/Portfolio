@@ -3,7 +3,9 @@ import React, { useRef, useState } from 'react';
 import { next, previous } from './js/Slider';
 import arrowIcon from '../../../../assets/images/png/showmore-icon.png';
 
-export const Slider = ({ children }) => {
+export const Slider = (props) => {
+  const { gallery } = props;
+
   const sliderRef = useRef(null);
   const [k, setK] = useState(1);
 
@@ -20,14 +22,18 @@ export const Slider = ({ children }) => {
       <button id={s.prev} disabled={k <= 1} className={s.buttons} onClick={handlePrevious}>
         <img className={s.prevButton} width={20} src={arrowIcon} alt="" />
       </button>
-      <div className={s.slider} id={'slider'} ref={sliderRef}>
-        <div className={s.sliderViewer} id='sliderViewwer'>
-          <div className={s.sliderCont}>
-            {children}
-          </div>
+      <div className={s.slider} id='slider' ref={sliderRef}>
+        <div className={s.sliderCont} style={{ width: gallery?.length * 100 + "%" }}>
+          {
+            gallery?.map((image, index) => (
+              <div id={`card${index}`} className={s.card} key={index}>
+                <img src={image} alt="" className={s.image} />
+              </div>
+            ))
+          }
         </div>
       </div>
-      <button id={s.next} className={s.buttons} onClick={handleNext}>
+      <button id={s.next} disabled={gallery?.length <= 2} className={s.buttons} onClick={handleNext}>
         <img className={s.nextButton} width={20} src={arrowIcon} alt="" />
       </button>
     </div>

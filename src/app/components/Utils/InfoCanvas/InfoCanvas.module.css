@@ -18,7 +18,10 @@
 }
 
 .infoCont {
-    padding-bottom: 80px;
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .ulCont {
@@ -36,10 +39,10 @@
     overflow-x: hidden;
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 15px;
 }
 
 .infoDiv {
-    position: relative;
     width: 70vw;
     height: 70vh;
     margin: 0;
@@ -49,10 +52,8 @@
     z-index: 1;
     display: flex;
     justify-content: center;
-    vertical-align: middle;
     align-items: center;
     z-index: 99;
-    overflow: hidden;
     background-repeat: 'no-repeat';
     background-size: 300%;
     background-position: center;
@@ -69,14 +70,10 @@
     display: flex;
 }
 
-.divButtonA {
-    background-color: transparent;
-    border: none;
-}
-
 .divButton {
+    padding: 0;
+    height: 25px;
     display: flex;
-    height: 35px;
     background: linear-gradient(230deg, rgb(185, 185, 185), #bfbfbf 85%);
     justify-content: center;
     align-items: center;
@@ -87,15 +84,14 @@
     transition: .4s;
     font-family: var(--font-global);
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
 .divButton p {
+    padding-top: 0;
+    transition: .4s;
     color: #171717;
     text-shadow: none;
-    transition: .4s;
     font-family: Trajan;
-    padding-top: 0;
 }
 
 .divButton:hover {
@@ -107,18 +103,12 @@
 }
 
 .buttonsCont {
+    gap: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 5px;
 }
 
 .textCont {
-    max-width: 280px;
     text-align: left;
-}
-
-.externalTextCont {
-    display: flex;
-    justify-content: center;
 }

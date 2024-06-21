@@ -5,13 +5,13 @@
   src: url(../assets/fonts/TrajanusBricks.ttf);
 }
 
-#webLi{
+#webLi {
   background-color: #171717d5;
 }
 
 #devListDesktopSection,
 #devListMobileSection,
-#devListSoftwareSection{
+#devListSoftwareSection {
   display: none;
 }
 
@@ -93,15 +93,23 @@ code {
   background: var(--color-background-hover);
 }
 
-#second, #third{
+#card0 {
+  transition: .7s;
+}
+
+#card1 {
   opacity: 0.4;
   transition: .7s;
   transform: rotateY(90deg);
 }
 
-#first {
+#card2 {
+  opacity: 0.4;
   transition: .7s;
+  transform: rotateY(90deg);
 }
+
+
 
 .main-container {
   width: 100%;
