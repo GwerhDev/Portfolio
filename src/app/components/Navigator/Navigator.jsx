@@ -8,6 +8,14 @@ import { removeLocalStorage } from "../../../functions/RemoveLocalStorage";
 import { disappear, optionActive } from "../../../functions/NavigationFunctions";
 import { ScrollToSection } from "../../../functions/ScrollToSection";
 import { closePanel, openPanel } from "../../../functions/LateralPanelFunctions";
+import menuIcon from '../../../assets/images/png/menu-icon.png';
+import homeIcon from '../../../assets/images/png/home-icon.png';
+import devIcon from '../../../assets/images/png/dev-icon.png';
+import soundIcon from '../../../assets/images/png/sound-icon.png';
+import designIcon from '../../../assets/images/png/design-icon.png';
+import skillsIcon from '../../../assets/images/svg/skills-icon.svg';
+import contactIcon from '../../../assets/images/png/contact-icon.png';
+import logoutIcon from '../../../assets/images/png/logout-icon.png';
 
 export const Navigator = () => {
   const selection = useSelector(state => state.selection);
@@ -16,11 +24,11 @@ export const Navigator = () => {
   function activeSelection() {
     switch (selection) {
       case 'develop':
-        return s.webImg;
+        return devIcon;
       case 'design':
-        return s.designImg;
+        return designIcon;
       case 'sound':
-        return s.soundImg;
+        return soundIcon;
       default:
         return;
     }
@@ -46,19 +54,18 @@ export const Navigator = () => {
       <div className={s.navCont} id='navCont'>
         <ul className={s.ulCont}>
           <li
-            className={s.profileImg}
             id='profile'
             onClick={openPanel}
             onMouseEnter={() => { return (document.querySelector('#menu').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menu').style.scale = '0') }}
           >
+            <img className={s.navImg} src={menuIcon} alt="" width="30" />
             <button className={s.menuItem} id='menu' disabled>
               {language === 'EN' ? 'menu' : 'menu'}
             </button>
           </li>
 
           <li
-            className={s.homeImg}
             id='home'
             onClick={() => {
               ScrollToSection('presentation-section');
@@ -68,12 +75,13 @@ export const Navigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuHome').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuHome').style.scale = '0') }}
           >
+            <img className={s.navImg} src={homeIcon} alt="" width="30" />
             <button className={s.menuItem} id='menuHome' disabled>
               {language === 'EN' ? 'Home' : 'Inicio'}
             </button>
           </li>
+
           <li
-            className={activeSelection()}
             id='projects'
             onClick={() => {
               ScrollToSection('projects-section', 'smooth');
@@ -82,6 +90,7 @@ export const Navigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuProjects').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuProjects').style.scale = '0') }}
           >
+            <img className={s.navImg} src={activeSelection()} alt="" width="30" />
             <button className={s.menuItem} id='menuProjects' disabled>
               {
                 language === 'EN' ? 'projects' : 'proyectos'
@@ -89,23 +98,7 @@ export const Navigator = () => {
             </button>
           </li>
 
-          {/*             <li
-              className={s.experienceImg}
-              id='experience'
-              onClick={() => {
-                  ScrollToSection('experienceSection', 'auto');
-                  closePanel();
-              }}
-              onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
-              onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
-            >
-              <button className={s.menuItem} id='menuExperience' disabled>
-                {language === 'EN' ? 'experience' : 'experiencia'}
-              </button>
-            </li> */}
-
           <li
-            className={s.skillsImg}
             id='skills'
             onClick={() => {
               ScrollToSection('skills-section', 'smooth');
@@ -114,24 +107,24 @@ export const Navigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuSkills').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuSkills').style.scale = '0') }}
           >
+            <img className={s.navImg} src={skillsIcon} alt="" width="30" />
             <button className={s.menuItem} id='menuSkills' disabled>
               {language === 'EN' ? 'skills' : 'habilidades'}
             </button>
           </li>
           <a id='contact' href='mailto:gwerh.dev@gmail.com' >
-            <div className={s.contactImg}>
-
-            </div>
+            <img className={s.navImg} src={contactIcon} alt="" width="30" />
             <button className={s.menuItem} id='menuContact' disabled>
               {language === 'EN' ? 'contact' : 'contacto'}
             </button>
           </a>
           <Link to='/'>
-            <li className={s.logoutImg} 
+            <li
               onClick={() => { return removeLocalStorage() }}
               onMouseEnter={() => { return (document.querySelector('#menuLogout').style.scale = '1') }}
               onMouseLeave={() => { return (document.querySelector('#menuLogout').style.scale = '0') }}
             >
+              <img className={s.navImg} src={logoutIcon} alt="" width="30" />
               <button className={s.menuItem} id='menuLogout' disabled>
                 {language === 'EN' ? 'logout' : 'salir'}
               </button>

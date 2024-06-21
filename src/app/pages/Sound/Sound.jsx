@@ -27,7 +27,7 @@ export const Sound = (props) => {
     <div className={s.soundCont}>
       <PresentationCard background={soundBack} language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND} />
       <main className="main-container">
-        <section className="section-container">
+        <section className="section-container" id='projects-section'>
           <SoundProjects language={language} />
         </section>
       </main>

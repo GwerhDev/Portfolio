@@ -34,51 +34,7 @@
   justify-content: center;
 }
 
-.profileImg {
-  background-image: url(../../../assets/images/png/menu-icon.png);
-}
-
-.homeImg {
-  background-image: url(../../../assets/images/png/home-icon.png);
-}
-
-.webImg {
-  background-image: url(../../../assets/images/png/dev-icon.png);
-}
-
-.soundImg {
-  background-image: url(../../../assets/images/png/sound-icon.png);
-}
-
-.designImg {
-  background-image: url(../../../assets/images/png/design-icon.png);
-}
-
-.experienceImg {
-  background-image: url(../../../assets/images/svg/experience-icon.svg);
-}
-
-.skillsImg {
-  background-image: url(../../../assets/images/svg/skills-icon.svg);
-}
-
-.contactImg {
-  background-image: url(../../../assets/images/png/contact-icon.png);
-}
-
-.logoutImg {
-  background-image: url(../../../assets/images/png/logout-icon.png);
-}
-
-.profileImg,
-.homeImg,
-.webImg,
-.soundImg,
-.designImg,
-.experienceImg,
-.contactImg,
-.skillsImg,
-.logoutImg {
+.navImg {
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -89,15 +45,7 @@
   scale: 1;
 }
 
-.profileImg:hover,
-.homeImg:hover,
-.webImg:hover,
-.soundImg:hover,
-.designImg:hover,
-.experienceImg:hover,
-.skillsImg:hover,
-.contactImg:hover,
-.logoutImg:hover {
+.navImg:hover {
   cursor: pointer;
   scale: 1.2;
 }
