@@ -4,7 +4,7 @@ export const Card = (props) => {
   const { image, description, role, language, title, url, github } = props;
 
   return (
-    <article className={s.card}>
+    <article className={s.container}>
       <section className={s.leftSection}>
         <a href={url} target="_blank" rel="noreferrer">
           <img src={image} alt="" width="100%" />

@@ -10,3 +10,8 @@
   flex-direction: column;
 }
 
+.emptyCardContainer {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}

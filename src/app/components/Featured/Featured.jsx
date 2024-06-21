@@ -35,7 +35,10 @@ export const Featured = (props) => {
             </li>
           ))
           :
-          <EmptyCard />
+          <ul className={s.emptyCardContainer}>
+            <EmptyCard />
+            <EmptyCard />
+          </ul>
       }
     </ul>
   )
