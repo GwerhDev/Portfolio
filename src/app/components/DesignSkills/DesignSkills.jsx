@@ -15,7 +15,7 @@ export const DesignSkills = (props) => {
           <div className={s.titleCont}>
             <h1>{language === 'EN' ? 'Skills' : 'Habilidades'}</h1>
           </div>
-          <ul className={s.iconList} style={{ marginLeft: '-40px' }}>
+          <ul className={s.iconList}>
             <li className={s.icon}>
               <img className={s.svgIcons} src={photoshopSVG} alt="" />
               <h5 style={{ color: 'white' }}>PhotoSHop</h5>

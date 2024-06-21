@@ -7,9 +7,10 @@
 }
 
 .skillsCont {
-  padding-top: 100px;
+  gap: 2rem;
   width: 100%;
   max-width: 800px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +19,6 @@
 
 .icon{
   filter: grayscale(1);
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .iconList{

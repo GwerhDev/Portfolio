@@ -9,8 +9,6 @@
 
 .icon {
   filter: grayscale(1);
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .iconList {
@@ -23,6 +21,17 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.skillsCont {
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .titleCont {
