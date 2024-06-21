@@ -5,7 +5,10 @@ export const Card = (props) => {
 
   return (
     <article className={s.card}>
-      <section className={s.leftSection} style={{ backgroundImage: `url(${image})` }}>
+      <section className={s.leftSection}>
+        <a href={url} target="_blank" rel="noreferrer">
+          <img src={image} alt="" width="100%" />
+        </a>
       </section>
       <section className={s.rightSection}>
         <div>
@@ -20,7 +23,6 @@ export const Card = (props) => {
           <a className={s.link} href={url} target="_blank" rel="noreferrer">{language === 'EN' ? "visit" : "visitar"}</a>
           <a className={s.link} href={github} target="_blank" rel="noreferrer">github</a>
         </span>
-
 
       </section>
     </article>)

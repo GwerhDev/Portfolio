@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Profile } from '../Profile/Profile';
 import { SocialLinks } from '../Utils/SocialLinks/SocialLinks';
 import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
-import { ContactButton } from '../Utils/Buttons/ContactButton';
+import { AnchorButton } from '../Utils/Buttons/AnchorButton';
 
 export const PresentationCard = (props) => {
   const { language, description, devDailyJoke } = props;
@@ -28,7 +28,7 @@ export const PresentationCard = (props) => {
                 }
               </p>
 
-              <ContactButton message={language === 'EN' ? 'contact' : 'contacto'} email='gwerh.dev@gmail.com' />
+              <AnchorButton message={language === 'EN' ? 'contact' : 'contacto'} href='mailto:gwerh.dev@gmail.com' />
 
               <SocialLinks />
             </span>
