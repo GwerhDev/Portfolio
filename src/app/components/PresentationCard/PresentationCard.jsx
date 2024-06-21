@@ -13,13 +13,13 @@ export const PresentationCard = (props) => {
     <div className={s.container}>
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ duration: 1 }}
         animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <div className={s.viewerCont} id='presentation-section'>
           <ul className={s.viewerUl}>
             <Profile />
-            <span className={s.description}>
+            <ul className={s.description}>
               <p className={s.parr}>
                 {
                   language === 'EN' ?
@@ -32,7 +32,7 @@ export const PresentationCard = (props) => {
               <AnchorButton message={language === 'EN' ? 'contact' : 'contacto'} href='mailto:gwerh.dev@gmail.com' />
 
               <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
-              </span>
+            </ul>
             {
               joke &&
               <div className={s.jokeCont}>

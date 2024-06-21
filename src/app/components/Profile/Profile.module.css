@@ -1,99 +1,88 @@
 .container {
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: centerww;
 }
 
 .imgProfile {
-    margin-top: 30px;
-    border-radius: 100%;
-    border: none;
-    filter: grayscale(.5);
-    transition-duration: .5s;
-    box-shadow: 0px 0px 8px rgb(255, 255, 255);
+  border-radius: 100%;
+  border: none;
+  filter: grayscale(.5);
+  transition-duration: .5s;
+  box-shadow: 0px 0px 8px rgb(255, 255, 255);
 }
 
 .imgProfile:hover {
-    filter: grayscale(.3);
-    box-shadow: 0px 0px 15px white;
+  filter: grayscale(.3);
+  box-shadow: 0px 0px 15px white;
 }
 
 .alias {
-    font-size: 15px;
-    animation-name: resplandorAlias;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    font-family: Trajan;
-    color: white;
-    font-weight: thin;
+  margin: 0;
+  font-size: 15px;
+  animation-name: resplandorAlias;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  font-family: Trajan;
+  color: white;
+  font-weight: thin;
 }
 
 .name {
-    font-size: 25px;
-    animation-name: resplandorName;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    font-family: Trajan;
-    color: white;
-    font-weight: thin;
-    filter: drop-shadow(0px 0px .1px yellow);
-}
-
-@keyframes resplandorName {
-    from {
-        filter: drop-shadow(0px 0px 1px rgb(255, 255, 174));
-    }
-
-    to {
-        filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0));
-    }
+  margin: 0;
+  font-size: 25px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  font-family: Trajan;
+  color: white;
+  font-weight: thin;
+  filter: drop-shadow(0px 0px .1px yellow);
 }
 
 @keyframes resplandorAlias {
-    from {
-        filter: drop-shadow(0px 0px 2px rgba(254, 254, 159, 0.768));
-    }
+  from {
+    filter: drop-shadow(0px 0px 2px rgba(254, 254, 159, 0.768));
+  }
 
-    to {
-        filter: drop-shadow(0px 0px 3px rgb(251, 251, 251));
-    }
+  to {
+    filter: drop-shadow(0px 0px 3px rgb(251, 251, 251));
+  }
 }
 
 @media (max-width: 680px) {
-    .imgProfile {
-        scale: .7;
-    }
+  .imgProfile {
+    width: 100px;
+  }
 }
 
 @media (max-width: 620px) {
-    .name {
-        font-size: 15px;
-        margin-top: -10px;
-    }
+  .name {
+    font-size: 15px;
+  }
 
-    .alias {
-        font-size: 10px;
-    }
+  .alias {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 550px) {
-    .name {
-        font-size: 13px;
-        margin-top: -10px;
-    }
+  .name {
+    font-size: 13px;
+  }
 
-    .alias {
-        font-size: 9px;
-    }
+  .alias {
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 500px) {
-    .imgProfile {
-        scale: .6;
-    }
+  .imgProfile {
+    width: 85px;
+  }
 }

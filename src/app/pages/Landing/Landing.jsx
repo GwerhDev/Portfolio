@@ -16,15 +16,15 @@ export const Landing = () => {
   }, []);
 
   return (
-    <div className={s.landingCont}>
-      <motion.div initial={{ opacity: 0, y: 10 }} transition={{ duration: 2, type: 'spring' }} animate={{ opacity: 1, y: 0 }}>
+    <div className={s.container}>
+      <motion.ul className={s.landing} initial={{ opacity: 0, y: 10 }} transition={{ duration: 2, type: 'spring' }} animate={{ opacity: 1, y: 0 }}>
         <Profile />
-        <p>
+        <p className={s.subtitle}>
           {language === 'EN' ? 'Develop, Design & Sound' : 'Desarrollo, Diseño & Sonido'}
         </p>
         <ActionButton route={"/selection"} message={language === 'EN' ? 'enter' : 'entrar'} />
         <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
-      </motion.div>
+      </motion.ul>
     </div>
   )
 }

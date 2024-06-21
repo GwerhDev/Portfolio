@@ -23,28 +23,22 @@
 .description {
   gap: 1rem;
   line-height: 15px;
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-direction: column;
 }
 
 .viewerUl {
+  padding: 0;
   width: 100%;
   max-width: 800px;
-  display: flex;
-  justify-content: center;
-  padding: 0;
+  padding-top: 1rem;
   padding-left: 70px;
   padding-right: 70px;
-  flex-direction: column;
+  display: flex;
   align-items: center;
-}
-
-.imgCont {
+  flex-direction: column;
   justify-content: center;
-  left: 0;
-  width: 100%;
-  margin-top: 100px;
 }
 
 .portfolioImg {
@@ -54,9 +48,9 @@
 .title {
   margin: 0;
   padding: 0;
-  font-family: Trajan;
   font-size: 3vw;
   color: white;
+  font-family: Trajan;
   text-shadow: 0px 0px 4px var(--color-primary);
 }
 
@@ -67,68 +61,20 @@
   text-shadow: 0px 0px 4px var(--color-primary);
 }
 
-.actionButton {
-  margin: 0;
-  padding: 0;
-  margin-top: 2rem;
-  background: linear-gradient(230deg, rgb(185, 185, 185), #919191 85%);
-  border-radius: 3%;
-  font-weight: thin;
-  font-family: Trajan;
-  border-radius: 10px;
-  border: none;
-  height: 35px;
-  position: relative;
-  transition-duration: .5s;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.actionButton:hover {
-  cursor: pointer;
-  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
-  color: white;
-  scale: 1.01;
-  animation-name: resplandor;
-  animation-duration: .5s;
-  animation-timing-function: ease-in-out;
-}
-
 .actionLink:hover {
   color: white;
   cursor: pointer;
 }
 
-.actionLink {
-  border-radius: 3%;
-  transition-duration: .5s;
-  font-weight: thin;
-  font-family: Trajan;
-  border-radius: 10px;
-  border: none;
-  margin: 0;
-  padding: 0;
-  margin-right: 15px;
-}
-
-.actionLink {
-  margin: 0;
-  width: 100%;
-  margin-top: 20px;
-  padding: 0;
-}
-
 .jokeCont{
   padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
@@ -139,9 +85,9 @@
 
 
   .title {
-    text-align: center;
     width: 100%;
     font-size: 4vw;
+    text-align: center;
   }
 
   .subtitle {
