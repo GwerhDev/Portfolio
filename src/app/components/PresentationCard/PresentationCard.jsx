@@ -6,7 +6,7 @@ import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
 import { AnchorButton } from '../Utils/Buttons/AnchorButton';
 
 export const PresentationCard = (props) => {
-  const { language, description, devDailyJoke } = props;
+  const { language, description, devDailyJoke, joke } = props;
 
   return (
     <div className={s.container}>
@@ -32,11 +32,12 @@ export const PresentationCard = (props) => {
 
               <SocialLinks />
             </span>
-            
-            <div className={s.jokeCont}>
-              <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
-            </div>
-
+            {
+              joke &&
+              <div className={s.jokeCont}>
+                <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
+              </div>
+            }
           </ul>
         </div>
       </motion.div>

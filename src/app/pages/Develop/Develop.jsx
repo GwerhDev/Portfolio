@@ -29,7 +29,7 @@ export const Develop = (props) => {
 
   return (
     <div className={s.devCont}>
-      <PresentationCard background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
+      <PresentationCard joke={true} background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <div className="main-container">
         <section className="section-container" id="projects-section">
           <Separator marginTop="0px" />
