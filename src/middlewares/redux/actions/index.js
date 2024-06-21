@@ -18,49 +18,64 @@ import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
 
 export const getDevelop = () => {
   return async function (dispatch) {
-    await axios.get(`${URL_API}/getdevelop`)
-      .then(res => {
-        dispatch({
-          type: GET_DEVELOP,
-          payload: res.data
+    try {
+      await axios.get(`${URL_API}/getdevelop`)
+        .then(res => {
+          dispatch({
+            type: GET_DEVELOP,
+            payload: res.data
+          })
         })
-      })
+    } catch (error) {
+    }
   }
 }
 
 export const getFeaturedDevelop = () => {
   return async function (dispatch) {
-    await axios.get(`${URL_API}/getdevelop/featured`)
-      .then(res => {
-        dispatch({
-          type: GET_FEATURED_DEVELOP,
-          payload: res.data
+    try {
+      await axios.get(`${URL_API}/getdevelop/featured`)
+        .then(res => {
+          dispatch({
+            type: GET_FEATURED_DEVELOP,
+            payload: res.data
+          })
         })
-      })
+    } catch (error) {
+
+    }
   }
 }
 
 export const getDesign = () => {
   return async function (dispatch) {
-    await axios.get(`${URL_API}/getdesign`)
-      .then(res => {
-        dispatch({
-          type: GET_DESIGN,
-          payload: res.data
+    try {
+      await axios.get(`${URL_API}/getdesign`)
+        .then(res => {
+          dispatch({
+            type: GET_DESIGN,
+            payload: res.data
+          })
         })
-      })
+    } catch (error) {
+
+    }
   }
 }
 
 export const getSound = () => {
   return async function (dispatch) {
-    await axios.get(`${URL_API}/getsound`)
-      .then(res => {
-        dispatch({
-          type: GET_SOUND,
-          payload: res.data
+    try {
+      await axios.get(`${URL_API}/getsound`)
+        .then(res => {
+          dispatch({
+            type: GET_SOUND,
+            payload: res.data
+          })
         })
-      })
+    } catch (error) {
+
+    }
   }
 }
 
@@ -91,16 +106,20 @@ export function setLanguage(e) {
 
 export function loginWithGoogle(accessToken) {
   return async function (dispatch) {
-    await axios.post(`${URL_API}/users/login-with-google`, { accessToken })
-      .then(res => {
-        dispatch({
-          type: GET_LOGIN,
-          payload: res.data
+    try {
+      await axios.post(`${URL_API}/users/login-with-google`, { accessToken })
+        .then(res => {
+          dispatch({
+            type: GET_LOGIN,
+            payload: res.data
+          })
         })
-      })
-      .catch((e) => {
-        console.error(e);
-      })
+        .catch((e) => {
+          console.error(e);
+        })
+    } catch (error) {
+
+    }
   }
 }
 
@@ -113,47 +132,59 @@ export function setInfo(info) {
 
 export function getWiki(query) {
   return async function (dispatch) {
-    await axios.get(`${URL_WIKI_API}?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${query}`)
-      .then(res => {
-        dispatch({
-          type: GET_WIKI,
-          payload: res.data
+    try {
+      await axios.get(`${URL_WIKI_API}?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${query}`)
+        .then(res => {
+          dispatch({
+            type: GET_WIKI,
+            payload: res.data
+          })
         })
-      })
-      .catch((e) => {
-        console.error(e);
-      })
+        .catch((e) => {
+          console.error(e);
+        })
+    } catch (error) {
+
+    }
   }
 }
 
 export function getDevDailyJoke(lang) {
   const url = `${URL_DEVDAILYJOKE_API}/${lang}`
   return async function (dispatch) {
-    await axios.get(url)
-      .then(res => {
-        dispatch({
-          type: GET_DEVDAILYJOKE,
-          payload: res.data
+    try {
+      await axios.get(url)
+        .then(res => {
+          dispatch({
+            type: GET_DEVDAILYJOKE,
+            payload: res.data
+          })
         })
-      })
-      .catch((e) => {
-        console.error(e);
-      })
+        .catch((e) => {
+          console.error(e);
+        })
+    } catch (error) {
+
+    }
   }
 }
 
 export function getGithubEvents() {
   const url = `${URL_API}/github/GwerhDev/lasts`
   return async function (dispatch) {
-    await axios.get(url)
-      .then(res => {
-        dispatch({
-          type: GET_LASTS,
-          payload: res.data
+    try {
+      await axios.get(url)
+        .then(res => {
+          dispatch({
+            type: GET_LASTS,
+            payload: res.data
+          })
         })
-      })
-      .catch((e) => {
-        console.error(e);
-      })
+        .catch((e) => {
+          console.error(e);
+        })
+    } catch (error) {
+      
+    }
   }
 }
