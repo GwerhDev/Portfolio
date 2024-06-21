@@ -4,6 +4,7 @@ export const SET_OPTION = 'SET_OPTION';
 export const RESET_OPTION = 'RESET_OPTION';
 export const SET_LANGUAGE = 'SET_LANGUAGE';
 export const GET_DEVELOP = 'GET_DEVELOP';
+export const GET_FEATURED_DEVELOP = 'GET_FEATURED_DEVELOP';
 export const GET_SOUND = 'GET_SOUND';
 export const GET_DESIGN = 'GET_DESIGN';
 export const SET_MENU = 'SET_MENU';

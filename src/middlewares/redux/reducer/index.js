@@ -9,14 +9,18 @@ import {
     GET_LOGIN, 
     SET_INFO,
     GET_DEVDAILYJOKE,
-    GET_LASTS
+    GET_LASTS,
+    GET_FEATURED_DEVELOP
  } from "../../misc/consts"
+import { Featured } from "../../models/Featured";
+import { PortfolioInfo } from "../../models/PortfolioInfo";
 const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
 
 const initialState = {
     selection: 'home',
     language: userLang,
+    featured: new Featured(),
     develop: '',
     sound: '',
     design: '',
@@ -24,20 +28,7 @@ const initialState = {
     currentUser: '',
     info: {},
     lasts: [],
-    portfolioInfo: {
-        develop: {
-            es: 'Proyectos y aplicaciones relacionados a la programación y el desarrollo web',
-            en: 'Projects and applications related to web development and programming',
-        },
-        design: {
-            es: 'Proyectos, modelos y muestras relacionadas al diseño 3D',
-            en: 'Projects, models and samples related to 3D design',
-        },
-        sound: {
-            es: 'Proyectos y lanzamientos relacionados a la post-producción de sonido',
-            en: 'Projects and releases related to post-production of sound',
-        }
-    },
+    portfolioInfo: new PortfolioInfo(),
     devDailyJoke: ''
 }
 
@@ -55,6 +46,14 @@ export default function rootReducer(state = initialState, action){
             return {
                 ...state,
                 develop: action.payload
+            }
+        case GET_FEATURED_DEVELOP:
+            return {
+                ...state,
+                featured: {
+                    ...state.featured,
+                    develop: action.payload
+                }
             }
         case GET_SOUND:
             return {
