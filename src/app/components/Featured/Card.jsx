@@ -25,5 +25,6 @@ export const Card = (props) => {
         </span>
 
       </section>
-    </article>)
+    </article>
+  )
 }
