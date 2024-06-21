@@ -6,7 +6,7 @@ import cubaseSVG from '../../../assets/images/svg/cubase-icon.svg';
 export const SoundSkills = (props) => {
   const { language } = props
   return (
-    <div className={s.skillsCont}>
+    <div className={s.container}>
       <section className="section-container">
         <div className={s.skillsCont}>
           <div className={s.titleCont}>

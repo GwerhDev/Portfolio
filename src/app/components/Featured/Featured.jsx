@@ -37,7 +37,6 @@ export const Featured = (props) => {
           :
           <ul className={s.emptyCardContainer}>
             <EmptyCard />
-            <EmptyCard />
           </ul>
       }
     </ul>
