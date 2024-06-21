@@ -7,7 +7,7 @@ import { AnchorButton } from '../Utils/Buttons/AnchorButton';
 
 export const PresentationCard = (props) => {
   const { language, description, devDailyJoke } = props;
-  
+
   return (
     <div className={s.container}>
       <motion.div
@@ -32,12 +32,11 @@ export const PresentationCard = (props) => {
 
               <SocialLinks />
             </span>
-            {
-              devDailyJoke &&
-              <div className={s.jokeCont}>
-                <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
-              </div>
-            }
+            
+            <div className={s.jokeCont}>
+              <DevDailyJoke language={language} devDailyJoke={devDailyJoke} />
+            </div>
+
           </ul>
         </div>
       </motion.div>
