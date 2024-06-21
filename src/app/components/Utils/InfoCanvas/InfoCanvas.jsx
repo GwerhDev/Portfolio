@@ -10,75 +10,73 @@ export const InfoCanvas = () => {
 
   return (
     <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e)}>
-      <div className={s.infoDiv} style={{ backgroundImage: `url(${info.img})` }}>
-        <ul className={s.ulCont} id='ulCont'>
-          <a href={info.url} target='_blank' rel='noreferrer'>
-            <div className={s.titleCont}>
-              <p>{info.title}</p>
-              <img src={linkIcon} alt="" height="20px" />
-            </div>
-          </a>
-          <div className={s.infoCont}>
-            <Slider gallery={info.gallery} />
-            <div className={s.buttonsCont}>
-              {
-                info.url?.length
-                  ?
-                  <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'>
-                    <p>{language === 'EN' ? "visit" : "visitar"}</p>
-                  </a>
-                  :
-                  null
-              }
-
-              {
-                info.download?.length
-                  ?
-                  <a className={s.divButton} href={info.download} target='_blank' rel='noreferrer'>
-                    <p>{language === 'EN' ? "download" : "descargar"}</p>
-                  </a>
-                  :
-                  null
-              }
-
-              {
-                info.github?.frontend?.length
-                  ?
-                  <a className={s.divButton} href={info.github?.frontend} target='_blank' rel='noreferrer'>
-                    <p>github - frontend</p>
-                  </a>
-                  :
-                  null
-              }
-
-              {
-                info.github?.backend?.length
-                  ?
-                  <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'>
-                    <p>github - backend</p>
-                  </a>
-                  :
-                  null
-              }
-
-              {
-                info.github?.code?.length
-                  ?
-                  <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'>
-                    <p>github</p>
-                  </a>
-                  :
-                  null
-              }
-            </div>
-              <div className={s.textCont}>
-                <p>{info.description}</p>
-                <p>{info.technologies}</p>
-                <p>{info.role}</p>
-            </div>
+      <ul className={s.ulCont} id='ulCont'>
+        <a href={info.url} target='_blank' rel='noreferrer'>
+          <div className={s.titleCont}>
+            <h3>{info.title}</h3>
+            <img src={linkIcon} alt="" height="20px" />
           </div>
-        </ul>
-      </div>
+        </a>
+        <div className={s.infoCont}>
+          <Slider gallery={info.gallery} />
+          <div className={s.buttonsCont}>
+            {
+              info.url?.length
+                ?
+                <a className={s.divButton} href={info.url} target='_blank' rel='noreferrer'>
+                  <p>{language === 'EN' ? "visit" : "visitar"}</p>
+                </a>
+                :
+                null
+            }
+
+            {
+              info.download?.length
+                ?
+                <a className={s.divButton} href={info.download} target='_blank' rel='noreferrer'>
+                  <p>{language === 'EN' ? "download" : "descargar"}</p>
+                </a>
+                :
+                null
+            }
+
+            {
+              info.github?.frontend?.length
+                ?
+                <a className={s.divButton} href={info.github?.frontend} target='_blank' rel='noreferrer'>
+                  <p>github - frontend</p>
+                </a>
+                :
+                null
+            }
+
+            {
+              info.github?.backend?.length
+                ?
+                <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'>
+                  <p>github - backend</p>
+                </a>
+                :
+                null
+            }
+
+            {
+              info.github?.code?.length
+                ?
+                <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'>
+                  <p>github</p>
+                </a>
+                :
+                null
+            }
+          </div>
+          <div className={s.textCont}>
+            <p>{info.description}</p>
+            <p>{info.technologies}</p>
+            <p>{info.role}</p>
+          </div>
+        </div>
+      </ul>
     </div>
   )
 }
