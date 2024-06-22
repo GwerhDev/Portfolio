@@ -19,10 +19,10 @@ export const Card = (props) => {
           <p>{language === 'EN' ? role.en : role.es}</p>
         </div>
 
-        <span className={s.buttons}>
+        <ul className={s.buttons}>
           <a className={s.link} href={url} target="_blank" rel="noreferrer">{language === 'EN' ? "visit" : "visitar"}</a>
           <a className={s.link} href={github} target="_blank" rel="noreferrer">github</a>
-        </span>
+        </ul>
 
       </section>
     </article>

@@ -1,54 +1,45 @@
-.jokeContainer {
+.container {
   width: 100%;
+  padding: 15px;
   max-height: 150px;
   text-align: center;
-  border: linear-gradient(168deg, rgb(88, 132, 173) 20%, rgb(130, 84, 161) 100%);
-  border: dashed 3px var(--color-secondary);
-  padding: 15px;
-  padding-bottom: 20px;
-  padding-top: 0px;
-  border-radius: 15px;
   font-family: var(--font-global);
+  border: dashed 3px var(--color-secondary);
+  border: linear-gradient(168deg, rgb(88, 132, 173) 20%, rgb(130, 84, 161) 100%);
+  border-radius: 15px;
 }
 
-span {
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph {
   color: white;
   font-size: 14px;
   font-family: var(--font-global);
   font-weight: 500;
 }
 
-.pTitle {
-  font-family: var(--font-global);
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-}
-
-.pInfo {
-  margin-top: -10px;
-}
-
 i {
   font-size: 12px;
 }
 
-.jokeSubtitle {
-  position: relative;
-  top: -20px;
+.subtitle {
+  margin: 0;
   color: rgb(206, 206, 206);
 }
 
-.jokeSubtitle:hover {
+.subtitle:hover {
   color: rgb(175, 175, 175);
 }
 
 @media (max-width: 680px) {
-  .jokeSubtitle {
+  .subtitle {
     font-size: 14px;
   }
 
-  span {
+  .paragraph {
     font-size: 13px;
   }
 }
