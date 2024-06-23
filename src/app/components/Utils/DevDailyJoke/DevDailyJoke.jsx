@@ -7,7 +7,7 @@ export const DevDailyJoke = (props) => {
   const { language, devDailyJoke } = props;
 
   return (
-    <div className={s.container}>
+    <div className={s.jokeContainer}>
       <h3 className={s.title}>
         {language === 'EN' ? 'DEVJOKE OF THE DAY' : 'DEVJOKE DEL DÍA'}
       </h3>
