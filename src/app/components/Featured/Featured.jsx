@@ -29,7 +29,7 @@ export const Featured = (props) => {
                 description={item.description}
                 technologies={item.technologies}
                 role={item.role}
-                github={item.repository.frontend}
+                github={item.repository}
                 url={item.href}
               />
             </li>
