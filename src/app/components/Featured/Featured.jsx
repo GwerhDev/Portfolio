@@ -12,7 +12,7 @@ export const Featured = (props) => {
 
   useEffect(() => {
     dispatch(getFeaturedDevelop());
-  }, [dispatch])
+  }, [dispatch]);
 
   return (
     <ul className={s.container}>
