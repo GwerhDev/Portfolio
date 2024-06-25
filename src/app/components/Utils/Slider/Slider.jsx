@@ -30,8 +30,8 @@ export const Slider = (props) => {
         <div className={s.sliderCont} style={{ width: gallery?.length * 100 + "%" }}>
           {
             gallery?.map((image, index) => (
-              <div id={`card${index}`} className={s.card} key={index}>
-                <img src={image} alt="" className={s.image} />
+              <div id={`card${index}`} className={s.card} key={index} style={{ aspectRatio: 9 / 16 }}>
+                <img src={image} alt="" className={s.image}/>
               </div>
             ))
           }

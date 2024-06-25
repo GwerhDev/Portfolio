@@ -14,14 +14,13 @@ export const initialState = (length) => {
 
 export const next = (k, setK, length) => {
   if (k === 0) {
-    setK(1);
+    setK(k + 1);
     document.getElementById(`card${k}`).style.opacity = `0.4`;
     document.getElementById(`card${k}`).style.transformOrigin = `right`;
     document.getElementById(`card${k}`).style.transform = `rotateY(-90deg)`;
     document.getElementById(`card${k + 1}`).style.opacity = `1`;
     document.getElementById(`card${k + 1}`).style.transformOrigin = `left`;
     document.getElementById(`card${k + 1}`).style.transform = `rotateY(0deg)`;
-    document.getElementById(`card${k + 2}`).style.opacity = `0.4`;
     document.getElementById(`slider`).style.transform = `translateX(-100%)`;
   } else if (k < length - 1 && k > 0) {
     setK(k + 1);
