@@ -93,24 +93,6 @@ code {
   background: var(--color-background-hover);
 }
 
-#card0 {
-  transition: .7s;
-}
-
-#card1 {
-  opacity: 0.4;
-  transition: .7s;
-  transform: rotateY(90deg);
-}
-
-#card2 {
-  opacity: 0.4;
-  transition: .7s;
-  transform: rotateY(90deg);
-}
-
-
-
 .main-container {
   width: 100%;
   display: flex;
