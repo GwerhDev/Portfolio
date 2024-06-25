@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { Slider } from '../Slider/Slider';
 import { handleClickOutside } from '../../../../functions/InfoCanvasFunctions';
 import linkIcon from '../../../../assets/images/svg/openwindow-icon.svg';
+import githubIcon from '../../../../assets/images/png/github-icon.png';
+
 
 export const InfoCanvas = () => {
   const info = useSelector(state => state.info);
@@ -44,7 +46,8 @@ export const InfoCanvas = () => {
               info.github?.frontend?.length
                 ?
                 <a className={s.divButton} href={info.github?.frontend} target='_blank' rel='noreferrer'>
-                  <p>github - frontend</p>
+                  <img src={githubIcon} width={15} alt="" />
+                  <p>frontend</p>
                 </a>
                 :
                 null
@@ -54,7 +57,8 @@ export const InfoCanvas = () => {
               info.github?.backend?.length
                 ?
                 <a className={s.divButton} href={info.github?.backend} target='_blank' rel='noreferrer'>
-                  <p>github - backend</p>
+                  <img src={githubIcon} width={15} alt="" />
+                  <p>backend</p>
                 </a>
                 :
                 null

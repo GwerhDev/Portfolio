@@ -58,6 +58,7 @@
 }
 
 .divButton {
+    gap: .4rem;
     padding: 0;
     height: 25px;
     display: flex;
