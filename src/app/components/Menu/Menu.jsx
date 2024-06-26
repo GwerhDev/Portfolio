@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { setSelection } from "../../../middlewares/redux/actions";
 import { SocialLinks } from "../Utils/SocialLinks/SocialLinks";
-import { GITHUB_URL, LINKEDIN_URL } from "../../../middlewares/config";
+import { GITHUB_URL, LINKEDIN_URL, UPWORK_URL } from "../../../middlewares/config";
 
 export const Menu = () => {
   const dispatch = useDispatch()
@@ -58,7 +58,7 @@ export const Menu = () => {
         </Link>
       </div>
       <div className={s.contSL}>
-        <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
+        <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} upWork={UPWORK_URL} />
       </div>
     </>
   )

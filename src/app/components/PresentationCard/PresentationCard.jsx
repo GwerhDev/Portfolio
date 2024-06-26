@@ -4,7 +4,7 @@ import { Profile } from '../Profile/Profile';
 import { SocialLinks } from '../Utils/SocialLinks/SocialLinks';
 import { AnchorButton } from '../Utils/Buttons/AnchorButton';
 import { DevDailyJoke } from '../Utils/DevDailyJoke/DevDailyJoke';
-import { GITHUB_URL, LINKEDIN_URL } from "../../../middlewares/config";
+import { GITHUB_URL, LINKEDIN_URL, UPWORK_URL } from "../../../middlewares/config";
 
 export const PresentationCard = (props) => {
   const { language, description, devDailyJoke, joke } = props;
@@ -31,7 +31,7 @@ export const PresentationCard = (props) => {
 
               <AnchorButton message={language === 'EN' ? 'contact' : 'contacto'} href='mailto:gwerh.dev@gmail.com' />
 
-              <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
+              <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} upWork={UPWORK_URL} />
             </ul>
             {
               joke &&

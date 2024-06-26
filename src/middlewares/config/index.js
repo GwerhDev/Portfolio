@@ -7,4 +7,5 @@ export const URL_DEVDAILYJOKE_API = "https://devdailyjoke-api.fly.dev";
 
 export const GITHUB_URL = "https://github.com/GwerhDev";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/gwerhdev/";
+export const UPWORK_URL = "https://www.upwork.com/freelancers/~0150aa07f211fc5b42";
 export const PORTFOLIO_REPO_URL = "https://github.com/GwerhDev/Portfolio";

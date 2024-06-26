@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Profile } from '../../components/Profile/Profile';
 import { SocialLinks } from '../../../app/components/Utils/SocialLinks/SocialLinks';
 import { removeLocalStorage } from '../../../functions/RemoveLocalStorage';
-import { GITHUB_URL, LINKEDIN_URL } from '../../../middlewares/config';
+import { GITHUB_URL, LINKEDIN_URL, UPWORK_URL } from '../../../middlewares/config';
 import { ActionButton } from '../../components/Utils/Buttons/ActionButton';
 
 export const Landing = () => {
@@ -23,7 +23,7 @@ export const Landing = () => {
           {language === 'EN' ? 'Develop, Design & Sound' : 'Desarrollo, Diseño & Sonido'}
         </p>
         <ActionButton route={"/selection"} message={language === 'EN' ? 'enter' : 'entrar'} />
-        <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} />
+        <SocialLinks gitHub={GITHUB_URL} linkedIn={LINKEDIN_URL} upWork={UPWORK_URL} />
       </motion.ul>
     </div>
   )
