@@ -1,3 +1,4 @@
+import { useDispatch } from 'react-redux';
 import s from './InfoCanvas.module.css';
 import { useSelector } from 'react-redux';
 import { Slider } from '../Slider/Slider';
@@ -7,11 +8,12 @@ import githubIcon from '../../../../assets/images/png/github-icon.png';
 
 
 export const InfoCanvas = () => {
+  const dispatch = useDispatch();
   const info = useSelector(state => state.info);
   const language = useSelector(state => state.language);
 
   return (
-    <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e)}>
+    <div className={s.infoContainer} id='infoCanvasDisplay' onClick={(e) => handleClickOutside(e, dispatch)}>
       <ul className={s.ulCont} id='ulCont'>
         <a href={info.url} target='_blank' rel='noreferrer'>
           <div className={s.titleCont}>

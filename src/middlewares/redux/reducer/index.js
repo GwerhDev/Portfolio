@@ -1,111 +1,141 @@
-import { 
-    RESET_OPTION, 
-    SET_OPTION, 
-    SET_LANGUAGE, 
-    GET_DEVELOP, 
-    GET_SOUND, 
-    GET_DESIGN, 
-    SET_MENU, 
-    GET_LOGIN, 
-    SET_INFO,
-    GET_DEVDAILYJOKE,
-    GET_LASTS,
-    GET_FEATURED_DEVELOP
- } from "../../misc/consts"
+import {
+  RESET_OPTION,
+  SET_OPTION,
+  SET_LANGUAGE,
+  GET_DEVELOP,
+  GET_SOUND,
+  GET_DESIGN,
+  SET_MENU,
+  GET_LOGIN,
+  SET_INFO,
+  GET_DEVDAILYJOKE,
+  GET_LASTS,
+  GET_FEATURED_DEVELOP,
+  SET_INDEX,
+  RESET_INFO
+} from "../../misc/consts"
 import { Featured } from "../../models/Featured";
+import { Info } from "../../models/Info";
 import { PortfolioInfo } from "../../models/PortfolioInfo";
 const lang = localStorage.getItem('language');
 const userLang = lang ? JSON.parse(lang) : 'EN';
 
 const initialState = {
-    selection: 'home',
-    language: userLang,
-    featured: new Featured(),
-    develop: '',
-    sound: '',
-    design: '',
-    menu: '',
-    currentUser: '',
-    info: {},
-    lasts: [],
-    portfolioInfo: new PortfolioInfo(),
-    devDailyJoke: ''
+  selection: 'home',
+  language: userLang,
+  featured: new Featured(),
+  develop: '',
+  sound: '',
+  design: '',
+  menu: '',
+  currentUser: '',
+  info: new Info(),
+  lasts: [],
+  portfolioInfo: new PortfolioInfo(),
+  devDailyJoke: ''
 }
 
-export default function rootReducer(state = initialState, action){
-    const auth = localStorage.getItem('auth');
-    const user = auth ? JSON.parse(auth) : null;
+export default function rootReducer(state = initialState, action) {
+  const auth = localStorage.getItem('auth');
+  const user = auth ? JSON.parse(auth) : null;
+
+  switch (action.type) {
+    case GET_LASTS:
+      return {
+        ...state,
+        lasts: action.payload,
+      };
+
+    case GET_DEVELOP:
+      return {
+        ...state,
+        develop: action.payload
+      };
+
+    case GET_FEATURED_DEVELOP:
+      return {
+        ...state,
+        featured: {
+          ...state.featured,
+          develop: action.payload
+        }
+      };
+
+    case GET_SOUND:
+      return {
+        ...state,
+        sound: action.payload
+      };
+
+    case GET_DESIGN:
+      return {
+        ...state,
+        design: action.payload
+      };
+
+    case SET_OPTION:
+      return {
+        ...state,
+        selection: action.payload
+      };
+
+    case RESET_OPTION:
+      return {
+        ...state,
+        selection: 'home'
+      };
+
+    case SET_MENU:
+      return {
+        ...state,
+        menu: action.payload
+      };
+
+    case SET_LANGUAGE:
+      localStorage.setItem('language', JSON.stringify(action.payload))
+      return {
+        ...state,
+        language: action.payload,
+      };
+
+    case GET_LOGIN:
+      return {
+        ...state,
+        currentUser: action.payload.msg ? {
+          userAlias: action.payload.msg.userAlias,
+          email: action.payload.msg.email,
+          googlePic: action.payload.msg.googlePic,
+        } : user,
+      };
+
+    case SET_INFO:
+      return {
+        ...state,
+        info: action.payload,
+      };
     
-    switch(action.type){
-        case GET_LASTS:
-            return {
-                ...state,
-                lasts: action.payload,
-            }
-        case GET_DEVELOP:
-            return {
-                ...state,
-                develop: action.payload
-            }
-        case GET_FEATURED_DEVELOP:
-            return {
-                ...state,
-                featured: {
-                    ...state.featured,
-                    develop: action.payload
-                }
-            }
-        case GET_SOUND:
-            return {
-                ...state,
-                sound: action.payload
-            }
-        case GET_DESIGN:
-            return {
-                ...state,
-                design: action.payload
-            }
-        case SET_OPTION:
-            return {
-                ...state,
-                selection: action.payload
-            }
-        case RESET_OPTION:
-            return {
-                ...state,
-                selection: 'home'
-            }
-        case SET_MENU:
-            return {
-                ...state,
-                menu: action.payload
-            }
-        case SET_LANGUAGE:
-            localStorage.setItem('language', JSON.stringify(action.payload))
-            return {
-                ...state,
-                language: action.payload,
-            }
-        case GET_LOGIN:
-            return {
-                ...state,
-                currentUser: action.payload.msg ? {
-                    userAlias: action.payload.msg.userAlias,
-                    email: action.payload.msg.email,
-                    googlePic: action.payload.msg.googlePic,
-                } : user,
-            };
-        case SET_INFO:
-            return {
-                ...state,
-                info: action.payload
-            }
-        case GET_DEVDAILYJOKE:
-            return {
-                ...state,
-                devDailyJoke: action.payload,
-            }
-        default:
-            return {...state}
-    }
+    case RESET_INFO:
+      return {
+        ...state,
+        info: new Info(),
+      };
+
+    case SET_INDEX:
+      return {
+        ...state,
+        info: {
+          ...state.info,
+          index: action.payload
+        }
+      };
+
+    case GET_DEVDAILYJOKE:
+      return {
+        ...state,
+        devDailyJoke: action.payload,
+      };
+
+    default:
+      return { ...state }
+  }
 }

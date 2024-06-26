@@ -12,7 +12,9 @@ import {
   GET_WIKI,
   GET_DEVDAILYJOKE,
   GET_LASTS,
-  GET_FEATURED_DEVELOP
+  GET_FEATURED_DEVELOP,
+  SET_INDEX,
+  RESET_INFO
 } from "../../misc/consts";
 import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
 
@@ -186,5 +188,18 @@ export function getGithubEvents() {
     } catch (error) {
       
     }
+  }
+}
+
+export function setIndex(index) {
+  return {
+    type: SET_INDEX,
+    payload: index
+  }
+}
+
+export function resetInfo() {
+  return {
+    type: RESET_INFO
   }
 }

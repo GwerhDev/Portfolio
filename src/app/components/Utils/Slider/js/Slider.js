@@ -1,14 +1,16 @@
 export const initialState = (length) => {
   for (let i = 0; i < length; i++) {
+    document.getElementById(`card${i}`).style.opacity = '1';
     document.getElementById(`card${i}`).style.transitionDuration = '.7s';
     document.getElementById(`card${i}`).style.transform = 'rotateY(0deg)';
+    document.getElementById(`slider`).style.transform = `translateX(0)`;
+
     if (i > 0) {
       document.getElementById(`card${i}`).style.opacity = '0.4';
       document.getElementById(`card${i}`).style.transform = 'rotateY(90deg)';
       document.getElementById(`card${i}`).style.transformOrigin = 'right';
     }
   }
-
   return;
 }
 

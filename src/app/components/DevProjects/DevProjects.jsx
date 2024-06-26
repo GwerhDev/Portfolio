@@ -45,7 +45,8 @@ export const DevProjects = (props) => {
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
                         github: e.repository,
-                        gallery: e.gallery
+                        gallery: e.gallery,
+                        index: 0
                       })),
                       openInfoCanvas()
                     )
@@ -83,7 +84,8 @@ export const DevProjects = (props) => {
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
                         github: e.repository,
-                        gallery: e.gallery
+                        gallery: e.gallery,
+                        index: 0
                       })),
                       openInfoCanvas()
                     )
@@ -121,7 +123,8 @@ export const DevProjects = (props) => {
                         role: language === 'EN' ? `Role: ${e.role.en}` : `Rol: ${e.role.es}`,
                         url: e.href,
                         github: e.repository,
-                        gallery: e.gallery
+                        gallery: e.gallery,
+                        index: 0
                       })),
                       openInfoCanvas()
                     )
@@ -160,7 +163,8 @@ export const DevProjects = (props) => {
                         url: e.href,
                         github: e.repository,
                         download: e.download,
-                        gallery: e.gallery
+                        gallery: e.gallery,
+                        index: 0
                       })),
                       openInfoCanvas()
                     )

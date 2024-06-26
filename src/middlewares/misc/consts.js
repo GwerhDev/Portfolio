@@ -13,3 +13,5 @@ export const SET_INFO = 'SET_INFO';
 export const GET_WIKI = 'GET_WIKI';
 export const GET_DEVDAILYJOKE = 'GET_DEVDAILYJOKE';
 export const GET_LASTS = 'GET_LASTS';
+export const SET_INDEX = 'SET_INDEX';
+export const RESET_INFO = 'RESET_INFO';

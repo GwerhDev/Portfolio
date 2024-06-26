@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { setInfo } from '../../../../middlewares/redux/actions';
 
 export const InfoButton = (props) => {
-  const { img, title, type, description, technologies, role, url, github, language } = props;
+  const { img, title, type, description, technologies, role, url, github, language, index } = props;
   const dispatch = useDispatch();
   
   return (
@@ -19,7 +19,8 @@ export const InfoButton = (props) => {
           technologies: language==="EN"? technologies.en : technologies.es, 
           role: language==="EN"? role.en : role.es, 
           url, 
-          github 
+          github,
+          index
         })), 
         openInfoCanvas()
       )
