@@ -1,21 +1,20 @@
 .devCont {
   padding: 0;
-  height: auto;
   width: 100%;
   margin-bottom: 100px;
+  color: white;
   display: flex;
-  justify-content: center;
   text-align: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  justify-content: center;
 }
 
 .projectSection {
   width: 100%;
-  background-color: var(--color-background);
-  backdrop-filter: blur(10px);
   border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background-color: var(--color-background);
 }
 
 .devUlCont {
@@ -23,9 +22,9 @@
   padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .devUlCont li {
@@ -34,19 +33,18 @@
 }
 
 .devLiCont {
-  list-style: none;
   height: 300px;
+  filter: grayscale(.2);
   transform: skew(-5deg);
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 100px;
+  border-radius: 5px;
+  transition-duration: .4s;
+  list-style: none;
   background-color: #171717;
   background-repeat: no-repeat;
-  background-position: center;
   box-shadow: 0px 0px 10px black;
-  transition-duration: .4s;
-  filter: grayscale(.2);
-  border-radius: 5px;
 }
 
 .backImgCanvas {
