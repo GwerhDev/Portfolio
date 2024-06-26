@@ -103,3 +103,14 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .link {
+    gap: .25rem;
+  }
+
+  .link p {
+    font-size: 9px;
+    margin-top: 2px;
+  }
+}
