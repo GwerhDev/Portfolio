@@ -1,6 +1,6 @@
 export const GET_DESCRIPTION_DEV={
-  en:'Fullstack Web Developer oriented to Multimedia, Scalable Apps, Machine Learning and Artificial Intelligence.',
-  es:'Desarrollador Web Fullstack, orientado a Multimedia, Aplicaciones Escalables, Machine Learning e Inteligencia Artificial.'
+  en:'Software Developer oriented to Multimedia, Scalable Apps, Machine Learning and Artificial Intelligence.',
+  es:'Desarrollador de Software, orientado a Multimedia, Aplicaciones Escalables, Machine Learning e Inteligencia Artificial.'
 }
 export const GET_DESCRIPTION_SOUND={
   en:"Self-taught Soundman, founder of the Audio Recording and Post-production Studio 'La Ruina Records'.",
