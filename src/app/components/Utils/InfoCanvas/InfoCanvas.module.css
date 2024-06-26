@@ -106,3 +106,17 @@
 .textCont {
   text-align: left;
 }
+
+@media screen and (max-width: 1100px) {
+  .ulCont{
+    padding-left: var(--size-12);
+    padding-right: var(--size-12);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ulCont{
+    padding-left: var(--size-6);
+    padding-right: var(--size-6);
+  }
+}
