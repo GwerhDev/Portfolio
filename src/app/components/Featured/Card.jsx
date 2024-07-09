@@ -1,15 +1,33 @@
 import s from './Card.module.css';
 import githubIcon from '../../../assets/images/png/github-icon.png';
+import { useDispatch } from 'react-redux';
+import { setInfo } from '../../../middlewares/redux/actions';
+import loadingImg from "../../../assets/images/gif/loading.gif";
+import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 
 export const Card = (props) => {
-  const { image, description, role, language, title, url, github } = props;
+  const dispatch = useDispatch();
+  const { image, description, role, language, title, url, github, technologies, gallery } = props;
 
   return (
     <article className={s.container}>
       <section className={s.leftSection}>
-        <a href={url} target="_blank" rel="noreferrer">
-          <img src={image} alt="" width="100%" />
-        </a>
+        <img src={image} alt="" width="100%" onClick={() => {
+          return (dispatch(setInfo({
+            img: image ? image : loadingImg,
+            title: title,
+            type: 'web',
+            description: language === 'EN' ? `Description: ${description.en}` : `Descripción: ${description.es}`,
+            technologies: language === 'EN' ? `Technologies: ${technologies.en}` : `Tecnologías: ${technologies.es}`,
+            role: language === 'EN' ? `Role: ${role.en}` : `Rol: ${role.es}`,
+            url: url,
+            github: github,
+            gallery: gallery,
+            index: 0
+          })), openInfoCanvas()
+          )
+        }}
+        />
       </section>
       <section className={s.rightSection}>
         <div>

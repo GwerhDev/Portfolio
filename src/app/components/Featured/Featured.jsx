@@ -31,6 +31,7 @@ export const Featured = (props) => {
                 role={item.role}
                 github={item.repository}
                 url={item.href}
+                gallery={item.gallery}
               />
             </li>
           ))
