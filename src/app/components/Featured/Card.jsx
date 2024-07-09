@@ -9,24 +9,29 @@ export const Card = (props) => {
   const dispatch = useDispatch();
   const { image, description, role, language, title, url, github, technologies, gallery } = props;
 
+  function handleCanvas() {
+    return (
+      dispatch(
+        setInfo({
+          img: image ? image : loadingImg,
+          title: title,
+          type: 'web',
+          description: language === 'EN' ? `Description: ${description.en}` : `Descripción: ${description.es}`,
+          technologies: language === 'EN' ? `Technologies: ${technologies.en}` : `Tecnologías: ${technologies.es}`,
+          role: language === 'EN' ? `Role: ${role.en}` : `Rol: ${role.es}`,
+          url: url,
+          github: github,
+          gallery: gallery,
+          index: 0
+        })
+      ), openInfoCanvas()
+    )
+  }
+
   return (
     <article className={s.container}>
       <section className={s.leftSection}>
-        <img src={image} alt="" width="100%" onClick={() => {
-          return (dispatch(setInfo({
-            img: image ? image : loadingImg,
-            title: title,
-            type: 'web',
-            description: language === 'EN' ? `Description: ${description.en}` : `Descripción: ${description.es}`,
-            technologies: language === 'EN' ? `Technologies: ${technologies.en}` : `Tecnologías: ${technologies.es}`,
-            role: language === 'EN' ? `Role: ${role.en}` : `Rol: ${role.es}`,
-            url: url,
-            github: github,
-            gallery: gallery,
-            index: 0
-          })), openInfoCanvas()
-          )
-        }}
+        <img src={image} alt="" width="100%" onClick={handleCanvas}
         />
       </section>
       <section className={s.rightSection}>

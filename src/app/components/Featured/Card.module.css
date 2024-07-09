@@ -11,7 +11,7 @@
 .leftSection {
   background: linear-gradient(230deg, #1e1928fd, #351f39 75%);;
   border-radius: 5px;
-  max-width: 300px;
+  max-width: 325px;
   max-height: 300px;
   aspect-ratio: 16/9;
   overflow: hidden;
@@ -23,7 +23,6 @@
   border-radius: .5rem;
   transition-duration: .2s;
   cursor: pointer;
-
 }
 
 .leftSection img:hover {
