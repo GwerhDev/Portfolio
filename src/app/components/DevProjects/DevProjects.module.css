@@ -93,7 +93,7 @@
 }
 
 .emptyCard {
-  background: linear-gradient(90deg, transparent, rgba(32, 32, 32, 0.3), transparent);
+  background: linear-gradient(90deg, #5b5b5bfd, #464646, #5b5b5bfd);
   background-size: 200% 100%;
   animation: shine 2s infinite alternate;
   list-style: none;
