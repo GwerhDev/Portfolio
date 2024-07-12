@@ -34,7 +34,7 @@
 
 .name {
   margin: 0;
-  font-size: 25px;
+  font-size: 30px;
   font-family: Trajan;
   color: white;
   font-weight: thin;
@@ -51,28 +51,12 @@
 }
 
 @media (max-width: 680px) {
+  .name {
+    font-size: 25px;
+  }
+
   .imgProfile {
     width: 100px;
-  }
-}
-
-@media (max-width: 620px) {
-  .name {
-    font-size: 15px;
-  }
-
-  .alias {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  .name {
-    font-size: 13px;
-  }
-
-  .alias {
-    font-size: 9px;
   }
 }
 
