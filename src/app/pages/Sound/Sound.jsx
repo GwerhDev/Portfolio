@@ -30,6 +30,10 @@ export const Sound = (props) => {
       <main className="main-container">
         <div className="sections-container">
           <section className="section-container" id='projects-section'>
+            <Separator marginTop="0px" />
+            <h1>
+              {language === "EN" ? "Releases" : "Lanzamientos"}
+            </h1>
             <SoundProjects language={language} />
           </section>
         </div>

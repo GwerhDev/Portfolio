@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getSound } from "../../../middlewares/redux/actions";
 import { Loader } from "../Utils/Loader/Loader";
-import { Title } from "../Utils/Title/Title";
 
 export const SoundProjects = (props) => {
   const { language } = props
@@ -17,7 +16,6 @@ export const SoundProjects = (props) => {
 
   return (
     <div className={s.worksContainer}>
-      <Title backgroundColor={true} color={"white"} title={language === 'EN' ? 'releases' : 'lanzamientos'} />
       <div className={s.works}>
         <ul className={s.devUl}>
           {

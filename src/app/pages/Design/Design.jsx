@@ -25,6 +25,10 @@ export const Design = (props) => {
       <main className="main-container">
         <div className="sections-container">
           <section className="section-container" id='projects-section'>
+            <Separator marginTop="0px" />
+            <h1>
+              {language === "EN" ? "Samples" : "Muestras"}
+            </h1>
             <DesignProjects language={language} />
           </section>
         </div>
