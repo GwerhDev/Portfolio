@@ -1,16 +1,12 @@
 import s from './Card.module.css';
-import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
+import { Timeline } from './Timeline';
 
 export const Card = (props) => {
   const { language, position, company, started, finished, description, more } = props;
 
   return (
     <article className={s.container}>
-      <div className={s.timelineContainer}>
-        <div className={s.timeline} style={{ height: "20px" }} />
-        <img src={experienceIcon} alt="" width={40} />
-        <div className={s.timeline} style={{ height: "100%" }} />
-      </div>
+      <Timeline />
       <div className={s.sectionsContainer}>
         <section className={s.leftSection}>
           <ul>

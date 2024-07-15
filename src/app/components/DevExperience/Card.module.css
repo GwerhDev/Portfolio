@@ -17,17 +17,6 @@
   padding-top: 1rem;
 }
 
-.timelineContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.timeline {
-  width: 2px;
-  background-color: var(--color-background);
-}
-
 .leftSection ul h2 {
   color: var(--color-primary-purple);
 }
