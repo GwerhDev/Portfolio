@@ -1,5 +1,6 @@
 import { Card } from './Card';
 import s from './DevExperience.module.css';
+import { EmptyCard } from './EmptyCard';
 
 export const DevExperience = (props) => {
   const { language, experience } = props;
@@ -7,7 +8,9 @@ export const DevExperience = (props) => {
   return (
     <ul className={s.container}>
       {
-        experience?.map((e, index) => {
+        experience
+        ?
+        experience.map((e, index) => {
           return (
             <li key={index}>
               <Card
@@ -21,6 +24,8 @@ export const DevExperience = (props) => {
             </li>
           )
         })
+        :
+        <EmptyCard />
       }
     </ul>
   );
