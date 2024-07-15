@@ -21,6 +21,8 @@
   --color-background-light: rgba(255, 255, 255, 0.527);
   --color-text: white;
   --color-primary: #171717;
+  --color-primary-purple: #987eaf;
+  --color-primary-purple-hover: #ad8dc9;
   --color-secondary: #8d8d8d;
   --color-button-gradient-start: rgb(185, 185, 185);
   --color-button-gradient-end: #919191;
@@ -116,6 +118,15 @@ code {
   justify-content: center;
 }
 
+.sections-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .align-start {
   align-items: flex-start;
 }
@@ -126,19 +137,29 @@ code {
   align-items: center;
   width: 100%;
   max-width: 800px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-bottom: 10rem;
+}
+
+#skills-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a:hover {
-  color: rgb(216, 216, 216);
+  color: var(--color-primary-purple-hover);
 }
 
 h1 {
-  font-family: Trajan;
+  gap: .5rem;
   color: white;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: Trajan;
 }
 
 h2 {

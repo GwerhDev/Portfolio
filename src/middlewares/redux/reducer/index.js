@@ -12,8 +12,10 @@ import {
   GET_LASTS,
   GET_FEATURED_DEVELOP,
   SET_INDEX,
-  RESET_INFO
+  RESET_INFO,
+  GET_EXPERIENCE
 } from "../../misc/consts"
+import { Experience } from "../../models/Experience";
 import { Featured } from "../../models/Featured";
 import { Info } from "../../models/Info";
 import { PortfolioInfo } from "../../models/PortfolioInfo";
@@ -32,7 +34,8 @@ const initialState = {
   info: new Info(),
   lasts: [],
   portfolioInfo: new PortfolioInfo(),
-  devDailyJoke: ''
+  devDailyJoke: '',
+  experience: new Experience(),
 }
 
 export default function rootReducer(state = initialState, action) {
@@ -40,6 +43,12 @@ export default function rootReducer(state = initialState, action) {
   const user = auth ? JSON.parse(auth) : null;
 
   switch (action.type) {
+    case GET_EXPERIENCE:
+      return {
+        ...state,
+        experience: action.payload,
+      };
+
     case GET_LASTS:
       return {
         ...state,

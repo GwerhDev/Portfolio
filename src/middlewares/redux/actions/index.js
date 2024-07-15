@@ -14,9 +14,26 @@ import {
   GET_LASTS,
   GET_FEATURED_DEVELOP,
   SET_INDEX,
-  RESET_INFO
+  RESET_INFO,
+  GET_EXPERIENCE,
 } from "../../misc/consts";
 import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
+
+export const getExperience = () => {
+  return async function (dispatch) {
+    try {
+      await axios.get(`${URL_API}/getexperience`)
+        .then(res => {
+          dispatch({
+            type: GET_EXPERIENCE,
+            payload: res.data
+          })
+        })
+    } catch (error) {
+
+    }
+  }
+}
 
 export const getDevelop = () => {
   return async function (dispatch) {

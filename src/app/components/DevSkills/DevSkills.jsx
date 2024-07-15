@@ -17,16 +17,11 @@ import angularSVG from '../../../assets/images/svg/angular-icon.svg';
 import vueSVG from '../../../assets/images/svg/vue-icon.svg';
 import djangoSVG from '../../../assets/images/svg/django-icon.svg';
 
-export const DevSkills = (props) => {
-  const { language } = props;
-
+export const DevSkills = () => {
   return (
     <div className={s.container}>
       <section className="section-container">
         <div className={s.skillsCont}>
-          <div className={s.titleCont}>
-            <h1>{language === 'EN' ? 'Skills' : 'Habilidades'}</h1>
-          </div>
           <ul className={s.iconList}>
             <li className={s.icon}>
               <img className={s.svgIcons} src={htmlSVG} alt="" />

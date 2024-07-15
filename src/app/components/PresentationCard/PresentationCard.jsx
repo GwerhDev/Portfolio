@@ -21,12 +21,7 @@ export const PresentationCard = (props) => {
             <Profile />
             <ul className={s.description}>
               <p className={s.parr}>
-                {
-                  language === 'EN' ?
-                    description.en
-                    :
-                    description.es
-                }
+                {language === 'EN' ? description.en : description.es}
               </p>
 
               <AnchorButton message={language === 'EN' ? 'contact' : 'contacto'} href='mailto:gwerh.dev@gmail.com' />

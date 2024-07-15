@@ -14,12 +14,14 @@ import devIcon from '../../../assets/images/png/dev-icon.png';
 import soundIcon from '../../../assets/images/png/sound-icon.png';
 import designIcon from '../../../assets/images/png/design-icon.png';
 import skillsIcon from '../../../assets/images/svg/skills-icon.svg';
-import contactIcon from '../../../assets/images/png/contact-icon.png';
 import logoutIcon from '../../../assets/images/png/logout-icon.png';
+import contactIcon from '../../../assets/images/png/contact-icon.png';
+import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
 
-export const Navigator = () => {
+export const Navigator = (props) => {
   const selection = useSelector(state => state.selection);
   const language = useSelector(state => state.language);
+  const experience = useSelector(state => state.experience);
 
   function activeSelection() {
     switch (selection) {
@@ -80,6 +82,26 @@ export const Navigator = () => {
               {language === 'EN' ? 'Home' : 'Inicio'}
             </button>
           </li>
+
+          {
+            experience[selection] &&
+            <li
+              id='experience'
+              onClick={() => {
+                ScrollToSection('experience-section', 'smooth');
+                closePanel();
+              }}
+              onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
+              onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
+            >
+              <img className={s.navImg} src={experienceIcon} alt="" width="30" />
+              <button className={s.menuItem} id='menuExperience' disabled>
+                {
+                  language === 'EN' ? 'experience' : 'experiencia'
+                }
+              </button>
+            </li>
+          }
 
           <li
             id='projects'

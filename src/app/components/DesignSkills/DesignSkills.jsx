@@ -7,14 +7,10 @@ import blenderSVG from '../../../assets/images/svg/blender-icon.svg';
 import rhinocerosSvg from '../../../assets/images/svg/rhinoceros-icon.svg';
 
 export const DesignSkills = (props) => {
-  const { language } = props
   return (
     <div className={s.container}>
       <section className="section-container">
         <div className={s.skillsCont}>
-          <div className={s.titleCont}>
-            <h1>{language === 'EN' ? 'Skills' : 'Habilidades'}</h1>
-          </div>
           <ul className={s.iconList}>
             <li className={s.icon}>
               <img className={s.svgIcons} src={photoshopSVG} alt="" />
