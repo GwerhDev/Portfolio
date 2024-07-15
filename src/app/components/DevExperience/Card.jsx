@@ -12,7 +12,7 @@ export const Card = (props) => {
           <ul>
             <h2>{position}</h2>
             <h3>{company}</h3>
-            <p>{started} - {finished}</p>
+            <p>{started} - {finished || "actualidad"}</p>
           </ul>
         </section>
         <section className={s.rightSection}>
