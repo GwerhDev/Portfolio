@@ -1,9 +1,19 @@
+import { useSelector } from 'react-redux';
+import s from './Experience.module.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Card } from './Card';
-import s from './DevExperience.module.css';
 import { EmptyCard } from './EmptyCard';
+import { getExperience } from '../../../middlewares/redux/actions';
 
-export const DevExperience = (props) => {
-  const { language, experience } = props;
+export const Experience = (props) => {
+  const dispatch = useDispatch();
+  const { language, selection } = props;
+  const experience = useSelector(state => state.experience[selection]);
+
+  useEffect(() => {
+    dispatch(getExperience());
+  }, [dispatch]);
 
   return (
     <ul className={s.container}>
