@@ -18,7 +18,7 @@ function Router() {
   const location = useLocation();
 
   return (
-    <div className="App">      
+    <div className="App">
       {
         location.pathname !== '/' && location.pathname !== '/selection' && <LateralCanvas />
       }
