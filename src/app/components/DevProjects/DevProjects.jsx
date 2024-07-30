@@ -21,7 +21,7 @@ export const DevProjects = (props) => {
   }, [dispatch]);
 
   return (
-    <div className={s.devCont}>
+    <div className={s.container}>
       <section className={s.projectSection}>
         <NavFilter language={language} />
         <ul className={s.devUlCont} id='devListWebSection'>

@@ -17,7 +17,7 @@ export const DesignProjects = (props) => {
   }, [dispatch]);
 
   return (
-    <div className={s.designContainer}>
+    <div className={s.container}>
       <section className={s.section}>
         <div className={s.header}>
           <h1>{language === 'EN' ? '3d Models' : 'Modelos 3d'}</h1>

@@ -15,7 +15,7 @@ export const SoundProjects = (props) => {
   }, [dispatch])
 
   return (
-    <div className={s.worksContainer}>
+    <div className={s.container}>
       <div className={s.works}>
         <ul className={s.devUl}>
           {

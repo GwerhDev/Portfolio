@@ -20,7 +20,6 @@ import djangoSVG from '../../../assets/images/svg/django-icon.svg';
 export const DevSkills = () => {
   return (
     <div className={s.container}>
-      <section className="section-container">
         <div className={s.skillsCont}>
           <ul className={s.iconList}>
             <li className={s.icon}>
@@ -97,7 +96,6 @@ export const DevSkills = () => {
             </li>
           </ul>
         </div>
-      </section>
     </div>
   )
 }
