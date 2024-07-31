@@ -6,7 +6,7 @@
 }
 
 .slider {
-  width: calc(100% - 50px);
+  width: calc(100% - 60px);
   max-height: 300px;
   transition-duration: .4s;
   transform: translateX(0);
