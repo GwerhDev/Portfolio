@@ -198,3 +198,21 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(26, 24, 31);
 }
+
+.grids-background {
+  width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/svg/grids/grid-02.svg);
+  opacity: .3;
+}
+
+.bg-position-top-center {
+  background-position: top center;
+}
+
+.bg-position-center {
+  background-position: center;
+}

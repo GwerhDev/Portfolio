@@ -30,7 +30,8 @@ export const Develop = (props) => {
   }, [dispatch, selection]);
 
   return (
-    <div className={s.devCont}>
+    <div className={s.container}>
+      <div className="grids-background bg-position-top-center" />
       <PresentationCard joke={true} background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <main className="main-container">
         <div className="sections-container">

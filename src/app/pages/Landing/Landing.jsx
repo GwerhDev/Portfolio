@@ -17,6 +17,7 @@ export const Landing = () => {
 
   return (
     <div className={s.container}>
+      <div className="grids-background bg-position-center" />
       <motion.ul className={s.landing} initial={{ opacity: 0, y: 10 }} transition={{ duration: 2, type: 'spring' }} animate={{ opacity: 1, y: 0 }}>
         <Profile />
         <p className={s.subtitle}>

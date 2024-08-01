@@ -45,7 +45,7 @@ function Router() {
         <Route exact path='/portfolio/develop'>
           <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
           <Develop selection='develop' />
-          <Navigator/>
+          <Navigator />
         </Route>
         <Route exact path='/portfolio/sound'>
           <Header title={"Gwerh | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />

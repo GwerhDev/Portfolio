@@ -26,6 +26,7 @@ export const Sound = (props) => {
 
   return (
     <div className={s.container}>
+      <div className="grids-background bg-position-top-center" />
       <PresentationCard background={soundBack} language={language} img={soundIcon} description={GET_DESCRIPTION_SOUND} />
       <main className="main-container">
         <div className="sections-container">

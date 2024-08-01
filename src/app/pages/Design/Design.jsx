@@ -20,7 +20,8 @@ export const Design = (props) => {
   }, [dispatch, selection]);
 
   return (
-    <div className={s.designCont}>
+    <div className={s.container}>
+      <div className="grids-background bg-position-top-center" />
       <PresentationCard background={designBack} language={language} hideCircle={false} img={designIcon} description={GET_DESCRIPTION_DESIGN} />
       <main className="main-container">
         <div className="sections-container">
