@@ -1,7 +1,5 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
-import { useEffect } from 'react';
 import s from './Card.module.css';
+import { useSelector } from 'react-redux';
 import { Timeline } from './Timeline';
 
 export const Card = (props) => {
