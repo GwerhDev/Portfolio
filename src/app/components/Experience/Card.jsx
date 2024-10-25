@@ -3,6 +3,7 @@ import { Timeline } from './Timeline';
 
 export const Card = (props) => {
   const { language, position, company, started, finished, description, more } = props;
+  const present = language === "EN" ? "present" : "actualidad";
 
   return (
     <article className={s.container}>
@@ -12,7 +13,7 @@ export const Card = (props) => {
           <ul>
             <h2>{position}</h2>
             <h3>{company}</h3>
-            <p>{started} - {finished || (language === "EN" ? "present" : "actualidad")}</p>
+            <p>{started} - {finished || present}</p>
           </ul>
         </section>
         <section className={s.rightSection}>
