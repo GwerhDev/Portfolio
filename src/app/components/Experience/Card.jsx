@@ -12,7 +12,7 @@ export const Card = (props) => {
           <ul>
             <h2>{position}</h2>
             <h3>{company}</h3>
-            <p>{started} - {finished || language === "EN" ? "present" : "actualidad"}</p>
+            <p>{started} - {finished || (language === "EN" ? "present" : "actualidad")}</p>
           </ul>
         </section>
         <section className={s.rightSection}>
