@@ -32,7 +32,7 @@ export const Develop = (props) => {
   return (
     <div className={s.container}>
       <div className="grids-background bg-position-top-center" />
-      <PresentationCard joke={true} background={devBack} language={language} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
+      <PresentationCard joke={true} background={devBack} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <main className="main-container">
         <div className="sections-container">
 

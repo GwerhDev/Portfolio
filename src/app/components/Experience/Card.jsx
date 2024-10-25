@@ -1,9 +1,12 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import s from './Card.module.css';
 import { Timeline } from './Timeline';
 
 export const Card = (props) => {
-  const { language, position, company, started, finished, description, more } = props;
-  const present = language === "EN" ? "present" : "actualidad";
+  const { position, company, started, finished, description, more } = props;
+  const language = useSelector(state => state.language);
 
   return (
     <article className={s.container}>
@@ -13,7 +16,7 @@ export const Card = (props) => {
           <ul>
             <h2>{position}</h2>
             <h3>{company}</h3>
-            <p>{started} - {finished || present}</p>
+            <p>{started} - {finished || (language === "EN" ? "present" : "actualidad")}</p>
           </ul>
         </section>
         <section className={s.rightSection}>
