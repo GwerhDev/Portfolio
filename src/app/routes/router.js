@@ -1,18 +1,18 @@
-import { Switch, Route } from 'react-router-dom';
-import { Landing } from '../pages/Landing/Landing';
-import { Home } from '../pages/Home/Home';
-import { Develop } from '../pages/Develop/Develop';
-import { Curriculum } from '../pages/Curriculum/Curriculum';
-import { Navigator } from '../components/Navigator/Navigator';
-import { Language } from '../components/Utils/Language/Language';
-import { Header } from '../components/Utils/Header/Header';
-import { LateralCanvas } from '../components/LateralCanvas/LateralCanvas';
-import ResumeAuthToken from '../pages/Auth/ResumeAuthToken';
-import MailAuthToken from '../pages/Auth/MailAuthToken';
-import { Design } from '../pages/Design/Design';
-import { Sound } from '../pages/Sound/Sound';
-import { Contact } from '../pages/Contact/Contact';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import { Switch, Route } from 'react-router-dom';
+import Home from '../pages/Home/Home';
+import Sound from '../pages/Sound/Sound';
+import Design from '../pages/Design/Design';
+import Develop from '../pages/Develop/Develop';
+import Landing from '../pages/Landing/Landing';
+import Contact from '../pages/Contact/Contact';
+import Curriculum from '../pages/Curriculum/Curriculum';
+import MailAuthToken from '../pages/Auth/MailAuthToken';
+import ResumeAuthToken from '../pages/Auth/ResumeAuthToken';
+import { Header } from '../components/Utils/Header/Header';
+import { Language } from '../components/Utils/Language/Language';
+import { Navigator } from '../components/Navigator/Navigator';
+import { LateralCanvas } from '../components/LateralCanvas/LateralCanvas';
 
 function Router() {
   const location = useLocation();
@@ -43,9 +43,11 @@ function Router() {
           <Home />
         </Route>
         <Route exact path='/portfolio/develop'>
-          <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
-          <Develop selection='develop' />
-          <Navigator />
+          <div className="container">
+            <Header title={"Gwerh | Portfolio: Develop"} content={"Desarrollo, Diseño y Sonido"} />
+            <Develop selection='develop' />
+            <Navigator />
+          </div>
         </Route>
         <Route exact path='/portfolio/sound'>
           <Header title={"Gwerh | Portfolio: Sound"} content={"Desarrollo, Diseño y Sonido"} />
@@ -65,8 +67,8 @@ function Router() {
           <Header title={"Gwerh | Resume"} content={"Desarrollo, Diseño y Sonido"} />
           <Curriculum />
         </Route>
-      </Switch>
-    </div>
+      </Switch >
+    </div >
   );
 }
 

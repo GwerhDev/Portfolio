@@ -4,7 +4,7 @@
   z-index: 99;
   padding-left: 10px;
   display: flex;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
 }

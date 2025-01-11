@@ -18,9 +18,9 @@ import logoutIcon from '../../../assets/images/png/logout-icon.png';
 import contactIcon from '../../../assets/images/png/contact-icon.png';
 import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
 
-export const Navigator = (props) => {
-  const selection = useSelector(state => state.selection);
+export const Navigator = () => {
   const language = useSelector(state => state.language);
+  const selection = useSelector(state => state.selection);
   const experience = useSelector(state => state.experience);
 
   function activeSelection() {

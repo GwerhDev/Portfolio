@@ -7,7 +7,7 @@ import { setSelection } from '../../../middlewares/redux/actions';
 import { Title } from '../../components/Utils/Title/Title';
 import pdfIcon from '../../../assets/images/png/pdf-icon.png';
 
-export const Curriculum = () => {
+export default function Curriculum() {
   const language = useSelector(state => state.language);
   const currentUser = useSelector(state => state.currentUser);
   const history = useHistory();

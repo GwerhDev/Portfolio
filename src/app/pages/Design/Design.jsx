@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import { setSelection } from '../../../middlewares/redux/actions';
 import { Separator } from '../../components/Utils/Separator/Separator';
 
-export const Design = (props) => {
+export default function Design(props) {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
   const { selection } = props;

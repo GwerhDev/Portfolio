@@ -1,5 +1,5 @@
-import { Selection } from "../Selection/Selection";
 import s from "./LateralCanvas.module.css";
+import { Selection } from "../Selection/Selection";
 
 export const LateralCanvas = () => {
   return (

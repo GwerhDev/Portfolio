@@ -1,3 +1,5 @@
+import { closePanel } from "./LateralPanelFunctions";
+
 export function optionActive(e) {
     document.querySelector(`#lateralMenu`).style.boxShadow=('0px 0px 4px transparent');
     document.querySelector(`#home`).style.boxShadow=('0px 0px 4px transparent');
@@ -16,8 +18,8 @@ export function disappear(){
   
     document.addEventListener('click', function(event) {
         if (!Div1.contains(event.target) && !Div2.contains(event.target) && !Div3.contains(event.target)) {
-            Div1.style.transform='translateX(-40vw)';
-            Div1.style.opacity='0';
+            closePanel();
+            Div1.style.width='0';
             Div2.style.transform='translateX(0)';
             Div3.style.scale='0';
             Div4.style.scale='0';

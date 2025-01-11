@@ -10,7 +10,7 @@ import logoutIcon from "../../../assets/images/png/logout-icon.png";
 import googleIcon from "../../../assets/images/png/gmail-icon.png";
 import { setSelection } from '../../../middlewares/redux/actions';
 
-export const Contact = (props) => {
+export default function Contact(props) {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
   const { selection } = props;

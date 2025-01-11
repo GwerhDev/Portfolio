@@ -11,7 +11,7 @@ import soundIcon from '../../../assets/images/png/sound-icon.png';
 import soundBack from '../../../assets/images/jpg/sound-bg.jpg';
 import { Separator } from "../../components/Utils/Separator/Separator";
 
-export const Sound = (props) => {
+export default function Sound(props) {
   const dispatch = useDispatch();
   const language = useSelector(state => state.language);
   const { selection } = props;

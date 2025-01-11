@@ -8,7 +8,7 @@ import { removeLocalStorage } from '../../../functions/RemoveLocalStorage';
 import { GITHUB_URL, LINKEDIN_URL, UPWORK_URL } from '../../../middlewares/config';
 import { ActionButton } from '../../components/Utils/Buttons/ActionButton';
 
-export const Landing = () => {
+export default function Landing() {
   const language = useSelector(state => state.language);
 
   useEffect(() => {

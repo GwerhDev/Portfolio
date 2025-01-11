@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { setSelection } from '../../../middlewares/redux/actions';
 import { Selection } from '../../components/Selection/Selection';
 
-export const Home = () => {
+export default function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
