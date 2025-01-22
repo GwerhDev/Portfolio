@@ -56,12 +56,12 @@
   }
 
   .imgProfile {
-    width: 100px;
+    width: 150px;
   }
 }
 
 @media (max-width: 500px) {
   .imgProfile {
-    width: 85px;
+    width: 135px;
   }
 }
