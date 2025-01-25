@@ -1,5 +1,5 @@
 import s from "./Profile.module.css";
-import picGwerhDev from "../../../assets/images/png/Gwerh.png";
+import picGwerhDev from "../../../assets/images/png/gwerh.png";
 
 export const Profile = () => {
   return (
