@@ -8,7 +8,7 @@ export const Profile = () => {
         className={s.imgProfile}
         src={picGwerhDev}
         alt="GwerhDev"
-        width="150px"
+        width="200px"
       />
       <h1 className={s.name}>Gerardo guarda</h1>
       <h2 className={s.alias}>gwerh</h2>
