@@ -27,15 +27,15 @@ function Router() {
 
       <Switch>
         <Route path='/mail/auth'>
-          <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"Gwerh | TerminalCore Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <MailAuthToken />
         </Route>
         <Route path='/resume/auth'>
-          <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"Gwerh | TerminalCore Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <ResumeAuthToken />
         </Route>
         <Route exact path='/'>
-          <Header title={"Gwerh | TerminalKiller Developers"} content={"Desarrollo, Diseño y Sonido"} />
+          <Header title={"Gwerh | TerminalCore Developers"} content={"Desarrollo, Diseño y Sonido"} />
           <Landing />
         </Route>
         <Route exact path='/selection'>
