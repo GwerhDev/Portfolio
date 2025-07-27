@@ -17,7 +17,7 @@ import {
   RESET_INFO,
   GET_EXPERIENCE,
 } from "../../misc/consts";
-import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API } from "../../config";
+import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API, NHEXA_API_PROJECT } from "../../config";
 
 export const getExperience = () => {
   return async function (dispatch) {
@@ -38,7 +38,7 @@ export const getExperience = () => {
 export const getDevelop = () => {
   return async function (dispatch) {
     try {
-      await axios.get(`${URL_API}/getdevelop`)
+      await axios.get(`${NHEXA_API_PROJECT}/public-export/develop`)
         .then(res => {
           dispatch({
             type: GET_DEVELOP,
