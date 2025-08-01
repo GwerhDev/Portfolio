@@ -129,6 +129,5 @@
 }
 
 .pInfo a:hover {
-    color: var(--app-white);
     background: linear-gradient(168deg, rgb(102, 101, 101) 20%, #171717d5 120%);
 }
