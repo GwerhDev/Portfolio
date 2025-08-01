@@ -40,23 +40,25 @@ export const Selection = () => {
           <li>
             <h3> {language === 'EN' ? 'DEVELOP' : 'DESARROLLO'} </h3>
             <div className={s.linkStyle}>
-              <Link to='/portfolio/develop' className={s.portfolioIconCont}
+              <a href='https://terminalcore.cl' target='_blank' className={s.portfolioIconCont}
+                rel="noreferrer"
                 onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.develop)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={devIcon} alt="" height={'110px'} />
-              </Link>
+              </a>
             </div>
           </li>
           <li>
             <h3> {language === 'EN' ? 'DESIGN' : 'DISEÑO'} </h3>
             <div className={s.linkStyle}>
-              <Link to='/portfolio/design' className={s.portfolioIconCont}
+              <a href='https://elumbral.cl' target='_blank' className={s.portfolioIconCont}
+                rel="noreferrer"
                 onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.design)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={designIcon} alt="" height={'110px'} />
-              </Link>
+              </a>
             </div>
           </li>
           <li>
@@ -65,12 +67,13 @@ export const Selection = () => {
                 language === 'EN' ? 'SOUND' : 'SONIDO'
               }                        </h3>
             <div className={s.linkStyle}>
-              <Link to='/portfolio/sound' className={s.portfolioIconCont}
+              <a href='https://laruina.cl' target='_blank' className={s.portfolioIconCont}
+                rel="noreferrer"
                 onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.sound)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={soundIcon} alt="" height={'110px'} />
-              </Link>
+              </a>
             </div>
           </li>
         </ul>
