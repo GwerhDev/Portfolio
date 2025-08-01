@@ -13,15 +13,13 @@ export const Language = () => {
   }, [language]);
 
   return (
-    <div className={s.lanCont}>
-      <ul className={s.ulCont}>
-        <button id="EN" value='EN' onClick={(e) => dispatch(setLanguage(e.target.value))}>
+    <div className={s.container}>
+        <button className={s.langOption} id="EN" value='EN' onClick={(e) => dispatch(setLanguage(e.target.value))}>
           en
         </button>
-        <button id="ES" value='ES' onClick={(e) => dispatch(setLanguage(e.target.value))}>
+        <button className={s.langOption} id="ES" value='ES' onClick={(e) => dispatch(setLanguage(e.target.value))}>
           es
         </button>
-      </ul>
     </div>
   )
 }
