@@ -144,7 +144,7 @@ export const DevProjects = (props) => {
         <ul className={s.devUlCont} id='devListSoftwareSection'>
           <div className={s.cathegoryDescription}>
             <img src={softwareIcon} alt="" width={50} />
-            <p>{language === 'EN' ? 'Software developing' : 'Desarrollo de Software'}</p>
+            <p>{language === 'EN' ? 'Software Development' : 'Desarrollo de Software'}</p>
           </div>
           {
             API ? API.at(3)?.software?.map((e, index) => {

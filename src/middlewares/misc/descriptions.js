@@ -1,6 +1,6 @@
 export const GET_DESCRIPTION_DEV = {
-  en: 'Software Engineer oriented on the development of Multimedia Platforms, Scalable Apps, Machine Learning and Artificial Intelligence.',
-  es: 'Ingeniero de Software orientado al desarrolllo de Plataformas Multimedia, Aplicaciones Escalables, Machine Learning e Inteligencia Artificial.'
+  en: 'Software Developer oriented on the development of Multimedia Platforms, Scalable Apps, Machine Learning and Artificial Intelligence.',
+  es: 'Desarrollador de Software orientado al desarrolllo de Plataformas Multimedia, Aplicaciones Escalables, Machine Learning e Inteligencia Artificial.'
 }
 export const GET_DESCRIPTION_SOUND = {
   en: "Self-taught Soundman, founder of the Audio Recording and Post-production Studio 'La Ruina Records'.",
