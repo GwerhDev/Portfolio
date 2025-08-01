@@ -9,7 +9,7 @@
 }
 
 .leftSection {
-  background: linear-gradient(230deg, #1e1928fd, #351f39 75%);;
+  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
   border-radius: 5px;
   max-width: 325px;
   max-height: 300px;
