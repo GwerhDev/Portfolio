@@ -18,7 +18,6 @@ import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
 export const Navigator = (props) => {
   const selection = useSelector(state => state.selection);
   const language = useSelector(state => state.language);
-  const experience = useSelector(state => state.experience);
 
   function activeSelection() {
     switch (selection) {
@@ -80,25 +79,22 @@ export const Navigator = (props) => {
             </button>
           </li>
 
-          {
-            experience[selection] &&
-            <li
-              id='experience'
-              onClick={() => {
-                ScrollToSection('experience-section', 'smooth');
-                closePanel();
-              }}
-              onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
-              onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
-            >
-              <img className={s.navImg} src={experienceIcon} alt="" width="30" />
-              <button className={s.menuItem} id='menuExperience' disabled>
-                {
-                  language === 'EN' ? 'experience' : 'experiencia'
-                }
-              </button>
-            </li>
-          }
+          <li
+            id='experience'
+            onClick={() => {
+              ScrollToSection('experience-section', 'smooth');
+              closePanel();
+            }}
+            onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
+            onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
+          >
+            <img className={s.navImg} src={experienceIcon} alt="" width="30" />
+            <button className={s.menuItem} id='menuExperience' disabled>
+              {
+                language === 'EN' ? 'experience' : 'experiencia'
+              }
+            </button>
+          </li>
 
           <li
             id='projects'
