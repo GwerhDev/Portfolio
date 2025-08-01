@@ -7,24 +7,11 @@ import { InfoToast } from '../Utils/InfoToast/InfoToast';
 import devIcon from '../../../assets/images/png/dev-icon.png';
 import soundIcon from '../../../assets/images/png/sound-icon.png';
 import designIcon from '../../../assets/images/png/design-icon.png';
-import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 export const Selection = () => {
   const language = useSelector(state => state.language);
   const portfolioInfo = useSelector(state => state.portfolioInfo);
   const [infoToast, setInfoToast] = useState('');
-  const location = useLocation();
-
-  function closePanel() {
-    if (location.pathname !== '/selection') {
-      window.scrollTo(0, 0);
-      document.querySelector('#lateralPanel').style.transform = 'translateX(-40vw)';
-      document.querySelector('#lateralPanel').style.opacity = '0';
-      document.querySelector('#navCont').style.transform = 'translateX(0vw)';
-    }
-
-    return;
-  }
 
   return (
     <div className={s.selectionContainer}>
@@ -41,7 +28,6 @@ export const Selection = () => {
             <div className={s.linkStyle}>
               <a href='https://terminalcore.cl' target='_blank' className={s.portfolioIconCont}
                 rel="noreferrer"
-                onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.develop)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={devIcon} alt="" height={'110px'} />
@@ -53,7 +39,6 @@ export const Selection = () => {
             <div className={s.linkStyle}>
               <a href='https://elumbral.cl' target='_blank' className={s.portfolioIconCont}
                 rel="noreferrer"
-                onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.design)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={designIcon} alt="" height={'110px'} />
@@ -68,7 +53,6 @@ export const Selection = () => {
             <div className={s.linkStyle}>
               <a href='https://laruina.cl' target='_blank' className={s.portfolioIconCont}
                 rel="noreferrer"
-                onClick={closePanel}
                 onMouseEnter={() => { return (document.getElementById('portfolioInfoContainer').style.scale = '1', setInfoToast(portfolioInfo.sound)) }}
                 onMouseLeave={() => document.getElementById('portfolioInfoContainer').style.scale = '0'}>
                 <img src={soundIcon} alt="" height={'110px'} />
