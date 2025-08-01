@@ -39,7 +39,7 @@
   backdrop-filter: blur(100px);
   overflow-x: hidden;
   overflow-y: auto;
-  background: linear-gradient(230deg, #1e1928fd, #0c0c0c 75%);
+  background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
   border-radius: 15px;
   max-width: 800px;
   margin-left: 20px;

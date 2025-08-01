@@ -41,7 +41,7 @@
 }
 
 .description {
-  color: rgb(193, 187, 210);
+  color: var(--app-white);
   font-size: 13px;
 }
 
