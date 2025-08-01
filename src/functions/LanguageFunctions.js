@@ -6,7 +6,7 @@ export default function lang(e) {
     document.querySelector('#ES').style.color='black'
     document.querySelector(`#ES`).style.boxShadow='none'
     return(
-      document.querySelector(`#${e}`).style.background='#346b84',
+      document.querySelector(`#${e}`).style.background='#171717',
       document.querySelector(`#${e}`).style.boxShadow= '0px 0px 8px black',
       document.querySelector(`#${e}`).style.color='#c7c7c7'
     )
