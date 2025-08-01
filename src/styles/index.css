@@ -163,9 +163,7 @@ code {
   min-height: 100vh;
 }
 
-a:hover,
-a:focus,
-a:visited {
+a:hover {
   color: var(--color-app-primary-hover);
 }
 

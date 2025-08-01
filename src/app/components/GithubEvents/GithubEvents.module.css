@@ -20,6 +20,10 @@
   color: var(--app-white);
 }
 
+.title a:hover {
+  color: var(--app-white);
+}
+
 .container li {
   background-color: rgba(143, 143, 143, 0.37);
   border-radius: 15px;
