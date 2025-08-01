@@ -1,7 +1,6 @@
 import s from './Selection.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Title } from '../Utils/Title/Title';
 import { InfoToast } from '../Utils/InfoToast/InfoToast';
