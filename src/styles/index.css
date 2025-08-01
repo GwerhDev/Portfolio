@@ -165,8 +165,7 @@ code {
 
 a:hover,
 a:focus,
-a:visited,
-a:link {
+a:visited {
   color: var(--color-app-primary-hover);
 }
 
