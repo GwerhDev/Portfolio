@@ -16,7 +16,7 @@
 
 .imgProfile:hover {
   filter: grayscale(.3);
-  box-shadow: 0px 0px 15px white;
+  box-shadow: 0px 0px 15px var(--app-white);
 }
 
 .alias {
@@ -28,16 +28,14 @@
   animation-timing-function: ease-in-out;
   animation-direction: alternate-reverse;
   font-family: Trajan;
-  color: white;
-  font-weight: thin;
+  color: var(--app-white);
 }
 
 .name {
   margin: 0;
   font-size: 30px;
   font-family: Trajan;
-  color: white;
-  font-weight: thin;
+  color: var(--app-white);
 }
 
 @keyframes resplandorAlias {

@@ -27,7 +27,7 @@ const ResumeAuthToken = () => {
 
   return (
     <div style={{
-      color: 'white',
+      color: 'var(--app-white);',
       filter: 'drop-shadow(0px 0px 2px green)',
       bottom: '0px',
       position: 'absolute',

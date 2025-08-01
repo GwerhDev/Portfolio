@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   display: flex;
-  color: white;
+  color: var(--app-white);
   gap: 1rem;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .leftSection ul h2 {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
 }
 
 .leftSection ul,
@@ -30,7 +30,7 @@
 }
 
 .more {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
 }
 
 @media (max-width: 800px) {

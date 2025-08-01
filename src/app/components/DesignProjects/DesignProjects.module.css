@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-  color: white;
+  color: var(--app-white);
 }
 
 .logoList {
@@ -35,7 +35,6 @@
 h6 {
   font-family: var(--font-global);
   font-size: 15px;
-  font-weight: 200;
 }
 
 .section {

@@ -18,7 +18,7 @@
 .navList {
   display: flex;
   list-style: none;
-  color: white;
+  color: var(--app-white);
   justify-content: space-around;
   align-items: center;
   margin: 0;
@@ -46,7 +46,7 @@
 
 select {
   background-color: transparent;
-  color: white;
+  color: var(--app-white);
   width: 100%;
   position: relative;
   border-radius: 15px;

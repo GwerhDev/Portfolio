@@ -14,11 +14,9 @@
 }
 
 .paragraph {
-  color: white;
   font-size: 14px;
   font-family: var(--font-global);
-  font-weight: 500;
-  color: rgb(193, 187, 210);
+  color: var(--color-secondary);
 }
 
 i {

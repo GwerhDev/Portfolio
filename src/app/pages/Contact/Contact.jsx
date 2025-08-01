@@ -80,7 +80,7 @@ export const Contact = (props) => {
 
             <div className={s.titleContainer}>
               <div className={s.titleContPerc}>
-                <Title backgroundColor={true} color={'white'} title={language === 'EN' ? 'contact' : 'contacto'} />
+                <Title backgroundColor={true} color={'var(--app-white);'} title={language === 'EN' ? 'contact' : 'contacto'} />
               </div>
             </div>
             {showForm && (
@@ -100,7 +100,7 @@ export const Contact = (props) => {
                         <a href={`${URL_API}/auth/mail/google`}>
                           <img src={defaultUserIcon} style={{ borderRadius: '100%', boxShadow: '0px 0px 4px black', marginLeft: '-40px' }} width='50px' height='50px' alt="" />
                         </a>
-                        <a href={`${URL_API}/auth/mail/google`} style={{ borderRadius: '100%', cursor: 'pointer', width: '25px', height: '25px', marginLeft: '-7px', backgroundColor: 'white' }}>
+                        <a href={`${URL_API}/auth/mail/google`} style={{ borderRadius: '100%', cursor: 'pointer', width: '25px', height: '25px', marginLeft: '-7px', backgroundColor: 'var(--app-white);' }}>
                           <img src={googleIcon} style={{ borderRadius: '100%', boxShadow: '0px 0px 4px black', filter: 'grayscale(.4)' }} width='25px' alt="" /> <br />
                         </a>
                       </ul>

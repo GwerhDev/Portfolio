@@ -57,7 +57,7 @@
 
 .titleCont h1 {
   font-family: Trajan;
-  color: white;
+  color: var(--app-white);
   font-size: 2.3rem;
 }
 

@@ -2,7 +2,7 @@
   padding: 0;
   width: 100%;
   margin-bottom: 100px;
-  color: white;
+  color: var(--app-white);
   display: flex;
   text-align: center;
   align-items: center;
@@ -72,7 +72,7 @@
 
 .backImgCanvas h1 {
   font-family: var(--font-global);
-  color: white;
+  color: var(--app-white);
   font-size: 12px;
   position: relative;
   padding: 10px;
@@ -123,7 +123,7 @@
 
   .backImgCanvas h1 {
     font-family: var(--font-global);
-    color: white;
+    color: var(--app-white);
     font-size: 8.5px;
     position: relative;
     padding: 10px;

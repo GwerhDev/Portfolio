@@ -27,7 +27,7 @@
 
 .buttons {
   z-index: 1;
-  color: white;
+  color: var(--app-white);
   border: none;
   display: flex;
   align-items: center;

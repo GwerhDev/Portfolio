@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 150px;
   display: flex;
-  color: white;
+  color: var(--app-white);
   gap: 1rem;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .position {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
   width: 100%;
   height: 36px;
   background: linear-gradient(90deg, #5b5b5bfd, #464646, #5b5b5bfd);
@@ -41,7 +41,7 @@
 }
 
 .company {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
   width: 100%;
   height: 28px;
   background: linear-gradient(90deg, #5b5b5bfd, #464646, #5b5b5bfd);
@@ -52,7 +52,7 @@
 
 
 .date {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
   width: 100%;
   height: 24px;
   background: linear-gradient(90deg, #5b5b5bfd, #464646, #5b5b5bfd);
@@ -62,7 +62,7 @@
 }
 
 .description {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #5b5b5bfd, #464646, #5b5b5bfd);
@@ -80,7 +80,7 @@
 }
 
 .more {
-  color: var(--color-primary-purple);
+  color: var(--color-app-primary);
 }
 
 @media (max-width: 800px) {

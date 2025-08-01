@@ -21,7 +21,7 @@
 }
 
 .porfolioList h3 {
-    color: white;
+    color: var(--app-white);
     font-size: .8rem;
     font-family: Poppins;
 }

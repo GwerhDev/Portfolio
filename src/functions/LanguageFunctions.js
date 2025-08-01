@@ -8,6 +8,6 @@ export default function lang(e) {
     return(
       document.querySelector(`#${e}`).style.background='#171717',
       document.querySelector(`#${e}`).style.boxShadow= '0px 0px 8px black',
-      document.querySelector(`#${e}`).style.color='white'
+      document.querySelector(`#${e}`).style.color='var(--app-white);'
     )
 }

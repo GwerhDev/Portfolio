@@ -65,7 +65,6 @@
   border-radius: 5px;
   transition-duration: .5s;
   color: #000000;
-  font-weight: thin;
   font-family: Trajan;
   font-size: 10px;
   border: none;
@@ -78,7 +77,7 @@
 .link:hover {
   cursor: pointer;
   background: linear-gradient(230deg, var(--color-button-hover-gradient-start), var(--color-button-hover-gradient-end) 85%);
-  color: white;
+  color: var(--app-white);
   animation-name: resplandor;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;

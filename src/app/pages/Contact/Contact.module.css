@@ -13,7 +13,6 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
     font-family: var(--font-global);
-    font-weight: 500;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -36,7 +35,7 @@
     margin-left: -60px;
     padding-right: 30px;
     padding-left: 10px;
-    color: white;
+    color: var(--app-white);
 }
 
 .formCont label{
@@ -49,7 +48,7 @@
     margin-bottom: 10px;
     height: 30px;
     background-color: #171717d5;
-    color: white;
+    color: var(--app-white);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
@@ -61,7 +60,7 @@
     height: 100px;
     resize: none;
     background-color: #171717d5;
-    color: white;
+    color: var(--app-white);
     border-radius: 10px;
     padding: 10px;
 }
@@ -72,7 +71,7 @@
     text-align: left;
     margin-left: 25%;
     left: 30px;
-    color: white;
+    color: var(--app-white);
 }
 
 .sformCont{
@@ -99,7 +98,6 @@
     border-radius: 3%;
     transition-duration: .5s;
     padding: 8px;
-    font-weight: thin; 
     font-family: Trajan;
     border-radius: 10px;
     border: none;
@@ -109,7 +107,7 @@
 .submitButton:hover{
     cursor: pointer;
     background: linear-gradient(230deg, rgb(27, 27, 27), #000000 85%);
-    color: white;
+    color: var(--app-white);
     scale: 1.01;
     animation-name: resplandor;
     animation-duration: .5s;
@@ -128,10 +126,9 @@
     border-radius: 5px;
     transition-duration: .4s;
     background: linear-gradient(168deg, rgb(102, 101, 101) 20%, #7a7a7a 120%);
-    font-weight: 100;
 }
 
 .pInfo a:hover {
-    color: white;
+    color: var(--app-white);
     background: linear-gradient(168deg, rgb(102, 101, 101) 20%, #171717d5 120%);
 }

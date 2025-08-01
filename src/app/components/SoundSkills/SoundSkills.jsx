@@ -11,15 +11,15 @@ export const SoundSkills = () => {
           <ul className={s.iconList}>
             <li className={s.icon}>
               <img className={s.svgIcons} src={reaperSVG} alt="" />
-              <h5 style={{ color: 'white' }}>Reaper</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>Reaper</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={protoolsSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ProTools</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ProTools</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={cubaseSVG} alt="" />
-              <h5 style={{ color: 'white' }}>Cubase</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>Cubase</h5>
             </li>
           </ul>
         </div>

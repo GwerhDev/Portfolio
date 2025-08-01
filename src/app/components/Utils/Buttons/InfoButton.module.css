@@ -4,7 +4,7 @@
     width: 25px;
     height: 25px;
     transition-duration: .4s;
-    color: white;
+    color: var(--app-white);
     background-color: grey;
     border: none;
 }

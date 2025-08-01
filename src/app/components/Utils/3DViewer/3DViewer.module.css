@@ -7,7 +7,7 @@
 
 .loaderContainer {
   z-index: 99;
-  color: white;
+  color: var(--app-white);
   font-family: var(--font-global);
   background-color: rgb(102, 81, 134);
   height: 3px;

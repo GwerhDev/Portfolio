@@ -24,75 +24,75 @@ export const DevSkills = () => {
           <ul className={s.iconList}>
             <li className={s.icon}>
               <img className={s.svgIcons} src={htmlSVG} alt="" />
-              <h5 style={{ color: 'white' }}>HTML</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>HTML</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={cssSVG} alt="" />
-              <h5 style={{ color: 'white' }}>CSS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>CSS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={pythonSVG} alt="" />
-              <h5 style={{ color: 'white' }}>Python</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>Python</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={jsSVG} alt="" />
-              <h5 style={{ color: 'white' }}>JavaScript</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>JavaScript</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={tsSVG} alt="" />
-              <h5 style={{ color: 'white' }}>TypeScript</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>TypeScript</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={reactSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ReactJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ReactJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={angularSVG} alt="" />
-              <h5 style={{ color: 'white' }}>AngularJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>AngularJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={vueSVG} alt="" />
-              <h5 style={{ color: 'white' }}>VueJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>VueJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={nextSVG} alt="" />
-              <h5 style={{ color: 'white' }}>NextJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>NextJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={djangoSVG} alt="" />
-              <h5 style={{ color: 'white' }}>Django</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>Django</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={reactSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ReactNative</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ReactNative</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={reduxSVG} alt="" />
-              <h5 style={{ color: 'white' }}>Redux</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>Redux</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={nodeSVG} alt="" />
-              <h5 style={{ color: 'white' }}>NodeJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>NodeJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={expressSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ExpressJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ExpressJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={postgresqlSVG} alt="" />
-              <h5 style={{ color: 'white' }}>PostgreSQL</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>PostgreSQL</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={electronSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ElectronJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ElectronJS</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={tensorflowSVG} alt="" />
-              <h5 style={{ color: 'white' }}>TensorFlow</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>TensorFlow</h5>
             </li>
             <li className={s.icon}>
               <img className={s.svgIcons} src={threeSVG} alt="" />
-              <h5 style={{ color: 'white' }}>ThreeJS</h5>
+              <h5 style={{ color: 'var(--app-white);' }}>ThreeJS</h5>
             </li>
           </ul>
         </div>
