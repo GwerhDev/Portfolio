@@ -16,7 +16,7 @@
 .paragraph {
   font-size: 14px;
   font-family: var(--font-global);
-  color: var(--color-secondary);
+  color: var(--app-white);
 }
 
 i {
