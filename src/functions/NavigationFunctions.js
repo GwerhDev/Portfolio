@@ -11,8 +11,6 @@ export function disappear(){
     const Div3 = document.getElementById('menu');
     const Div4 = document.getElementById('menuHome');
     const Div5 = document.getElementById('menuProjects');
-/*     const Div6 = document.getElementById('menuExperience');
- */    const Div9 = document.getElementById('menuLogout');
   
     document.addEventListener('click', function(event) {
         if (!Div1.contains(event.target) && !Div2.contains(event.target) && !Div3.contains(event.target)) {
@@ -22,8 +20,6 @@ export function disappear(){
             Div3.style.scale='0';
             Div4.style.scale='0';
             Div5.style.scale='0';
-/*             Div6.style.scale='0';
- */            Div9.style.scale='0';
         };
     });
 };

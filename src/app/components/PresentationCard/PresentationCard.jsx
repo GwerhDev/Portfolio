@@ -8,7 +8,6 @@ import { GITHUB_URL, LINKEDIN_URL, UPWORK_URL } from "../../../middlewares/confi
 
 export const PresentationCard = (props) => {
   const { language, description, devDailyJoke, joke } = props;
-  console.log(language)
 
   return (
     <div className={s.container}>
