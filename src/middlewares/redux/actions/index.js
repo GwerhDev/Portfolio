@@ -22,7 +22,7 @@ import { URL_API, URL_DEVDAILYJOKE_API, URL_WIKI_API, NHEXA_PROJECT_API } from "
 export const getExperience = () => {
   return async function (dispatch) {
     try {
-      await axios.get(`${NHEXA_PROJECT_API}/public-export/experience`)
+      await axios.get(`${NHEXA_PROJECT_API}/experience`)
         .then(res => {
           dispatch({
             type: GET_EXPERIENCE,
@@ -38,7 +38,7 @@ export const getExperience = () => {
 export const getDevelop = () => {
   return async function (dispatch) {
     try {
-      await axios.get(`${NHEXA_PROJECT_API}/public-export/develop`)
+      await axios.get(`${NHEXA_PROJECT_API}/develop`)
         .then(res => {
           dispatch({
             type: GET_DEVELOP,
@@ -53,7 +53,7 @@ export const getDevelop = () => {
 export const getFeaturedDevelop = () => {
   return async function (dispatch) {
     try {
-      await axios.get(`${NHEXA_PROJECT_API}/public-export/develop-featured`)
+      await axios.get(`${NHEXA_PROJECT_API}/develop-featured`)
         .then(res => {
           dispatch({
             type: GET_FEATURED_DEVELOP,
