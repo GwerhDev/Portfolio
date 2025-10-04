@@ -3,7 +3,6 @@
 }
 
 .contTitle{
-    position: relative;
     max-width: 100%;
     height: auto;
     text-align: center;
@@ -39,7 +38,6 @@
 
 @media (max-width: 950px) {
     .showMoreIcon {
-        position: relative;
         scale: .6;
         margin-top: -7px;
         top: 3px;

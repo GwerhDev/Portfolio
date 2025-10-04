@@ -1,4 +1,4 @@
-.container{
+.container {
     background: linear-gradient(to left, #000000a9, #0e0e0eec 99%);
     backdrop-filter: blur(10px);
     top: 0;
@@ -21,4 +21,11 @@
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 800px) {
+    .innerContainer {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 }

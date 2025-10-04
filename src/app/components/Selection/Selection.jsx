@@ -14,15 +14,15 @@ export const Selection = () => {
   const [infoToast, setInfoToast] = useState('');
 
   return (
-    <div className={s.selectionContainer}>
-      <Title backgroundColor title={language === 'EN' ? 'select' : 'seleccionar'} color='var(--app-white)' />
+    <div className={s.container}>
+      <Title backgroundColor top={0} title={language === 'EN' ? 'select' : 'seleccionar'} color='var(--app-white)' />
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
         animate={{ opacity: 1, y: 0 }}
-        className={s.porfolioContainer}
+        className={s.portfolioContainer}
       >
-        <ul className={s.porfolioList}>
+        <ul className={s.portfolioList}>
           <li>
             <h3> {language === 'EN' ? 'DEVELOP' : 'DESARROLLO'} </h3>
             <div className={s.linkStyle}>
