@@ -12,7 +12,6 @@ import {
   GET_WIKI,
   GET_DEVDAILYJOKE,
   GET_LASTS,
-  GET_FEATURED_DEVELOP,
   SET_INDEX,
   RESET_INFO,
   GET_EXPERIENCE,
@@ -46,22 +45,6 @@ export const getDevelop = () => {
           })
         })
     } catch (error) {
-    }
-  }
-}
-
-export const getFeaturedDevelop = () => {
-  return async function (dispatch) {
-    try {
-      await axios.get(`${NHEXA_PROJECT_API}/develop-featured`)
-        .then(res => {
-          dispatch({
-            type: GET_FEATURED_DEVELOP,
-            payload: res.data
-          })
-        })
-    } catch (error) {
-      console.error(error);
     }
   }
 }

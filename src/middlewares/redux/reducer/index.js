@@ -10,13 +10,11 @@ import {
   SET_INFO,
   GET_DEVDAILYJOKE,
   GET_LASTS,
-  GET_FEATURED_DEVELOP,
   SET_INDEX,
   RESET_INFO,
   GET_EXPERIENCE
 } from "../../misc/consts"
 import { Experience } from "../../models/Experience";
-import { Featured } from "../../models/Featured";
 import { Info } from "../../models/Info";
 import { PortfolioInfo } from "../../models/PortfolioInfo";
 const lang = localStorage.getItem('language');
@@ -25,7 +23,6 @@ const userLang = lang ? JSON.parse(lang) : 'EN';
 const initialState = {
   selection: 'home',
   language: userLang,
-  featured: new Featured(),
   develop: '',
   sound: '',
   design: '',
@@ -59,15 +56,6 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         develop: action.payload
-      };
-
-    case GET_FEATURED_DEVELOP:
-      return {
-        ...state,
-        featured: {
-          ...state.featured,
-          develop: action.payload
-        }
       };
 
     case GET_SOUND:

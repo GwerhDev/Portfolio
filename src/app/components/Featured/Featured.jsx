@@ -1,25 +1,19 @@
 import s from "./Featured.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Card } from "./Card";
-import { useEffect } from "react";
-import { getFeaturedDevelop } from "../../../middlewares/redux/actions";
 import { EmptyCard } from "./EmptyCard";
 
 export const Featured = (props) => {
-  const dispatch = useDispatch();
   const { language } = props;
-  const featured = useSelector((state) => state.featured);
-
-  useEffect(() => {
-    dispatch(getFeaturedDevelop());
-  }, [dispatch]);
+  const develop = useSelector((state) => state.develop);
 
   return (
     <ul className={s.container}>
       {
-        featured.develop
+        develop?.[0]?.web
           ?
-          featured.develop.map((item, index) => (
+          develop?.[0]?.web?.map((item, index) => (
+            item.featured &&
             <li key={index}>
               <Card
                 key={index}
