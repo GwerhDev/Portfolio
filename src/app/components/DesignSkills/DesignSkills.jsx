@@ -13,27 +13,27 @@ export const DesignSkills = () => {
         <ul className={s.iconList}>
           <li className={s.icon}>
             <img className={s.svgIcons} src={photoshopSVG} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>PhotoSHop</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>PhotoSHop</h5>
           </li>
           <li className={s.icon}>
             <img className={s.svgIcons} src={illustratorSVG} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>Illustrator</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>Illustrator</h5>
           </li>
           <li className={s.icon}>
             <img className={s.svgIcons} src={premiereproSVG} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>PremierePro</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>PremierePro</h5>
           </li>
           <li className={s.icon}>
             <img className={s.svgIcons} src={aftereffectsSVG} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>AfterEffects</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>AfterEffects</h5>
           </li>
           <li className={s.icon}>
             <img className={s.svgIcons} src={blenderSVG} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>Blender</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>Blender</h5>
           </li>
           <li className={s.icon}>
             <img className={s.svgIcons} src={rhinocerosSvg} alt="" />
-            <h5 style={{ color: 'var(--app-white);' }}>Rhinoceros</h5>
+            <h5 style={{ color: 'var(--app-white)' }}>Rhinoceros</h5>
           </li>
         </ul>
       </div>

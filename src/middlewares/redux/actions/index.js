@@ -189,14 +189,36 @@ export function getDevDailyJoke(lang) {
 }
 
 export function getGithubEvents() {
-  const url = `${URL_API}/github/GwerhDev/lasts`
+  const url = `${NHEXA_PROJECT_API}/github-lasts`
   return async function (dispatch) {
     try {
       await axios.get(url)
         .then(res => {
+          const response = res.data.map(repo => {
+            return {
+              name: repo.name,
+              description: repo.description,
+              topics: repo.topics,
+              language: repo.language,
+              lastUpdated: new Date(repo.pushed_at),
+              href: repo.homepage,
+              repoUrl: repo.html_url,
+              owner: {
+                name: repo.owner.login,
+                avatarUrl: repo.owner.avatar_url,
+                url: repo.owner.html_url,
+              },
+            }
+          });
+
+          response.sort((a, b) => {
+            return b.lastUpdated - a.lastUpdated;
+          });
+
+          const lastUpdated = response.slice(0, 5);
           dispatch({
             type: GET_LASTS,
-            payload: res.data
+            payload: lastUpdated
           })
         })
         .catch((e) => {

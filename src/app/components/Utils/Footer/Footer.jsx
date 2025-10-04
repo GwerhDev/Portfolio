@@ -8,7 +8,7 @@ export const Footer = () => {
       <h3 style={{ fontSize: '10px' }}>
         {currentYear()} &copy; Theme by Gwerh.{' '}
         <a
-          style={{ color: 'var(--app-white);', textDecoration: 'underline' }}
+          style={{ color: 'var(--app-white)', textDecoration: 'underline' }}
           href={PORTFOLIO_REPO_URL}
           alt='repository'
           target='_blank'
