@@ -37,8 +37,8 @@ export const GithubEvents = (props) => {
             <img className={s.githubIcon} src={githubIcon} alt="" width="35px" />
           </span>
           <a href={current?.repoUrl} target='_blank' rel="noreferrer">
-            {current?.name? "/" + current?.name : "Cargando..."}
-            {current?.name? <img className={s.openwindowIcon} src={openwindowIcon} alt="" width="25px" /> : null}
+            {current?.name ? "/" + current?.name : "Cargando..."}
+            {current?.name ? <img className={s.openwindowIcon} src={openwindowIcon} alt="" width="25px" /> : null}
           </a>
         </h2>
         <div className={s.ownerContainer}>
@@ -49,10 +49,15 @@ export const GithubEvents = (props) => {
         </div>
         {
           current?.lastUpdated
-          ?
-          <span>{language === "EN" ? "Last update" : "Última actualización"}: <i>{new Date(current?.lastUpdated).toLocaleString()}</i></span>
-          :
-          <span>{language === "EN" ? "Connecting with Github" : "Estableciendo conexión con GitHub"}</span>
+            ?
+            <span>
+              <p><strong>{language === "EN" ? "Last update" : "Última actualización"}:</strong></p>
+              <p><i>{new Date(current?.lastUpdated).toLocaleString()}</i></p>
+            </span>
+            :
+            <span>
+              <p><strong>{language === "EN" ? "Connecting with Github" : "Estableciendo conexión con GitHub"}</strong></p>
+            </span>
         }
       </li>
     </ul>

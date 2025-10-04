@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import s from './DevProjects.module.css';
+import s from './Projects.module.css';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RenderMainTech } from '../../../functions/RenderMainTech';
 import { getDevelop, setInfo } from '../../../middlewares/redux/actions';
 import { openInfoCanvas } from '../../../functions/InfoCanvasFunctions';
 import { NavFilter } from '../NavFilter/NavFilter';
-import loadingImg from "../../../assets/images/gif/loading.gif";
 import webIcon from "../../../assets/images/svg/web-icon.svg";
-import desktopIcon from "../../../assets/images/svg/desktop-icon.svg";
+import loadingImg from "../../../assets/images/gif/loading.gif";
 import mobileIcon from "../../../assets/images/svg/mobile-icon.svg";
+import desktopIcon from "../../../assets/images/svg/desktop-icon.svg";
 import softwareIcon from "../../../assets/images/svg/software-icon.svg";
 
-export const DevProjects = (props) => {
+export const Projects = (props) => {
   const { language } = props;
   const dispatch = useDispatch();
-  const API = useSelector(state => state.develop);
+  const projects = useSelector(state => state.develop);
 
   useEffect(() => {
     dispatch(getDevelop());
@@ -30,7 +30,7 @@ export const DevProjects = (props) => {
             <p>{language === 'EN' ? 'Web Applications' : 'Aplicaciones Web'}</p>
           </div>
           {
-            API ? API.at(0)?.web?.map((e, index) => {
+            projects ? projects.at(0)?.web?.map((e, index) => {
               return (
                 e.published &&
                 <li
@@ -69,7 +69,7 @@ export const DevProjects = (props) => {
             <p>{language === 'EN' ? 'Desktop Applications' : 'Aplicaciones de Escritorio'}</p>
           </div>
           {
-            API ? API.at(1)?.desktop?.map((e, index) => {
+            projects ? projects.at(1)?.desktop?.map((e, index) => {
               return (
                 e.published &&
                 <li
@@ -108,7 +108,7 @@ export const DevProjects = (props) => {
             <p>{language === 'EN' ? 'Mobile Applications' : 'Aplicaciones de Móvil'}</p>
           </div>
           {
-            API ? API.at(2)?.mobile?.map((e, index) => {
+            projects ? projects.at(2)?.mobile?.map((e, index) => {
               return (
                 e.published &&
                 <li
@@ -147,7 +147,7 @@ export const DevProjects = (props) => {
             <p>{language === 'EN' ? 'Software Development' : 'Desarrollo de Software'}</p>
           </div>
           {
-            API ? API.at(3)?.software?.map((e, index) => {
+            projects ? projects.at(3)?.software?.map((e, index) => {
               return (
                 e.published &&
                 <li

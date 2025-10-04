@@ -1,4 +1,4 @@
-import s from './DevSkills.module.css';
+import s from './Skills.module.css';
 import htmlSVG from '../../../assets/images/svg/html-icon.svg';
 import cssSVG from '../../../assets/images/svg/css-icon.svg';
 import pythonSVG from '../../../assets/images/svg/python-icon.svg';
@@ -17,7 +17,7 @@ import angularSVG from '../../../assets/images/svg/angular-icon.svg';
 import vueSVG from '../../../assets/images/svg/vue-icon.svg';
 import djangoSVG from '../../../assets/images/svg/django-icon.svg';
 
-export const DevSkills = () => {
+export const Skills = () => {
   return (
     <div className={s.container}>
         <div className={s.skillsCont}>

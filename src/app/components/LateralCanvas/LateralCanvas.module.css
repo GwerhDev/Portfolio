@@ -1,5 +1,6 @@
-.lateralPanel{
-    background: linear-gradient(to left, #000000, #0e0e0e 99%);
+.container{
+    background: linear-gradient(to left, #000000a9, #0e0e0eec 99%);
+    backdrop-filter: blur(10px);
     top: 0;
     left: 0;
     width: 40vw;

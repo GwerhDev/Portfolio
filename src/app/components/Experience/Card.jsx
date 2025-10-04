@@ -22,7 +22,9 @@ export const Card = (props) => {
             <p>{description}</p>
             {
               more &&
-              <a className={s.more} href={more} target='_blank' rel='noreferrer'>{language === "EN" ? "see more..." : "ver más..."}</a>
+              <span>
+                <a className={s.more} href={more} target='_blank' rel='noreferrer'>{language === "EN" ? "see more..." : "ver más..."}</a>
+              </span>
             }
           </ul>
         </section>

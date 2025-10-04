@@ -41,6 +41,12 @@
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  .viewerUl {
+    padding-right: 20px;
+  }
+}
+
 .portfolioImg {
   width: 200px;
 }

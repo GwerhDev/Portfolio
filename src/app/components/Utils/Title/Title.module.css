@@ -26,7 +26,7 @@
 }
 
 .contTitle h1{
-    font-size: 20px;
+    font-size: 24px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -45,6 +45,12 @@
         top: 3px;
     }
     .contTitle h1{
-        font-size: 12px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contTitle h1{
+        font-size: 8px;
     }
 }

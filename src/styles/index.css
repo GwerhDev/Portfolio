@@ -142,26 +142,25 @@ code {
   padding-right: 70px;
 }
 
+@media (max-width: 900px) {
+  .sections-container {
+    padding-right: 20px;
+  }
+}
+
 .align-start {
   align-items: flex-start;
 }
 
 .section-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   max-width: 800px;
   padding-bottom: 5rem;
 }
 
-#skills-section {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 a:hover {
   color: var(--color-app-primary-hover);
@@ -229,4 +228,44 @@ a {
 
 .bg-position-center {
   background-position: center;
+}
+
+#skills-section {
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 8px;
+  }
 }

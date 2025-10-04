@@ -8,13 +8,18 @@
 
 .skillsCont {
   gap: 2rem;
-  width: 100%;
+  width: 100%;  
   max-width: 800px;
   padding-left: 70px;
   padding-right: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .skillsCont {
+    padding: 0;
+  }
 }
 
 .icon {
@@ -22,15 +27,14 @@
 }
 
 .iconList {
-  max-width: 100%;
-  position: relative;
+  width: 100%;
+  grid-gap: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  grid-gap: 20px;
   list-style: none;
   text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
 }
 
 .icon h5 {
