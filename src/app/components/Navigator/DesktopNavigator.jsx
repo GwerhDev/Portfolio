@@ -6,13 +6,8 @@ import { setSelection } from "../../../middlewares/redux/actions";
 import { disappear, optionActive } from "../../../functions/NavigationFunctions";
 import { ScrollToSection } from "../../../functions/ScrollToSection";
 import { closePanel } from "../../../functions/LateralPanelFunctions";
-import homeIcon from '../../../assets/images/png/home-icon.png';
-import devIcon from '../../../assets/images/png/dev-icon.png';
-import soundIcon from '../../../assets/images/png/sound-icon.png';
-import designIcon from '../../../assets/images/png/design-icon.png';
-import skillsIcon from '../../../assets/images/svg/skills-icon.svg';
-import contactIcon from '../../../assets/images/png/contact-icon.png';
-import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faBriefcase, faCode, faPalette, faMusic, faWrench, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const DesktopNavigator = () => {
   const selection = useSelector(state => state.selection);
@@ -21,11 +16,11 @@ export const DesktopNavigator = () => {
   function activeSelection() {
     switch (selection) {
       case 'develop':
-        return devIcon;
+        return faCode;
       case 'design':
-        return designIcon;
+        return faPalette;
       case 'sound':
-        return soundIcon;
+        return faMusic;
       default:
         return;
     }
@@ -60,7 +55,7 @@ export const DesktopNavigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuHome').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuHome').style.scale = '0') }}
           >
-            <img className={s.navImg} src={homeIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faHome} />
             <button className={s.menuItem} id='menuHome' disabled>
               {language === 'EN' ? 'Home' : 'Inicio'}
             </button>
@@ -75,7 +70,7 @@ export const DesktopNavigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuExperience').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuExperience').style.scale = '0') }}
           >
-            <img className={s.navImg} src={experienceIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faBriefcase} />
             <button className={s.menuItem} id='menuExperience' disabled>
               {
                 language === 'EN' ? 'experience' : 'experiencia'
@@ -92,7 +87,7 @@ export const DesktopNavigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuProjects').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuProjects').style.scale = '0') }}
           >
-            <img className={s.navImg} src={activeSelection()} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={activeSelection()} />
             <button className={s.menuItem} id='menuProjects' disabled>
               {
                 language === 'EN' ? 'projects' : 'proyectos'
@@ -109,7 +104,7 @@ export const DesktopNavigator = () => {
             onMouseEnter={() => { return (document.querySelector('#menuSkills').style.scale = '1') }}
             onMouseLeave={() => { return (document.querySelector('#menuSkills').style.scale = '0') }}
           >
-            <img className={s.navImg} src={skillsIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faWrench} />
             <button className={s.menuItem} id='menuSkills' disabled>
               {language === 'EN' ? 'skills' : 'habilidades'}
             </button>
@@ -124,7 +119,7 @@ export const DesktopNavigator = () => {
 
           >
             <a href='mailto:gwerh.dev@gmail.com'>
-              <img className={s.navImg} src={contactIcon} alt="" width="30" />
+              <FontAwesomeIcon className={s.navImg} icon={faEnvelope} />
             </a>
             <button className={s.menuItem} id='menuContact' disabled>
               {language === 'EN' ? 'contact' : 'contacto'}

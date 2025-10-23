@@ -21,6 +21,7 @@
   height: 50px;
   margin-inline: 20px;
 }
+
 .ulCont {
   display: flex;
   list-style: none;
@@ -41,8 +42,6 @@
 }
 
 .navImg {
-  width: 30px;
-  height: 30px;
   filter: grayscale(0.2);
   transition-duration: 1s;
   scale: 1;
@@ -51,6 +50,8 @@
   justify-content: center;
   background-size: cover;
   background-position: center;
+  color: var(--app-white);
+
 }
 
 .navImg:hover {

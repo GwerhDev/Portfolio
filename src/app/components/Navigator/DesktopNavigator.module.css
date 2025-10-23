@@ -24,7 +24,7 @@
 }
 
 .ulCont {
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -43,8 +43,6 @@
 }
 
 .navImg {
-  width: 30px;
-  height: 30px;
   filter: grayscale(0.2);
   transition-duration: 1s;
   scale: 1;
@@ -53,6 +51,7 @@
   justify-content: center;
   background-size: cover;
   background-position: center;
+  color: var(--app-white);
 }
 
 .navImg:hover {

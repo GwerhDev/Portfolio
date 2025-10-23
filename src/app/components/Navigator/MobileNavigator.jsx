@@ -6,13 +6,8 @@ import { setSelection } from "../../../middlewares/redux/actions";
 import { disappear, optionActive } from "../../../functions/NavigationFunctions";
 import { ScrollToSection } from "../../../functions/ScrollToSection";
 import { closePanel } from "../../../functions/LateralPanelFunctions";
-import homeIcon from '../../../assets/images/png/home-icon.png';
-import devIcon from '../../../assets/images/png/dev-icon.png';
-import soundIcon from '../../../assets/images/png/sound-icon.png';
-import designIcon from '../../../assets/images/png/design-icon.png';
-import skillsIcon from '../../../assets/images/svg/skills-icon.svg';
-import contactIcon from '../../../assets/images/png/contact-icon.png';
-import experienceIcon from '../../../assets/images/svg/experience-icon.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faBriefcase, faCode, faPalette, faMusic, faWrench, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const MobileNavigator = () => {
   const selection = useSelector(state => state.selection);
@@ -20,11 +15,11 @@ export const MobileNavigator = () => {
   function activeSelection() {
     switch (selection) {
       case 'develop':
-        return devIcon;
+        return faCode;
       case 'design':
-        return designIcon;
+        return faPalette;
       case 'sound':
-        return soundIcon;
+        return faMusic;
       default:
         return;
     }
@@ -52,7 +47,7 @@ export const MobileNavigator = () => {
               closePanel();
             }}
           >
-            <img className={s.navImg} src={homeIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faHome} />
           </li>
 
           <li
@@ -62,7 +57,7 @@ export const MobileNavigator = () => {
               closePanel();
             }}
           >
-            <img className={s.navImg} src={experienceIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faBriefcase} />
           </li>
 
           <li
@@ -72,7 +67,7 @@ export const MobileNavigator = () => {
               closePanel();
             }}
           >
-            <img className={s.navImg} src={activeSelection()} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={activeSelection()} />
           </li>
 
           <li
@@ -82,7 +77,7 @@ export const MobileNavigator = () => {
               closePanel();
             }}
           >
-            <img className={s.navImg} src={skillsIcon} alt="" width="30" />
+            <FontAwesomeIcon className={s.navImg} icon={faWrench} />
           </li>
           <li
             id='contact'
@@ -91,7 +86,7 @@ export const MobileNavigator = () => {
             }}
           >
             <a href='mailto:gwerh.dev@gmail.com'>
-              <img className={s.navImg} src={contactIcon} alt="" width="30" />
+              <FontAwesomeIcon className={s.navImg} icon={faEnvelope} />
             </a>
           </li>
         </ul>
