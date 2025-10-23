@@ -117,7 +117,6 @@ export const DesktopNavigator = () => {
           <li
             id='contact'
             onClick={() => {
-              ScrollToSection('skills-section', 'smooth');
               closePanel();
             }}
             onMouseEnter={() => { return (document.querySelector('#menuContact').style.scale = '1') }}

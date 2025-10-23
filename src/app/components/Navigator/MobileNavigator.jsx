@@ -87,7 +87,6 @@ export const MobileNavigator = () => {
           <li
             id='contact'
             onClick={() => {
-              ScrollToSection('skills-section', 'smooth');
               closePanel();
             }}
           >

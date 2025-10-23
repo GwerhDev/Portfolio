@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: centerww;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .imgProfile {
