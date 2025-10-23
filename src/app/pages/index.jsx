@@ -1,17 +1,16 @@
-import s from "./Home.module.css";
 import { useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
-import { PresentationCard } from "../../components/PresentationCard/PresentationCard";
-import { GET_DESCRIPTION_DEV } from "../../../middlewares/misc/descriptions";
-import { getDevDailyJoke, setSelection } from '../../../middlewares/redux/actions';
-import { Featured } from "../../components/Featured/Featured";
-import { Skills } from "../../components/Skills/Skills";
-import { Experience } from '../../components/Experience/Experience';
-import { Separator } from "../../components/Utils/Separator/Separator";
-import { Projects } from "../../components/Projects/Projects";
-import { GithubEvents } from "../../components/GithubEvents/GithubEvents";
-import devBack from '../../../assets/images/jpg/dev-bg.jpg';
+import { PresentationCard } from "../components/PresentationCard/PresentationCard";
+import { GET_DESCRIPTION_DEV } from "../../middlewares/misc/descriptions";
+import { getDevDailyJoke, setSelection } from '../../middlewares/redux/actions';
+import { Featured } from "../components/Featured/Featured";
+import { Skills } from "../components/Skills/Skills";
+import { Experience } from '../components/Experience/Experience';
+import { Separator } from "../components/Utils/Separator/Separator";
+import { Projects } from "../components/Projects/Projects";
+import { GithubEvents } from "../components/GithubEvents/GithubEvents";
+import devBack from '../../assets/images/jpg/dev-bg.jpg';
 
 export const Home = (props) => {
   const dispatch = useDispatch();
@@ -29,7 +28,7 @@ export const Home = (props) => {
   }, [dispatch, selection]);
 
   return (
-    <div className={s.container}>
+    <div>
       <div className="grids-background bg-position-top-center" />
       <PresentationCard language={language} joke={true} background={devBack} devDailyJoke={devDailyJoke} description={GET_DESCRIPTION_DEV} />
       <main className="main-container">
@@ -60,7 +59,7 @@ export const Home = (props) => {
             <Skills />
           </section>
         </div>
-      </main >
-    </div >
+      </main>
+    </div>
   )
 }
