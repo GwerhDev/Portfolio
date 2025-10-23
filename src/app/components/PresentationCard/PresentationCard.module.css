@@ -43,6 +43,7 @@
 
 @media (max-width: 800px) {
   .viewerUl {
+    padding-left: 20px;
     padding-right: 20px;
   }
 }
@@ -72,7 +73,7 @@
   cursor: pointer;
 }
 
-.jokeCont{
+.jokeCont {
   padding-top: 50px;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
@@ -87,7 +88,6 @@
   .parr {
     font-size: 11px;
   }
-
 
   .title {
     width: 100%;
