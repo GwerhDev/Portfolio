@@ -10,4 +10,4 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/gwerh/";
 export const UPWORK_URL = "https://www.upwork.com/freelancers/~0150aa07f211fc5b42";
 export const PORTFOLIO_REPO_URL = "https://github.com/GwerhDev/Portfolio";
 
-export const NHEXA_PROJECT_API = environment === DEVELOPMENT ? "http://localhost:8080/streamby/48a9ef27-5056-45bf-90dc-905d0cf39fa9/get-export" : "https://api.nhexa.cl/streamby/48a9ef27-5056-45bf-90dc-905d0cf39fa9/get-export";
+export const NHEXA_PROJECT_API = environment === DEVELOPMENT ? "http://localhost:8080/streamby/48a9ef27-5056-45bf-90dc-905d0cf39fa9/export" : "https://api.nhexa.cl/streamby/48a9ef27-5056-45bf-90dc-905d0cf39fa9/export";
