@@ -39,9 +39,13 @@ export const getDevelop = () => {
     try {
       await axios.get(`${NHEXA_PROJECT_API}/develop`)
         .then(res => {
+          const data = Object.keys(res.data)
+            .filter(key => !isNaN(key))
+            .sort((a, b) => Number(a) - Number(b))
+            .map(key => res.data[key]);
           dispatch({
             type: GET_DEVELOP,
-            payload: res.data
+            payload: data
           })
         })
     } catch (error) {
